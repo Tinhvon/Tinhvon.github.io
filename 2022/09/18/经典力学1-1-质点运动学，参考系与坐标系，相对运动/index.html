@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="#Chapter1 矢量力学##1.1质点运动学，参考系与坐标系，相对运动前言：作者本人已经大二啦，开始了《理论力学》与《数学物理方法》的学习。本系列文章是作者平时的课堂笔记+一些自己的思考，希望能和大家共同交流。    什么是运动学，运动学主要研究系统在时空中的运动，并使用几何手段来描述物体的运动。在矢量力学中，时间和空间是分离的，空间可以使用Euclid几何来描述。同时，矢量力学中的空间是均匀">
+<meta property="og:type" content="article">
+<meta property="og:title" content="经典力学1.1 质点运动学，参考系与坐标系，相对运动">
+<meta property="og:url" content="http://example.com/2022/09/18/%E7%BB%8F%E5%85%B8%E5%8A%9B%E5%AD%A61-1-%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6%EF%BC%8C%E5%8F%82%E8%80%83%E7%B3%BB%E4%B8%8E%E5%9D%90%E6%A0%87%E7%B3%BB%EF%BC%8C%E7%9B%B8%E5%AF%B9%E8%BF%90%E5%8A%A8/index.html">
+<meta property="og:site_name" content="Tinhvon&#39;s Space">
+<meta property="og:description" content="#Chapter1 矢量力学##1.1质点运动学，参考系与坐标系，相对运动前言：作者本人已经大二啦，开始了《理论力学》与《数学物理方法》的学习。本系列文章是作者平时的课堂笔记+一些自己的思考，希望能和大家共同交流。    什么是运动学，运动学主要研究系统在时空中的运动，并使用几何手段来描述物体的运动。在矢量力学中，时间和空间是分离的，空间可以使用Euclid几何来描述。同时，矢量力学中的空间是均匀">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-09-18T04:20:55.000Z">
+<meta property="article:modified_time" content="2022-09-18T18:28:52.414Z">
+<meta property="article:author" content="Tinhvon">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2022/09/18/%E7%BB%8F%E5%85%B8%E5%8A%9B%E5%AD%A61-1-%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6%EF%BC%8C%E5%8F%82%E8%80%83%E7%B3%BB%E4%B8%8E%E5%9D%90%E6%A0%87%E7%B3%BB%EF%BC%8C%E7%9B%B8%E5%AF%B9%E8%BF%90%E5%8A%A8/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>经典力学1.1 质点运动学，参考系与坐标系，相对运动 | Tinhvon's Space</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Tinhvon's Space</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/18/%E7%BB%8F%E5%85%B8%E5%8A%9B%E5%AD%A61-1-%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6%EF%BC%8C%E5%8F%82%E8%80%83%E7%B3%BB%E4%B8%8E%E5%9D%90%E6%A0%87%E7%B3%BB%EF%BC%8C%E7%9B%B8%E5%AF%B9%E8%BF%90%E5%8A%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Tinhvon">
+      <meta itemprop="description" content="你无法借由今天的逃离，来躲避明天的责任。 ——亚伯拉罕·林肯 ''">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tinhvon's Space">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          经典力学1.1 质点运动学，参考系与坐标系，相对运动
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-09-18 12:20:55" itemprop="dateCreated datePublished" datetime="2022-09-18T12:20:55+08:00">2022-09-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-09-19 02:28:52" itemprop="dateModified" datetime="2022-09-19T02:28:52+08:00">2022-09-19</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>6.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>#Chapter1 矢量力学<br>##1.1质点运动学，参考系与坐标系，相对运动<br>前言：作者本人已经大二啦，开始了《理论力学》与《数学物理方法》的学习。本系列文章是作者平时的课堂笔记+一些自己的思考，希望能和大家共同交流。  </p>
+<hr>
+<p>什么是运动学，运动学主要研究系统在时空中的运动，并使用几何手段来描述物体的运动。在矢量力学中，时间和空间是分离的，空间可以使用<strong>Euclid几何</strong>来描述。同时，矢量力学中的空间是均匀的也是各向同性的，而时间是均匀的。在经典力学中，时空的均匀性决定了一系列守恒律！</p>
+<p>而为了描述物体的运动，我们需要引入自己的一套“语言体系”。首先为了简化对物理问题的研究，我们引入了<strong>质点</strong>这模型。其严格定义为：<strong>没有大小形状，只有质量的点。</strong>显然，质点模型是一个高度理想化理想模型，当我们研究一个物理问题时，物体的形状，体积对研究几乎甚至没有影响时，我们可以“放弃”对这些次要因素的研究，而是用一个只有质量的点来等效这个物体，从而对其进行研究。 </p>
+<p>但是仅有质点是仅仅不够的，我们需要更多的“语言”来描述运动！由此产生了基本物理量。考虑到基本物理量都是用于描述质点在某一瞬时的运动状态，故其有<strong>瞬时性</strong>；此外，在不同的参考系下，我们观测到的基本物理量往往是不同的，这被称为<strong>相对性</strong>；在运动学中，物理量的变化往往有大小和方向两个方向，所以其有<strong>矢量性</strong>。描述运动的基本物理量如下：<br>位矢$\overrightarrow{r}$:在参考系已经选定的情况下，某个确定的点指向质点所在位置的矢量，它用来描述质点位置随时间变化的规律。在运动学中，$$\overrightarrow{r}&#x3D; \overrightarrow{r}(t)$$被称为运动方程式，其对时间 $t$ 单值可微。而 $\overrightarrow{r}$在空间划过的曲线，通常被称为轨迹。<br>**位移$\Delta \overrightarrow{r}$ **:在给定位矢$\overrightarrow{r}$后，为了描述在某一段时间$\Delta t$内位矢的变化。我们引入位移这一概念，显然，它是$ t,\Delta t $的函数，表示为： r→(t,Δt)&#x3D;r→(t+Δt)−r→(t)&#x3D;Δr→ .<br>**速度 $\overrightarrow{v}$ **:速度通常定义为位移与完成这段位移所需时间的比值，即 $\overrightarrow{v}&#x3D; \frac{\mathrm{d}\overrightarrow{r} }{\mathrm dt}$ .形象地讲，速度常用来描述运动的快慢和方向，同位矢，它也是时间的单值可微函数。<br>**加速度$\overrightarrow{a}$:**加速度通常定义为速度该变量与完成这些改变所需时间的比值，即$\overrightarrow{a}&#x3D; \frac{\mathrm d\overrightarrow{v}}{\mathrm d t} $.同理，加速度通常用来描述速度改变的快慢与方向。 </p>
+<p>在基本物理量给出后，我们便需要观测（测量）这些物理量。自然而然，我们引入了<strong>参考系</strong>这一工具，参考系被称为用来基准的物体或物体组。其定量化结果就是我们所说的<strong>坐标系</strong>。在坐标系中，矢量可以用分量形式来描述，下介绍几种常见的坐标系：   </p>
+<p><strong>标准正交坐标系：</strong>通常也称为<strong>笛卡尔坐标系</strong>，其基底满足 $\overrightarrow{e_{i}}\times\overrightarrow{e_{j}} &#x3D; \overrightarrow{e_{k}} $ (即我们所说的右手系)。在标准坐标系中，给定矢量$\overrightarrow{A}$可表示为：$\begin{equation} \begin{aligned} \overrightarrow{A} &#x3D; \sum_{i &#x3D; 1}^{3}{A_{i}}\overrightarrow{e_{i}} \end{aligned} \end{equation}$,其中 $\begin{equation} \begin{aligned} A_{i} &#x3D; \overrightarrow{A}\cdot\overrightarrow{e_{i}} \end{aligned} \end{equation}$ .即： $\begin{equation} \begin{aligned} \overrightarrow{A} &#x3D; \sum_{i &#x3D; 1}^{3}{\overrightarrow{A}\cdot\overrightarrow{e_{i}}} \overrightarrow{e_{j}} \end{aligned} \end{equation} $</p>
+<p>在笛卡尔坐标系中，描述运动的基本物理量可写为：<br>$$<br>\overrightarrow{r} &#x3D; x\overrightarrow{e_{i}}+y\overrightarrow{e_{j}}+z\overrightarrow{e_{k}} \ \overrightarrow{v} &#x3D; \dot{x}\overrightarrow{e_{i}}+\dot{y}\overrightarrow{e_{j}}+\dot{z}\overrightarrow{e_{k}}\ \overrightarrow{a} &#x3D; \ddot{x}\overrightarrow{e_{i}}+\ddot{y}\overrightarrow{e_{j}}+\ddot{z}\overrightarrow{e_{k}}<br>$$<br><strong>平面极坐标系</strong>：其基底与笛卡尔坐标系基底满足变换关系： $\begin{cases} \overrightarrow{e_{r}} &#x3D; \cos\theta \overrightarrow{e_{i}}+\sin\theta \overrightarrow{e_{j}}\ \overrightarrow{e_{\theta}} &#x3D; -\sin\theta \overrightarrow{e_{i}}+\cos\theta \overrightarrow{e_{j}}\ \end{cases}$ .显然，在平面极坐标系下，基本物理量可表示成如下形式：<br>$$<br>\overrightarrow{r} &#x3D; r\overrightarrow{e_{r}}\ \overrightarrow{v} &#x3D; \dot{r}\overrightarrow{e_{r}}+r\dot{\theta}\overrightarrow{e_{\theta}}\ \overrightarrow{a} &#x3D; (\ddot{r}-r\dot{\theta}^{2})\overrightarrow{e_{r}}+(2\dot{r}\dot{\theta}+r\ddot{\theta})\overrightarrow{e_{\theta}}<br>$$<br>数学推导如下：</p>
+<p>先考虑证明：$\dot{\overrightarrow{e_{r}}} &#x3D; \dot{\theta}\overrightarrow{e_{\theta}},\dot{\overrightarrow{e_{\theta}}} &#x3D; -\dot{\theta}\overrightarrow{e_{r}}$ ,利用极坐标与直角坐标基底的变换关系可轻易证明。</p>
+<p>现考虑位矢：$\overrightarrow{r} &#x3D; r\overrightarrow{e_{r}}$ .</p>
+<p>根据速度的定义式：</p>
+<p>$\overrightarrow{v} &#x3D; \frac{\mathrm d\overrightarrow{r}}{dt} &#x3D; \frac{\mathrm{d}r}{\mathrm dt}\overrightarrow{e_{r}}+r\dot{\overrightarrow{e_{r}}} &#x3D;\dot{r}\overrightarrow{e_{r}}+r\dot\theta\overrightarrow{e_{\theta}}$.</p>
+<p>再根据加速度的定义式：</p>
+<p>$\overrightarrow{a} &#x3D; \frac{\mathrm d\overrightarrow{v}}{dt} &#x3D; (\ddot{r}-r\dot{\theta}^{2})\overrightarrow{e_{r}}+(2\dot{r}\dot{\theta}+r\ddot{\theta})\overrightarrow{e_{\theta}}$</p>
+<p><strong>自然坐标系：</strong>当质点被<strong>约束在给定轨迹上</strong>运动时，常利用此坐标系。其坐标原点为取在轨迹上某瞬间与运动质点重合的点。在该坐标系中，质点的位置通过弧坐标 $s$ 确定，用单位矢量$ \overrightarrow{e_{\tau}}$ 表示，称为切向量。与此同时，主法线的正方向指向运动轨迹的凹侧并且垂直于$\overrightarrow{e_{\tau}}$ ，用单位矢量$\overrightarrow{e_{n}}$ 表示。由切线，主法线，次发现的正方向组成右手螺旋系规定次法线的正方向，该正方向用单位矢量 $\overrightarrow{e_{b}}$表示，根据定义，有：$\overrightarrow{e_{b}} &#x3D; \overrightarrow{e_{\tau}} \times \overrightarrow{e_{n}}$基底选用切向量和法向量来描述。在该坐标系下，运动的基本物理量可表示为：<br>$$<br>\overrightarrow{r} &#x3D; \overrightarrow{r}(s),s &#x3D; s(t)\ \overrightarrow{v} &#x3D; \dot{r}\overrightarrow{e_{\tau}}\ \overrightarrow{a} &#x3D; \ddot{r}\overrightarrow{e_{\tau}}+\frac{v^{2}}{\rho}\overrightarrow{e_{n}}<br>$$<br>值得一提的是，这里加速度有两个分量 $a_{\tau}$ 和 $a_{n}$ ,分别被称为切向加速度与法向加速度。其中$a_{n} &#x3D; \frac{v^{2}}{\rho}$中的 $ρ $被称为质点所在位置轨迹的<strong>曲率半径</strong>,它还有一个定义式：$\rho &#x3D; |\frac{\mathrm ds}{\mathrm d \theta}|$ .</p>
+<p>在上面的讨论中，我们知道物体的同一运动在不同的参考系下，得到的结果也不同。但是客观上，物体的统一运动对应着唯一的物理过程，所以不同的参考系之间的运动学量也存在着对应关系，这便是我们引入相对运动的原因。</p>
+<p>运动学中，我们常常会引入<strong>静止参考系</strong>与<strong>运动参考系</strong>来进行研究，自然而然，运动的质点相对于运动参考系的运动被称为<strong>相对运动</strong>，而相对于静止参考系的运动被称为<strong>绝对运动</strong>，由于运动参考系的牵引，导致质点相对于静止参考系的运动被称为<strong>牵连运动。</strong>在引入这些工具后，我们便能定量地对相对运动进行研究。</p>
+<p>考虑任一矢量的时间变化率，不妨考虑两种对时间的微商：①<strong>绝对微商</strong> $\frac{\mathrm d}{\mathrm d t}$ ,相对于静止参考系的时间变化率；②<strong>相对微商</strong> $\frac{\mathrm {\tilde{d}}}{\mathrm dt}$,相对于运动参考系的时间变化率。两者之间存在着以下的对应关系：</p>
+<p>$\frac{\mathrm d\overrightarrow{a}}{\mathrm d t} &#x3D; \frac{\mathrm {\tilde{d}\overrightarrow{a}}}{\mathrm dt} + \overrightarrow{\omega}\times\overrightarrow{a}$,其中$\overrightarrow{\omega}$ 为运动参考系相对于静止参考系的角速度。</p>
+<p>现在考虑一个位矢，其在静止参考系下表示为$\overrightarrow{r}$ ,在运动参考系下表示为 $\overrightarrow{r’}$ ,显然，两位矢的关系为：</p>
+<p>$\overrightarrow{r’} &#x3D; \overrightarrow{r_{0}}+\overrightarrow{r}$ </p>
+<p>根据速度的定义式，有<strong>速度合成定理：</strong></p>
+<p>$\overrightarrow{v’} &#x3D; \frac{\mathrm d\overrightarrow{r_{0}}}{dt}+\frac{\mathrm d\overrightarrow{r}}{dt} &#x3D; \overrightarrow{v_{0}}+\frac{\mathrm {\tilde{d}}\overrightarrow{r}}{dt}+\overrightarrow{\omega}\times\overrightarrow{r} &#x3D; \overrightarrow{v_{0}}+\overrightarrow{v_{r}}+\overrightarrow{\omega}\times\overrightarrow{r}$ .</p>
+<p>其中 $\overrightarrow{v_{r}} &#x3D; \frac{\mathrm{\tilde{d}\overrightarrow{r}}}{\mathrm dt}$ 为相对速度， $\overrightarrow{v_{0}}+\overrightarrow{\omega}\times\overrightarrow{r} $为牵连速度。</p>
+<p>根据加速度的定义式，有<strong>加速度合成定理：</strong></p>
+<p>$\overrightarrow{a’} &#x3D; \frac{\mathrm{d}\overrightarrow{v}}{\mathrm{d}t}  &#x3D; \overrightarrow{a_{0}} + \overrightarrow{a_{r}}+\dot{\overrightarrow{\omega}}\times\overrightarrow{r}+\omega\times(\overrightarrow{\omega}\times\overrightarrow{r})+2\overrightarrow{\omega}\times\overrightarrow{v_{r}}  $</p>
+<p>其中$\overrightarrow{a_{r}} &#x3D; \frac{\mathrm{\tilde{d}\overrightarrow{v_{r}}}}{\mathrm dt}$为相对加速度，$\overrightarrow{a_{c}} &#x3D; 2\overrightarrow{\omega}\times\overrightarrow{v_{r}}  $为科里奥利加速度，而$\overrightarrow{a_{0}}+\dot{\overrightarrow{\omega}}\times\overrightarrow{r}+\omega\times(\overrightarrow{\omega}\times\overrightarrow{r})$ 为牵连加速度.</p>
+<p>在构建了以上的“语言体系”后，我们便可以完整地描述物体的运动了！</p>
+<hr>
+<p>**参考文献：</p>
+<p>[1]梁昆淼 《力学》</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/09/17/My-first-post/" rel="prev" title="My first post">
+      <i class="fa fa-chevron-left"></i> My first post
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Tinhvon</p>
+  <div class="site-description" itemprop="description">你无法借由今天的逃离，来躲避明天的责任。 ——亚伯拉罕·林肯 ''</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Tinhvon" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Tinhvon" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/tinhvon784261513@outlook.com" title="E-Mail → tinhvon784261513@outlook.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/Tinhvon" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;Tinhvon" rel="noopener" target="_blank"><i class="cubes fa-fw"></i>知乎</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://blog.csdn.net/tinhvon?spm=1000.2115.3001.5343" title="CSDN → https:&#x2F;&#x2F;blog.csdn.net&#x2F;tinhvon?spm&#x3D;1000.2115.3001.5343" rel="noopener" target="_blank"><i class="flag fa-fw"></i>CSDN</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; Thu Sep 15 2022 08:00:00 GMT+0800 (中国标准时间) – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tinhvon</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">7k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">6 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共2.4k字</span>
+</div>
+
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
