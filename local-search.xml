@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>微积分-Chapter1-极限与连续</title>
+    <link href="/2023/07/18/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter1-%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD/"/>
+    <url>/2023/07/18/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter1-%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD/</url>
+    
+    <content type="html"><![CDATA[<h1 id="极限与连续">极限与连续</h1><h2 id="极限">极限</h2><p>言简意赅,我们首先给出在<strong>某点处函数极限</strong>的定义:</p><div class="note note-primary">            <p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(N_{0}(x_0,\delta)\)</span>有定义,则对于<spanclass="math inline">\(\forall \varepsilon &gt; 0,\exists \delta&gt;0\)</span>,当<span class="math inline">\(x \inN_0(x_0,\delta)\)</span>时,有<span class="math inline">\(|f(x)-A| &lt;\varepsilon\)</span>,则称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x_0\)</span>处的<strong>极限</strong>为<spanclass="math inline">\(A\)</span>,记为<span class="math inline">\(\lim_{x\to x_0} f(x) = A\)</span></p>          </div><div class="note note-success">            <p><strong>exp1</strong>:证明: <span class="math inline">\(\lim_{x \tox_0}x = x_0\)</span></p><p><strong>Proof</strong>:对于<span class="math inline">\(\forall\varepsilon &gt;0\)</span>,取<span class="math inline">\(\delta =\varepsilon\)</span>.,当<spanclass="math inline">\(0&lt;|x-x_0|&lt;\delta\)</span>时,有:</p><p><span class="math inline">\(|x-x_0|&lt;\varepsilon\)</span></p><p><span class="math inline">\(\Rightarrow \lim_{x \to x_0}x =x_0\)</span></p><p><strong>exp2</strong>:证明<span class="math inline">\(\lim_{x \tox_0}\cfrac{1}{x} = \cfrac{1}{x_0}\)</span></p><p><strong>Proof</strong>:对于$&gt;0,|x-x_0| &lt; |x| &gt; $</p><p>取<span class="math inline">\(\delta = \min \{\cfrac{|x_0|}{2},\cfrac{|x_0|^2}{2}\varepsilon\}\)</span></p><p>当<span class="math inline">\(x \in N_{0}(x_0,\delta) \Rightarrow|\cfrac{1}{x}-\cfrac{1}{x_0}| &lt; \varepsilon\)</span></p><p><span class="math inline">\(\Rightarrow \lim_{x \to x_0}\cfrac{1}{x}= \cfrac{1}{x_0}\)</span></p>          </div><h3 id="单侧极限">单侧极限</h3><p>给出普遍的函数极限定义后,我们可更进一步,给出<strong>单侧极限</strong>的定义:</p><div class="note note-primary">            <p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(N_{0}^{+}(x_0,\delta)\)</span>有定义,则对于<spanclass="math inline">\(\forall \varepsilon &gt; 0,\exists \delta&gt;0\)</span>,当<span class="math inline">\(x \inN_0^{+}(x_0,\delta)\)</span>时,有<span class="math inline">\(|f(x)-A|&lt; \varepsilon\)</span>,则称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x_0\)</span>处的<strong>右极限</strong>为<spanclass="math inline">\(A\)</span>,记为<span class="math inline">\(\lim_{x\to x_0^{+}} f(x) = A\)</span></p><p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(N_{0}^{-}(x_0,\delta)\)</span>有定义,则对于<spanclass="math inline">\(\forall \varepsilon &gt; 0,\exists \delta&gt;0\)</span>,当<span class="math inline">\(x \inN_0^{-}(x_0,\delta)\)</span>时,有<span class="math inline">\(|f(x)-A|&lt; \varepsilon\)</span>,则称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x_0\)</span>处的<strong>左极限</strong>为<spanclass="math inline">\(A\)</span>,记为<span class="math inline">\(\lim_{x\to x_0^{-}} f(x) = A\)</span></p>          </div><p>给出单侧极限的定义后,我们可以得到其推论:</p><div class="note note-danger">            <p><span class="math inline">\(\lim_{x\to x_0}f(x)=A \Leftrightarrow\lim_{x \to x_0^{+}} f(x)=\lim_{x \to x_0^{-}} f(x) = A\)</span></p>          </div><div class="note note-success">            <p><strong>exp3</strong>:已知函数: <span class="math display">\[f(x) = \mathrm{sgn}x =\begin{cases}-1,x&lt;0 \\0,x=0  \\1,x&gt;0\end{cases}\]</span> 证明:<span class="math inline">\(\lim_{x \to0}f(x)\)</span>不存在</p><p><strong>Proof</strong>:<span class="math inline">\(\lim_{x\to0^{+}}=1,\lim_{x\to 0^{-}}=-1\)</span>两者不相同,故极限不存在.</p>          </div><h3 id="无穷远点的极限">无穷远点的极限</h3><p>现在我们讨论<strong>无穷远点的极限</strong>的<spanclass="math inline">\(\varepsilon-\delta\)</span>语言描述:</p><div class="note note-primary">            <p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<span class="math inline">\(\{x||x|&gt;M\}\)</span>有定义,则对于<span class="math inline">\(\forall\varepsilon &gt; 0,\exists x_{0} &gt;0\)</span>,当<spanclass="math inline">\(|x|&gt;x_{0}\)</span>时,有<spanclass="math inline">\(|f(x)-A| &lt; \varepsilon\)</span>,则称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(∞\)</span>处的<strong>极限</strong>为<spanclass="math inline">\(A\)</span>,记为<span class="math inline">\(\lim_{x\to ∞} f(x) = A\)</span></p><p>在定义无穷远点极限的基础上,我们也可将单侧极限的定义引入进来,定义如下:</p><p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<span class="math inline">\(\{x||x|&gt;M\}\)</span>有定义,则对于<span class="math inline">\(\forall\varepsilon &gt; 0,\exists x_{0} &gt;0\)</span>,当<spanclass="math inline">\(x&gt;x_{0}\)</span>时,有<spanclass="math inline">\(|f(x)-A| &lt; \varepsilon\)</span>,则称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(+∞\)</span>处的<strong>极限</strong>为<spanclass="math inline">\(A\)</span>,记为<span class="math inline">\(\lim_{x\to +∞} f(x) = A\)</span></p><p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<span class="math inline">\(\{x||x|&gt;M\}\)</span>有定义,则对于<span class="math inline">\(\forall\varepsilon &gt; 0,\exists x_{0} &gt;0\)</span>,当<spanclass="math inline">\(x&lt;-x_{0}\)</span>时,有<spanclass="math inline">\(|f(x)-A| &lt; \varepsilon\)</span>,则称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(-∞\)</span>处的<strong>极限</strong>为<spanclass="math inline">\(A\)</span>,记为<span class="math inline">\(\lim_{x\to -∞} f(x) = A\)</span></p>          </div><div class="note note-success">            <p><strong>exp4</strong>:证明<span class="math inline">\(\lim_{x \to∞}\cfrac{1}{x} = 0\)</span></p><p><strong>Proof</strong>:对<span class="math inline">\(\forall\varepsilon &gt; 0\)</span>,取<span class="math inline">\(x_{0} =\cfrac{1}{\varepsilon}+ 1\)</span>,当<spanclass="math inline">\(|x|&gt;x_0\)</span>时:</p><p><span class="math inline">\(|\cfrac{1}{x} - 0| &lt; \varepsilon\Rightarrow \lim_{x \to ∞}\cfrac{1}{x} = 0\)</span></p>          </div><h3 id="极限为无穷大">极限为无穷大</h3><p>下面给出极限为无穷大的<spanclass="math inline">\(\varepsilon-\delta\)</span>语言描述</p><div class="note note-primary">            <p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(N_{0}(x_0,\delta)\)</span>有定义,且对于<spanclass="math inline">\(\forall M &gt; 0,\exists \delta&gt;0\)</span>,当<span class="math inline">\(x \inN_{0}(x_0,\delta)\)</span>时,有<spanclass="math inline">\(|f(x)|&gt;M\)</span>,则称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x_0\)</span>处的<strong>极限</strong>为<spanclass="math inline">\(∞\)</span>(<em>极限不存在</em>),记为<spanclass="math inline">\(\lim_{x \to x_0} f(x) = ∞\)</span></p>          </div><div class="note note-success">            <p><strong>exp5</strong>:<span class="math inline">\(\lim _{x \to 1}\cfrac{x}{(x-1)^{2}} = ∞\)</span></p>          </div><h3 id="数列的极限">数列的极限</h3><p>此前我们讨论的均为函数的极限,数列是特殊的函数,其极限的$-$语言描述如下:</p><div class="note note-primary">            <p><strong>Definition</strong>:设数列<spanclass="math inline">\(\{a_n\}\)</span>,对于<spanclass="math inline">\(\forall \varepsilon &gt; 0\)</span>,当<spanclass="math inline">\(n &gt; N\)</span>时,<spanclass="math inline">\(|a_n - A| &lt;\varepsilon\)</span>,则称数列的极限为<spanclass="math inline">\(A\)</span>,记为<span class="math inline">\(\lim_{n \to ∞} a_n = A\)</span></p>          </div><div class="note note-success">            <p><strong>exp6</strong>:证明<span class="math inline">\(\lim_{n \to ∞}\sqrt[n]a = 1(a&gt;1)\)</span></p><p><strong>Proof</strong>:<span class="math inline">\(\sqrt[n]a =\sqrt[n]{a \cdot 1 \cdot1 ... \cdot 1}(n-1个1)\)</span></p><p>由均值不等式:<span class="math inline">\(\sqrt[n]a = \sqrt[n]{a \cdot1 \cdot1 ... \cdot 1} \leq \cfrac{a + n - 1}{n} = 1 +\cfrac{a-1}{n}\)</span></p><p>故有$0 &lt;-1 &lt; $</p><p>对于<span class="math inline">\(\forall \varepsilon &gt;0\)</span>,取<span class="math inline">\(N =[\cfrac{a-1}{\varepsilon}]+1\)</span>,当<spanclass="math inline">\(n&gt;N\)</span>时有:</p><p><span class="math inline">\(|\sqrt[n]a - 1 | &lt; \varepsilon\Rightarrow \lim_{n \to ∞} \sqrt[n]a = 1\)</span></p><p><strong>exp7</strong>:证明<span class="math inline">\(\lim _{n \to ∞}q ^{n}= 0(|q| &lt; 1 )\)</span></p><p><strong>Proof</strong>:分两种情况讨论:</p><p>①:<span class="math inline">\(q = 0\)</span> ,显然成立</p><p>②:<span class="math inline">\(0 &lt; |q| &lt; 1\)</span>时,记<spanclass="math inline">\(h = \cfrac{1}{|q|} - 1\)</span></p><p>则有<span class="math inline">\(|q^n| = \cfrac{1}{(1+h)^{n}} \leq\cfrac{1}{1+nh} \leq \cfrac{1}{nh}\)</span></p><p>对于<span class="math inline">\(\forall \varepsilon &gt;0\)</span>,取<span class="math inline">\(N = [\cfrac{1}{\varepsilon h}]+1\)</span>,当$n &gt; N $时,有:</p><p><span class="math inline">\(|q^n - 0| &lt; \varepsilon \Rightarrow\lim _{n \to ∞} q ^{n}= 0(|q| &lt; 1 )\)</span></p><p><strong>exp8</strong>: 证明<span class="math inline">\(\lim _{n \to∞} \sqrt[n]{n} = 1\)</span></p><p><strong>Proof</strong>:记<span class="math inline">\(\sqrt[n]{n} =a_n,n&gt;1 \Rightarrow a_n &gt; 1\)</span></p><p>记<span class="math inline">\(a_n = 1 + \alpha_n ,\alpha &gt;0\)</span></p><p>故<span class="math inline">\(n = (1 + \alpha_n)^{n} \geq\cfrac{n}{2}(n-1)\alpha_{n}^{2}\Rightarrow 0&lt; \alpha_n \leq\sqrt{\cfrac{2}{n-1}}\)</span></p><p>对于<span class="math inline">\(\forall \varepsilon &gt;0\)</span>,取<span class="math inline">\(N = [\cfrac{2}{\varepsilon ^2}+ 1] + 1\)</span>,当$n &gt; N $时,有:</p><p><span class="math inline">\(|\sqrt[n]{n} - 1| &lt; \varepsilon\Rightarrow \lim _{n \to ∞} \sqrt[n]{n} = 1\)</span></p>          </div><h2 id="极限的性质">极限的性质</h2><p>上文中我们介绍了各种各样的极限,现在我们讨论一下他的性质:</p><h3 id="运算法则">运算法则</h3><p>首先讨论极限的运算:不妨假设<span class="math inline">\(\lim_{x \tox_0}f(x) = A,\lim_{x \to x_0}g(x) = B\)</span>,则其满足:</p><div class="note note-danger">            <p>①:<span class="math inline">\(\lim_{x \to x_0}[\alpha f(x)+\betag(x)] = \alpha A + \beta B\)</span>.</p><p>②:<span class="math inline">\(\lim_{x \to x_0}f(x)g(x) =AB\)</span>.</p><p>③:<span class="math inline">\(\lim_{x \to x_0}\cfrac{f(x)}{g(x)} =\cfrac{A}{B}(B \ne 0)\)</span>.</p>          </div><p>对于<strong>复合函数的极限</strong>,我们做如下定义:</p><div class="note note-primary">            <p><strong>Definition</strong>:假设<spanclass="math inline">\(f(u)\)</span>在<spanclass="math inline">\(N_{0}(u_0,\delta_1)\)</span>有定义,且<spanclass="math inline">\(\lim _{u \to u_0} = A\)</span>,<spanclass="math inline">\(u = g(x)\)</span>在<spanclass="math inline">\(N_{0}(x_0,\delta_2)\)</span>有定义,<spanclass="math inline">\(\lim_{x \to x_0}g(x) = u_0\)</span>,则<spanclass="math inline">\(\lim_{x \to x_0 }f[g(x)] = A\)</span></p>          </div><h3 id="唯一性">唯一性</h3><p><strong>极限的唯一性定理</strong>如下:</p><div class="note note-danger">            <p><strong>Theorem</strong>:若函数的极限存在,则其一定唯一.</p>          </div><p>证明如下,考虑使用反证法:</p><div class="note note-light">            <p><strong>Proof</strong>:不妨假设:<span class="math inline">\(\lim_{x\to x_0}f(x) = A,\lim_{x \to x_0}f(x) = B (A &lt; B)\)</span></p><p>取<span class="math inline">\(\varepsilon_0 = \cfrac{B-A}{2} &gt;0\)</span></p><p>由<span class="math inline">\(\lim_{x \to x_0}f(x) = A\)</span></p><p><span class="math inline">\(\Rightarrow \exists \delta_1 &gt;0\)</span>当<span class="math inline">\(x \inN(x_0,\delta_1)\)</span>时,<span class="math inline">\(|f(x) - A| &lt;\cfrac{B-A}{2},f(x) &lt; \cfrac{A+B}{2}\)</span></p><p>由<span class="math inline">\(\lim_{x \to x_0}f(x) = B\)</span></p><p><span class="math inline">\(\Rightarrow \exists \delta_2 &gt;0\)</span>当<span class="math inline">\(x \inN(x_0,\delta_2)\)</span>时,<span class="math inline">\(|f(x) - B| &lt;\cfrac{B-A}{2},f(x) &gt; \cfrac{A+B}{2}\)</span></p><p>产生矛盾,故极限唯一性定理得证.</p>          </div><h3 id="局部有界性">局部有界性</h3><p>极限<strong>局部有界性</strong>的表述如下:</p><div class="note note-danger">            <p><strong>Theorem</strong>:若<span class="math inline">\(\lim_{x \tox_0}f(x) = A\)</span>,则<span class="math inline">\(\existsN(x_0,\delta)\)</span>,当<span class="math inline">\(x\inN(x_0,\delta)\)</span>时,由<span class="math inline">\(|f(x)| &lt;M\)</span></p>          </div><p>证明如下:</p><div class="note note-light">            <p><strong>Proof</strong>:取<spanclass="math inline">\(\varepsilon_0=1\)</span>,由<spanclass="math inline">\(\lim_{x \to x_0}f(x) = A\)</span></p><p><span class="math inline">\(\exists \delta &gt; 0\)</span>,当<spanclass="math inline">\(x\in N(x_0,\delta),|f(x)-A| &lt; 1 \Rightarrow A-1&lt; f(x) &lt; A + 1\)</span></p><p>记<span class="math inline">\(M = |A-1|+|A+1|+1 \Rightarrow |f(x)|&lt; M\)</span></p>          </div><h3 id="局部保号性">局部保号性</h3><p>极限<strong>局部保号性</strong>的表述如下:</p><div class="note note-danger">            <p><strong>Theorem</strong>:若<span class="math inline">\(\lim_{x \tox_0}f(x) = A &gt; 0\)</span>,则<span class="math inline">\(\forall r \in(0,A),\exists \delta &gt; 0\)</span>,当<span class="math inline">\(x \inN_{0}(x_0,\delta)\)</span>时 有<span class="math inline">\(f(x) &gt; r&gt; 0\)</span></p>          </div><p>证明如下:</p><div class="note note-light">            <p><strong>Proof</strong>:取<span class="math inline">\(\varepsilon_0 =A - r\)</span>,由$_{x x_0}f(x) = A $</p><p><span class="math inline">\(\exists \delta &gt; 0\)</span>,当<spanclass="math inline">\(x \in N_{0} (x_0,\delta )\)</span>时,有:</p><p><span class="math inline">\(|f(x)-A| &lt; A - r \Rightarrow f(x) &gt;r\)</span></p>          </div>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>Calculus</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Notes</tag>
+      
+      <tag>Study</tag>
+      
+      <tag>Calculus</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>微积分-Chapter1-预备知识</title>
     <link href="/2023/07/17/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter0-%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/"/>
     <url>/2023/07/17/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter0-%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</url>
@@ -38,19 +69,6 @@
     <title>微积分-Chapter0-写在前面</title>
     <link href="/2023/07/17/%E5%BE%AE%E7%A7%AF%E5%88%86-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/"/>
     <url>/2023/07/17/%E5%BE%AE%E7%A7%AF%E5%88%86-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/2023/07/17/Untitled/"/>
-    <url>/2023/07/17/Untitled/</url>
     
     <content type="html"><![CDATA[]]></content>
     
@@ -117,19 +135,6 @@
       <tag>Study</tag>
       
     </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Calculus</title>
-    <link href="/2023/07/04/Calculus/"/>
-    <url>/2023/07/04/Calculus/</url>
-    
-    <content type="html"><![CDATA[<h1 id="basic-tutorial-of-calculus-for-hust">Basic Tutorial of CalculusFor HUST</h1><p>The main mission of calculus is to describe functions.We have learnedfunctions well in high school. Let's set up a function: <spanclass="math display">\[f(x) = \frac{3}{2}x^2+x\]</span> Its graph can be seen in the figure (1)</p>]]></content>
-    
-    
     
   </entry>
   
