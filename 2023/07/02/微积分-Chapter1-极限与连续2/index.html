@@ -16,19 +16,26 @@
   <meta name="author" content="Tinhvon">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
-<meta property="og:title" content="微积分-Chapter0-写在前面">
-<meta property="og:url" content="http://example.com/2023/07/17/%E5%BE%AE%E7%A7%AF%E5%88%86-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/index.html">
+    <meta name="description" content="介绍完极限的基本概念后，我们可以对极限进行计算了。本文还介绍了连续和间断的概念，并且对其进行了深入的讨论。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微积分-Chapter1-极限与连续（Part 2）">
+<meta property="og:url" content="http://example.com/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter1-%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD2/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
+<meta property="og:description" content="介绍完极限的基本概念后，我们可以对极限进行计算了。本文还介绍了连续和间断的概念，并且对其进行了深入的讨论。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-17T13:10:04.000Z">
-<meta property="article:modified_time" content="2023-07-17T13:10:04.794Z">
+<meta property="og:image" content="http://example.com/img/bg/Calculus.png">
+<meta property="article:published_time" content="2023-07-02T08:05:21.000Z">
+<meta property="article:modified_time" content="2023-07-19T09:24:59.518Z">
 <meta property="article:author" content="Tinhvon">
+<meta property="article:tag" content="Notes">
+<meta property="article:tag" content="Study">
+<meta property="article:tag" content="Calculus">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/bg/Calculus.png">
   
   
   
-  <title>微积分-Chapter0-写在前面 - Tinhvon&#39;s Space</title>
+  <title>微积分-Chapter1-极限与连续（Part 2） - Tinhvon&#39;s Space</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -66,7 +73,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":true,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -204,13 +211,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/bg/Calculus.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="微积分-Chapter0-写在前面"></span>
+            <span id="subtitle" data-typed-text="微积分-Chapter1-极限与连续（Part 2）"></span>
           
         </div>
 
@@ -221,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-17 21:10" pubdate>
-          2023年7月17日 晚上
+        <time datetime="2023-07-02 16:05" pubdate>
+          2023年7月2日 下午
         </time>
       </span>
     
@@ -233,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          108 字
         
       </span>
     
@@ -281,13 +288,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">微积分-Chapter0-写在前面</h1>
+            <h1 id="seo-header">微积分-Chapter1-极限与连续（Part 2）</h1>
             
             
               <div class="markdown-body">
                 
-                
-
+                <h1 id="极限与连续（Part-2）"><a href="#极限与连续（Part-2）" class="headerlink" title="极限与连续（Part 2）"></a>极限与连续（Part 2）</h1><h2 id="极限的计算"><a href="#极限的计算" class="headerlink" title="极限的计算"></a>极限的计算</h2><h3 id="夹逼定理法"><a href="#夹逼定理法" class="headerlink" title="夹逼定理法"></a>夹逼定理法</h3><h3 id="取对数"><a href="#取对数" class="headerlink" title="取对数"></a>取对数</h3><h3 id="利用两个重要极限"><a href="#利用两个重要极限" class="headerlink" title="利用两个重要极限"></a>利用两个重要极限</h3><h3 id="根式有理化"><a href="#根式有理化" class="headerlink" title="根式有理化"></a>根式有理化</h3><h3 id="约分法"><a href="#约分法" class="headerlink" title="约分法"></a>约分法</h3><h3 id="利用单调有界原理"><a href="#利用单调有界原理" class="headerlink" title="利用单调有界原理"></a>利用单调有界原理</h3><h2 id="无穷小量"><a href="#无穷小量" class="headerlink" title="无穷小量"></a>无穷小量</h2><h3 id="相关推论"><a href="#相关推论" class="headerlink" title="相关推论"></a>相关推论</h3><h3 id="无穷小代换"><a href="#无穷小代换" class="headerlink" title="无穷小代换"></a>无穷小代换</h3><h3 id="无穷大"><a href="#无穷大" class="headerlink" title="无穷大"></a>无穷大</h3><h3 id="等价无穷小代换及应用"><a href="#等价无穷小代换及应用" class="headerlink" title="等价无穷小代换及应用"></a>等价无穷小代换及应用</h3><h1 id="连续与间断"><a href="#连续与间断" class="headerlink" title="连续与间断"></a>连续与间断</h1><h2 id="连续"><a href="#连续" class="headerlink" title="连续"></a>连续</h2><h2 id="间断"><a href="#间断" class="headerlink" title="间断"></a>间断</h2><h3 id="第一类间断点"><a href="#第一类间断点" class="headerlink" title="第一类间断点"></a>第一类间断点</h3><h3 id="第二类间断点"><a href="#第二类间断点" class="headerlink" title="第二类间断点"></a>第二类间断点</h3><h2 id="有限闭区间连续函数的性质"><a href="#有限闭区间连续函数的性质" class="headerlink" title="有限闭区间连续函数的性质"></a>有限闭区间连续函数的性质</h2>
                 
               </div>
             
@@ -295,6 +301,45 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Notes/" class="category-chain-item">Notes</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Notes/Calculus/" class="category-chain-item">Calculus</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Notes/" class="print-no-link">#Notes</a>
+      
+        <a href="/tags/Study/" class="print-no-link">#Study</a>
+      
+        <a href="/tags/Calculus/" class="print-no-link">#Calculus</a>
+      
+    </div>
   
 </div>
 
@@ -304,8 +349,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>微积分-Chapter0-写在前面</div>
-      <div>http://example.com/2023/07/17/微积分-写在前面/</div>
+      <div>微积分-Chapter1-极限与连续（Part 2）</div>
+      <div>http://example.com/2023/07/02/微积分-Chapter1-极限与连续2/</div>
     </div>
     <div class="license-meta">
       
@@ -317,7 +362,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年7月17日</div>
+          <div>2023年7月2日</div>
         </div>
       
       
@@ -349,9 +394,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/07/17/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter0-%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/" title="微积分-Chapter1-预备知识">
+                      <a href="/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter1-%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD3/" title="微积分-Chapter1-极限与连续（Part 3）">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">微积分-Chapter1-预备知识</span>
+                        <span class="hidden-mobile">微积分-Chapter1-极限与连续（Part 3）</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -359,8 +404,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/17/%E5%85%89%E5%AD%A6-Chapter2-%E5%85%89%E7%9A%84%E4%BC%A0%E6%92%AD/" title="光学-Chapter2-光的传播">
-                        <span class="hidden-mobile">光学-Chapter2-光的传播</span>
+                      <a href="/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter1-%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD/" title="微积分-Chapter1-极限与连续（Part 1）">
+                        <span class="hidden-mobile">微积分-Chapter1-极限与连续（Part 1）</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -373,15 +418,15 @@
             
   
   
-    <article id="comments" lazyload>
+    <article id="comments">
       
   <div class="disqus" style="width:100%">
     <div id="disqus_thread"></div>
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'http://example.com/2023/07/17/%E5%BE%AE%E7%A7%AF%E5%88%86-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/';
-          this.page.identifier = '/2023/07/17/%E5%BE%AE%E7%A7%AF%E5%88%86-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/';
+          this.page.url = 'http://example.com/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter1-%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD2/';
+          this.page.identifier = '/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter1-%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD2/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');
@@ -561,7 +606,9 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    
+      <script  src="/js/img-lazyload.js" ></script>
+    
   
 
 
