@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Calculus.png">
 <meta property="article:published_time" content="2023-07-02T08:05:21.000Z">
-<meta property="article:modified_time" content="2023-07-19T09:24:59.518Z">
+<meta property="article:modified_time" content="2023-07-20T12:39:43.615Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Study">
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          109 字
+          2.6k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          1 分钟
+          22 分钟
         
       </span>
     
@@ -295,7 +295,26 @@
                 
                 <h1 id="极限与连续part-2">极限与连续（Part 2）</h1>
 <h2 id="极限的计算">极限的计算</h2>
+<p>在讨论完极限的定义和各种性质后，我们主要关心的是<strong>如何计算极限</strong>，下面介绍一些计算极限的方法：</p>
 <h3 id="夹逼定理法">夹逼定理法</h3>
+<div class="note note-success">
+            <p><strong>exp1</strong>:计算<span class="math inline">\(\lim\limits_{n\to ∞}\sqrt[n]{1^n+2^n+...+2022^n}\)</span></p><p><strong>Solution</strong>:考虑数列<span class="math inline">\(a_n =\sqrt[n]{1^n+2^n+...+2022^n}\)</span></p><p>则有<span class="math inline">\(2022^n \leq 1^n+2^n+...+2022^n \leq2022\times 2022^n\)</span></p><p>即有<span class="math inline">\(2022 \leq a_n \leq2022\sqrt[n]{2022}\)</span></p><p>又<span class="math inline">\(\lim\limits_{n \to ∞}2022 =\lim\limits_{n \to ∞}2022\sqrt[n]{2022} = 2022\)</span></p><p>根据夹逼定理，有<span class="math inline">\(\lim\limits_{n \to∞}\sqrt[n]{1^n+2^n+...+2022^n} = 2022\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>exp2</strong>:证明:<span class="math inline">\(\lim\limits_{n\to ∞}\cfrac{n^{k}}{a^{n}}(a &gt; 1) = 0,\lim\limits_{n \to ∞}\cfrac{\lnn}{n}= 0,\lim\limits_{n \to ∞}\cfrac{c^n}{n!}(c &gt; 1) =0\)</span>（数列增长速度的比较）</p><p><strong>Proof</strong>:</p><ul><li><p>首先证明<span class="math inline">\(\lim\limits_{n \to∞}\cfrac{n^{k}}{a^{n}}(a &gt; 1) = 0\)</span></p><p>记<span class="math inline">\(a = 1 + \alpha (\alpha &gt; 0)\Rightarrow a^{n} = (1 + \alpha)^{n} &gt;\cfrac{n(n-1)...(n-k)}{(k+1)!}\alpha^{k+1} =An(n-1)...(n-k)\)</span></p><p>有<span class="math inline">\(0 &lt; \cfrac{n^{k}}{a^{n}} &lt;\cfrac{n^k}{An(n-1)...(n-k)}\)</span></p><p>根据夹逼定理：<span class="math inline">\(\lim\limits_{n \to∞}\cfrac{n^{k}}{a^{n}}(a &gt; 1) = 0\)</span></p></li><li><p>再证明<span class="math inline">\(\lim\limits_{n \to ∞}\cfrac{\lnn}{n}= 0\)</span></p><p>记<span class="math inline">\(\ln n = t,n = e^t\)</span></p><p>则根据夹逼定理显然有<span class="math inline">\(\lim\limits_{n \to∞}\cfrac{\ln n}{n} = \lim\limits_{t \to ∞}\cfrac{t}{e^t} =0\)</span></p><p>再证明<span class="math inline">\(\lim\limits_{n \to ∞}\cfrac{\lnn}{n}= 0\)</span></p></li><li><p>最后证明<span class="math inline">\(\lim\limits_{n \to∞}\cfrac{c^n}{n!}(c &gt; 1) = 0\)</span></p><p>记<span class="math inline">\([c] = k\)</span></p><p>有<span class="math inline">\(0 &lt; \cfrac{c^n}{n!} = \cfrac{c\cdotc\cdot ...\cdot c}{1\cdot 2...\cdot k}\cdot \cfrac{c\cdot ... \cdotc\cdot c}{(k+1) ...(n-1)n}\)</span></p><p>化简有$0 &lt; &lt; $</p><p>根据夹逼定理<span class="math inline">\(\lim\limits_{n \to∞}\cfrac{c^n}{n!}(c &gt; 1) = 0\)</span></p></li></ul>
+          </div>
+<p><strong>Note</strong>:当<span class="math inline">\(n\to
+∞\)</span>时，数列增长速度从小到大排列为<span class="math inline">\(\ln
+n &lt; n^k &lt; a^n &lt; n! &lt; n^n(a &gt; 1)\)</span></p>
+<div class="note note-success">
+            <p><strong>exp3</strong>:证明以下极限<spanclass="math inline">\(\lim\limits_{x \to 0^{+}}[x]\cdot \cfrac{1}{x} =0,\lim\limits_{x \to 0}x \cdot [\cfrac{1}{x}] = 1\)</span></p><p><strong>Proof:</strong></p><ul><li><p>首先证明<span class="math inline">\(\lim\limits_{x \to0^{+}}[x]\cdot \cfrac{1}{x} = 0\)</span></p><p>当$x $时，<span class="math inline">\(0 &lt; [x]\cdot \cfrac{1}{x}&lt; 1\)</span></p><p>根据夹逼定理：<span class="math inline">\(\lim\limits_{x \to0^{+}}[x]\cdot \cfrac{1}{x} = 0\)</span></p></li><li><p>再证明<span class="math inline">\(\lim\limits_{x \to 0}x \cdot[\cfrac{1}{x}] = 1\)</span></p><p>当<span class="math inline">\(x \ne 0\)</span>时</p><p><span class="math inline">\(\cfrac{1}{x}-1 &lt; [\cfrac{1}{x}] \leq\cfrac{1}{x} \Rightarrow 1-x \leq x\cdot [\cfrac{1}{x}]\leq1\)</span></p><p>根据夹逼定理：<span class="math inline">\(\lim\limits_{x \to 0}x\cdot [\cfrac{1}{x}] = 1\)</span></p></li></ul>
+          </div>
+<div class="note note-success">
+            <p><strong>exp4</strong>：求解<span class="math inline">\(\lim\limits_{n\to ∞}\cfrac{1\cdot 3\cdot 5 \cdot...\cdot (2n-1)}{2\cdot 4\cdot 6\cdot...\cdot 2n}\)</span></p><p><strong>Solution</strong>：记<span class="math inline">\(a_n =\cfrac{1\cdot 3\cdot 5 \cdot...\cdot (2n-1)}{2\cdot 4\cdot 6\cdot...\cdot 2n}\)</span>对<spanclass="math inline">\(2n\)</span>进行放缩，有<spanclass="math inline">\(2n = \cfrac{2n-1+2n+1}{2}\geq\sqrt{(2n-1)(2n+1)}\)</span></p><p>故有<span class="math inline">\(0 &lt; a_n &lt;\cfrac{1}{\sqrt{2n+1}}\)</span></p><p>根据夹逼定理<span class="math inline">\(\lim\limits_{n \to∞}\cfrac{1\cdot 3\cdot 5 \cdot...\cdot (2n-1)}{2\cdot 4\cdot 6\cdot...\cdot 2n} = 0\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>exp5</strong>:计算<span class="math inline">\(\lim\limits_{n\to ∞}(\cfrac{1}{n^2+1}+\cfrac{1}{n^2 + 2^2} + ... + \cfrac{1}{n^2 +n^2})\)</span></p><p><strong>Solution</strong>:记<span class="math inline">\(a_n =\cfrac{1}{n^2+1}+\cfrac{1}{n^2 + 2^2} + ... + \cfrac{1}{n^2 +n^2}\)</span></p><p>有$ = &lt;a_n&lt; &lt; = $</p><p>即<span class="math inline">\(\cfrac{1}{2n} &lt; a_n &lt;\cfrac{1}{n}\)</span></p><p>根据夹逼定理<span class="math inline">\(\lim\limits_{n \to∞}(\cfrac{1}{n^2+1}+\cfrac{1}{n^2 + 2^2} + ... + \cfrac{1}{n^2 + n^2}) =0\)</span></p>
+          </div>
 <h3 id="取对数">取对数</h3>
 <h3 id="利用两个重要极限">利用两个重要极限</h3>
 <h3 id="根式有理化">根式有理化</h3>
