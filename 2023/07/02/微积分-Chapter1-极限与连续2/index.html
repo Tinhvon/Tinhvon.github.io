@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Calculus.png">
 <meta property="article:published_time" content="2023-07-02T08:05:21.000Z">
-<meta property="article:modified_time" content="2023-07-20T12:39:43.615Z">
+<meta property="article:modified_time" content="2023-07-22T09:05:22.953Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Study">
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.6k 字
+          4.2k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          22 分钟
+          35 分钟
         
       </span>
     
@@ -316,7 +316,40 @@ n &lt; n^k &lt; a^n &lt; n! &lt; n^n(a &gt; 1)\)</span></p>
             <p><strong>exp5</strong>:计算<span class="math inline">\(\lim\limits_{n\to ∞}(\cfrac{1}{n^2+1}+\cfrac{1}{n^2 + 2^2} + ... + \cfrac{1}{n^2 +n^2})\)</span></p><p><strong>Solution</strong>:记<span class="math inline">\(a_n =\cfrac{1}{n^2+1}+\cfrac{1}{n^2 + 2^2} + ... + \cfrac{1}{n^2 +n^2}\)</span></p><p>有$ = &lt;a_n&lt; &lt; = $</p><p>即<span class="math inline">\(\cfrac{1}{2n} &lt; a_n &lt;\cfrac{1}{n}\)</span></p><p>根据夹逼定理<span class="math inline">\(\lim\limits_{n \to∞}(\cfrac{1}{n^2+1}+\cfrac{1}{n^2 + 2^2} + ... + \cfrac{1}{n^2 + n^2}) =0\)</span></p>
           </div>
 <h3 id="取对数">取对数</h3>
+<p>当我们遇到指数型的极限时，可以考虑取对数，即： <span
+class="math display">\[
+a^{b} = e^{b\ln a}
+\]</span> 下面给出几个例子：</p>
+<div class="note note-success">
+            <p><strong>exp1</strong>：计算<span class="math inline">\(\lim\limits_{x\to +\infty}x^{1/x}\)</span></p><p><strong>Solution</strong>：<span class="math inline">\(\lim\limits_{x\to +\infty}x^{1/x} = \lim\limits_{x \to +\infty}e^{\ln x/x } =e^{\lim\limits_{x \to +\infty}\ln x/x} = e^{0} = 1\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>exp2</strong>:计算<span class="math inline">\(\lim\limits_{x\to 0^{+}}x^x\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(\lim\limits_{x\to 0^{+}}x^x = \lim\limits_{x \to 0^{+}}e^{x\ln x} = e^{\lim\limits_{x\to 0^{+}}x\ln x} = e^0 = 1\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>exp3</strong>：计算<span class="math inline">\(\lim\limits_{x\to 0^{+}}x^{\sin x}\)</span></p><p><strong>Solution</strong>:$<em>{x <sup>{+}}x</sup>{x} = </em>{x<sup>{+}}e</sup>{x x} = e^{_{x ^{+}}x x} = e^{1 } =1 $</p>
+          </div>
+<div class="note note-success">
+            <p><strong>exp4</strong>:计算<span class="math inline">\(\lim\limits_{x\to +\infty}(\ln x)^{1/x}\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(\lim\limits_{x\to +\infty}(\ln x)^{1/x} =\lim\limits_{x \to +\infty} e^{\ln \ln x/ \lnx\cdot \ln x /x} = 1\)</span></p>
+          </div>
 <h3 id="利用两个重要极限">利用两个重要极限</h3>
+<p>此前我们曾介绍过两个重要极限，他们分别为： <span
+class="math display">\[
+\lim_{x \to 0}\cfrac{\sin x}{x} = 1,\lim_{x \to 0}(1+x)^{1/x} = e
+\]</span>
+利用两个重要极限，我们可以计算某些比较复杂代数式的极限，例题如下：</p>
+<div class="note note-success">
+            <p><strong>exp1</strong>:计算<span class="math inline">\(\lim\limits_{x\to 0}\cfrac{\sin (ax)}{\sin (bx)}(a,b \ne 0)\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(\lim\limits_{x\to 0}\cfrac{\sin (ax)}{\sin (bx)} = \lim\limits_{x \to 0}\cfrac{\sin(ax)}{ax}\cdot \cfrac{bx}{\sin(bx)} \cdot \cfrac{a}{b} =\cfrac{a}{b}\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>exp2</strong>:计算<span class="math inline">\(\lim\limits_{x\to 0}(1+ax)^{b/x}(a,b \ne 0)\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(\lim\limits_{x\to 0}(1+ax)^{b/x} = \lim\limits_{x \to 0}(1+ax)^{ab/ax} =e^{ab}\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>exp3</strong>:计算<span class="math inline">\(\lim\limits_{n\to +\infty}\cos(\cfrac{x}{2})\cdot ...\cdot \cos (\cfrac{x}{2^n})(x \ne0)\)</span></p><p><strong>Solution</strong>:记<span class="math inline">\(f(x) =\cos(\cfrac{x}{2})...\cos (\cfrac{x}{2^n})\)</span></p><p>则<span class="math inline">\(f(x) = \cfrac{\sin(\cfrac{x}{2^n})}{\sin (\cfrac{x}{2^n})}\cos(\cfrac{x}{2})...\cos(\cfrac{x}{2^n})\)</span></p><p>根据二倍角公式，反复迭代<spanclass="math inline">\(n\)</span>次，有</p><p>原式<span class="math inline">\(=\lim\limits_{n \to +\infty}\cfrac{\sin x}{2^n \sin (\cfrac{x}{2^n})} = \lim\limits_{n \to+\infty}\cfrac{\cfrac{x}{2^n}}{\sin \cfrac{x}{2^n}}\cfrac{\sin x}{x} =\cfrac{\sin x}{x}\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>exp4</strong>:计算<span class="math inline">\((1+\cosx)^{3\sec x}\)</span></p>
+          </div>
 <h3 id="根式有理化">根式有理化</h3>
 <h3 id="约分法">约分法</h3>
 <h3 id="利用单调有界原理">利用单调有界原理</h3>
