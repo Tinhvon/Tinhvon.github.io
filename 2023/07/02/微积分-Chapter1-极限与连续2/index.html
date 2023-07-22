@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Calculus.png">
 <meta property="article:published_time" content="2023-07-02T08:05:21.000Z">
-<meta property="article:modified_time" content="2023-07-22T09:05:22.953Z">
+<meta property="article:modified_time" content="2023-07-22T13:46:17.933Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Study">
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4.2k 字
+          8.7k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          35 分钟
+          73 分钟
         
       </span>
     
@@ -348,13 +348,80 @@ class="math display">\[
             <p><strong>exp3</strong>:计算<span class="math inline">\(\lim\limits_{n\to +\infty}\cos(\cfrac{x}{2})\cdot ...\cdot \cos (\cfrac{x}{2^n})(x \ne0)\)</span></p><p><strong>Solution</strong>:记<span class="math inline">\(f(x) =\cos(\cfrac{x}{2})...\cos (\cfrac{x}{2^n})\)</span></p><p>则<span class="math inline">\(f(x) = \cfrac{\sin(\cfrac{x}{2^n})}{\sin (\cfrac{x}{2^n})}\cos(\cfrac{x}{2})...\cos(\cfrac{x}{2^n})\)</span></p><p>根据二倍角公式，反复迭代<spanclass="math inline">\(n\)</span>次，有</p><p>原式<span class="math inline">\(=\lim\limits_{n \to +\infty}\cfrac{\sin x}{2^n \sin (\cfrac{x}{2^n})} = \lim\limits_{n \to+\infty}\cfrac{\cfrac{x}{2^n}}{\sin \cfrac{x}{2^n}}\cfrac{\sin x}{x} =\cfrac{\sin x}{x}\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>exp4</strong>:计算<span class="math inline">\((1+\cosx)^{3\sec x}\)</span></p>
+            <p><strong>exp4</strong>:计算<span class="math inline">\(\lim\limits_{x\to 0}(1+\cos x)^{3\sec x}\)</span></p><p><strong>Solution</strong>:直接计算：原式<spanclass="math inline">\(=2^3 = 8\)</span></p>
+          </div>
+<p>Note:注意这个极限并不是重要极限，因为趋势不同。</p>
+<div class="note note-success">
+            <p><strong>exp5</strong>:计算<span class="math inline">\(\lim\limits_{x\to 0^{+}}(1+\cfrac{1}{n}+\cfrac{1}{n^2})^n\)</span>与<spanclass="math inline">\(\lim\limits_{n \to+\infty}(1+\cfrac{1}{n^2})^n\)</span></p><p><strong>Solution</strong>:</p><ul><li>首先求解<span class="math inline">\(\lim\limits_{x \to0^{+}}(1+\cfrac{1}{n}+\cfrac{1}{n^2})^n\)</span></li></ul><p>​ <span class="math inline">\(\lim\limits_{x \to0^{+}}(1+\frac{1}{n}+\frac{1}{n^2})^n = \lim\limits_{x \to0^{+}}[(1+\frac{n+1}{n^2})^{\frac{n^2}{n+1}}]^{\frac{n+1}{n}} =e\)</span></p><ul><li><p>再计算<span class="math inline">\(\lim\limits_{n \to+\infty}(1+\cfrac{1}{n^2})^n\)</span></p><p><span class="math inline">\(\lim\limits_{n \to+\infty}(1+\cfrac{1}{n^2})^n = \lim\limits_{n \to+\infty}[(1+\cfrac{1}{n^2})^{n^2}]^{1/n} = 1\)</span></p></li></ul>
+          </div>
+<div class="note note-success">
+            <p><strong>exp6</strong>:计算<span class="math inline">\(\lim\limits_{x\to 0^{+}}(\cfrac{a_1^x+...+a_n^x}{n})^{1/x}(a_i &gt;0,i =1,2,...,n)\)</span></p><p><strong>Solution</strong>:记<span class="math inline">\(\Delta =a_1^x-1+a_2^x-1+...+a_n^x-1\)</span></p><p><span class="math inline">\(\Rightarrow \lim\limits_{x \to0^{+}}(\cfrac{a_1^x+...+a_n^x}{n})^{1/x} = \lim\limits_{x \to0^{+}}[(1+\cfrac{\Delta}{n})^{n/\Delta}]^{1/x\cdot \Delta /n} =\sqrt[n]{a_1a_2...a_n}\)</span></p>
           </div>
 <h3 id="根式有理化">根式有理化</h3>
+<p>当所求极限的代数式存在较多根号时，可以考虑使用<strong>根式有理化</strong>，给出几个例子：</p>
+<div class="note note-success">
+            <p><strong>exp1</strong>:计算：<spanclass="math inline">\(\lim\limits_{x \rightarrow 3} \frac{\sqrt{5x+1}-\sqrt[3]{20 x+4}}{\sqrt{x+1}-2}\)</span></p><p><strong>Solution</strong>：<span class="math inline">\(\lim\limits_{x\rightarrow 3} \frac{\sqrt{5 x+1}-\sqrt[3]{20 x+4}}{\sqrt{x+1}-2} =\lim\limits_{x \rightarrow 3} \frac{\frac{5(x-3)}{\sqrt{5x+1}+4}-\frac{20(x-3)}{(20 x+4)^{\frac{2}{3}}+4 \sqrt[3]{20x+4}+16}}{\frac{x-3}{\sqrt{x+1}+2}}=\frac{5}{6}\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>exp2</strong>:计算：<spanclass="math inline">\(\lim\limits_{x\rightarrow+\infty}(\sqrt{x+\sqrt{x+\sqrt{x}}}-\sqrt{x})\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(\lim\limits_{x\rightarrow+\infty}(\sqrt{x+\sqrt{x+\sqrt{x}}}-\sqrt{x}) =\lim\limits_{x \rightarrow+\infty}\frac{\sqrt{x+\sqrt{x}}}{\sqrt{x+\sqrt{x+\sqrt{x}}}+\sqrt{x}}=\frac{1}{2}\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>exp3</strong>:计算：<spanclass="math inline">\(\lim\limits_{x \to -1}\frac{\frac{2}{1+2x}+1}{\sqrt[3]{2+x}+x}\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(\lim\limits_{x\to -1}\cfrac{\cfrac{2}{1+2 x}+1}{\sqrt[3]{2+x}+x} = \lim\limits_{x \to-1}\cfrac{\cfrac{2(x+1)}{(1+2 x)^{\cfrac{2}{3}}-(1+2x)^{\cfrac{1}{3}}+1}}{\cfrac{2+x+x^3}{(2+x)^{\cfrac{2}{3}}-x(2+x)^{\cfrac{1}{3}}+x^2}}=\cfrac{1}{2}\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>exp4</strong>:计算：$ _{n } ()$</p><p><strong>Solution</strong>：$ <em>{n }() =</em>{n +}(-1)^n (-n )=_{n}(-1)^{n} =0 \ $</p>
+          </div>
 <h3 id="约分法">约分法</h3>
+<p>一般遇到两多项式商类型的极限，即： <span class="math display">\[
+\lim_{x \to x_0}\cfrac{P(x)}{Q(x)}
+\]</span> 其中<span
+class="math inline">\(P(x),Q(x)\)</span>是多项式，一个很常用的思路是<strong>因式分解</strong>，即约分法，下面给出几个例子：</p>
+<div class="note note-success">
+            <p><strong>exp1</strong>:计算<span class="math inline">\(\lim\limits_{x\rightarrow 1} \frac{x^m-1}{x^n-1} \quad\left(m, n \inN^{+}\right)\)</span></p><p><strong>Solution</strong>:$<em>{x } =</em>{x } = $</p>
+          </div>
+<div class="note note-success">
+            <p><strong>exp2</strong>：计算$_{x } $</p><p><strong>Solution</strong>:记<spanclass="math inline">\(\sqrt[n]{1+x}-1 = t\)</span></p><p>故<span class="math inline">\(\lim\limits_{x \to0}\cfrac{\sqrt[n]{1+x}-1}{x} = \lim\limits_{t \to 1}\cfrac{t-1}{t^n-1} =\cfrac{1}{n}\)</span></p>
+          </div>
 <h3 id="利用单调有界原理">利用单调有界原理</h3>
+<p>首先回顾一下极限中的<strong>单调有界原理</strong></p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:单调有界数列必有极限</p>
+          </div>
+<p>利用这个原理，我们可以计算一些抽象数列的极限，例题如下：</p>
+<div class="note note-success">
+            <p><strong>exp1</strong>:数列<spanclass="math inline">\(\{x_n\}\)</span>满足递推关系：<spanclass="math inline">\(x_n = \cfrac{1}{2}(x_{n-1} +\cfrac{a}{x_{n-1}}),a&gt;0,x_n&gt;0\)</span>,求证：<spanclass="math inline">\(\lim\limits_{n \to \infty}x_n =\sqrt{a}\)</span></p><p><strong>Proof</strong>：考虑运用单调有界原理证明</p><ul><li><p>首先证明数列有界，化简递推关系有：</p><p><span class="math inline">\(x_{n-1}^2-2x_{n-1}x_{n}+x_{n}^2 = x_{n}^2- a \Rightarrow x_n^2-a = (x_n-x_{n-1})^2 \geq 0\)</span></p><p>即<span class="math inline">\(x_n \geq\sqrt{a}\)</span>,数列存在下界。</p></li><li><p>再证明数列单调，有<spanclass="math inline">\(\cfrac{x_n}{x_{n-1}} =\cfrac{1}{2}(1+\cfrac{a}{x_{n-1}^2}) \leq 1 \Rightarrow\{x_n\}\)</span>单调递减,根据单调有界原理，数列<spanclass="math inline">\(\{x_n \}\)</span>极限存在</p><p>设<span class="math inline">\(\lim\limits_{n \to \infty }x_n =A\)</span>则有方程<span class="math inline">\(A =\cfrac{1}{2}(A+\cfrac{a}{A}) \Rightarrow A = \sqrt{a}\)</span></p></li></ul>
+          </div>
+<div class="note note-success">
+            <p><strong>exp2</strong>:数列<spanclass="math inline">\(\{x_n\}\)</span>满足递推关系<spanclass="math inline">\(x_{n+1} = 1+\cfrac{x_n}{1+x_n}，x_1=1,x_2 =\cfrac{3}{2}\)</span>,求$_{n }x_n $</p><p><strong>Solution</strong>:还是利用单调有界原理</p><ul><li><p>首先证明其单调性：</p><p>$ x_{n_1}-x_n=1+-1- ==A(x_2-x_1)&gt;0x_n $单调递增</p></li><li><p>再证明其有界性：</p><p>易知<span class="math inline">\(x_n &lt;2\)</span>,根据单调有界原理，数列<spanclass="math inline">\(\{x_n\}\)</span>极限存在，</p><p>设<span class="math inline">\(\lim\limits_{n \to \infty}x_n =B\)</span>,则有方程<span class="math inline">\(B = 1 +\cfrac{B}{1+B}\)</span>，解得<span class="math inline">\(B =\cfrac{1+\sqrt{5}}{2}\)</span></p></li></ul>
+          </div>
+<div class="note note-success">
+            <p><strong>exp3</strong>:数列<spanclass="math inline">\(\{x_n\}\)</span>满足递推关系<spanclass="math inline">\(x_1 = \sqrt{2},x_n =\sqrt{2+x_{n-1}}\)</span>，求证<spanclass="math inline">\(\lim\limits_{n \to \infty}x_n = 2\)</span></p><p><strong>Proof</strong>:</p><ul><li>根据数学归纳法，<spanclass="math inline">\(x_n\)</span>单调递增，有上界<spanclass="math inline">\(2\)</span></li><li>设<span class="math inline">\(\lim\limits_{n \to \infty}x_n =A\)</span>,有方程<span class="math inline">\(A =\sqrt{2+A}\)</span>，解得<span class="math inline">\(A =\sqrt{2}\)</span></li></ul>
+          </div>
 <h2 id="无穷小量">无穷小量</h2>
+<p>首先给出<strong>无穷小量</strong>的定义</p>
+<div class="note note-primary">
+            <p><strong>Definition</strong>:若<span class="math inline">\(x\tox_0\)</span>时，<span class="math inline">\(\alpha(x) \to0\)</span>，则称$(x) <spanclass="math inline">\(为\)</span>xx_0$的无穷小量.</p><p>数学语言表述为：<span class="math inline">\(\lim\limits_{x \tox_0}f(x) = A \Leftrightarrow f(x) = A +\alpha ,\lim\limits_{x \to x_0}\alpha =0\)</span></p>
+          </div>
 <h3 id="相关推论">相关推论</h3>
+<p>给出无穷小的定义后，我们对<strong>无穷小</strong>做进一步讨论</p>
+<div class="note note-danger">
+            <p><strong>Note1</strong>:</p><ul><li>有限个无穷小之和为无穷小</li><li>有限个无穷小之积为无穷小</li><li>有界量与无穷小之积也为无穷小</li><li>无穷个无穷小之和不一定为无穷小，如<span class="math inline">\(x_n =\cfrac{1}{n},n\to \infty\)</span></li><li>无穷个无穷小之积不一定为无穷小</li></ul>
+          </div>
+<p>以上证明略，由<strong>Note1</strong>的第三点可以得知<span
+class="math inline">\(\lim\limits_{x \to 0}x\sin(\cfrac{1}{x}) =
+0\)</span></p>
+<p>讨论无穷小和与积的性质后，我们暂未搞懂应当怎样描述无穷小的大小，先给出推论：</p>
+<div class="note note-danger">
+            <p><strong>Note2</strong>:</p><ul><li><span class="math inline">\(\lim\limits_{x \tox_0}\cfrac{\alpha(x)}{\beta(x)}= 0\)</span>，称<spanclass="math inline">\(\alpha(x)\)</span>是<spanclass="math inline">\(\beta(x)\)</span>的<strong>高阶无穷小</strong>，记作<spanclass="math inline">\(\alpha(x) = o(\beta(x))\)</span></li><li><span class="math inline">\(\lim\limits_{x \tox_0}\cfrac{\alpha(x)}{\beta(x)}= C \ne 0\)</span>,称<spanclass="math inline">\(\alpha(x)\)</span>是<spanclass="math inline">\(\beta(x)\)</span>的<strong>同阶无穷小</strong>，记作<spanclass="math inline">\(\alpha(x) \textasciitildeC\beta(x)\)</span>,若<span class="math inline">\(C = 1\)</span>,称<spanclass="math inline">\(\alpha(x)\)</span>是<spanclass="math inline">\(\beta(x)\)</span>的<strong>等价无穷小</strong>，记作<spanclass="math inline">\(\alpha(x) \textasciitilde \beta(x),x\tox_0\)</span></li></ul>
+          </div>
+<p>在掌握无穷小比较的语言后，我们可以建立一个“坐标系”，将一个简单的无穷小作为参照物，进而比较其他复杂无穷小量的阶数，因此我们引入<strong>基本无穷小</strong>的定义：</p>
+<div class="note note-primary">
+            <p><strong>Definition</strong>:当<span class="math inline">\(x\tox_0\)</span>时，称<spanclass="math inline">\((x-x_0)\)</span>为<strong>基本无穷小</strong>,若<spanclass="math inline">\(\alpha (x) \textasciitilde A(x - x_0)^{r}(A \ne0,r &gt; 0)\)</span>则称<spanclass="math inline">\(\alpha(x)\)</span>为<strong><spanclass="math inline">\(r\)</span>阶无穷小</strong>，并称$ A(x -x_0)^{r}<span class="math inline">\(为\)</span>(x)<spanclass="math inline">\(的**主部**，且\)</span>(x) =A(x-x_0)<sup>{r}+o((x-x_0)</sup>r)$</p>
+          </div>
+<p>给出几个例子：</p>
+<div class="note note-success">
+            <p><strong>exp1</strong>:<span class="math inline">\(\alpha(x) =\cfrac{2x}{1+x^2}(x \to 0),\alpha(x) \textasciitilde 2x\)</span></p><p><strong>exp2</strong>:<span class="math inline">\(\beta(x) = \lnx^2(x\to1),\beta(x) =\ln x^2 = \ln(1+x^2-1)\textasciitilde (x^2-1) =(x+1)(x-1) = 2(x-1)\)</span></p>
+          </div>
 <h3 id="无穷小代换">无穷小代换</h3>
 <h3 id="无穷大">无穷大</h3>
 <h3 id="等价无穷小代换及应用">等价无穷小代换及应用</h3>

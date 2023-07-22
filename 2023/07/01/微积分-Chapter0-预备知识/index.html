@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.7k 字
+          3.4k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          31 分钟
+          29 分钟
         
       </span>
     
@@ -293,119 +293,84 @@
             
               <div class="markdown-body">
                 
-                <h1 id="预备知识">预备知识</h1>
-<h2 id="集合">集合</h2>
-<h3 id="集合-1">集合</h3>
-<p>首先给出<strong>集合</strong>的定义</p>
+                <h1 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h1><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><h3 id="集合-1"><a href="#集合-1" class="headerlink" title="集合"></a>集合</h3><p>首先给出<strong>集合</strong>的定义</p>
 <div class="note note-primary">
-            <p><strong>定义</strong>:具有某种特定性质的元素的汇总所成的集体.其中,构成集合的对象称为<strong>元素</strong>.一般,用大写字母表示集合,如<spanclass="math inline">\(N\)</span>,<spanclass="math inline">\(R\)</span>,<spanclass="math inline">\(Q\)</span>等；而用小写字母表示元素,如<spanclass="math inline">\(x\)</span>,<spanclass="math inline">\(y\)</span>等.常记为: <span class="math display">\[A = \{ x | x \in A\} \quad or\quad A = \{x|x的特性\}\]</span></p>
+            <p><strong>定义</strong>:具有某种特定性质的元素的汇总所成的集体.其中,构成集合的对象称为<strong>元素</strong>.一般,用大写字母表示集合,如$N$,$R$,$Q$等；而用小写字母表示元素,如$x$,$y$等.常记为:</p><script type="math/tex; mode=display">A = \{ x | x \in A\} \quad or\quad A = \{x|x的特性\}</script>
           </div>
 <p>一般表示集合的方法有:</p>
-<p><strong>列举法</strong>:<span class="math inline">\(A = \{
-1,3,5,7,...,2021\}\)</span></p>
-<p><strong>特性表示法</strong>:<span class="math inline">\(A = \{x| x
-&gt; 1986\}\)</span></p>
+<p><strong>列举法</strong>:$A = \{ 1,3,5,7,…,2021\}$</p>
+<p><strong>特性表示法</strong>:$A = \{x| x &gt; 1986\}$</p>
 <p>了解集合的定义后,便可以讨论<strong>集合之间的关系</strong>与<strong>集合之间的运算</strong>.</p>
 <p>首先讨论集合之间的关系,定义如下:</p>
 <div class="note note-primary">
-            <p>若<span class="math inline">\(\forall x \in A \Rightarrow x \inB\)</span>,则称<span class="math inline">\(A\)</span>是<spanclass="math inline">\(B\)</span>的<strong>子集</strong>,记为<spanclass="math inline">\(A \subseteq B\)</span>.</p><p>若<span class="math inline">\(A \subseteq B,\exists x \in B,x \notinA\)</span>,则称<span class="math inline">\(A\)</span>是<spanclass="math inline">\(B\)</span>的<strong>真子集</strong>.</p><p>若<span class="math inline">\(A \subseteq B,B \subseteqA\)</span>,称两个集合相等,记为<spanclass="math inline">\(A=B\)</span></p>
+            <p>若$\forall x \in A \Rightarrow x \in B$,则称$A$是$B$的<strong>子集</strong>,记为$A \subseteq B$.</p><p>若$A \subseteq B,\exists x \in B,x \notin A$,则称$A$是$B$的<strong>真子集</strong>.</p><p>若$A \subseteq B,B \subseteq A$,称两个集合相等,记为$A=B$</p>
           </div>
 <p>再讨论集合之间的运算,定义如下:</p>
 <div class="note note-primary">
-            <p><strong>并集</strong>:<span class="math inline">\(A \cup B = \{x \inA \quad or \quad x \in B\}\)</span></p><p><strong>交集</strong>:<span class="math inline">\(A \cap B = \{x \inA \quad and \quad x \in B\}\)</span></p><p><strong>差集</strong>:<span class="math inline">\(A - B = \{x \in A\quad and \quad x \notin B\}\)</span></p><p><strong>补集</strong>:定义一个非空集合<spanclass="math inline">\(X\)</span>,<span class="math inline">\(A \subseteqX\)</span>,则<span class="math inline">\(A^{c} = X - A\)</span>是<spanclass="math inline">\(A\)</span>的补集.</p><p><strong>乘积</strong>:考虑集合$A = { x | x A},B = { y | yA} <spanclass="math inline">\(,则\)</span>A B ={ (x,y) | x A ,y B} $</p>
+            <p><strong>并集</strong>:$A \cup B = \{x \in A \quad or \quad  x \in B\}$</p><p><strong>交集</strong>:$A \cap B = \{x \in A \quad and \quad  x \in B\}$</p><p><strong>差集</strong>:$A - B = \{x \in A \quad and \quad  x \notin B\}$</p><p><strong>补集</strong>:定义一个非空集合$X$,$A \subseteq X$,则$A^{c} =  X - A$是$A$的补集.</p><p><strong>乘积</strong>:考虑集合$A = \{ x | x \in A\},B = \{ y | y\in A\} $,则$A \times B =\{ (x,y) | x \in A ,y \in B\} $</p>
           </div>
-<h3 id="区间">区间</h3>
-<p>定义集合后,我们可以用<strong>区间</strong>来表述数轴上的一个范围,现有两个实数<span
-class="math inline">\(a,b\)</span>,不妨假设<span class="math inline">\(a
-&lt; b\)</span>,则定义如下:</p>
+<h3 id="区间"><a href="#区间" class="headerlink" title="区间"></a>区间</h3><p>定义集合后,我们可以用<strong>区间</strong>来表述数轴上的一个范围,现有两个实数$a,b$,不妨假设$a &lt; b$,则定义如下:</p>
 <div class="note note-primary">
-            <p><span class="math inline">\((a,b) =\{x|a&lt;x&lt;b\}\)</span>,称该区间为<strong>开区间</strong></p><p><span class="math inline">\([a,b] = \{x|a\leq x \leqb\}\)</span>,称该区间为<strong>闭区间</strong></p><p><span class="math inline">\((a,b] =\{x|a &lt; x \leq b\}\)</span>与<span class="math inline">\([a,b) =\{x|a \leq x &lt; b\}\)</span>统称为<strong>半开半闭区间</strong>.</p><p><span class="math inline">\((a,+∞) = \{x|x &gt; a\}\)</span></p><p><span class="math inline">\((-∞,b] = \{x|x \leq b\}\)</span></p><p><span class="math inline">\((-∞,+∞) = \{x|-∞ &lt; x &lt; +∞ \} =R\)</span></p>
+            <p>$(a,b) = \{x|a&lt;x&lt;b\}$,称该区间为<strong>开区间</strong></p><p>$[a,b] = \{x|a\leq x \leq b\}$,称该区间为<strong>闭区间</strong></p><p>$(a,b] =\{x|a &lt; x \leq b \}$与$[a,b) =\{x|a \leq x &lt; b \}$统称为<strong>半开半闭区间</strong>.</p><p>$(a,+∞) = \{x|x &gt; a\}$</p><p>$(-∞,b] = \{x|x \leq b\}$</p><p>$(-∞,+∞) = \{x|-∞ &lt; x &lt; +∞ \} = R$ </p>
           </div>
-<h3 id="邻域">邻域</h3>
-<p>在函数论中,我们经常遇到<strong>邻域</strong>的概念,假设<span
-class="math inline">\(x_0 \in R,\delta &gt; 0\)</span>,则:</p>
+<h3 id="邻域"><a href="#邻域" class="headerlink" title="邻域"></a>邻域</h3><p>在函数论中,我们经常遇到<strong>邻域</strong>的概念,假设$x_0 \in R,\delta &gt; 0$,则:</p>
 <div class="note note-primary">
-            <p><span class="math inline">\(x_0\)</span>的<spanclass="math inline">\(\delta\)</span>邻域定义为:<spanclass="math inline">\(N(x_0,\delta) = \{x| \quad|x-x_0|&lt;\delta\}\)</span></p><p><span class="math inline">\(x_0\)</span>的<spanclass="math inline">\(\delta\)</span>去心邻域定义为:<spanclass="math inline">\(N_0(x_0,\delta) =\{x| 0&lt;|x-x_0|&lt;\delta\}\)</span></p>
+            <p>$x_0$的$\delta$邻域定义为:$N(x_0,\delta) = \{x| \quad|x-x_0|&lt;\delta \}$</p><p>$x_0$的$\delta$去心邻域定义为:$N_0(x_0,\delta) =\{x| 0&lt;|x-x_0|&lt;\delta \}$ </p>
           </div>
 <p>下面给出常用邻域的例子:</p>
 <div class="note note-success">
-            <p><strong>右邻域</strong>:<span class="math inline">\(N^{+}(x_0,\delta)= \{x| 0\leq x-x_0&lt;\delta \}\)</span></p><p><strong>去心右邻域</strong>:<spanclass="math inline">\(N^{+}_{0}(x_0,\delta) = \{x|0&lt; x-x_0&lt;\delta\}\)</span></p><p><strong>左邻域</strong>:<span class="math inline">\(N^{-}(x_0,\delta)= \{x| -\delta &lt; x-x_0\leq 0 \}\)</span></p><p><strong>去心左邻域</strong>:<spanclass="math inline">\(N^{-}_{0}(x_0,\delta) = \{x| -\delta &lt;x-x_0\leq 0 \}\)</span></p><p><strong><span class="math inline">\(+∞\)</span>邻域</strong>:即<spanclass="math inline">\((a,+∞)\)</span></p><p><strong><span class="math inline">\(-∞\)</span>邻域</strong>:即<spanclass="math inline">\((-∞,b)\)</span></p><p><strong><span class="math inline">\(∞\)</span>邻域</strong>:即<spanclass="math inline">\((-∞,b) \cup (a,+∞)\)</span></p>
+            <p><strong>右邻域</strong>:$N^{+}(x_0,\delta) = \{x| 0\leq x-x_0&lt;\delta \}$</p><p><strong>去心右邻域</strong>:$N^{+}_{0}(x_0,\delta) = \{x|0&lt; x-x_0&lt;\delta \}$</p><p><strong>左邻域</strong>:$N^{-}(x_0,\delta) = \{x| -\delta &lt; x-x_0\leq 0 \}$</p><p><strong>去心左邻域</strong>:$N^{-}_{0}(x_0,\delta) = \{x| -\delta &lt; x-x_0\leq 0 \}$</p><p><strong>$+∞$邻域</strong>:即$(a,+∞)$</p><p><strong>$-∞$邻域</strong>:即$(-∞,b)$</p><p><strong>$∞$邻域</strong>:即$(-∞,b) \cup (a,+∞)$</p>
           </div>
-<h3 id="常用不等式">常用不等式</h3>
-<p>高中阶段学过的常见不等式如下(取等条件略):</p>
+<h3 id="常用不等式"><a href="#常用不等式" class="headerlink" title="常用不等式"></a>常用不等式</h3><p>高中阶段学过的常见不等式如下(取等条件略):</p>
 <div class="note note-primary">
-            <p><strong>绝对值不等式</strong>:<spanclass="math inline">\(|a_1+a_2+...+a_n| \leq |a_1|+|a_2|+... +|a_n|\)</span></p><p><strong>Bernoulli 不等式</strong>: 对于<spanclass="math inline">\(\forall x &gt; -1\)</span>,<spanclass="math inline">\((1+x)^{n}\geq 1+nx\)</span>.</p><p><strong>平均值不等式</strong>:<spanclass="math inline">\(x_i&gt;0,i=1,2,...n\)</span>,有<spanclass="math inline">\(\sqrt[n]{x_1x_2...x_n}\leq\cfrac{x_1+x_2+...+x_n}{n}\)</span></p>
+            <p><strong>绝对值不等式</strong>:$|a_1+a_2+…+a_n| \leq |a_1|+|a_2|+… + |a_n|$</p><p><strong>Bernoulli 不等式</strong>: 对于$\forall x &gt; -1$,$(1+x)^{n}\geq 1+nx$.</p><p><strong>平均值不等式</strong>:$x_i&gt;0,i=1,2,…n$,有$\sqrt[n]{x_1x_2…x_n}\leq \cfrac{x_1+x_2+…+x_n}{n}$</p>
           </div>
-<h2 id="实数理论初步">实数理论初步</h2>
-<p><em>该部分严格证明需要学习《数学分析》,普通微积分对此不作要求,了解即可.</em></p>
+<h2 id="实数理论初步"><a href="#实数理论初步" class="headerlink" title="实数理论初步"></a>实数理论初步</h2><p><em>该部分严格证明需要学习《数学分析》,普通微积分对此不作要求,了解即可.</em></p>
 <p>实数有以下性质:</p>
 <p>1.实数对四则运算是<strong>封闭的</strong>,即实数通过四则运算仍为实数.</p>
-<p>2.实数是<strong>有序集合</strong>,数学语言表述即为: <span
-class="math display">\[
-\forall a,b\in R \Rightarrow a&lt;b或a=b或a&gt;b
-\]</span>
-3.实数具有<strong>稠密性</strong>,即任意两个实数之间一定存在实数.</p>
+<p>2.实数是<strong>有序集合</strong>,数学语言表述即为:</p>
+<script type="math/tex; mode=display">
+\forall a,b\in R \Rightarrow a<b或a=b或a>b</script><p>3.实数具有<strong>稠密性</strong>,即任意两个实数之间一定存在实数.</p>
 <p>4.实数与数轴上的点一一对应.</p>
-<h3 id="确界">确界</h3>
-<p>现引入<strong>确界</strong>概念</p>
+<h3 id="确界"><a href="#确界" class="headerlink" title="确界"></a>确界</h3><p>现引入<strong>确界</strong>概念</p>
 <div class="note note-primary">
-            <p>实数集<spanclass="math inline">\(E\)</span>的最小上界定义为<strong>上确界</strong>,用<spanclass="math inline">\(\sup E\)</span>表示.</p><p>实数集<spanclass="math inline">\(E\)</span>的最大下界定义为<strong>下确界</strong>,用<spanclass="math inline">\(\inf E\)</span>表示.</p>
+            <p>实数集$E$的最小上界定义为<strong>上确界</strong>,用$\sup E$表示.</p><p>实数集$E$的最大下界定义为<strong>下确界</strong>,用$\inf E$表示.</p>
           </div>
 <p>实数理论中很重要的一个定理是<strong>确界存在原理</strong>,其表述为</p>
 <div class="note note-danger">
-            <p>设集合<span class="math inline">\(S\)</span>为非空实数集,若<spanclass="math inline">\(S\)</span>有上界,则<spanclass="math inline">\(S\)</span>必有上确界；若<spanclass="math inline">\(S\)</span>有下界,则<spanclass="math inline">\(S\)</span>必有下确界.</p>
+            <p>设集合$S$为非空实数集,若$S$有上界,则$S$必有上确界；若$S$有下界,则$S$必有下确界.</p>
           </div>
-<h2 id="映射与函数">映射与函数</h2>
-<h3 id="映射">映射</h3>
-<p>下面引入<strong>映射</strong>的定义:</p>
+<h2 id="映射与函数"><a href="#映射与函数" class="headerlink" title="映射与函数"></a>映射与函数</h2><h3 id="映射"><a href="#映射" class="headerlink" title="映射"></a>映射</h3><p>下面引入<strong>映射</strong>的定义:</p>
 <div class="note note-primary">
-            <p>设<spanclass="math inline">\(A,B\)</span>为两个非空集合,若存在对应法则<spanclass="math inline">\(f\)</span>,使得<span class="math inline">\(\forallx\in A\)</span>,存在唯一的<span class="math inline">\(y \inB\)</span>与之对应,则称<span class="math inline">\(f\)</span>为$A B$的一个映射,记为: <span class="math display">\[f:A\to B或f:x\to y或y=f(x)\]</span> 称<spanclass="math inline">\(y\)</span>为映射下的<strong>像</strong>,称<spanclass="math inline">\(A\)</span>为<spanclass="math inline">\(f\)</span>的<strong>定义域</strong>,<spanclass="math inline">\(f(A)\)</span>为<spanclass="math inline">\(f\)</span>的<strong>值域</strong>.</p>
+            <p>设$A,B$为两个非空集合,若存在对应法则$f$,使得$\forall x\in A$,存在唯一的$y \in B$与之对应,则称$f$为$A \to B $的一个映射,记为:</p><script type="math/tex; mode=display">f:A\to B或f:x\to y或y=f(x)</script><p>称$y$为映射下的<strong>像</strong>,称$A$为$f$的<strong>定义域</strong>,$f(A)$为$f$的<strong>值域</strong>.</p>
           </div>
 <p>由定义可知,映射的三要素分别为定义域、值域、对应法则.</p>
-<h3 id="函数">函数</h3>
-<p>定义映射后,我们讨论一种特殊的映射—<strong>函数</strong>.其定义为:</p>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>定义映射后,我们讨论一种特殊的映射—<strong>函数</strong>.其定义为:</p>
 <div class="note note-primary">
-            <p>考虑映射<spanclass="math inline">\(f\)</span>,若其定义域与值域均为实数集,则称<spanclass="math inline">\(f\)</span>是一个(实)函数.</p><p>一元函数的表示为:<span class="math inline">\(f:R\to R\)</span></p><p>n元函数的表示为:<span class="math inline">\(f:R^{n} \toR\)</span></p>
+            <p>考虑映射$f$,若其定义域与值域均为实数集,则称$f$是一个(实)函数.</p><p>一元函数的表示为:$f:R\to R$</p><p>n元函数的表示为:$f:R^{n} \to R$</p>
           </div>
 <p>下面给出几个特殊的函数例子</p>
 <div class="note note-success">
-            <p><strong>符号函数</strong>: <span class="math display">\[\mathrm{sgn} (x) =\begin{cases}-1 ,x&lt;0 \\0, x= 0 \\1,x &gt;0\end{cases}\]</span> <strong>狄利克雷函数</strong>: <span class="math display">\[D(x) =\begin{cases}1,x\in Q \\0,x\notin Q\end{cases}\]</span> <strong>黎曼函数</strong>: <span class="math display">\[R(x) =\begin{cases}\cfrac{1}{q},x = \cfrac{p}{q},q&gt;p&gt;0 \\0,x=0,1or无理数\end{cases}\]</span></p>
+            <p><strong>符号函数</strong>:</p><script type="math/tex; mode=display">\mathrm{sgn} (x) = \begin{cases}-1 ,x<0 \\0, x= 0 \\1,x >0\end{cases}</script><p><strong>狄利克雷函数</strong>:</p><script type="math/tex; mode=display">D(x) = \begin{cases}1,x\in Q \\0,x\notin Q\end{cases}</script><p><strong>黎曼函数</strong>:</p><script type="math/tex; mode=display">R(x) = \begin{cases}\cfrac{1}{q},x = \cfrac{p}{q},q>p>0 \\0,x=0,1or无理数\end{cases}</script>
           </div>
 <p>我们同样可以定义<strong>函数的运算</strong>:</p>
-<h4 id="四则运算">四则运算</h4>
-<div class="note note-primary">
-            <p>与实数一样,也可以定义函数的加减乘除,其中记<spanclass="math inline">\(\alpha f(x)+\beta g(x)\)</span>是函数<spanclass="math inline">\(f(x),g(x)\)</span>的线性组合</p>
+<h4 id="四则运算"><a href="#四则运算" class="headerlink" title="四则运算"></a>四则运算</h4><div class="note note-primary">
+            <p>与实数一样,也可以定义函数的加减乘除,其中记$\alpha f(x)+\beta g(x)$是函数$f(x),g(x)$的线性组合</p>
           </div>
-<h4 id="复合运算">复合运算</h4>
-<div class="note note-primary">
-            <p>设函数<span class="math inline">\(f(x),g(x)\)</span>,称<spanclass="math inline">\(f[g(x)]\)</span>为<spanclass="math inline">\(f(x),g(x)\)</span>的复合函数,其中定义域为 <spanclass="math display">\[D = \{ x|x \in D(g)andg(x)\in D(f)\}\]</span></p>
+<h4 id="复合运算"><a href="#复合运算" class="headerlink" title="复合运算"></a>复合运算</h4><div class="note note-primary">
+            <p>设函数$f(x),g(x)$,称$f[g(x)]$为$f(x),g(x)$的复合函数,其中定义域为</p><script type="math/tex; mode=display">D = \{ x|x \in D(g)andg(x)\in D(f)\}</script>
           </div>
-<h4 id="反函数运算">反函数运算</h4>
-<div class="note note-primary">
-            <p>考虑函数<span class="math inline">\(y=f(x),x\in D,\forall x_1 \ne x_2\Rightarrow f(x_1)\ne f(x_2)\)</span>,此时可以推断映射<spanclass="math inline">\(f\)</span>是单射,满射,记为<spanclass="math inline">\(f:D\to J\)</span>,此时我们可定义映射<spanclass="math inline">\(g:D \to J\)</span>,称<spanclass="math inline">\(g\)</span>是<spanclass="math inline">\(f\)</span>的反函数,记为<spanclass="math inline">\(g=f^{-1}\)</span></p>
+<h4 id="反函数运算"><a href="#反函数运算" class="headerlink" title="反函数运算"></a>反函数运算</h4><div class="note note-primary">
+            <p>考虑函数$y=f(x),x\in D,\forall x_1 \ne x_2 \Rightarrow f(x_1)\ne f(x_2)$,此时可以推断映射$f$是单射,满射,记为$f:D\to J$,此时我们可定义映射$g:D \to J$,称$g$是$f$的反函数,记为$g=f^{-1}$</p>
           </div>
 <p>函数有以下特性:</p>
-<p>1.<strong>有界性</strong>:若函数<span
-class="math inline">\(f(x)\)</span>满足<span
-class="math inline">\(\forall x \in D,|f(x)|\leq
-M\)</span>,则称函数有界.</p>
-<p>2.<strong>单调性</strong>:对于<span class="math inline">\(\forall x_1
-\ne x_2\)</span>,<span class="math inline">\((x_2-x_1)[f(x_2)-f(x_1)]
-\leq (\geq)0\)</span>,则称函数<strong>单调递减(增)</strong>,若<span
-class="math inline">\(\leq\)</span>改为<span
-class="math inline">\(&lt;\)</span>(<span
-class="math inline">\(\geq\)</span>改为&gt;),则称为<strong>严格单调递减(增)</strong>.</p>
-<p>3.<strong>奇偶性</strong>:若函数定义域关于原点对称,且<span
-class="math inline">\(f(x)=f(-x)\)</span>,则称函数为偶函数；若<span
-class="math inline">\(f(x)=-f(-x)\)</span>,则称函数为奇函数</p>
-<p>4.<strong>周期性</strong>:<span class="math inline">\(\exists
-T&gt;0\)</span>,若<span
-class="math inline">\(f(x+T)=f(x)\)</span>,则称<span
-class="math inline">\(y=f(x)\)</span>为以<span
-class="math inline">\(T\)</span>为周期的函数,满足条件的$T的最小值成为函数的最小正周期.</p>
+<p>1.<strong>有界性</strong>:若函数$f(x)$满足$\forall x \in D,|f(x)|\leq M$,则称函数有界.</p>
+<p>2.<strong>单调性</strong>:对于$\forall x_1 \ne x_2$,$(x_2-x_1)[f(x_2)-f(x_1)] \leq (\geq)0$,则称函数<strong>单调递减(增)</strong>,若$\leq$改为$&lt;$($\geq$改为&gt;),则称为<strong>严格单调递减(增)</strong>.</p>
+<p>3.<strong>奇偶性</strong>:若函数定义域关于原点对称,且$f(x)=f(-x)$,则称函数为偶函数；若$f(x)=-f(-x)$,则称函数为奇函数</p>
+<p>4.<strong>周期性</strong>:$\exists T&gt;0$,若$f(x+T)=f(x)$,则称$y=f(x)$为以$T$为周期的函数,满足条件的$T的最小值成为函数的最小正周期.</p>
 <p>最后给出基本初等函数:</p>
 <div class="note note-success">
-            <p><strong>常函数</strong>:即<span class="math inline">\(f(x) =C\)</span>,<span class="math inline">\(C\)</span>为常数.</p><p><strong>幂函数</strong>:即<span class="math inline">\(f(x) =x^{\alpha} = e^{\alpha \ln x}\)</span></p><p><strong>指数函数</strong>:即<span class="math inline">\(f(x) =a^{x}(a&gt;0,a\ne1)\)</span>,常用的指数函数为<spanclass="math inline">\(f(x) = e^{x}\)</span></p><p><strong>对数函数</strong>:即<span class="math inline">\(f(x) =\log_{a}(x)(a&gt;0,a\ne1)\)</span>,若底数为<spanclass="math inline">\(e\)</span>,则函数为<spanclass="math inline">\(f(x) = \ln x\)</span></p><p><strong>三角函数</strong>:常见的三角函数为<spanclass="math inline">\(\sin x,\cos x,\tan x ,\cot x,\sec x,\cscx\)</span></p><p><strong>反三角函数</strong>:表示方法为<spanclass="math inline">\(\arcsin x,\arccos x,\arctan x\)</span></p><p><strong>双曲函数</strong>:双曲正弦函数<spanclass="math inline">\(\sinh x =\frac{e^x-e^{-x}}{2}\)</span>,双曲余弦为<spanclass="math inline">\(\cosh x =\frac{e^x+e^{-x}}{2}\)</span>,双曲正切为:<spanclass="math inline">\(\tanh x =\frac{e^x-e^{-x}}{e^x+e^{-x}}\)</span></p>
+            <p><strong>常函数</strong>:即$f(x) = C$,$C$为常数.</p><p><strong>幂函数</strong>:即$f(x) = x^{\alpha} = e^{\alpha \ln x}$</p><p><strong>指数函数</strong>:即$f(x) = a^{x}(a&gt;0,a\ne1)$,常用的指数函数为$f(x) = e^{x}$</p><p><strong>对数函数</strong>:即$f(x) = \log_{a}(x)(a&gt;0,a\ne1)$,若底数为$e$,则函数为$f(x) = \ln x$</p><p><strong>三角函数</strong>:常见的三角函数为$\sin x,\cos x,\tan x ,\cot x,\sec x,\csc x$</p><p><strong>反三角函数</strong>:表示方法为$\arcsin x,\arccos x,\arctan x$</p><p><strong>双曲函数</strong>:双曲正弦函数$\sinh x = \frac{e^x-e^{-x}}{2}$,双曲余弦为$\cosh x = \frac{e^x+e^{-x}}{2}$,双曲正切为:$\tanh x = \frac{e^x-e^{-x}}{e^x+e^{-x}}$</p>
           </div>
 <p>初等函数可以由基本函数表示.</p>
 
