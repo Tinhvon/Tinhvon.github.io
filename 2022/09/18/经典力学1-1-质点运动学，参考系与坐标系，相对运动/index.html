@@ -16,16 +16,16 @@
   <meta name="author" content="Tinhvon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Chapter1 矢量力学1.1质点运动学，参考系与坐标系，相对运动前言：作者本人已经大二啦，开始了《理论力学》与《数学物理方法》的学习。本系列文章是作者平时的课堂笔记+一些自己的思考，希望能和大家共同交流。    什么是运动学，运动学主要研究系统在时空中的运动，并使用几何手段来描述物体的运动。在矢量力学中，时间和空间是分离的，空间可以使用Euclid几何来描述。同时，矢量力学中的空间是均匀的也是">
+    <meta name="description" content="Chapter1 矢量力学 1.1质点运动学，参考系与坐标系，相对运动 前言：作者本人已经大二啦，开始了《理论力学》与《数学物理方法》的学习。本系列文章是作者平时的课堂笔记+一些自己的思考，希望能和大家共同交流。  什么是运动学，运动学主要研究系统在时空中的运动，并使用几何手段来描述物体的运动。在矢量力学中，时间和空间是分离的，空间可以使用Euclid几何来描述。同时，矢量力学中的空间是均">
 <meta property="og:type" content="article">
 <meta property="og:title" content="经典力学-Chapter1-矢量力学">
 <meta property="og:url" content="http://example.com/2022/09/18/%E7%BB%8F%E5%85%B8%E5%8A%9B%E5%AD%A61-1-%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6%EF%BC%8C%E5%8F%82%E8%80%83%E7%B3%BB%E4%B8%8E%E5%9D%90%E6%A0%87%E7%B3%BB%EF%BC%8C%E7%9B%B8%E5%AF%B9%E8%BF%90%E5%8A%A8/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
-<meta property="og:description" content="Chapter1 矢量力学1.1质点运动学，参考系与坐标系，相对运动前言：作者本人已经大二啦，开始了《理论力学》与《数学物理方法》的学习。本系列文章是作者平时的课堂笔记+一些自己的思考，希望能和大家共同交流。    什么是运动学，运动学主要研究系统在时空中的运动，并使用几何手段来描述物体的运动。在矢量力学中，时间和空间是分离的，空间可以使用Euclid几何来描述。同时，矢量力学中的空间是均匀的也是">
+<meta property="og:description" content="Chapter1 矢量力学 1.1质点运动学，参考系与坐标系，相对运动 前言：作者本人已经大二啦，开始了《理论力学》与《数学物理方法》的学习。本系列文章是作者平时的课堂笔记+一些自己的思考，希望能和大家共同交流。  什么是运动学，运动学主要研究系统在时空中的运动，并使用几何手段来描述物体的运动。在矢量力学中，时间和空间是分离的，空间可以使用Euclid几何来描述。同时，矢量力学中的空间是均">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Theoretical%20Mechanics.png">
 <meta property="article:published_time" content="2022-09-18T04:20:55.000Z">
-<meta property="article:modified_time" content="2023-07-19T07:44:45.122Z">
+<meta property="article:modified_time" content="2023-07-23T13:03:25.368Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Study">
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4.4k 字
+          4.5k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          37 分钟
+          38 分钟
         
       </span>
     
@@ -293,70 +293,145 @@
             
               <div class="markdown-body">
                 
-                <h1 id="Chapter1-矢量力学"><a href="#Chapter1-矢量力学" class="headerlink" title="Chapter1 矢量力学"></a>Chapter1 矢量力学</h1><h2 id="1-1质点运动学，参考系与坐标系，相对运动"><a href="#1-1质点运动学，参考系与坐标系，相对运动" class="headerlink" title="1.1质点运动学，参考系与坐标系，相对运动"></a>1.1质点运动学，参考系与坐标系，相对运动</h2><p>前言：作者本人已经大二啦，开始了《理论力学》与《数学物理方法》的学习。本系列文章是作者平时的课堂笔记+一些自己的思考，希望能和大家共同交流。  </p>
-<hr>
+                <h1 id="chapter1-矢量力学">Chapter1 矢量力学</h1>
+<h2
+id="质点运动学参考系与坐标系相对运动">1.1质点运动学，参考系与坐标系，相对运动</h2>
+<p>前言：作者本人已经大二啦，开始了《理论力学》与《数学物理方法》的学习。本系列文章是作者平时的课堂笔记+一些自己的思考，希望能和大家共同交流。</p>
+<hr />
 <p>什么是运动学，运动学主要研究系统在时空中的运动，并使用几何手段来描述物体的运动。在矢量力学中，时间和空间是分离的，空间可以使用<strong>Euclid几何</strong>来描述。同时，矢量力学中的空间是均匀的也是各向同性的，而时间是均匀的。在经典力学中，时空的均匀性决定了一系列守恒律！</p>
-<p>而为了描述物体的运动，我们需要引入自己的一套“语言体系”。首先为了简化对物理问题的研究，我们引入了<strong>质点</strong>这模型。其严格定义为：<strong>没有大小形状，只有质量的点。</strong>显然，质点模型是一个高度理想化理想模型，当我们研究一个物理问题时，物体的形状，体积对研究几乎甚至没有影响时，我们可以“放弃”对这些次要因素的研究，而是用一个只有质量的点来等效这个物体，从而对其进行研究。 </p>
-<p>但是仅有质点是仅仅不够的，我们需要更多的“语言”来描述运动！由此产生了基本物理量。考虑到基本物理量都是用于描述质点在某一瞬时的运动状态，故其有<strong>瞬时性</strong>；此外，在不同的参考系下，我们观测到的基本物理量往往是不同的，这被称为<strong>相对性</strong>；在运动学中，物理量的变化往往有大小和方向两个方向，所以其有<strong>矢量性</strong>。描述运动的基本物理量如下：<br><strong>位矢</strong> $\vec{r}$:在参考系已经选定的情况下，某个确定的点指向质点所在位置的矢量，它用来描述质点位置随时间变化的规律。在运动学中，$\vec{r}= \vec{r}(t)$被称为运动方程式，其对时间 $ t $ 单值可微。而 $\vec{r}$在空间划过的曲线，通常被称为轨迹。<br><strong>位移</strong> $\Delta \vec{r}$ :在给定位矢$\vec{r}$后，为了描述在某一段时间$\Delta t$内位矢的变化。我们引入位移这一概念，显然，它是$ t,\Delta t $的函数，表示为 </p>
-<script type="math/tex; mode=display">
-\vec{r}(t,\Delta t) = \vec{r}(t+\Delta t) - \vec{r}(t)</script><p><strong>速度</strong> $\vec{v}$ :速度通常定义为位移与完成这段位移所需时间的比值，即：</p>
-<script type="math/tex; mode=display">
-\vec{v}= \cfrac{\mathrm{d}\vec{r} }{\mathrm dt}</script><p>形象地讲，速度常用来描述运动的快慢和方向，同位矢，它也是时间的单值可微函数。<br><strong>加速度</strong>$\vec{a}$ :加速度通常定义为速度该变量与完成这些改变所需时间的比值，即:</p>
-<script type="math/tex; mode=display">
-\vec{a}= \cfrac{\mathrm d\vec{v}}{\mathrm d t}</script><p>同理，加速度通常用来描述速度改变的快慢与方向。 </p>
-<p>在基本物理量给出后，我们便需要观测（测量）这些物理量。自然而然，我们引入了<strong>参考系</strong>这一工具，参考系被称为用来基准的物体或物体组。其定量化结果就是我们所说的<strong>坐标系</strong>。在坐标系中，矢量可以用分量形式来描述，下介绍几种常见的坐标系：   </p>
-<p><strong>标准正交坐标系：</strong>通常也称为<strong>笛卡尔坐标系</strong>，其基底满足 $\vec{e_{i}}\times\vec{e_{j}} = \vec{e_{k}} $ (即我们所说的右手系)。在标准坐标系中，给定矢量$\vec{A}$可表示为：</p>
-<script type="math/tex; mode=display">
-\vec{A} = \sum_{i = 1}^{3}{A_{i}}\vec{e_{i}}</script><p>其中:</p>
-<script type="math/tex; mode=display">
-A_{i} = \vec{A}\cdot\vec{e_{i}}</script><p>即：</p>
-<script type="math/tex; mode=display">
-\vec{A} = \sum_{i = 1}^{3}{\vec { A } \cdot\vec{e_{i } } } \vec{e_{j}}</script><p>在笛卡尔坐标系中，描述运动的基本物理量可写为：</p>
-<script type="math/tex; mode=display">
-\vec{r} = x\vec{e_{i}}+y\vec{e_{j}}+z\vec{e_ {k } } \\ 
-\vec{v} = \dot{x}\vec{e_{i}}+\dot{y}\vec{e_{j}}+\dot{z}\vec{e_{k}}\\ 
-\vec{a} = \ddot{x}\vec{e_{i}}+\ddot{y}\vec{e_{j}}+\ddot{z}\vec{e_{k}}</script><p><strong>平面极坐标系</strong>：其基底与笛卡尔坐标系基底满足变换关系：</p>
-<script type="math/tex; mode=display">
-\begin{cases} 
-\vec{e_{r}} = \cos\theta \vec{e_{i}}+\sin\theta \vec{e_{j}} \\ 
-\vec{e_{\theta}} = -\sin\theta \vec{e_{i}}+\cos\theta \vec{e_{j}}\\ 
-\end{cases}</script><p>显然，在平面极坐标系下，基本物理量可表示成如下形式：</p>
-<script type="math/tex; mode=display">
-\vec{r} = r\vec{e_{r}}\\ 
-\vec{v} = \dot{r}\vec{e_{r}}+r\dot{\theta}\vec{e_{\theta}}\\ 
-\vec{a} = (\ddot{r}-r\dot{\theta}^{2})\vec{e_{r}}+(2\dot{r}\dot{\theta}+r\ddot{\theta})\vec{e_{\theta}}</script><p>数学推导如下：</p>
-<p>先考虑证明：$\dot{\vec{e_{r}}} = \dot{\theta}\vec{e_{\theta}},\dot{\vec{e_{\theta}}} = -\dot{\theta}\vec{e_{r}}$ ,利用极坐标与直角坐标基底的变换关系可轻易证明。</p>
-<p>现考虑位矢：$\vec{r} = r\vec{e_{r}}$ .</p>
-<p>根据速度的定义式：</p>
-<script type="math/tex; mode=display">
-\vec{v} = \cfrac{\mathrm d\vec{r}}{dt} = \cfrac{\mathrm{d}r}{\mathrm dt}\vec{e_{r}}+r\dot{\vec{e_{r}}} =\dot{r}\vec{e_{r}}+r\dot\theta\vec{e_{\theta}}</script><p>再根据加速度的定义式：</p>
-<script type="math/tex; mode=display">
-\vec{a} = \cfrac{\mathrm d\vec{v}}{dt} = (\ddot{r}-r\dot{\theta}^{2})\vec{e_{r}}+(2\dot{r}\dot{\theta}+r\ddot{\theta})\vec{e_{\theta}}</script><p><strong>自然坐标系：</strong>当质点被<strong>约束在给定轨迹上</strong>运动时，常利用此坐标系。其坐标原点为取在轨迹上某瞬间与运动质点重合的点。在该坐标系中，质点的位置通过弧坐标 $s$ 确定，用单位矢量$ \vec{e_{\tau}}$ 表示，称为切向量。与此同时，主法线的正方向指向运动轨迹的凹侧并且垂直于$\vec{e_{\tau}}$ ，用单位矢量$\vec{e_{n}}$ 表示。由切线，主法线，次发现的正方向组成右手螺旋系规定次法线的正方向，该正方向用单位矢量 $\vec{e_{b}}$表示，根据定义，有：$\vec{e_{b}} = \vec{e_{\tau}} \times \vec{e_{n}}$基底选用切向量和法向量来描述。在该坐标系下，运动的基本物理量可表示为：</p>
-<script type="math/tex; mode=display">
-\vec{r} = \vec{r}(s),s = s(t)\\ \vec{v} = \dot{r}\vec{e_{\tau}}\\ \vec{a} = \ddot{r}\vec{e_{\tau}}+\cfrac{v^{2}}{\rho}\vec{e_{n}}</script><p>值得一提的是，这里加速度有两个分量 $a_{\tau}$ 和 $a_{n}$ ,分别被称为切向加速度与法向加速度。其中$a_{n} = \frac{v^{2}}{\rho}$中的 $ρ$被称为质点所在位置轨迹的<strong>曲率半径</strong>,它还有一个定义式：$\rho = |\frac{\mathrm ds}{\mathrm d \theta}|$ .</p>
+<p>而为了描述物体的运动，我们需要引入自己的一套“语言体系”。首先为了简化对物理问题的研究，我们引入了<strong>质点</strong>这模型。其严格定义为：<strong>没有大小形状，只有质量的点。</strong>显然，质点模型是一个高度理想化理想模型，当我们研究一个物理问题时，物体的形状，体积对研究几乎甚至没有影响时，我们可以“放弃”对这些次要因素的研究，而是用一个只有质量的点来等效这个物体，从而对其进行研究。</p>
+<p>但是仅有质点是仅仅不够的，我们需要更多的“语言”来描述运动！由此产生了基本物理量。考虑到基本物理量都是用于描述质点在某一瞬时的运动状态，故其有<strong>瞬时性</strong>；此外，在不同的参考系下，我们观测到的基本物理量往往是不同的，这被称为<strong>相对性</strong>；在运动学中，物理量的变化往往有大小和方向两个方向，所以其有<strong>矢量性</strong>。描述运动的基本物理量如下：<br />
+<strong>位矢</strong> <span
+class="math inline">\(\vec{r}\)</span>:在参考系已经选定的情况下，某个确定的点指向质点所在位置的矢量，它用来描述质点位置随时间变化的规律。在运动学中，<span
+class="math inline">\(\vec{r}=
+\vec{r}(t)\)</span>被称为运动方程式，其对时间 $ t $ 单值可微。而 <span
+class="math inline">\(\vec{r}\)</span>在空间划过的曲线，通常被称为轨迹。<br />
+<strong>位移</strong> <span class="math inline">\(\Delta
+\vec{r}\)</span> :在给定位矢<span
+class="math inline">\(\vec{r}\)</span>后，为了描述在某一段时间<span
+class="math inline">\(\Delta
+t\)</span>内位矢的变化。我们引入位移这一概念，显然，它是$ t,t
+$的函数，表示为 <span class="math display">\[
+\vec{r}(t,\Delta t) = \vec{r}(t+\Delta t) - \vec{r}(t)
+\]</span> <strong>速度</strong> <span
+class="math inline">\(\vec{v}\)</span>
+:速度通常定义为位移与完成这段位移所需时间的比值，即： <span
+class="math display">\[
+\vec{v}= \cfrac{\mathrm{d}\vec{r} }{\mathrm dt}
+\]</span>
+形象地讲，速度常用来描述运动的快慢和方向，同位矢，它也是时间的单值可微函数。<br />
+<strong>加速度</strong><span class="math inline">\(\vec{a}\)</span>
+:加速度通常定义为速度该变量与完成这些改变所需时间的比值，即: <span
+class="math display">\[
+\vec{a}= \cfrac{\mathrm d\vec{v}}{\mathrm d t}
+\]</span> 同理，加速度通常用来描述速度改变的快慢与，方向。</p>
+<p>在基本物理量给出后，我们便需要观测（测量）这些物理量。自然而然，我们引入了<strong>参考系</strong>这一工具，参考系被称为用来基准的物体或物体组。其定量化结果就是我们所说的<strong>坐标系</strong>。在坐标系中，矢量可以用分量形式来描述，下介绍几种常见的坐标系：</p>
+<p><strong>标准正交坐标系：</strong>通常也称为<strong>笛卡尔坐标系</strong>，其基底满足
+$ = $ (即我们所说的右手系)。在标准坐标系中，给定矢量<span
+class="math inline">\(\vec{A}\)</span>可表示为： <span
+class="math display">\[
+\vec{A} = \sum_{i = 1}^{3}{A_{i}}\vec{e_{i}}
+\]</span> 其中: <span class="math display">\[
+A_{i} = \vec{A}\cdot\vec{e_{i}}
+\]</span> 即： <span class="math display">\[
+\vec{A} = \sum_{i = 1}^{3}{\vec { A } \cdot\vec{e_{i } } } \vec{e_{j}}
+\]</span> 在笛卡尔坐标系中，描述运动的基本物理量可写为： <span
+class="math display">\[
+\vec{r} = x\vec{e_{i}}+y\vec{e_{j}}+z\vec{e_ {k } } \\
+\vec{v} = \dot{x}\vec{e_{i}}+\dot{y}\vec{e_{j}}+\dot{z}\vec{e_{k}}\\
+\vec{a} = \ddot{x}\vec{e_{i}}+\ddot{y}\vec{e_{j}}+\ddot{z}\vec{e_{k}}
+\]</span></p>
+<p><strong>平面极坐标系</strong>：其基底与笛卡尔坐标系基底满足变换关系：
+<span class="math display">\[
+\begin{cases}
+\vec{e_{r}} = \cos\theta \vec{e_{i}}+\sin\theta \vec{e_{j}} \\
+\vec{e_{\theta}} = -\sin\theta \vec{e_{i}}+\cos\theta \vec{e_{j}}\\
+\end{cases}
+\]</span></p>
+<p>显然，在平面极坐标系下，基本物理量可表示成如下形式： <span
+class="math display">\[
+\vec{r} = r\vec{e_{r}}\\
+\vec{v} = \dot{r}\vec{e_{r}}+r\dot{\theta}\vec{e_{\theta}}\\
+\vec{a} =
+(\ddot{r}-r\dot{\theta}^{2})\vec{e_{r}}+(2\dot{r}\dot{\theta}+r\ddot{\theta})\vec{e_{\theta}}
+\]</span> 数学推导如下：</p>
+<p>先考虑证明：<span class="math inline">\(\dot{\vec{e_{r}}} =
+\dot{\theta}\vec{e_{\theta}},\dot{\vec{e_{\theta}}} =
+-\dot{\theta}\vec{e_{r}}\)</span>
+,利用极坐标与直角坐标基底的变换关系可轻易证明。</p>
+<p>现考虑位矢：<span class="math inline">\(\vec{r} =
+r\vec{e_{r}}\)</span> .</p>
+<p>根据速度的定义式： <span class="math display">\[
+\vec{v} = \cfrac{\mathrm d\vec{r}}{dt} = \cfrac{\mathrm{d}r}{\mathrm
+dt}\vec{e_{r}}+r\dot{\vec{e_{r}}}
+=\dot{r}\vec{e_{r}}+r\dot\theta\vec{e_{\theta}}
+\]</span> 再根据加速度的定义式：</p>
+<p><span class="math display">\[
+\vec{a} = \cfrac{\mathrm d\vec{v}}{dt} =
+(\ddot{r}-r\dot{\theta}^{2})\vec{e_{r}}+(2\dot{r}\dot{\theta}+r\ddot{\theta})\vec{e_{\theta}}
+\]</span>
+<strong>自然坐标系：</strong>当质点被<strong>约束在给定轨迹上</strong>运动时，常利用此坐标系。其坐标原点为取在轨迹上某瞬间与运动质点重合的点。在该坐标系中，质点的位置通过弧坐标
+<span class="math inline">\(s\)</span> 确定，用单位矢量$ $
+表示，称为切向量。与此同时，主法线的正方向指向运动轨迹的凹侧并且垂直于<span
+class="math inline">\(\vec{e_{\tau}}\)</span> ，用单位矢量<span
+class="math inline">\(\vec{e_{n}}\)</span>
+表示。由切线，主法线，次发现的正方向组成右手螺旋系规定次法线的正方向，该正方向用单位矢量
+<span
+class="math inline">\(\vec{e_{b}}\)</span>表示，根据定义，有：<span
+class="math inline">\(\vec{e_{b}} = \vec{e_{\tau}} \times
+\vec{e_{n}}\)</span>基底选用切向量和法向量来描述。在该坐标系下，运动的基本物理量可表示为：
+<span class="math display">\[
+\vec{r} = \vec{r}(s),s = s(t)\\ \vec{v} = \dot{r}\vec{e_{\tau}}\\
+\vec{a} = \ddot{r}\vec{e_{\tau}}+\cfrac{v^{2}}{\rho}\vec{e_{n}}
+\]</span> 值得一提的是，这里加速度有两个分量 <span
+class="math inline">\(a_{\tau}\)</span> 和 <span
+class="math inline">\(a_{n}\)</span>
+,分别被称为切向加速度与法向加速度。其中<span class="math inline">\(a_{n}
+= \frac{v^{2}}{\rho}\)</span>中的 <span
+class="math inline">\(ρ\)</span>被称为质点所在位置轨迹的<strong>曲率半径</strong>,它还有一个定义式：<span
+class="math inline">\(\rho = |\frac{\mathrm ds}{\mathrm d
+\theta}|\)</span> .</p>
 <p>在上面的讨论中，我们知道物体的同一运动在不同的参考系下，得到的结果也不同。但是客观上，物体的统一运动对应着唯一的物理过程，所以不同的参考系之间的运动学量也存在着对应关系，这便是我们引入相对运动的原因。</p>
 <p>运动学中，我们常常会引入<strong>静止参考系</strong>与<strong>运动参考系</strong>来进行研究，自然而然，运动的质点相对于运动参考系的运动被称为<strong>相对运动</strong>，而相对于静止参考系的运动被称为<strong>绝对运动</strong>，由于运动参考系的牵引，导致质点相对于静止参考系的运动被称为<strong>牵连运动。</strong>在引入这些工具后，我们便能定量地对相对运动进行研究。</p>
-<p>考虑任一矢量的时间变化率，不妨考虑两种对时间的微商：①<strong>绝对微商</strong> $\cfrac{\mathrm d}{\mathrm d t}$ ,相对于静止参考系的时间变化率；②<strong>相对微商</strong> $\cfrac{\mathrm {\tilde{d}}}{\mathrm dt}$,相对于运动参考系的时间变化率。两者之间存在着以下的对应关系：</p>
-<script type="math/tex; mode=display">
-\cfrac{\mathrm d\vec{a}}{\mathrm d t} = \cfrac{\mathrm {\tilde{d}\vec{a}}}{\mathrm dt} + \vec{\omega}\times\vec{a}</script><p>其中$\vec{\omega}$ 为运动参考系相对于静止参考系的角速度。</p>
-<p>现在考虑一个位矢，其在静止参考系下表示为$\vec{r}$ ,在运动参考系下表示为 $\vec{r’}$ ,显然，两位矢的关系为：</p>
-<script type="math/tex; mode=display">
-\vec{r'} = \vec{ r_ {0 } }+\vec{r}</script><p>根据速度的定义式，有<strong>速度合成定理：</strong></p>
-<script type="math/tex; mode=display">
-\vec{v'} = \cfrac{\mathrm d\vec{r_{0}}}{dt}+\cfrac{\mathrm d\vec{r}}{dt} = \vec{v_{0}}+\cfrac{\mathrm {\tilde{d}}\vec{r}}{dt}+\vec{\omega}\times\vec{r} = \vec{v_{0}}+\vec{v_{r}}+\vec{\omega}\times\vec{r}</script><p>其中相对速度为:</p>
-<script type="math/tex; mode=display">
-\vec{ v_{ r } } = \cfrac{ \mathrm{ \tilde{d}\vec{r } } }{\mathrm dt}</script><p>牵连速度为:</p>
-<script type="math/tex; mode=display">
-\vec{v_{0}}+\vec{\omega}\times\vec{r}</script><p>根据加速度的定义式，有<strong>加速度合成定理：</strong></p>
-<script type="math/tex; mode=display">
-\vec{a'} = \cfrac{\mathrm{d}\vec{v}}{\mathrm{d}t}  = \vec{a_{0}} + \vec{a_{r}}+\dot{\vec{\omega}}\times\vec{r}+\omega\times(\vec{\omega}\times\vec{r})+2\vec{\omega}\times\vec{v_{r}}</script><p>其中科里奥利加速度为:</p>
-<script type="math/tex; mode=display">
-\vec{a_{r}} = \cfrac{\mathrm{\tilde{d}\vec{v_{r} } } }{\mathrm dt}</script><p>相对加速度为:</p>
-<script type="math/tex; mode=display">
-\vec{a_{c}} = 2\vec{\omega}\times\vec{ v_{r} }</script><p>牵连加速度为:</p>
-<script type="math/tex; mode=display">
-\vec{a_{ 0 } }+\dot{ \vec{\omega } }\times\vec{r}+\omega\times( \vec{ \omega }\times\vec{ r })</script><p>在构建了以上的“语言体系”后，我们便可以完整地描述物体的运动了！</p>
-<hr>
+<p>考虑任一矢量的时间变化率，不妨考虑两种对时间的微商：①<strong>绝对微商</strong>
+<span class="math inline">\(\cfrac{\mathrm d}{\mathrm d t}\)</span>
+,相对于静止参考系的时间变化率；②<strong>相对微商</strong> <span
+class="math inline">\(\cfrac{\mathrm {\tilde{d}}}{\mathrm
+dt}\)</span>,相对于运动参考系的时间变化率。两者之间存在着以下的对应关系：
+<span class="math display">\[
+\cfrac{\mathrm d\vec{a}}{\mathrm d t} = \cfrac{\mathrm
+{\tilde{d}\vec{a}}}{\mathrm dt} + \vec{\omega}\times\vec{a}
+\]</span> 其中<span class="math inline">\(\vec{\omega}\)</span>
+为运动参考系相对于静止参考系的角速度。</p>
+<p>现在考虑一个位矢，其在静止参考系下表示为<span
+class="math inline">\(\vec{r}\)</span> ,在运动参考系下表示为 <span
+class="math inline">\(\vec{r&#39;}\)</span> ,显然，两位矢的关系为：
+<span class="math display">\[
+\vec{r&#39;} = \vec{ r_ {0 } }+\vec{r}
+\]</span> 根据速度的定义式，有<strong>速度合成定理：</strong> <span
+class="math display">\[
+\vec{v&#39;} = \cfrac{\mathrm d\vec{r_{0}}}{dt}+\cfrac{\mathrm
+d\vec{r}}{dt} = \vec{v_{0}}+\cfrac{\mathrm
+{\tilde{d}}\vec{r}}{dt}+\vec{\omega}\times\vec{r} =
+\vec{v_{0}}+\vec{v_{r}}+\vec{\omega}\times\vec{r}
+\]</span> 其中相对速度为: <span class="math display">\[
+\vec{ v_{ r } } = \cfrac{ \mathrm{ \tilde{d}\vec{r } } }{\mathrm dt}
+\]</span> 牵连速度为: <span class="math display">\[
+\vec{v_{0}}+\vec{\omega}\times\vec{r}
+\]</span> 根据加速度的定义式，有<strong>加速度合成定理：</strong> <span
+class="math display">\[
+\vec{a&#39;} = \cfrac{\mathrm{d}\vec{v}}{\mathrm{d}t}  = \vec{a_{0}} +
+\vec{a_{r}}+\dot{\vec{\omega}}\times\vec{r}+\omega\times(\vec{\omega}\times\vec{r})+2\vec{\omega}\times\vec{v_{r}}
+\]</span> 其中科里奥利加速度为: <span class="math display">\[
+\vec{a_{r}} = \cfrac{\mathrm{\tilde{d}\vec{v_{r} } } }{\mathrm dt}
+\]</span> 相对加速度为: <span class="math display">\[
+\vec{a_{c}} = 2\vec{\omega}\times\vec{ v_{r} }
+\]</span> 牵连加速度为: <span class="math display">\[
+\vec{a_{ 0 } }+\dot{ \vec{\omega } }\times\vec{r}+\omega\times( \vec{
+\omega }\times\vec{ r })
+\]</span></p>
+<p>在构建了以上的“语言体系”后，我们便可以完整地描述物体的运动了！</p>
+<hr />
 <p><strong>参考文献：</strong></p>
 <p><strong>[1]梁昆淼 《力学》</strong></p>
 
