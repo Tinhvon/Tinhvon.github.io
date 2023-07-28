@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>微积分-Chapter2-导数及其应用-基本概念</title>
+    <link href="/2023/07/29/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <url>/2023/07/29/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    
+    <content type="html"><![CDATA[<h1 id="导数及其应用">导数及其应用</h1><h2 id="基本概念">基本概念</h2><p>在第一章中，我们介绍了<strong>极限</strong>这一研究函数的重要工具，本章我们借助极限，可以引入一个新的工具——<strong>导数</strong></p><h3 id="导数">导数</h3><p>中学阶段我们已经接触过导数，下面我们给出其定义：</p><div class="note note-primary">            <p><strong>Definition</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,若<spanclass="math inline">\(\lim\limits_{\Delta x \to 0}\cfrac{f(x+\Deltax)-f(x)}{\Delta x} = A,x+\Delta x \in (a,b)\)</span>，则称<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x\)</span>点<strong>可导</strong>，并称<spanclass="math inline">\(A\)</span>为其<strong>导数值</strong>，记作<spanclass="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x}=y&#39;=f&#39;(x)=\dot{y}= A\)</span></p>          </div><p><strong>Note1</strong>:对于导数，物理学中我们常称其为“微商”，是一个新的函数（导函数），简称导数。对于<spanclass="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x}\)</span>,我们常理解为函数的改变量与自变量改变量比值<spanclass="math inline">\(\cfrac{\Delta y}{\Delta x}\)</span>的极限。</p><p><strong>Note2</strong>：对于一元函数<spanclass="math inline">\(f(x)\)</span>，其<strong>可导一定连续</strong>，但是<strong>连续不一定可导</strong>，考虑函数<spanclass="math inline">\(f(x) = |x|\)</span>在<spanclass="math inline">\(x=0\)</span>处的行为即可。</p><p><strong>Note3</strong>：函数<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>可导，指<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>内任意一点可导，且在端点处存在单侧导数。</p><p><strong>Note4</strong>：<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>可导，<spanclass="math inline">\(f&#39;(x)\in C[a,b]\)</span>,称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>连续可导，记为<spanclass="math inline">\(f(x) \in C^1[a,b]\)</span></p><h3 id="单侧导数">单侧导数</h3><p>我们可以效仿单侧极限，给出单侧导数的定义：</p><div class="note note-primary">            <p><strong>Definition</strong>：设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,则将<spanclass="math inline">\(\lim\limits_{x\tox_0^+}\cfrac{f(x)-f(x_0)}{x-x_0}\)</span>定义为<strong>右导数</strong>，记作<spanclass="math inline">\(f_{+}^{&#39;}(x_0)\)</span>.</p><p><strong>Definition</strong>：设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,则将<spanclass="math inline">\(\lim\limits_{x\tox_0^-}\cfrac{f(x)-f(x_0)}{x-x_0}\)</span>定义为<strong>左导数</strong>，记作<spanclass="math inline">\(f_{+}^{&#39;}(x_0)\)</span>.</p>          </div><p>与极限相同，函数<span class="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处可导的充要条件是函数在<spanclass="math inline">\(x = x_0\)</span>的左右导数均存在，且相等。</p><p><strong>Note1</strong>：我们需要区分几种概念的符号表示，如<spanclass="math inline">\(f(x_0^+)\)</span>表示的是<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处的<strong>右极限</strong>；<spanclass="math inline">\(f^{&#39;}(x_0^+)\)</span>表示的是<spanclass="math inline">\(f&#39;(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处的<strong>右极限</strong>;而<spanclass="math inline">\(f_{+}^{&#39;}(x_0)\)</span>表示的是<strong>右导数</strong>。一般而言，<strong>导函数的右极限</strong>不一定等于<strong>右导数</strong>。</p><h3 id="导数的几何意义">导数的几何意义</h3><p>最后我们讨论一下导数的几何意义，给出严格的定理：</p><div class="note note-danger">            <p><strong>Theorem</strong>:<span class="math inline">\(y =f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处的导数，即为曲线<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处切线的<strong>斜率</strong>，其中<spanclass="math inline">\((x_0,f(x_0))\)</span>在曲线上，切线斜率为<spanclass="math inline">\(f&#39;(x_0)\)</span>,切线方程为<spanclass="math inline">\(y-f(x_0)=f&#39;(x_0)(x-x_0)\)</span>.</p>          </div><p><strong>Note1</strong>:在给出切线方程的同时，我们可以给出<strong>法线方程</strong>，此时仅有斜率的改变，即<spanclass="math inline">\(y-f(x_0)=-\cfrac{1}{f&#39;(x_0)}(x-x_0)\)</span>.</p><p>由此我们可以得知：可导<spanclass="math inline">\(\Rightarrow\)</span>切线存在；切线存在$<spanclass="math inline">\(可导或者导数为\)</span>$.</p><div class="note note-success">            <p><strong>exp1</strong>:求<spanclass="math inline">\(y=x^2\)</span>在<spanclass="math inline">\((1,1)\)</span>处的切线方程。</p><p><strong>Solution</strong>:<span class="math inline">\(f&#39;(1) = 2\times 1 = 2\)</span></p><p>故切线方程为<span class="math inline">\(y-1 = 2(x-1)\)</span>即<spanclass="math inline">\(y=2x-1\)</span></p>          </div><h3 id="基本初等函数导数表">基本初等函数导数表</h3><p>最后附上基本初等函数表：</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>Calculus</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Notes</tag>
+      
+      <tag>Study</tag>
+      
+      <tag>Calculus</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>光学-Chapter2-光的传播</title>
     <link href="/2023/07/17/%E5%85%89%E5%AD%A6-Chapter2-%E5%85%89%E7%9A%84%E4%BC%A0%E6%92%AD/"/>
     <url>/2023/07/17/%E5%85%89%E5%AD%A6-Chapter2-%E5%85%89%E7%9A%84%E4%BC%A0%E6%92%AD/</url>
