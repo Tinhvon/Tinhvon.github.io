@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.1k 字
+          2.9k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          26 分钟
+          25 分钟
         
       </span>
     
@@ -293,36 +293,29 @@
             
               <div class="markdown-body">
                 
-                <h1 id="极限与连续-part-3">极限与连续 (Part 3)</h1>
-<h1 id="例题">例题</h1>
-<p>最后我们给出一些极限的例题吧！</p>
+                <h1 id="极限与连续-Part-3"><a href="#极限与连续-Part-3" class="headerlink" title="极限与连续 (Part 3)"></a>极限与连续 (Part 3)</h1><h1 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h1><p>最后我们给出一些极限的例题吧！</p>
 <div class="note note-success">
-            <p><strong>exp1</strong>:求极限<spanclass="math inline">\(\lim\limits_{x\to+\infty}[\sqrt[3]{(x+a)(x+b)(x+c)}-x]\)</span>.</p><p><strong>Solution</strong>:</p><p><span class="math inline">\(\begin{align}I &amp;=\lim\limits_{x\to+\infty}\cfrac{[\sqrt[3]{(1+\frac{1}{x})(1+\frac{b}{x})(1+\frac{c}{x})}-1]}{\frac{1}{x}}\\ &amp;= \lim\limits_{t \to0}\cfrac{[\sqrt[3]{(1+t)(1+t)(1+t)}-1]}{t}\\&amp;=\lim\limits_{t \to0}\cfrac{\sqrt[3]{1+(a+b+c)t+o(t)}-1}{(a+b+c)t+o(t)}\cdot\cfrac{(a+b+c)t+o(t)}{t} \\ &amp;=\cfrac{1}{3}(a+b+c)\end{align}\)</span></p>
+            <p><strong>exp1</strong>:求极限$\lim\limits_{x\to +\infty}[\sqrt[3]{(x+a)(x+b)(x+c)}-x]$.</p><p><strong>Solution</strong>:</p><p>$\begin{align}I &amp;=\lim\limits_{x\to +\infty}\cfrac{[\sqrt[3]{(1+\frac{1}{x})(1+\frac{b}{x})(1+\frac{c}{x})}-1]}{\frac{1}{x}} \\ &amp;= \lim\limits_{t \to 0}\cfrac{[\sqrt[3]{(1+t)(1+t)(1+t)}-1]}{t}\\&amp;=\lim\limits_{t \to 0}\cfrac{\sqrt[3]{1+(a+b+c)t+o(t)}-1}{(a+b+c)t+o(t)}\cdot \cfrac{(a+b+c)t+o(t)}{t} \\ &amp;= \cfrac{1}{3}(a+b+c)\end{align}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp2</strong>:求极限<spanclass="math inline">\(\lim\limits_{x\to 0^+}\cfrac{x^x-(\sinx)^x}{x^2\arctan x}\)</span></p><p><strong>Solution</strong>:</p><p><span class="math inline">\(\begin{align}I &amp;=\lim\limits_{x\to0^+}(-x^x)\cfrac{(\frac{\sin x}{x})^x-1}{x^3} \\ &amp;=\lim\limits_{x\to 0^+}\cfrac{e^x\ln{\frac{\sin x}{x}}-1}{-x^3} \\ &amp;=\lim\limits_{x\to 0^+}-\cfrac{\ln{\frac{\sin x}{x}}}{x^2} \\ &amp;=\lim\limits_{x\to 0^+}-\cfrac{\ln({1+\frac{\sin x-x}{x}})}{x^2} \\&amp;= \lim\limits_{x\to 0^+}-\cfrac{\sin x-x}{x^3} \\ &amp;=\cfrac{1}{6}\end{align}\)</span></p>
+            <p><strong>exp2</strong>:求极限$\lim\limits_{x\to 0^+}\cfrac{x^x-(\sin x)^x}{x^2\arctan x}$</p><p><strong>Solution</strong>:</p><p>$\begin{align}I &amp;=\lim\limits_{x\to 0^+}(-x^x)\cfrac{(\frac{\sin x}{x})^x-1}{x^3} \\ &amp;= \lim\limits_{x\to 0^+}\cfrac{e^x\ln{\frac{\sin x}{x}}-1}{-x^3} \\ &amp;= \lim\limits_{x\to 0^+}-\cfrac{\ln{\frac{\sin x}{x}}}{x^2} \\ &amp;= \lim\limits_{x\to 0^+}-\cfrac{\ln({1+\frac{\sin x-x}{x}})}{x^2} \\ &amp;= \lim\limits_{x\to 0^+}-\cfrac{\sin x-x}{x^3} \\ &amp;= \cfrac{1}{6}\end{align}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp3</strong>:已知数列满足递推关系:<spanclass="math inline">\(x_1=a,x_2=b,x_{n+2}=\cfrac{x_{n+1}+x_{n}}{2},\)</span>求<spanclass="math inline">\(\lim\limits_{n \to \infty }x_n\)</span></p><p><strong>Solution</strong>:化简递推关系,有:</p><p><span class="math inline">\(x_{n+2}-x_{n+1}=-\cfrac{1}{2}(x_{n+1}-x_{n}) = \cfrac{1}{2^2}(x_n-x_{n-1}) = ... =(-1)^{n}\cfrac{1}{2^n}(b-a)\)</span></p><p>同理有<span class="math inline">\(x_{n+1}-x_{n} =(-1)^{n-1}\cfrac{1}{2^{n-1}}(b-a)\)</span></p><p>故有<span class="math inline">\(x_{n+2}-x_{1} =(1-\cfrac{1}{2}+\cfrac{1}{2^2}+...+(-1)^n\cfrac{1}{2^n})(b-a)\)</span></p><p>故<span class="math inline">\(\lim\limits_{n \to \infty }x_n =a+\cfrac{2(b-a)}{3}= \cfrac{a+2b}{3}\)</span></p>
+            <p><strong>exp3</strong>:已知数列满足递推关系:$x_1=a,x_2=b,x_{n+2}=\cfrac{x_{n+1}+x_{n}}{2},$求$\lim\limits_{n \to \infty }x_n$</p><p><strong>Solution</strong>:化简递推关系,有:</p><p>$x_{n+2}-x_{n+1} =-\cfrac{1}{2}(x_{n+1}-x_{n}) = \cfrac{1}{2^2}(x_n-x_{n-1}) = … = (-1)^{n}\cfrac{1}{2^n}(b-a)$</p><p>同理有$x_{n+1}-x_{n} = (-1)^{n-1}\cfrac{1}{2^{n-1}}(b-a)$</p><p>故有$x_{n+2}-x_{1} = (1-\cfrac{1}{2}+\cfrac{1}{2^2}+…+(-1)^n\cfrac{1}{2^n})(b-a)$</p><p>故$\lim\limits_{n \to \infty }x_n = a+\cfrac{2(b-a)}{3}= \cfrac{a+2b}{3}$</p>
           </div>
-<p>同理,若<strong>exp3</strong>条件改为<span
-class="math inline">\(x_1=a,x_2=b&gt;0,x_{n+2} =
-\sqrt{x_nx_{n+1}}\)</span>,则同理可求<span
-class="math inline">\(\lim\limits_{n\to \infty}x_{n} =
-\sqrt[3]{ab^2}\)</span></p>
+<p>同理,若<strong>exp3</strong>条件改为$x_1=a,x_2=b&gt;0,x_{n+2} = \sqrt{x_nx_{n+1}}$,则同理可求$\lim\limits_{n\to \infty}x_{n} = \sqrt[3]{ab^2}$</p>
 <div class="note note-success">
-            <p><strong>exp4</strong>:已知数列<spanclass="math inline">\(\{x_n\}\)</span>满足<spanclass="math inline">\(0&lt;x_1&lt;\pi,x_{n+1}=\sin{x_n}\)</span></p><ul><li>证明:<span class="math inline">\(\lim\limits_{n \to\infty}x_n\)</span>存在并求其值；</li><li>求<spanclass="math inline">\(\lim\limits_{n\to\infty}(\cfrac{x_{n+1}}{x_{n}})^{1/x_n^2}\)</span></li></ul><p><strong>Solution</strong>:</p><ul><li>我们考虑用归纳法证明<span class="math inline">\(\{x_n\}\)</span>单调有界:</li></ul><p>​ 当<span class="math inline">\(n=1\)</span>时,有<spanclass="math inline">\(0&lt;x_2 = \sin{x_1} \leq x_1&lt;\pi\)</span></p><p>​ 设<span class="math inline">\(0&lt;x_n&lt;\pi\)</span>时,有<spanclass="math inline">\(0&lt;x_{n+1}=\sin{x_n}\leq x_{n}&lt;\pi\)</span></p><p>​ 故<span class="math inline">\(\{x_n \}\)</span>单调递减且有下界<spanclass="math inline">\(\Rightarrow\lim\limits_{n \to\infty}x_n\)</span>存在,且设其为<spanclass="math inline">\(a\)</span>,故有<span class="math inline">\(a =\sin{a} \Rightarrow a=0\)</span></p><ul><li></li></ul><p><span class="math inline">\(\begin{aligned}I&amp;=\lim\limits_{n\to\infty}(\cfrac{x_{n+1}}{x_n})^{1/x_n^2} \\&amp;=\lim\limits_{n\to\infty}(\cfrac{\sin{x_n}}{x_n})^{1/x_n^2} \\ &amp;=\lim\limits_{n\to\infty}(1+\cfrac{\sin{x_n}-x_n}{x_n})^{x_n/(\sin{x_n}-x_n)\cdot(\sin{x_n}-x_n)/x_n^3} \\ &amp;=e^{-\frac{1}{6}}\end{aligned}\)</span></p>
+            <p><strong>exp4</strong>:已知数列$\{x_n\}$满足$0&lt;x_1&lt;\pi,x_{n+1}=\sin{x_n}$</p><ul><li>证明:$\lim\limits_{n \to \infty}x_n$存在并求其值；</li><li>求$\lim\limits_{n\to\infty}(\cfrac{x_{n+1}}{x_{n}})^{1/x_n^2}$</li></ul><p><strong>Solution</strong>:</p><ul><li>我们考虑用归纳法证明$\{x_n \}$单调有界:</li></ul><p>​       当$n=1$时,有$0&lt;x_2 = \sin{x_1} \leq x_1&lt;\pi$</p><p>​      设$0&lt;x_n&lt;\pi$时,有$0&lt;x_{n+1}=\sin{x_n}\leq x_{n}&lt; \pi$</p><p>​      故$\{x_n \}$单调递减且有下界$\Rightarrow\lim\limits_{n \to \infty}x_n$存在,且设其为$a$,故有$a = \sin{a} \Rightarrow a=0$</p><ul><li><p>$\begin{aligned}I&amp;= \lim\limits_{n\to\infty}(\cfrac{x_{n+1}}{x_n})^{1/x_n^2} \\&amp;= \lim\limits_{n\to\infty}(\cfrac{\sin{x_n}}{x_n})^{1/x_n^2} \\ &amp;= \lim\limits_{n\to\infty}(1+\cfrac{\sin{x_n}-x_n}{x_n})^{x_n/(\sin{x_n}-x_n)\cdot (\sin{x_n}-x_n)/x_n^3} \\ &amp;= e^{-\frac{1}{6}}\end{aligned}$</p></li></ul>
           </div>
 <div class="note note-success">
-            <p><strong>exp5</strong>:函数<span class="math inline">\(f(x)\inC[a,b],x_i \in [a,b],\sum\limits_{i=1}^{n}\lambda_i=1(\lambda_i &gt;0)\)</span>,求证<span class="math inline">\(\exists \xi \in[a,b]\)</span>,使得<span class="math inline">\(f(\xi) =\sum\limits_{i=1}^{n}\lambda_if(x_i)\)</span></p><p><strong>Proof</strong>:设函数在<spanclass="math inline">\([a,b]\)</span>上的最大值为<spanclass="math inline">\(M\)</span>,最小值为<spanclass="math inline">\(m\)</span></p><p>则有<span class="math inline">\(m \leq\sum\limits_{i=1}^{n}\lambda_if(x_i) \leq M\)</span></p><p>由介值定理:<span class="math inline">\(\exists \xi \in[a,b]\)</span>,使得<span class="math inline">\(f(\xi) =\sum\limits_{i=1}^{n}\lambda_if(x_i)\)</span></p>
+            <p><strong>exp5</strong>:函数$f(x)\in C[a,b],x_i \in [a,b],\sum\limits_{i=1}^{n}\lambda_i=1(\lambda_i &gt; 0)$,求证$\exists \xi \in [a,b]$,使得$f(\xi) = \sum\limits_{i=1}^{n}\lambda_if(x_i)$</p><p><strong>Proof</strong>:设函数在$[a,b]$上的最大值为$M$,最小值为$m$</p><p>则有$m \leq \sum\limits_{i=1}^{n}\lambda_if(x_i) \leq M$</p><p>由介值定理:$\exists \xi \in [a,b]$,使得$f(\xi) = \sum\limits_{i=1}^{n}\lambda_if(x_i)$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp6</strong>:设<span class="math inline">\(f(x) \inC[0,n],f(a) =f(n)\)</span>,求证:<span class="math inline">\(\exists \xi\in (0,n-1)\)</span>,使得<span class="math inline">\(f(\xi+1)=f(\xi)\)</span></p><p><strong>Proof</strong>:构造<spanclass="math inline">\(F(x)=f(x+1)-f(x),x\in[0,n-1]\)</span></p><p><span class="math inline">\(F(k)=f(k+1)-f(k) \RightarrowF(0)+F(1)+...+F(n-1)=f(n)-f(0)=0\)</span></p><p><span class="math inline">\(\exists \xi \in (0,n-1),\RightarrowF(\xi) = \cfrac{F(0)+F(1)+...+F(n-1)}{n} = 0\)</span>,即<spanclass="math inline">\(f(\xi +1) = f(\xi)\)</span></p>
+            <p><strong>exp6</strong>:设$f(x) \in C[0,n],f(a) =f(n)$,求证:$\exists \xi \in (0,n-1)$,使得$f(\xi +1)=f(\xi)$</p><p><strong>Proof</strong>:构造$F(x)=f(x+1)-f(x),x\in[0,n-1]$</p><p>$F(k)=f(k+1)-f(k) \Rightarrow F(0)+F(1)+…+F(n-1)=f(n)-f(0)=0$</p><p>$\exists \xi \in (0,n-1),\Rightarrow F(\xi) = \cfrac{F(0)+F(1)+…+F(n-1)}{n} = 0$,即$f(\xi +1) = f(\xi)$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp7</strong>:<spanclass="math inline">\(f(x)\in(a,+\infty),\lim\limits_{x\toa^+}f(x)=A,\lim\limits_{x\to+\infty} = B,AB&lt;0\)</span>,求证<spanclass="math inline">\(\exists \xi \in (a,+\infty),f(\xi) =0\)</span></p><p><strong>Proof</strong>:不妨设<span class="math inline">\(A &lt; 0,B&gt; 0,\lim\limits_{x\to+\infty} = B\)</span>,根据极限的保号性可知<spanclass="math inline">\(\exists x_0 &gt; a \Rightarrow f(x_0) &gt;0\)</span></p><p>在<spanclass="math inline">\((a,x_0)\)</span>上,根据零点存在性定理,易知<spanclass="math inline">\(\exists \xi \in (a,+\infty),f(\xi) =0\)</span></p>
+            <p><strong>exp7</strong>:$f(x)\in(a,+\infty),\lim\limits_{x\to a^+}f(x)=A,\lim\limits_{x\to+\infty} = B,AB&lt;0$,求证$\exists \xi \in (a,+\infty),f(\xi) =0$</p><p><strong>Proof</strong>:不妨设$A &lt; 0,B &gt; 0,\lim\limits_{x\to+\infty} = B$,根据极限的保号性可知$\exists x_0 &gt; a \Rightarrow f(x_0) &gt; 0$</p><p>在$(a,x_0)$上,根据零点存在性定理,易知$\exists \xi \in (a,+\infty),f(\xi) =0$</p>
           </div>
-
                 
               </div>
             

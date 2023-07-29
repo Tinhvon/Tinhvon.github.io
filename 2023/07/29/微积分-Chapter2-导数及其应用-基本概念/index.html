@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.6k 字
+          1.5k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          14 分钟
+          13 分钟
         
       </span>
     
@@ -293,64 +293,31 @@
             
               <div class="markdown-body">
                 
-                <h1 id="导数及其应用">导数及其应用</h1>
-<h2 id="基本概念">基本概念</h2>
-<p>在第一章中，我们介绍了<strong>极限</strong>这一研究函数的重要工具，本章我们借助极限，可以引入一个新的工具——<strong>导数</strong></p>
-<h3 id="导数">导数</h3>
-<p>中学阶段我们已经接触过导数，下面我们给出其定义：</p>
+                <h1 id="导数及其应用"><a href="#导数及其应用" class="headerlink" title="导数及其应用"></a>导数及其应用</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>在第一章中，我们介绍了<strong>极限</strong>这一研究函数的重要工具，本章我们借助极限，可以引入一个新的工具——<strong>导数</strong></p>
+<h3 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h3><p>中学阶段我们已经接触过导数，下面我们给出其定义：</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,若<spanclass="math inline">\(\lim\limits_{\Delta x \to 0}\cfrac{f(x+\Deltax)-f(x)}{\Delta x} = A,x+\Delta x \in (a,b)\)</span>，则称<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x\)</span>点<strong>可导</strong>，并称<spanclass="math inline">\(A\)</span>为其<strong>导数值</strong>，记作<spanclass="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x}=y&#39;=f&#39;(x)=\dot{y}= A\)</span></p>
+            <p><strong>Definition</strong>:设$f(x)$在$(a,b)$有定义，对于$x\in(a,b)$,若$\lim\limits_{\Delta x \to 0}\cfrac{f(x+\Delta x)-f(x)}{\Delta x} = A,x+\Delta x \in (a,b)$，则称$y=f(x)$在$x$点<strong>可导</strong>，并称$A$为其<strong>导数值</strong>，记作$\cfrac{\mathrm{d}y}{\mathrm{d}x}=y’=f’(x)=\dot{y} = A$</p>
           </div>
-<p><strong>Note1</strong>:对于导数，物理学中我们常称其为“微商”，是一个新的函数（导函数），简称导数。对于<span
-class="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x}\)</span>,我们常理解为函数的改变量与自变量改变量比值<span
-class="math inline">\(\cfrac{\Delta y}{\Delta x}\)</span>的极限。</p>
-<p><strong>Note2</strong>：对于一元函数<span
-class="math inline">\(f(x)\)</span>，其<strong>可导一定连续</strong>，但是<strong>连续不一定可导</strong>，考虑函数<span
-class="math inline">\(f(x) = |x|\)</span>在<span
-class="math inline">\(x=0\)</span>处的行为即可。</p>
-<p><strong>Note3</strong>：函数<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\([a,b]\)</span>可导，指<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\((a,b)\)</span>内任意一点可导，且在端点处存在单侧导数。</p>
-<p><strong>Note4</strong>：<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\([a,b]\)</span>可导，<span
-class="math inline">\(f&#39;(x)\in C[a,b]\)</span>,称<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\([a,b]\)</span>连续可导，记为<span
-class="math inline">\(f(x) \in C^1[a,b]\)</span></p>
-<h3 id="单侧导数">单侧导数</h3>
-<p>我们可以效仿单侧极限，给出单侧导数的定义：</p>
+<p><strong>Note1</strong>:对于导数，物理学中我们常称其为“微商”，是一个新的函数（导函数），简称导数。对于$\cfrac{\mathrm{d}y}{\mathrm{d}x}$,我们常理解为函数的改变量与自变量改变量比值$\cfrac{\Delta y}{\Delta x}$的极限。</p>
+<p><strong>Note2</strong>：对于一元函数$f(x)$，其<strong>可导一定连续</strong>，但是<strong>连续不一定可导</strong>，考虑函数$f(x) = |x|$在$x=0$处的行为即可。</p>
+<p><strong>Note3</strong>：函数$f(x)$在$[a,b]$可导，指$f(x)$在$(a,b)$内任意一点可导，且在端点处存在单侧导数。</p>
+<p><strong>Note4</strong>：$f(x)$在$[a,b]$可导，$f’(x)\in C[a,b]$,称$f(x)$在$[a,b]$连续可导，记为$f(x) \in C^1[a,b]$</p>
+<h3 id="单侧导数"><a href="#单侧导数" class="headerlink" title="单侧导数"></a>单侧导数</h3><p>我们可以效仿单侧极限，给出单侧导数的定义：</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>：设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,则将<spanclass="math inline">\(\lim\limits_{x\tox_0^+}\cfrac{f(x)-f(x_0)}{x-x_0}\)</span>定义为<strong>右导数</strong>，记作<spanclass="math inline">\(f_{+}^{&#39;}(x_0)\)</span>.</p><p><strong>Definition</strong>：设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,则将<spanclass="math inline">\(\lim\limits_{x\tox_0^-}\cfrac{f(x)-f(x_0)}{x-x_0}\)</span>定义为<strong>左导数</strong>，记作<spanclass="math inline">\(f_{+}^{&#39;}(x_0)\)</span>.</p>
+            <p><strong>Definition</strong>：设$f(x)$在$(a,b)$有定义，对于$x\in(a,b)$,则将$\lim\limits_{x\to x_0^+}\cfrac{f(x)-f(x_0)}{x-x_0}$定义为<strong>右导数</strong>，记作$f_{+}^{‘}(x_0)$.</p><p><strong>Definition</strong>：设$f(x)$在$(a,b)$有定义，对于$x\in(a,b)$,则将$\lim\limits_{x\to x_0^-}\cfrac{f(x)-f(x_0)}{x-x_0}$定义为<strong>左导数</strong>，记作$f_{+}^{‘}(x_0)$.</p>
           </div>
-<p>与极限相同，函数<span class="math inline">\(f(x)\)</span>在<span
-class="math inline">\(x=x_0\)</span>处可导的充要条件是函数在<span
-class="math inline">\(x = x_0\)</span>的左右导数均存在，且相等。</p>
-<p><strong>Note1</strong>：我们需要区分几种概念的符号表示，如<span
-class="math inline">\(f(x_0^+)\)</span>表示的是<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\(x=x_0\)</span>处的<strong>右极限</strong>；<span
-class="math inline">\(f^{&#39;}(x_0^+)\)</span>表示的是<span
-class="math inline">\(f&#39;(x)\)</span>在<span
-class="math inline">\(x=x_0\)</span>处的<strong>右极限</strong>;而<span
-class="math inline">\(f_{+}^{&#39;}(x_0)\)</span>表示的是<strong>右导数</strong>。一般而言，<strong>导函数的右极限</strong>不一定等于<strong>右导数</strong>。</p>
-<h3 id="导数的几何意义">导数的几何意义</h3>
-<p>最后我们讨论一下导数的几何意义，给出严格的定理：</p>
+<p>与极限相同，函数$f(x)$在$x=x_0$处可导的充要条件是函数在$x = x_0$的左右导数均存在，且相等。</p>
+<p><strong>Note1</strong>：我们需要区分几种概念的符号表示，如$f(x_0^+)$表示的是$f(x)$在$x=x_0$处的<strong>右极限</strong>；$f^{‘}(x_0^+)$表示的是$f’(x)$在$x=x_0$处的<strong>右极限</strong>;而$f_{+}^{‘}(x_0)$表示的是<strong>右导数</strong>。一般而言，<strong>导函数的右极限</strong>不一定等于<strong>右导数</strong>。</p>
+<h3 id="导数的几何意义"><a href="#导数的几何意义" class="headerlink" title="导数的几何意义"></a>导数的几何意义</h3><p>最后我们讨论一下导数的几何意义，给出严格的定理：</p>
 <div class="note note-danger">
-            <p><strong>Theorem</strong>:<span class="math inline">\(y =f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处的导数，即为曲线<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处切线的<strong>斜率</strong>，其中<spanclass="math inline">\((x_0,f(x_0))\)</span>在曲线上，切线斜率为<spanclass="math inline">\(f&#39;(x_0)\)</span>,切线方程为<spanclass="math inline">\(y-f(x_0)=f&#39;(x_0)(x-x_0)\)</span>.</p>
+            <p><strong>Theorem</strong>:$y = f(x)$在$x=x_0$处的导数，即为曲线$y=f(x)$在$x=x_0$处切线的<strong>斜率</strong>，其中$(x_0,f(x_0))$在曲线上，切线斜率为$f’(x_0)$,切线方程为$y-f(x_0)=f’(x_0)(x-x_0)$.</p>
           </div>
-<p><strong>Note1</strong>:在给出切线方程的同时，我们可以给出<strong>法线方程</strong>，此时仅有斜率的改变，即<span
-class="math inline">\(y-f(x_0)=-\cfrac{1}{f&#39;(x_0)}(x-x_0)\)</span>.</p>
-<p>由此我们可以得知：可导<span
-class="math inline">\(\Rightarrow\)</span>切线存在；切线存在$<span
-class="math inline">\(可导或者导数为\)</span>$.</p>
+<p><strong>Note1</strong>:在给出切线方程的同时，我们可以给出<strong>法线方程</strong>，此时仅有斜率的改变，即$y-f(x_0)=-\cfrac{1}{f’(x_0)}(x-x_0)$.</p>
+<p>由此我们可以得知：可导$\Rightarrow$切线存在；切线存在$\Rightarrow $可导或者导数为$\infty$.</p>
 <div class="note note-success">
-            <p><strong>exp1</strong>:求<spanclass="math inline">\(y=x^2\)</span>在<spanclass="math inline">\((1,1)\)</span>处的切线方程。</p><p><strong>Solution</strong>:<span class="math inline">\(f&#39;(1) = 2\times 1 = 2\)</span></p><p>故切线方程为<span class="math inline">\(y-1 = 2(x-1)\)</span>即<spanclass="math inline">\(y=2x-1\)</span></p>
+            <p><strong>exp1</strong>:求$y=x^2$在$(1,1)$处的切线方程。</p><p><strong>Solution</strong>:$f’(1) = 2 \times 1 = 2$</p><p>故切线方程为$y-1 = 2(x-1)$即$y=2x-1$</p>
           </div>
-<h3 id="基本初等函数导数表">基本初等函数导数表</h3>
-<p>最后附上基本初等函数表：</p>
+<h3 id="基本初等函数导数表"><a href="#基本初等函数导数表" class="headerlink" title="基本初等函数导数表"></a>基本初等函数导数表</h3><p>最后附上基本初等函数表：</p>
 
                 
               </div>
@@ -456,8 +423,8 @@ class="math inline">\(可导或者导数为\)</span>$.</p>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/17/%E5%85%89%E5%AD%A6-Chapter2-%E5%85%89%E7%9A%84%E4%BC%A0%E6%92%AD/" title="光学-Chapter2-光的传播">
-                        <span class="hidden-mobile">光学-Chapter2-光的传播</span>
+                      <a href="/2023/07/29/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/" title="微积分-Chapter2-导数及其应用-导数的四则运算">
+                        <span class="hidden-mobile">微积分-Chapter2-导数及其应用-导数的四则运算</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

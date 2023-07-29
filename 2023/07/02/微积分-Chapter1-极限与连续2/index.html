@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          16k 字
+          17k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          136 分钟
+          141 分钟
         
       </span>
     
@@ -293,209 +293,185 @@
             
               <div class="markdown-body">
                 
-                <h1 id="极限与连续part-2">极限与连续（Part 2）</h1>
-<h2 id="极限的计算">极限的计算</h2>
-<p>在讨论完极限的定义和各种性质后,我们主要关心的是<strong>如何计算极限</strong>,下面介绍一些计算极限的方法:</p>
-<h3 id="夹逼定理法">夹逼定理法</h3>
-<div class="note note-success">
-            <p><strong>exp1</strong>:计算<span class="math inline">\(\lim\limits_{n\to ∞}\sqrt[n]{1^n+2^n+...+2022^n}\)</span></p><p><strong>Solution</strong>:考虑数列<span class="math inline">\(a_n =\sqrt[n]{1^n+2^n+...+2022^n}\)</span></p><p>则有<span class="math inline">\(2022^n \leq 1^n+2^n+...+2022^n \leq2022\times 2022^n\)</span></p><p>即有<span class="math inline">\(2022 \leq a_n \leq2022\sqrt[n]{2022}\)</span></p><p>又<span class="math inline">\(\lim\limits_{n \to ∞}2022 =\lim\limits_{n \to ∞}2022\sqrt[n]{2022} = 2022\)</span></p><p>根据夹逼定理,有<span class="math inline">\(\lim\limits_{n \to∞}\sqrt[n]{1^n+2^n+...+2022^n} = 2022\)</span></p>
+                <h1 id="极限与连续（Part-2）"><a href="#极限与连续（Part-2）" class="headerlink" title="极限与连续（Part 2）"></a>极限与连续（Part 2）</h1><h2 id="极限的计算"><a href="#极限的计算" class="headerlink" title="极限的计算"></a>极限的计算</h2><p>在讨论完极限的定义和各种性质后,我们主要关心的是<strong>如何计算极限</strong>,下面介绍一些计算极限的方法:</p>
+<h3 id="夹逼定理法"><a href="#夹逼定理法" class="headerlink" title="夹逼定理法"></a>夹逼定理法</h3><div class="note note-success">
+            <p><strong>exp1</strong>:计算$\lim\limits_{n \to ∞}\sqrt[n]{1^n+2^n+…+2022^n}$</p><p><strong>Solution</strong>:考虑数列$a_n = \sqrt[n]{1^n+2^n+…+2022^n}$</p><p>则有$2022^n \leq 1^n+2^n+…+2022^n \leq 2022\times 2022^n$</p><p>即有$2022 \leq a_n \leq 2022\sqrt[n]{2022}$</p><p>又$\lim\limits_{n \to ∞}2022 = \lim\limits_{n \to ∞}2022\sqrt[n]{2022} = 2022$</p><p>根据夹逼定理,有$\lim\limits_{n \to ∞}\sqrt[n]{1^n+2^n+…+2022^n} = 2022$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp2</strong>:证明:<span class="math inline">\(\lim\limits_{n\to ∞}\cfrac{n^{k}}{a^{n}}(a &gt; 1) = 0,\lim\limits_{n \to ∞}\cfrac{\lnn}{n}= 0,\lim\limits_{n \to ∞}\cfrac{c^n}{n!}(c &gt; 1) =0\)</span>（数列增长速度的比较）</p><p><strong>Proof</strong>:</p><ul><li><p>首先证明<span class="math inline">\(\lim\limits_{n \to∞}\cfrac{n^{k}}{a^{n}}(a &gt; 1) = 0\)</span></p><p>记<span class="math inline">\(a = 1 + \alpha (\alpha &gt; 0)\Rightarrow a^{n} = (1 + \alpha)^{n} &gt;\cfrac{n(n-1)...(n-k)}{(k+1)!}\alpha^{k+1} =An(n-1)...(n-k)\)</span></p><p>有<span class="math inline">\(0 &lt; \cfrac{n^{k}}{a^{n}} &lt;\cfrac{n^k}{An(n-1)...(n-k)}\)</span></p><p>根据夹逼定理:<span class="math inline">\(\lim\limits_{n \to∞}\cfrac{n^{k}}{a^{n}}(a &gt; 1) = 0\)</span></p></li><li><p>再证明<span class="math inline">\(\lim\limits_{n \to ∞}\cfrac{\lnn}{n}= 0\)</span></p><p>记<span class="math inline">\(\ln n = t,n = e^t\)</span></p><p>则根据夹逼定理显然有<span class="math inline">\(\lim\limits_{n \to∞}\cfrac{\ln n}{n} = \lim\limits_{t \to ∞}\cfrac{t}{e^t} =0\)</span></p><p>再证明<span class="math inline">\(\lim\limits_{n \to ∞}\cfrac{\lnn}{n}= 0\)</span></p></li><li><p>最后证明<span class="math inline">\(\lim\limits_{n \to∞}\cfrac{c^n}{n!}(c &gt; 1) = 0\)</span></p><p>记<span class="math inline">\([c] = k\)</span></p><p>有<span class="math inline">\(0 &lt; \cfrac{c^n}{n!} = \cfrac{c\cdotc\cdot ...\cdot c}{1\cdot 2...\cdot k}\cdot \cfrac{c\cdot ... \cdotc\cdot c}{(k+1) ...(n-1)n}\)</span></p><p>化简有$0 &lt; &lt; $</p><p>根据夹逼定理<span class="math inline">\(\lim\limits_{n \to∞}\cfrac{c^n}{n!}(c &gt; 1) = 0\)</span></p></li></ul>
+            <p><strong>exp2</strong>:证明:$\lim\limits_{n \to ∞}\cfrac{n^{k}}{a^{n}}(a &gt; 1) = 0,\lim\limits_{n \to ∞}\cfrac{\ln n}{n}= 0,\lim\limits_{n \to ∞}\cfrac{c^n}{n!}(c &gt; 1) = 0$（数列增长速度的比较）</p><p><strong>Proof</strong>:</p><ul><li><p>首先证明$\lim\limits_{n \to ∞}\cfrac{n^{k}}{a^{n}}(a &gt; 1) = 0$</p><p>记$a = 1 + \alpha (\alpha &gt; 0) \Rightarrow a^{n} = (1 + \alpha)^{n} &gt; \cfrac{n(n-1)…(n-k)}{(k+1)!}\alpha^{k+1} = An(n-1)…(n-k)$</p><p>有$0 &lt; \cfrac{n^{k}}{a^{n}} &lt; \cfrac{n^k}{An(n-1)…(n-k)}$</p><p>根据夹逼定理:$\lim\limits_{n \to ∞}\cfrac{n^{k}}{a^{n}}(a &gt; 1) = 0$</p></li><li><p>再证明$\lim\limits_{n \to ∞}\cfrac{\ln n}{n}= 0$</p><p>记$\ln n = t,n = e^t$</p><p>则根据夹逼定理显然有$\lim\limits_{n \to ∞}\cfrac{\ln n}{n} = \lim\limits_{t \to ∞}\cfrac{t}{e^t} = 0$</p><p>再证明$\lim\limits_{n \to ∞}\cfrac{\ln n}{n}= 0$</p></li><li><p>最后证明$\lim\limits_{n \to ∞}\cfrac{c^n}{n!}(c &gt; 1) = 0$</p><p>记$[c] = k$</p><p>有$0 &lt; \cfrac{c^n}{n!} = \cfrac{c\cdot c\cdot …\cdot c}{1\cdot 2…\cdot k}\cdot \cfrac{c\cdot … \cdot c\cdot c}{(k+1) …(n-1)n}$</p><p>化简有$0 &lt; \cfrac{c^n}{n!} &lt; \cfrac{Ac}{n} $</p><p>根据夹逼定理$\lim\limits_{n \to ∞}\cfrac{c^n}{n!}(c &gt; 1) = 0$</p></li></ul>
           </div>
-<p><strong>Note</strong>:当<span class="math inline">\(n\to
-∞\)</span>时,数列增长速度从小到大排列为<span class="math inline">\(\ln n
-&lt; n^k &lt; a^n &lt; n! &lt; n^n(a &gt; 1)\)</span></p>
+<p><strong>Note</strong>:当$n\to ∞$时,数列增长速度从小到大排列为$\ln n &lt; n^k &lt; a^n &lt; n! &lt; n^n(a &gt; 1)$</p>
 <div class="note note-success">
-            <p><strong>exp3</strong>:证明以下极限<spanclass="math inline">\(\lim\limits_{x \to 0^{+}}[x]\cdot \cfrac{1}{x} =0,\lim\limits_{x \to 0}x \cdot [\cfrac{1}{x}] = 1\)</span></p><p><strong>Proof:</strong></p><ul><li><p>首先证明<span class="math inline">\(\lim\limits_{x \to0^{+}}[x]\cdot \cfrac{1}{x} = 0\)</span></p><p>当$x $时,<span class="math inline">\(0 &lt; [x]\cdot \cfrac{1}{x}&lt; 1\)</span></p><p>根据夹逼定理:<span class="math inline">\(\lim\limits_{x \to0^{+}}[x]\cdot \cfrac{1}{x} = 0\)</span></p></li><li><p>再证明<span class="math inline">\(\lim\limits_{x \to 0}x \cdot[\cfrac{1}{x}] = 1\)</span></p><p>当<span class="math inline">\(x \ne 0\)</span>时</p><p><span class="math inline">\(\cfrac{1}{x}-1 &lt; [\cfrac{1}{x}] \leq\cfrac{1}{x} \Rightarrow 1-x \leq x\cdot [\cfrac{1}{x}]\leq1\)</span></p><p>根据夹逼定理:<span class="math inline">\(\lim\limits_{x \to 0}x \cdot[\cfrac{1}{x}] = 1\)</span></p></li></ul>
+            <p><strong>exp3</strong>:证明以下极限$\lim\limits_{x \to 0^{+}}[x]\cdot \cfrac{1}{x} = 0,\lim\limits_{x \to 0}x \cdot [\cfrac{1}{x}] = 1$</p><p><strong>Proof:</strong></p><ul><li><p>首先证明$\lim\limits_{x \to 0^{+}}[x]\cdot \cfrac{1}{x} = 0$ </p><p>当$x \ne 0 $时,$0 &lt; [x]\cdot \cfrac{1}{x} &lt; 1$</p><p>根据夹逼定理:$\lim\limits_{x \to 0^{+}}[x]\cdot \cfrac{1}{x} = 0$</p></li><li><p>再证明$\lim\limits_{x \to 0}x \cdot [\cfrac{1}{x}] = 1$</p><p>当$x \ne 0$时</p><p>$\cfrac{1}{x}-1 &lt; [\cfrac{1}{x}] \leq \cfrac{1}{x} \Rightarrow 1-x \leq x\cdot [\cfrac{1}{x}]\leq 1$</p><p>根据夹逼定理:$\lim\limits_{x \to 0}x \cdot [\cfrac{1}{x}] = 1$</p></li></ul>
           </div>
 <div class="note note-success">
-            <p><strong>exp4</strong>:求解<span class="math inline">\(\lim\limits_{n\to ∞}\cfrac{1\cdot 3\cdot 5 \cdot...\cdot (2n-1)}{2\cdot 4\cdot 6\cdot...\cdot 2n}\)</span></p><p><strong>Solution</strong>:记<span class="math inline">\(a_n =\cfrac{1\cdot 3\cdot 5 \cdot...\cdot (2n-1)}{2\cdot 4\cdot 6\cdot...\cdot 2n}\)</span>对<spanclass="math inline">\(2n\)</span>进行放缩,有<spanclass="math inline">\(2n = \cfrac{2n-1+2n+1}{2}\geq\sqrt{(2n-1)(2n+1)}\)</span></p><p>故有<span class="math inline">\(0 &lt; a_n &lt;\cfrac{1}{\sqrt{2n+1}}\)</span></p><p>根据夹逼定理<span class="math inline">\(\lim\limits_{n \to∞}\cfrac{1\cdot 3\cdot 5 \cdot...\cdot (2n-1)}{2\cdot 4\cdot 6\cdot...\cdot 2n} = 0\)</span></p>
+            <p><strong>exp4</strong>:求解$\lim\limits_{n \to ∞}\cfrac{1\cdot 3\cdot 5 \cdot…\cdot (2n-1)}{2\cdot 4\cdot 6\cdot …\cdot 2n}$</p><p><strong>Solution</strong>:记$a_n = \cfrac{1\cdot 3\cdot 5 \cdot…\cdot (2n-1)}{2\cdot 4\cdot 6\cdot …\cdot 2n}$对$2n$进行放缩,有$2n = \cfrac{2n-1+2n+1}{2}\geq \sqrt{(2n-1)(2n+1)}$</p><p>故有$0 &lt; a_n &lt; \cfrac{1}{\sqrt{2n+1}}$</p><p>根据夹逼定理$\lim\limits_{n \to ∞}\cfrac{1\cdot 3\cdot 5 \cdot…\cdot (2n-1)}{2\cdot 4\cdot 6\cdot …\cdot 2n} = 0$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp5</strong>:计算<span class="math inline">\(\lim\limits_{n\to ∞}(\cfrac{1}{n^2+1}+\cfrac{1}{n^2 + 2^2} + ... + \cfrac{1}{n^2 +n^2})\)</span></p><p><strong>Solution</strong>:记<span class="math inline">\(a_n =\cfrac{1}{n^2+1}+\cfrac{1}{n^2 + 2^2} + ... + \cfrac{1}{n^2 +n^2}\)</span></p><p>有$ = &lt;a_n&lt; &lt; = $</p><p>即<span class="math inline">\(\cfrac{1}{2n} &lt; a_n &lt;\cfrac{1}{n}\)</span></p><p>根据夹逼定理<span class="math inline">\(\lim\limits_{n \to∞}(\cfrac{1}{n^2+1}+\cfrac{1}{n^2 + 2^2} + ... + \cfrac{1}{n^2 + n^2}) =0\)</span></p>
+            <p><strong>exp5</strong>:计算$\lim\limits_{n \to ∞}(\cfrac{1}{n^2+1}+\cfrac{1}{n^2 + 2^2} + … + \cfrac{1}{n^2 + n^2})$</p><p><strong>Solution</strong>:记$a_n = \cfrac{1}{n^2+1}+\cfrac{1}{n^2 + 2^2} + … + \cfrac{1}{n^2 + n^2}$</p><p>有$\cfrac{n}{n^2 + n^2} = \cfrac{1}{2n}&lt;a_n&lt;\cfrac{n}{n^2+1} &lt; \cfrac{n}{n^2} = \cfrac{1}{n} $</p><p>即$\cfrac{1}{2n} &lt; a_n &lt; \cfrac{1}{n}$</p><p>根据夹逼定理$\lim\limits_{n \to ∞}(\cfrac{1}{n^2+1}+\cfrac{1}{n^2 + 2^2} + … + \cfrac{1}{n^2 + n^2}) = 0$</p>
           </div>
-<h3 id="取对数">取对数</h3>
-<p>当我们遇到指数型的极限时,可以考虑取对数,即: <span
-class="math display">\[
-a^{b} = e^{b\ln a}
-\]</span> 下面给出几个例子:</p>
+<h3 id="取对数"><a href="#取对数" class="headerlink" title="取对数"></a>取对数</h3><p>当我们遇到指数型的极限时,可以考虑取对数,即:</p>
+<script type="math/tex; mode=display">
+a^{b} = e^{b\ln a}</script><p>下面给出几个例子:</p>
 <div class="note note-success">
-            <p><strong>exp1</strong>:计算<span class="math inline">\(\lim\limits_{x\to +\infty}x^{1/x}\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(\lim\limits_{x\to +\infty}x^{1/x} = \lim\limits_{x \to +\infty}e^{\ln x/x } =e^{\lim\limits_{x \to +\infty}\ln x/x} = e^{0} = 1\)</span></p>
+            <p><strong>exp1</strong>:计算$\lim\limits_{x \to +\infty}x^{1/x}$</p><p><strong>Solution</strong>:$\lim\limits_{x \to +\infty}x^{1/x} = \lim\limits_{x \to +\infty}e^{\ln x/x } = e^{\lim\limits_{x \to +\infty}\ln x/x} = e^{0} = 1$ </p>
           </div>
 <div class="note note-success">
-            <p><strong>exp2</strong>:计算<span class="math inline">\(\lim\limits_{x\to 0^{+}}x^x\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(\lim\limits_{x\to 0^{+}}x^x = \lim\limits_{x \to 0^{+}}e^{x\ln x} = e^{\lim\limits_{x\to 0^{+}}x\ln x} = e^0 = 1\)</span></p>
+            <p><strong>exp2</strong>:计算$\lim\limits_{x \to 0^{+}}x^x$</p><p><strong>Solution</strong>:$\lim\limits_{x \to 0^{+}}x^x = \lim\limits_{x \to 0^{+}}e^{x\ln x} = e^{\lim\limits_{x \to 0^{+}}x\ln x} = e^0 = 1$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp3</strong>:计算<span class="math inline">\(\lim\limits_{x\to 0^{+}}x^{\sin x}\)</span></p><p><strong>Solution</strong>:$<em>{x <sup>{+}}x</sup>{x} = </em>{x<sup>{+}}e</sup>{x x} = e^{_{x ^{+}}x x} = e^{1 } =1 $</p>
+            <p><strong>exp3</strong>:计算$\lim\limits_{x \to 0^{+}}x^{\sin x}$</p><p><strong>Solution</strong>:$\lim\limits_{x \to 0^{+}}x^{\sin x} = \lim\limits_{x \to 0^{+}}e^{\sin x \ln x} = e^{\lim\limits_{x \to 0^{+}}\cfrac{\sin x}{x}\cdot x \ln x} = e^{1 \times 0} =1 $ </p>
           </div>
 <div class="note note-success">
-            <p><strong>exp4</strong>:计算<span class="math inline">\(\lim\limits_{x\to +\infty}(\ln x)^{1/x}\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(\lim\limits_{x\to +\infty}(\ln x)^{1/x} =\lim\limits_{x \to +\infty} e^{\ln \ln x/ \lnx\cdot \ln x /x} = 1\)</span></p>
+            <p><strong>exp4</strong>:计算$\lim\limits_{x \to +\infty}(\ln x)^{1/x}$</p><p><strong>Solution</strong>:$\lim\limits_{x \to +\infty}(\ln x)^{1/x} =\lim\limits_{x \to +\infty} e^{\ln \ln x/ \ln x\cdot \ln x /x} = 1$</p>
           </div>
-<h3 id="利用两个重要极限">利用两个重要极限</h3>
-<p>此前我们曾介绍过两个重要极限,他们分别为: <span
-class="math display">\[
-\lim_{x \to 0}\cfrac{\sin x}{x} = 1,\lim_{x \to 0}(1+x)^{1/x} = e
-\]</span>
-利用两个重要极限,我们可以计算某些比较复杂代数式的极限,例题如下:</p>
+<h3 id="利用两个重要极限"><a href="#利用两个重要极限" class="headerlink" title="利用两个重要极限"></a>利用两个重要极限</h3><p>此前我们曾介绍过两个重要极限,他们分别为:</p>
+<script type="math/tex; mode=display">
+\lim_{x \to 0}\cfrac{\sin x}{x} = 1,\lim_{x \to 0}(1+x)^{1/x} = e</script><p> 利用两个重要极限,我们可以计算某些比较复杂代数式的极限,例题如下:</p>
 <div class="note note-success">
-            <p><strong>exp1</strong>:计算<span class="math inline">\(\lim\limits_{x\to 0}\cfrac{\sin (ax)}{\sin (bx)}(a,b \ne 0)\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(\lim\limits_{x\to 0}\cfrac{\sin (ax)}{\sin (bx)} = \lim\limits_{x \to 0}\cfrac{\sin(ax)}{ax}\cdot \cfrac{bx}{\sin(bx)} \cdot \cfrac{a}{b} =\cfrac{a}{b}\)</span></p>
+            <p><strong>exp1</strong>:计算$\lim\limits_{x \to 0}\cfrac{\sin (ax)}{\sin (bx)}(a,b \ne 0)$</p><p><strong>Solution</strong>:$\lim\limits_{x \to 0}\cfrac{\sin (ax)}{\sin (bx)} = \lim\limits_{x \to 0}\cfrac{\sin (ax)}{ax}\cdot \cfrac{bx}{\sin(bx)} \cdot \cfrac{a}{b} = \cfrac{a}{b}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp2</strong>:计算<span class="math inline">\(\lim\limits_{x\to 0}(1+ax)^{b/x}(a,b \ne 0)\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(\lim\limits_{x\to 0}(1+ax)^{b/x} = \lim\limits_{x \to 0}(1+ax)^{ab/ax} =e^{ab}\)</span></p>
+            <p><strong>exp2</strong>:计算$\lim\limits_{x \to 0}(1+ax)^{b/x}(a,b \ne 0)$</p><p><strong>Solution</strong>:$\lim\limits_{x \to 0}(1+ax)^{b/x} = \lim\limits_{x \to 0}(1+ax)^{ab/ax} = e^{ab}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp3</strong>:计算<span class="math inline">\(\lim\limits_{n\to +\infty}\cos(\cfrac{x}{2})\cdot ...\cdot \cos (\cfrac{x}{2^n})(x \ne0)\)</span></p><p><strong>Solution</strong>:记<span class="math inline">\(f(x) =\cos(\cfrac{x}{2})...\cos (\cfrac{x}{2^n})\)</span></p><p>则<span class="math inline">\(f(x) = \cfrac{\sin(\cfrac{x}{2^n})}{\sin (\cfrac{x}{2^n})}\cos(\cfrac{x}{2})...\cos(\cfrac{x}{2^n})\)</span></p><p>根据二倍角公式,反复迭代<spanclass="math inline">\(n\)</span>次,有</p><p>原式<span class="math inline">\(=\lim\limits_{n \to +\infty}\cfrac{\sin x}{2^n \sin (\cfrac{x}{2^n})} = \lim\limits_{n \to+\infty}\cfrac{\cfrac{x}{2^n}}{\sin \cfrac{x}{2^n}}\cfrac{\sin x}{x} =\cfrac{\sin x}{x}\)</span></p>
+            <p><strong>exp3</strong>:计算$\lim\limits_{n \to +\infty}\cos(\cfrac{x}{2})\cdot …\cdot \cos (\cfrac{x}{2^n})(x \ne 0)$</p><p><strong>Solution</strong>:记$f(x) = \cos(\cfrac{x}{2})…\cos (\cfrac{x}{2^n})$</p><p>则$f(x) = \cfrac{\sin (\cfrac{x}{2^n})}{\sin (\cfrac{x}{2^n})}\cos(\cfrac{x}{2})…\cos (\cfrac{x}{2^n})$</p><p>根据二倍角公式,反复迭代$n$次,有</p><p>原式$=\lim\limits_{n \to +\infty} \cfrac{\sin x}{2^n \sin (\cfrac{x}{2^n})} = \lim\limits_{n \to +\infty}\cfrac{\cfrac{x}{2^n}}{\sin \cfrac{x}{2^n}}\cfrac{\sin x}{x} = \cfrac{\sin x}{x}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp4</strong>:计算<span class="math inline">\(\lim\limits_{x\to 0}(1+\cos x)^{3\sec x}\)</span></p><p><strong>Solution</strong>:直接计算:原式<spanclass="math inline">\(=2^3 = 8\)</span></p>
+            <p><strong>exp4</strong>:计算$\lim\limits_{x \to 0}(1+\cos x)^{3\sec x}$</p><p><strong>Solution</strong>:直接计算:原式$=2^3 = 8$</p>
           </div>
 <p>Note:注意这个极限并不是重要极限,因为趋势不同.</p>
 <div class="note note-success">
-            <p><strong>exp5</strong>:计算<span class="math inline">\(\lim\limits_{x\to 0^{+}}(1+\cfrac{1}{n}+\cfrac{1}{n^2})^n\)</span>与<spanclass="math inline">\(\lim\limits_{n \to+\infty}(1+\cfrac{1}{n^2})^n\)</span></p><p><strong>Solution</strong>:</p><ul><li>首先求解<span class="math inline">\(\lim\limits_{x \to0^{+}}(1+\cfrac{1}{n}+\cfrac{1}{n^2})^n\)</span></li></ul><p>​ <span class="math inline">\(\lim\limits_{x \to0^{+}}(1+\frac{1}{n}+\frac{1}{n^2})^n = \lim\limits_{x \to0^{+}}[(1+\frac{n+1}{n^2})^{\frac{n^2}{n+1}}]^{\frac{n+1}{n}} =e\)</span></p><ul><li><p>再计算<span class="math inline">\(\lim\limits_{n \to+\infty}(1+\cfrac{1}{n^2})^n\)</span></p><p><span class="math inline">\(\lim\limits_{n \to+\infty}(1+\cfrac{1}{n^2})^n = \lim\limits_{n \to+\infty}[(1+\cfrac{1}{n^2})^{n^2}]^{1/n} = 1\)</span></p></li></ul>
+            <p><strong>exp5</strong>:计算$\lim\limits_{x \to 0^{+}}(1+\cfrac{1}{n}+\cfrac{1}{n^2})^n$与$\lim\limits_{n \to +\infty}(1+\cfrac{1}{n^2})^n$</p><p><strong>Solution</strong>:</p><ul><li>首先求解$\lim\limits_{x \to 0^{+}}(1+\cfrac{1}{n}+\cfrac{1}{n^2})^n$</li></ul><p>​      $\lim\limits_{x \to 0^{+}}(1+\frac{1}{n}+\frac{1}{n^2})^n = \lim\limits_{x \to 0^{+}}[(1+\frac{n+1}{n^2})^{\frac{n^2}{n+1}}]^{\frac{n+1}{n}} = e$</p><ul><li><p>再计算$\lim\limits_{n \to +\infty}(1+\cfrac{1}{n^2})^n$</p><p>$\lim\limits_{n \to +\infty}(1+\cfrac{1}{n^2})^n = \lim\limits_{n \to +\infty}[(1+\cfrac{1}{n^2})^{n^2}]^{1/n} = 1$</p></li></ul>
           </div>
 <div class="note note-success">
-            <p><strong>exp6</strong>:计算<span class="math inline">\(\lim\limits_{x\to 0^{+}}(\cfrac{a_1^x+...+a_n^x}{n})^{1/x}(a_i &gt;0,i =1,2,...,n)\)</span></p><p><strong>Solution</strong>:记<span class="math inline">\(\Delta =a_1^x-1+a_2^x-1+...+a_n^x-1\)</span></p><p><span class="math inline">\(\Rightarrow \lim\limits_{x \to0^{+}}(\cfrac{a_1^x+...+a_n^x}{n})^{1/x} = \lim\limits_{x \to0^{+}}[(1+\cfrac{\Delta}{n})^{n/\Delta}]^{1/x\cdot \Delta /n} =\sqrt[n]{a_1a_2...a_n}\)</span></p>
+            <p><strong>exp6</strong>:计算$\lim\limits_{x \to 0^{+}}(\cfrac{a_1^x+…+a_n^x}{n})^{1/x}(a_i &gt;0,i = 1,2,…,n)$</p><p><strong>Solution</strong>:记$\Delta = a_1^x-1+a_2^x-1+…+a_n^x-1$</p><p>$\Rightarrow \lim\limits_{x \to 0^{+}}(\cfrac{a_1^x+…+a_n^x}{n})^{1/x} = \lim\limits_{x \to 0^{+}}[(1+\cfrac{\Delta}{n})^{n/\Delta}]^{1/x\cdot \Delta /n} = \sqrt[n]{a_1a_2…a_n}$</p>
           </div>
-<h3 id="根式有理化">根式有理化</h3>
-<p>当所求极限的代数式存在较多根号时,可以考虑使用<strong>根式有理化</strong>,给出几个例子:</p>
+<h3 id="根式有理化"><a href="#根式有理化" class="headerlink" title="根式有理化"></a>根式有理化</h3><p>当所求极限的代数式存在较多根号时,可以考虑使用<strong>根式有理化</strong>,给出几个例子:</p>
 <div class="note note-success">
-            <p><strong>exp1</strong>:计算:<span class="math inline">\(\lim\limits_{x\rightarrow 3} \frac{\sqrt{5 x+1}-\sqrt[3]{20x+4}}{\sqrt{x+1}-2}\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(\lim\limits_{x\rightarrow 3} \frac{\sqrt{5 x+1}-\sqrt[3]{20 x+4}}{\sqrt{x+1}-2} =\lim\limits_{x \rightarrow 3} \frac{\frac{5(x-3)}{\sqrt{5x+1}+4}-\frac{20(x-3)}{(20 x+4)^{\frac{2}{3}}+4 \sqrt[3]{20x+4}+16}}{\frac{x-3}{\sqrt{x+1}+2}}=\frac{5}{6}\)</span></p>
-          </div>
-<div class="note note-success">
-            <p><strong>exp2</strong>:计算:<span class="math inline">\(\lim\limits_{x\rightarrow+\infty}(\sqrt{x+\sqrt{x+\sqrt{x}}}-\sqrt{x})\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(\lim\limits_{x\rightarrow+\infty}(\sqrt{x+\sqrt{x+\sqrt{x}}}-\sqrt{x}) =\lim\limits_{x \rightarrow+\infty}\frac{\sqrt{x+\sqrt{x}}}{\sqrt{x+\sqrt{x+\sqrt{x}}}+\sqrt{x}}=\frac{1}{2}\)</span></p>
+            <p><strong>exp1</strong>:计算:$\lim\limits_{x \rightarrow 3} \frac{\sqrt{5 x+1}-\sqrt[3]{20 x+4}}{\sqrt{x+1}-2}$</p><p><strong>Solution</strong>:$\lim\limits_{x \rightarrow 3} \frac{\sqrt{5 x+1}-\sqrt[3]{20 x+4}}{\sqrt{x+1}-2} = \lim\limits_{x \rightarrow 3} \frac{\frac{5(x-3)}{\sqrt{5 x+1}+4}-\frac{20(x-3)}{(20 x+4)^{\frac{2}{3}}+4 \sqrt[3]{20 x+4}+16}}{\frac{x-3}{\sqrt{x+1}+2}}=\frac{5}{6}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp3</strong>:计算:<span class="math inline">\(\lim\limits_{x\to -1}\frac{\frac{2}{1+2 x}+1}{\sqrt[3]{2+x}+x}\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(\lim\limits_{x\to -1}\cfrac{\cfrac{2}{1+2 x}+1}{\sqrt[3]{2+x}+x} = \lim\limits_{x \to-1}\cfrac{\cfrac{2(x+1)}{(1+2 x)^{\cfrac{2}{3}}-(1+2x)^{\cfrac{1}{3}}+1}}{\cfrac{2+x+x^3}{(2+x)^{\cfrac{2}{3}}-x(2+x)^{\cfrac{1}{3}}+x^2}}=\cfrac{1}{2}\)</span></p>
+            <p><strong>exp2</strong>:计算:$\lim\limits_{x \rightarrow+\infty}(\sqrt{x+\sqrt{x+\sqrt{x}}}-\sqrt{x})$</p><p><strong>Solution</strong>:$\lim\limits_{x \rightarrow+\infty}(\sqrt{x+\sqrt{x+\sqrt{x}}}-\sqrt{x}) = \lim\limits_{x \rightarrow+\infty} \frac{\sqrt{x+\sqrt{x}}}{\sqrt{x+\sqrt{x+\sqrt{x}}}+\sqrt{x}}=\frac{1}{2}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp4</strong>:计算:$ _{n } ()$</p><p><strong>Solution</strong>:$ <em>{n }() =</em>{n +}(-1)^n (-n )=_{n}(-1)^{n} =0 \ $</p>
-          </div>
-<h3 id="约分法">约分法</h3>
-<p>一般遇到两多项式商类型的极限,即: <span class="math display">\[
-\lim_{x \to x_0}\cfrac{P(x)}{Q(x)}
-\]</span> 其中<span
-class="math inline">\(P(x),Q(x)\)</span>是多项式,一个很常用的思路是<strong>因式分解</strong>,即约分法,下面给出几个例子:</p>
-<div class="note note-success">
-            <p><strong>exp1</strong>:计算<span class="math inline">\(\lim\limits_{x\rightarrow 1} \frac{x^m-1}{x^n-1} \quad\left(m, n \inN^{+}\right)\)</span></p><p><strong>Solution</strong>:$<em>{x } =</em>{x } = $</p>
+            <p><strong>exp3</strong>:计算:$\lim\limits_{x \to -1}\frac{\frac{2}{1+2 x}+1}{\sqrt[3]{2+x}+x}$</p><p><strong>Solution</strong>:$\lim\limits_{x \to -1}\cfrac{\cfrac{2}{1+2 x}+1}{\sqrt[3]{2+x}+x} =  \lim\limits_{x \to -1}\cfrac{\cfrac{2(x+1)}{(1+2 x)^{\cfrac{2}{3}}-(1+2 x)^{\cfrac{1}{3}}+1}}{\cfrac{2+x+x^3}{(2+x)^{\cfrac{2}{3}}-x(2+x)^{\cfrac{1}{3}}+x^2}}=\cfrac{1}{2}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp2</strong>:计算$_{x } $</p><p><strong>Solution</strong>:记<spanclass="math inline">\(\sqrt[n]{1+x}-1 = t\)</span></p><p>故<span class="math inline">\(\lim\limits_{x \to0}\cfrac{\sqrt[n]{1+x}-1}{x} = \lim\limits_{t \to 1}\cfrac{t-1}{t^n-1} =\cfrac{1}{n}\)</span></p>
+            <p><strong>exp4</strong>:计算:$ \lim\limits_{n \rightarrow \infty} \sin \left(\pi \sqrt{n^2+1}\right)$</p><p><strong>Solution</strong>:$ \lim\limits_{n \rightarrow \infty}\sin \left(\pi \sqrt{n^2+1}\right) =\lim\limits_{n \to +\infty}(-1)^n \sin \left(\pi \sqrt{n^2+1}-n \pi\right)=\lim\limits_{n \rightarrow \infty}(-1)^{n} \sin \frac{\pi}{\sqrt{n^2+1}+n}=0 \\<br>$</p>
           </div>
-<h3 id="利用单调有界原理">利用单调有界原理</h3>
-<p>首先回顾一下极限中的<strong>单调有界原理</strong></p>
+<h3 id="约分法"><a href="#约分法" class="headerlink" title="约分法"></a>约分法</h3><p>一般遇到两多项式商类型的极限,即:</p>
+<script type="math/tex; mode=display">
+\lim_{x \to x_0}\cfrac{P(x)}{Q(x)}</script><p>其中$P(x),Q(x)$是多项式,一个很常用的思路是<strong>因式分解</strong>,即约分法,下面给出几个例子:</p>
+<div class="note note-success">
+            <p><strong>exp1</strong>:计算$\lim\limits_{x \rightarrow 1} \frac{x^m-1}{x^n-1} \quad\left(m, n \in N^{+}\right)$</p><p><strong>Solution</strong>:$\lim\limits_{x \rightarrow 1} \cfrac{x^m-1}{x^n-1}=\lim\limits_{x \rightarrow 1} \cfrac{(x-1)\left(x^{m-1}+x^n+\cdots+1\right)}{(x-1)\left(x^{n-1}+x^{+2}+\cdots+1\right)}=\cfrac{m}{n}<br>$</p>
+          </div>
+<div class="note note-success">
+            <p><strong>exp2</strong>:计算$\lim\limits_{x \to 0}\cfrac{\sqrt[n]{1+x}-1}{x}<br>$</p><p><strong>Solution</strong>:记$\sqrt[n]{1+x}-1 = t$</p><p>故$\lim\limits_{x \to 0}\cfrac{\sqrt[n]{1+x}-1}{x} = \lim\limits_{t \to 1}\cfrac{t-1}{t^n-1} = \cfrac{1}{n}$</p>
+          </div>
+<h3 id="利用单调有界原理"><a href="#利用单调有界原理" class="headerlink" title="利用单调有界原理"></a>利用单调有界原理</h3><p>首先回顾一下极限中的<strong>单调有界原理</strong></p>
 <div class="note note-danger">
             <p><strong>Theorem</strong>:单调有界数列必有极限</p>
           </div>
 <p>利用这个原理,我们可以计算一些抽象数列的极限,例题如下:</p>
 <div class="note note-success">
-            <p><strong>exp1</strong>:数列<spanclass="math inline">\(\{x_n\}\)</span>满足递推关系:<spanclass="math inline">\(x_n = \cfrac{1}{2}(x_{n-1} +\cfrac{a}{x_{n-1}}),a&gt;0,x_n&gt;0\)</span>,求证:<spanclass="math inline">\(\lim\limits_{n \to \infty}x_n =\sqrt{a}\)</span></p><p><strong>Proof</strong>:考虑运用单调有界原理证明</p><ul><li><p>首先证明数列有界,化简递推关系有:</p><p><span class="math inline">\(x_{n-1}^2-2x_{n-1}x_{n}+x_{n}^2 = x_{n}^2- a \Rightarrow x_n^2-a = (x_n-x_{n-1})^2 \geq 0\)</span></p><p>即<span class="math inline">\(x_n \geq\sqrt{a}\)</span>,数列存在下界.</p></li><li><p>再证明数列单调,有<span class="math inline">\(\cfrac{x_n}{x_{n-1}}= \cfrac{1}{2}(1+\cfrac{a}{x_{n-1}^2}) \leq 1 \Rightarrow\{x_n\}\)</span>单调递减,根据单调有界原理,数列<spanclass="math inline">\(\{x_n \}\)</span>极限存在</p><p>设<span class="math inline">\(\lim\limits_{n \to \infty }x_n =A\)</span>则有方程<span class="math inline">\(A =\cfrac{1}{2}(A+\cfrac{a}{A}) \Rightarrow A = \sqrt{a}\)</span></p></li></ul>
+            <p><strong>exp1</strong>:数列$\{x_n\}$满足递推关系:$x_n = \cfrac{1}{2}(x_{n-1} + \cfrac{a}{x_{n-1}}),a&gt;0,x_n&gt;0$,求证:$\lim\limits_{n \to \infty}x_n = \sqrt{a}$</p><p><strong>Proof</strong>:考虑运用单调有界原理证明</p><ul><li><p>首先证明数列有界,化简递推关系有:</p><p>$x_{n-1}^2-2x_{n-1}x_{n}+x_{n}^2 = x_{n}^2 - a \Rightarrow x_n^2-a = (x_n-x_{n-1})^2 \geq 0$</p><p>即$x_n \geq \sqrt{a}$,数列存在下界.</p></li><li><p>再证明数列单调,有$\cfrac{x_n}{x_{n-1}} = \cfrac{1}{2}(1+\cfrac{a}{x_{n-1}^2}) \leq 1 \Rightarrow  \{x_n\}$单调递减,根据单调有界原理,数列$\{x_n \}$极限存在</p><p>设$\lim\limits_{n \to \infty }x_n = A$则有方程$A = \cfrac{1}{2}(A+\cfrac{a}{A}) \Rightarrow A = \sqrt{a}$</p></li></ul>
           </div>
 <div class="note note-success">
-            <p><strong>exp2</strong>:数列<spanclass="math inline">\(\{x_n\}\)</span>满足递推关系<spanclass="math inline">\(x_{n+1} = 1+\cfrac{x_n}{1+x_n},x_1=1,x_2 =\cfrac{3}{2}\)</span>,求$_{n }x_n $</p><p><strong>Solution</strong>:还是利用单调有界原理</p><ul><li><p>首先证明其单调性:</p><p>$ x_{n_1}-x_n=1+-1- ==A(x_2-x_1)&gt;0x_n $单调递增</p></li><li><p>再证明其有界性:</p><p>易知<span class="math inline">\(x_n &lt;2\)</span>,根据单调有界原理,数列<spanclass="math inline">\(\{x_n\}\)</span>极限存在,</p><p>设<span class="math inline">\(\lim\limits_{n \to \infty}x_n =B\)</span>,则有方程<span class="math inline">\(B = 1 +\cfrac{B}{1+B}\)</span>,解得<span class="math inline">\(B =\cfrac{1+\sqrt{5}}{2}\)</span></p></li></ul>
+            <p><strong>exp2</strong>:数列$\{x_n\}$满足递推关系$x_{n+1} = 1+\cfrac{x_n}{1+x_n},x_1=1,x_2 = \cfrac{3}{2}$,求$\lim\limits_{n \to \infty}x_n $</p><p><strong>Solution</strong>:还是利用单调有界原理</p><ul><li><p>首先证明其单调性:</p><p>$ x_{n_1}-x_n=1+\cfrac{x_n}{1+x_n}-1-\cfrac{x_{n-1}}{1+x_{-1}}<br>=\cfrac{x_{n-1}-x_{n-1}}{\left(1+x_n\right)\left(1+x_{n-1}\right)}=A\left(x_2-x_1\right)&gt;0\Rightarrow x_n<br>$单调递增</p></li><li><p>再证明其有界性:</p><p>易知$x_n &lt; 2$,根据单调有界原理,数列$\{x_n\}$极限存在,</p><p>设$\lim\limits_{n \to \infty}x_n = B$,则有方程$B = 1 + \cfrac{B}{1+B}$,解得$B = \cfrac{1+\sqrt{5}}{2}$</p></li></ul>
           </div>
 <div class="note note-success">
-            <p><strong>exp3</strong>:数列<spanclass="math inline">\(\{x_n\}\)</span>满足递推关系<spanclass="math inline">\(x_1 = \sqrt{2},x_n =\sqrt{2+x_{n-1}}\)</span>,求证<span class="math inline">\(\lim\limits_{n\to \infty}x_n = 2\)</span></p><p><strong>Proof</strong>:</p><ul><li>根据数学归纳法,<spanclass="math inline">\(x_n\)</span>单调递增,有上界<spanclass="math inline">\(2\)</span></li><li>设<span class="math inline">\(\lim\limits_{n \to \infty}x_n =A\)</span>,有方程<span class="math inline">\(A =\sqrt{2+A}\)</span>,解得<span class="math inline">\(A =\sqrt{2}\)</span></li></ul>
+            <p><strong>exp3</strong>:数列$\{x_n\}$满足递推关系$x_1 = \sqrt{2},x_n = \sqrt{2+x_{n-1}}$,求证$\lim\limits_{n \to \infty}x_n = 2$</p><p><strong>Proof</strong>:</p><ul><li>根据数学归纳法,$x_n$单调递增,有上界$2$</li><li>设$\lim\limits_{n \to \infty}x_n = A$,有方程$A = \sqrt{2+A}$,解得$A = \sqrt{2}$</li></ul>
           </div>
-<h2 id="无穷小量">无穷小量</h2>
-<p>首先给出<strong>无穷小量</strong>的定义</p>
+<h2 id="无穷小量"><a href="#无穷小量" class="headerlink" title="无穷小量"></a>无穷小量</h2><p>首先给出<strong>无穷小量</strong>的定义</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>:若<span class="math inline">\(x\tox_0\)</span>时,<span class="math inline">\(\alpha(x) \to0\)</span>,则称$(x) <spanclass="math inline">\(为\)</span>xx_0$的无穷小量.</p><p>数学语言表述为:<span class="math inline">\(\lim\limits_{x \tox_0}f(x) = A \Leftrightarrow f(x) = A +\alpha ,\lim\limits_{x \to x_0}\alpha =0\)</span></p>
+            <p><strong>Definition</strong>:若$x\to x_0$时,$\alpha(x) \to 0$,则称$\alpha (x) $为$x\to x_0$的无穷小量.</p><p>数学语言表述为:$\lim\limits_{x \to x_0}f(x) = A \Leftrightarrow f(x) = A +\alpha ,\lim\limits_{x \to x_0} \alpha =0$</p>
           </div>
-<h3 id="相关推论">相关推论</h3>
-<p>给出无穷小的定义后,我们对<strong>无穷小</strong>做进一步讨论</p>
+<h3 id="相关推论"><a href="#相关推论" class="headerlink" title="相关推论"></a>相关推论</h3><p>给出无穷小的定义后,我们对<strong>无穷小</strong>做进一步讨论</p>
 <div class="note note-danger">
-            <p><strong>Note1</strong>:</p><ul><li>有限个无穷小之和为无穷小</li><li>有限个无穷小之积为无穷小</li><li>有界量与无穷小之积也为无穷小</li><li>无穷个无穷小之和不一定为无穷小,如<span class="math inline">\(x_n =\cfrac{1}{n},n\to \infty\)</span></li><li>无穷个无穷小之积不一定为无穷小</li></ul>
+            <p><strong>Note1</strong>:</p><ul><li>有限个无穷小之和为无穷小</li><li>有限个无穷小之积为无穷小</li><li>有界量与无穷小之积也为无穷小</li><li>无穷个无穷小之和不一定为无穷小,如$x_n = \cfrac{1}{n},n\to \infty$</li><li>无穷个无穷小之积不一定为无穷小</li></ul>
           </div>
-<p>以上证明略,由<strong>Note1</strong>的第三点可以得知<span
-class="math inline">\(\lim\limits_{x \to 0}x\sin(\cfrac{1}{x}) =
-0\)</span></p>
+<p>以上证明略,由<strong>Note1</strong>的第三点可以得知$\lim\limits_{x \to 0}x\sin(\cfrac{1}{x}) = 0$</p>
 <p>讨论无穷小和与积的性质后,我们暂未搞懂应当怎样描述无穷小的大小,先给出推论:</p>
 <div class="note note-danger">
-            <p><strong>Note2</strong>:</p><ul><li><span class="math inline">\(\lim\limits_{x \tox_0}\cfrac{\alpha(x)}{\beta(x)}= 0\)</span>,称<spanclass="math inline">\(\alpha(x)\)</span>是<spanclass="math inline">\(\beta(x)\)</span>的<strong>高阶无穷小</strong>,记作<spanclass="math inline">\(\alpha(x) = o(\beta(x))\)</span></li><li><span class="math inline">\(\lim\limits_{x \tox_0}\cfrac{\alpha(x)}{\beta(x)}= C \ne 0\)</span>,称<spanclass="math inline">\(\alpha(x)\)</span>是<spanclass="math inline">\(\beta(x)\)</span>的<strong>同阶无穷小</strong>,记作<spanclass="math inline">\(\alpha(x) \textasciitildeC\beta(x)\)</span>,若<span class="math inline">\(C = 1\)</span>,称<spanclass="math inline">\(\alpha(x)\)</span>是<spanclass="math inline">\(\beta(x)\)</span>的<strong>等价无穷小</strong>,记作<spanclass="math inline">\(\alpha(x) \textasciitilde \beta(x),x\tox_0\)</span></li></ul>
+            <p><strong>Note2</strong>:</p><ul><li>$\lim\limits_{x \to x_0}\cfrac{\alpha(x)}{\beta(x)}= 0$,称$\alpha(x)$是$\beta(x)$的<strong>高阶无穷小</strong>,记作$\alpha(x) = o(\beta(x))$</li><li>$\lim\limits_{x \to x_0}\cfrac{\alpha(x)}{\beta(x)}= C \ne 0$,称$\alpha(x)$是$\beta(x)$的<strong>同阶无穷小</strong>,记作$\alpha(x) \textasciitilde C\beta(x)$,若$C = 1$,称$\alpha(x)$是$\beta(x)$的<strong>等价无穷小</strong>,记作$\alpha(x) \textasciitilde \beta(x),x\to x_0$</li></ul>
           </div>
 <p>在掌握无穷小比较的语言后,我们可以建立一个“坐标系”,将一个简单的无穷小作为参照物,进而比较其他复杂无穷小量的阶数,因此我们引入<strong>基本无穷小</strong>的定义:</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>:当<span class="math inline">\(x\tox_0\)</span>时,称<spanclass="math inline">\((x-x_0)\)</span>为<strong>基本无穷小</strong>,若<spanclass="math inline">\(\alpha (x) \textasciitilde A(x - x_0)^{r}(A \ne0,r &gt; 0)\)</span>则称<spanclass="math inline">\(\alpha(x)\)</span>为<strong><spanclass="math inline">\(r\)</span>阶无穷小</strong>,并称$ A(x -x_0)^{r}<span class="math inline">\(为\)</span>(x)<spanclass="math inline">\(的**主部**,且\)</span>(x) =A(x-x_0)<sup>{r}+o((x-x_0)</sup>r)$</p>
+            <p><strong>Definition</strong>:当$x\to x_0$时,称$(x-x_0)$为<strong>基本无穷小</strong>,若$\alpha (x) \textasciitilde A(x - x_0)^{r}(A \ne 0,r &gt; 0)$则称$\alpha(x)$为<strong>$r$阶无穷小</strong>,并称$ A(x - x_0)^{r}$为$\alpha(x)$的<strong>主部</strong>,且$\alpha (x) = A(x-x_0)^{r}+o((x-x_0)^r)$</p>
           </div>
 <p>给出几个例子:</p>
 <div class="note note-success">
-            <p><strong>exp1</strong>:<span class="math inline">\(\alpha(x) =\cfrac{2x}{1+x^2}(x \to 0),\alpha(x) \textasciitilde 2x\)</span></p><p><strong>exp2</strong>:<span class="math inline">\(\beta(x) = \lnx^2(x\to1),\beta(x) =\ln x^2 = \ln(1+x^2-1)\textasciitilde (x^2-1) =(x+1)(x-1) = 2(x-1)\)</span></p>
+            <p><strong>exp1</strong>:$\alpha(x) = \cfrac{2x}{1+x^2}(x \to 0),\alpha(x) \textasciitilde 2x$</p><p><strong>exp2</strong>:$\beta(x) = \ln x^2(x\to1),\beta(x) =\ln x^2 = \ln(1+x^2-1)\textasciitilde (x^2-1) = (x+1)(x-1) = 2(x-1)$</p>
           </div>
-<h3 id="无穷小代换">无穷小代换</h3>
-<p>引入无穷小这一概念后,我们求极限的方法又多了一种,记<strong>无穷小代换</strong>,其数学语言叙述如下:</p>
+<h3 id="无穷小代换"><a href="#无穷小代换" class="headerlink" title="无穷小代换"></a>无穷小代换</h3><p>引入无穷小这一概念后,我们求极限的方法又多了一种,记<strong>无穷小代换</strong>,其数学语言叙述如下:</p>
 <div class="note note-danger">
-            <p><strong>Theorem</strong>:当<span class="math inline">\(x\tox_0\)</span>时,<span class="math inline">\(\alpha \textasciitilde\alpha&#39;,\beta \textasciitilde \beta&#39;\)</span>,则有$<em>{xx_0}=</em>{xx_0} $</p>
+            <p><strong>Theorem</strong>:当$x\to x_0$时,$\alpha \textasciitilde \alpha’,\beta \textasciitilde \beta’$,则有$\lim\limits_{x\to x_0}\cfrac{\alpha}{\beta} =\lim\limits_{x\to x_0}\cfrac{\alpha’}{\beta’} $</p>
           </div>
 <p>给出几个例子:</p>
 <div class="note note-success">
-            <ul><li><p>与<span class="math inline">\(x\)</span>等价的无穷小(默认<spanclass="math inline">\(x \to x_0\)</span>)</p><p><span class="math inline">\(x,\sin x,\arcsin x,\tan x,\arctanx,\ln(1+x),e^x-1,n(\sqrt[n]{1+x}-1)\)</span></p></li><li><p><span class="math inline">\(1-\cos x\textasciitilde\cfrac{1}{2}x^2,x-\sin x \textasciitilde\cfrac{1}{6}x^3\)</span></p></li></ul>
+            <ul><li><p>与$x$等价的无穷小(默认$x \to x_0$)</p><p>$x,\sin x,\arcsin x,\tan x,\arctan x,\ln(1+x),e^x-1,n(\sqrt[n]{1+x}-1)$</p></li><li><p>$1-\cos x\textasciitilde \cfrac{1}{2}x^2,x-\sin x \textasciitilde \cfrac{1}{6}x^3$</p></li></ul>
           </div>
 <div class="note note-success">
-            <p><strong>exp2</strong>:计算<spanclass="math inline">\(\lim\limits_{x\to0}\cfrac{\sqrt{4+x^2}}{\sqrt{9+x^3}}\cdot \cfrac{\arcsin x}{e^x-1}\cdot\cfrac{\tan x}{\sin x}\cdot \cfrac{\ln (1+x)}{\arctan x}\)</span></p><p><strong>Solution</strong>:根据等价无穷小代换,有:</p><p><span class="math inline">\(\lim\limits_{x\to0}\cfrac{\sqrt{4+x^2}}{\sqrt{9+x^3}}\cdot \cfrac{\arcsin x}{e^x-1}\cdot\cfrac{\tan x}{\sin x}\cdot \cfrac{\ln (1+x)}{\arctan x} =\lim\limits_{x\to 0}\cfrac{\sqrt{4+x^2}}{\sqrt{9+x^3}}\cdot\cfrac{x}{x}\cdot \cfrac{x}{x}\cdot \cfrac{x}{x} =\cfrac{2}{3}\)</span></p>
+            <p><strong>exp2</strong>:计算$\lim\limits_{x\to 0}\cfrac{\sqrt{4+x^2}}{\sqrt{9+x^3}}\cdot \cfrac{\arcsin x}{e^x-1}\cdot \cfrac{\tan x}{\sin x}\cdot \cfrac{\ln (1+x)}{\arctan x}$</p><p><strong>Solution</strong>:根据等价无穷小代换,有:</p><p>$\lim\limits_{x\to 0}\cfrac{\sqrt{4+x^2}}{\sqrt{9+x^3}}\cdot \cfrac{\arcsin x}{e^x-1}\cdot \cfrac{\tan x}{\sin x}\cdot \cfrac{\ln (1+x)}{\arctan x} = \lim\limits_{x\to 0}\cfrac{\sqrt{4+x^2}}{\sqrt{9+x^3}}\cdot \cfrac{x}{x}\cdot \cfrac{x}{x}\cdot \cfrac{x}{x} = \cfrac{2}{3}$</p>
           </div>
-<h3 id="无穷大">无穷大</h3>
-<p>给出无穷大的定义:</p>
+<h3 id="无穷大"><a href="#无穷大" class="headerlink" title="无穷大"></a>无穷大</h3><p>给出无穷大的定义:</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>:若<spanclass="math inline">\(\lim\limits_{x\to x_0}L(x) =\infty\)</span>,则称<span class="math inline">\(L(x)\)</span>为<spanclass="math inline">\(x\tox_0\)</span>的<strong>无穷大（量）</strong>.</p>
+            <p><strong>Definition</strong>:若$\lim\limits_{x\to x_0}L(x) = \infty$,则称$L(x)$为$x\to x_0$的<strong>无穷大（量）</strong>.</p>
           </div>
 <p>对于无穷大量,我们有一个常用的定理:</p>
 <div class="note note-primary">
-            <p><strong>Theorem</strong>:当<span class="math inline">\(x\tox_0\)</span>时,<spanclass="math inline">\(L(x)\)</span>为无穷大量,则<spanclass="math inline">\(\cfrac{1}{L(x)}\)</span>为无穷小量.</p>
+            <p><strong>Theorem</strong>:当$x\to x_0$时,$L(x)$为无穷大量,则$\cfrac{1}{L(x)}$为无穷小量.</p>
           </div>
 <p>最后再给出一个例题:</p>
 <div class="note note-success">
-            <p><strong>exp1</strong>:计算$_{x } $</p><p><strong>Solution</strong>:$<em>{x } =</em>{x }=_{x } = m n(n-m) $</p>
+            <p><strong>exp1</strong>:计算$\lim\limits_{x \rightarrow 0} \cfrac{(1+m x)^n-(1+n x)^m}{x^2} $</p><p><strong>Solution</strong>:$\lim\limits_{x \rightarrow 0} \cfrac{(1+m x)^n-(1+n x)^m}{x^2} =\lim\limits_{x \rightarrow 0}\frac{\frac{1}{2} n(n-1) m^2 x^2+o\left(x^2\right)-\frac{1}{2} m(m-1)n^2 x^2-o(x^2)}{x^2}=\lim\limits_{x \rightarrow 0} \frac{\frac{1}{2}\left[\left(n(n-1) m^2-m(m-1) n^2\right] x^2+0\left(x^2\right)\right.}{x^2}=\frac{1}{2} m n(n-m) $</p>
           </div>
-<h3 id="等价无穷小代换及应用">等价无穷小代换及应用</h3>
-<p>等价无穷小代换是求解极限的一种常用的方法,下面我们给出几道例题来细细体验一下这种方法:</p>
+<h3 id="等价无穷小代换及应用"><a href="#等价无穷小代换及应用" class="headerlink" title="等价无穷小代换及应用"></a>等价无穷小代换及应用</h3><p>等价无穷小代换是求解极限的一种常用的方法,下面我们给出几道例题来细细体验一下这种方法:</p>
 <div class="note note-success">
-            <p><strong>exp1</strong>:计算<spanclass="math inline">\(\lim\limits_{x\to 0}(\cfrac{x+\sinx}{x})\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(I =\lim\limits_{x\to 0}(\cfrac{x+x}{x}) =2\)</span></p>
+            <p><strong>exp1</strong>:计算$\lim\limits_{x\to 0}(\cfrac{x+\sin x}{x})$</p><p><strong>Solution</strong>:$I = \lim\limits_{x\to 0}(\cfrac{x+x}{x}) =2$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp2</strong>:计算<spanclass="math inline">\(\lim\limits_{x\to 0}(\cfrac{x-\sinx}{x^3})\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(I =\lim\limits_{x\to 0}(\cfrac{\frac{1}{6}x^3}{x^3}) =\cfrac{1}{6}\)</span></p>
+            <p><strong>exp2</strong>:计算$\lim\limits_{x\to 0}(\cfrac{x-\sin x}{x^3})$</p><p><strong>Solution</strong>:$I = \lim\limits_{x\to 0}(\cfrac{\frac{1}{6}x^3}{x^3}) = \cfrac{1}{6}$</p>
           </div>
 <p>针对前两道例题,我们可以给出一个推论:</p>
 <div class="note note-danger">
-            <p><strong>Theorem</strong>:当<span class="math inline">\(x\tox_0\)</span>时,若<span class="math inline">\(\alpha \textasciitilde\alpha&#39;,\beta \textasciitilde \beta&#39;,r\textasciitilder&#39;\)</span>,且<span class="math inline">\(\lim\limits_{x\tox_0}\cfrac{\alpha}{r} \ne -1\)</span>,则有<spanclass="math inline">\(\lim\limits_{x\to x_0}\cfrac{\alpha +r}{\beta} =\lim\limits_{x\to x_0}\cfrac{\alpha&#39;+r&#39;}{\beta&#39;}\)</span></p>
+            <p><strong>Theorem</strong>:当$x\to x_0$时,若$\alpha \textasciitilde \alpha’,\beta \textasciitilde \beta’,r\textasciitilde r’$,且$\lim\limits_{x\to x_0}\cfrac{\alpha}{r} \ne -1$,则有$\lim\limits_{x\to x_0}\cfrac{\alpha +r}{\beta} = \lim\limits_{x\to x_0}\cfrac{\alpha’ +r’}{\beta’}$</p>
           </div>
 <p>得到这个推论后,我们再来看下列例题:</p>
 <div class="note note-success">
-            <p><strong>exp3</strong>:计算<spanclass="math inline">\(\lim\limits_{x\to 0}\cfrac{x\cosx-x+x^3+o(x^3)}{x^3}\)</span></p><p><strong>Solution</strong>:根据以上推论,<span class="math inline">\(I= \lim\limits_{x\to 0}[\cfrac{x\cos x-x}{x^3}+\cfrac{x^3+o(x^3)}{x^3}] =\cfrac{1}{2}\)</span></p>
+            <p><strong>exp3</strong>:计算$\lim\limits_{x\to 0}\cfrac{x\cos x-x+x^3+o(x^3)}{x^3}$</p><p><strong>Solution</strong>:根据以上推论,$I = \lim\limits_{x\to 0}[\cfrac{x\cos x-x}{x^3}+\cfrac{x^3+o(x^3)}{x^3}] = \cfrac{1}{2}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp4</strong>:计算<span class="math inline">\(\lim\limits_{x\to x_0}\cfrac{\tan^3(2x)}{x^4}(1-\cfrac{x}{e^x-1})\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(I =8\lim\limits_{x\to0}[\cfrac{e^x-x-1}{x(e^x-1)}] = 8\lim\limits_{x\to0}\cfrac{\frac{1}{2}x^2+o(x^2)}{x^2}=4\)</span></p>
+            <p><strong>exp4</strong>:计算$\lim\limits_{x \to x_0}\cfrac{\tan^3(2x)}{x^4}(1-\cfrac{x}{e^x-1})$</p><p><strong>Solution</strong>:$I = 8\lim\limits_{x\to0}[\cfrac{e^x-x-1}{x(e^x-1)}] = 8\lim\limits_{x\to 0}\cfrac{\frac{1}{2}x^2+o(x^2)}{x^2}=4$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp5</strong>:计算<span class="math inline">\(\lim\limits_{x\rightarrow 0} \cfrac{3 \sin x+x^2 \cos \frac{1}{x}}{(1+\cos x) \ln(1+x)}\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(I =\lim\limits_{x \rightarrow 0}\left(\cfrac{3 \sin x+x \cos x}{2x}\right)=\cfrac{3}{2}\)</span></p>
+            <p><strong>exp5</strong>:计算$\lim\limits_{x \rightarrow 0} \cfrac{3 \sin x+x^2 \cos \frac{1}{x}}{(1+\cos x) \ln (1+x)}$</p><p><strong>Solution</strong>:$I = \lim\limits_{x \rightarrow 0}\left(\cfrac{3 \sin x+x \cos x}{2 x}\right)=\cfrac{3}{2}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp6</strong>:计算<span class="math inline">\(\lim\limits_{x\rightarrow 0}(\cos x)^{\frac{1}{\ln \left(1+x^2\right)}}\)</span></p><p><strong>Solution</strong>:<span class="math inline">\(I =\lim\limits_{x \rightarrow 0}\left\{(1+\cos x-1)^{\frac{1}{\cosx-1}}\right\}^{\frac{\cos x-1}{\ln\left(1+x^2\right)}}=e^{-\frac{1}{2}}\)</span></p>
+            <p><strong>exp6</strong>:计算$\lim\limits_{x \rightarrow 0}(\cos x)^{\frac{1}{\ln \left(1+x^2\right)}}$</p><p><strong>Solution</strong>:$I = \lim\limits_{x \rightarrow 0}\left\{(1+\cos x-1)^{\frac{1}{\cos x-1}}\right\}^{\frac{\cos x-1}{\ln \left(1+x^2\right)}}=e^{-\frac{1}{2}}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp7</strong>:计算<span class="math inline">\(\lim\limits_{x\rightarrow 0} \cfrac{\sqrt{1+x}+\sqrt{1-x}-2}{x^2}\)</span></p><p><strong>Solution</strong>:</p><p><span class="math inline">\(\begin{align}I &amp;= \lim\limits_{x\rightarrow 0} \cfrac{\sqrt{1+x}-1+\sqrt{1-x}-1}{x^2} \\ &amp;=\lim\limits_{x \rightarrow 0}\cfrac{\frac{x}{\sqrt{1+x}+1}-\frac{x}{\sqrt{1-x}+1}}{x^2} \\ &amp;=\cfrac{1}{4}\lim _{x \rightarrow 0} \cfrac{\sqrt{1-x}-\sqrt{1+x}}{x} \\&amp;=\cfrac{1}{4} \lim\limits_{x \rightarrow 0} \cfrac{-2x}{(\sqrt{1-x}+\sqrt{1+x}) x} \\ &amp;=-\cfrac{1}{4}\end{align}\)</span></p>
+            <p><strong>exp7</strong>:计算$\lim\limits_{x \rightarrow 0} \cfrac{\sqrt{1+x}+\sqrt{1-x}-2}{x^2}$</p><p><strong>Solution</strong>:</p><p>$\begin{align}I &amp;= \lim\limits_{x \rightarrow 0} \cfrac{\sqrt{1+x}-1+\sqrt{1-x}-1}{x^2} \\ &amp; =\lim\limits_{x \rightarrow 0} \cfrac{\frac{x}{\sqrt{1+x}+1}-\frac{x}{\sqrt{1-x}+1}}{x^2} \\ &amp;= \cfrac{1}{4}\lim _{x \rightarrow 0} \cfrac{\sqrt{1-x}-\sqrt{1+x}}{x} \\ &amp;=\cfrac{1}{4} \lim\limits_{x \rightarrow 0} \cfrac{-2 x}{(\sqrt{1-x}+\sqrt{1+x}) x} \\ &amp;= -\cfrac{1}{4}\end{align}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp8</strong>:计算<span class="math inline">\(\lim\limits_{x\rightarrow 0} \cfrac{[\sin x-\sin (\sin x)] \sin x}{x^4}\)</span></p><p><strong>Solution</strong>: <span class="math inline">\(I =\lim\limits_{x \rightarrow 0}\cfrac{\sin(x) -\sin (\sin x)}{x^3} =\lim\limits_{x \rightarrow 0}\cfrac{x-\sin x}{x^3}=\cfrac{1}{6}\)</span></p>
+            <p><strong>exp8</strong>:计算$\lim\limits_{x \rightarrow 0} \cfrac{[\sin x-\sin (\sin x)] \sin x}{x^4}$</p><p><strong>Solution</strong>: $I = \lim\limits_{x \rightarrow 0}\cfrac{\sin(x) -\sin (\sin x)}{x^3} = \lim\limits_{x \rightarrow 0}\cfrac{x-\sin x}{x^3}= \cfrac{1}{6}$</p>
           </div>
-<p># 连续与间断</p>
-<h2 id="连续">连续</h2>
-<p>在讨论极限过后,函数的研究方法又多了一种.此前我们在中学阶段接触到的函数均为连续函数,但是我们并未用严谨的语言对<strong>连续</strong>做一个定义,下面给出<strong>连续</strong>的极限定义:</p>
+<h1 id="连续与间断"><a href="#连续与间断" class="headerlink" title="连续与间断"></a>连续与间断</h1><h2 id="连续"><a href="#连续" class="headerlink" title="连续"></a>连续</h2><p>在讨论极限过后,函数的研究方法又多了一种.此前我们在中学阶段接触到的函数均为连续函数,但是我们并未用严谨的语言对<strong>连续</strong>做一个定义,下面给出<strong>连续</strong>的极限定义:</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>:设<span class="math inline">\(y =f(x)\)</span>在<span class="math inline">\(x =x_0\)</span>及其附近有定义,对于<span class="math inline">\(\forall\varepsilon &gt; 0,\exists \delta &gt; 0\)</span>,当<spanclass="math inline">\(x \in N(x_0,\delta)\)</span>,有<spanclass="math inline">\(|f(x)-f(x_0) &lt; \varepsilon|\)</span>,即<spanclass="math inline">\(\lim\limits_{x \to x_0}f(x) =f(x_0)\)</span>,则称<span class="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x = x_0\)</span>处<strong>连续</strong>.</p>
+            <p><strong>Definition</strong>:设$y = f(x)$在$x = x_0$及其附近有定义,对于$\forall \varepsilon &gt; 0,\exists \delta &gt; 0$,当$x \in N(x_0,\delta)$,有$|f(x)-f(x_0) &lt; \varepsilon|$,即$\lim\limits_{x \to x_0}f(x) = f(x_0)$,则称$y=f(x)$在$x = x_0$处<strong>连续</strong>.</p>
           </div>
 <p>以上是<strong>双侧连续</strong>的定义,同理,我们可以给出单侧极限的定义,定义如下:</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>:</p><ul><li><span class="math inline">\(\lim\limits_{x\to x_0^{+}}f(x) =f(x_0)\)</span>,则称函数<span class="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span><strong>右连续</strong>.</li><li><span class="math inline">\(\lim\limits_{x\to x_0^{-}}f(x) =f(x_0)\)</span>,则称函数<span class="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span><strong>左连续</strong>.</li></ul>
+            <p><strong>Definition</strong>:</p><ul><li>$\lim\limits_{x\to x_0^{+}}f(x) = f(x_0)$,则称函数$f(x)$在$x=x_0$<strong>右连续</strong>.</li><li>$\lim\limits_{x\to x_0^{-}}f(x) = f(x_0)$,则称函数$f(x)$在$x=x_0$<strong>左连续</strong>.</li></ul>
           </div>
 <p>定义单侧连续后,我们立马可以得到一个重要的推论:</p>
 <div class="note note-danger">
-            <p><strong>Theorem</strong>:<spanclass="math inline">\(f(x)\)</span>在<span class="math inline">\(x =x_0\)</span>处连续<span class="math inline">\(\Leftrightarrow\lim\limits_{x\to x_0^{+}}f(x) = \lim\limits_{x\to x_0^{-}}f(x) =f(x_0)\)</span></p>
+            <p><strong>Theorem</strong>:$f(x)$在$x = x_0$处连续$\Leftrightarrow \lim\limits_{x\to x_0^{+}}f(x) = \lim\limits_{x\to x_0^{-}}f(x) = f(x_0)$</p>
           </div>
-<p>此后,我们给出<span class="math inline">\(f(x)\)</span>在闭区间<span
-class="math inline">\([a,b]\)</span>上连续的定义:</p>
+<p>此后,我们给出$f(x)$在闭区间$[a,b]$上连续的定义:</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong><spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>上连续<spanclass="math inline">\(\Leftrightarrow f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>上任意一点连续,且在<spanclass="math inline">\(x=a,b\)</span>处单侧连续.将在<spanclass="math inline">\([a,b]\)</span>上连续的函数,记作<spanclass="math inline">\(C[a,b]\)</span></p>
+            <p><strong>Definition</strong>$f(x)$在$[a,b]$上连续$\Leftrightarrow f(x)$在$(a,b)$上任意一点连续,且在$x=a,b$处单侧连续.将在$[a,b]$上连续的函数,记作$C[a,b]$</p>
           </div>
 <p>在定义连续后,我们需要讨论函数的连续性,有以下定理:</p>
 <div class="note note-danger">
@@ -507,108 +483,75 @@ class="math inline">\([a,b]\)</span>上连续的定义:</p>
 <div class="note note-danger">
             <p><strong>Theorem</strong>:基本初等函数在其定义域内是连续的</p>
           </div>
-<p>关于该定理的证明,直接利用连续的<span
-class="math inline">\(\varepsilon-\delta\)</span>语言即可,这里不再详细说明.</p>
-<h2 id="间断">间断</h2>
-<p>我们遇到的函数不一定是连续的,其图像往往会在某些点出现“断开”的现象.我们用<strong>间断</strong>来描述.下面给出间断的严格定义:</p>
+<p>关于该定理的证明,直接利用连续的$\varepsilon-\delta$语言即可,这里不再详细说明.</p>
+<h2 id="间断"><a href="#间断" class="headerlink" title="间断"></a>间断</h2><p>我们遇到的函数不一定是连续的,其图像往往会在某些点出现“断开”的现象.我们用<strong>间断</strong>来描述.下面给出间断的严格定义:</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>:若$<em>{x x_0^+}f(x) = </em>{xx_0^-}f(x)=f(x_0) <spanclass="math inline">\(不成立,称\)</span>f(x)<spanclass="math inline">\(在\)</span>x = x_0$处间断.</p>
+            <p><strong>Definition</strong>:若$\lim\limits_{x \to x_0^+}f(x) = \lim\limits_{x \to x_0^-}f(x)=f(x_0) $不成立,称$f(x)$在$x = x_0$处间断.</p>
           </div>
-<h3 id="第一类间断点">第一类间断点</h3>
-<p>为了更方便地描述间断,我们将函数的间断点分类为<strong>第一类间断点</strong>与<strong>第二类间断点</strong>.</p>
+<h3 id="第一类间断点"><a href="#第一类间断点" class="headerlink" title="第一类间断点"></a>第一类间断点</h3><p>为了更方便地描述间断,我们将函数的间断点分类为<strong>第一类间断点</strong>与<strong>第二类间断点</strong>.</p>
 <p>下面给出第一类间断点的定义:</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>:函数<spanclass="math inline">\(f(x)\)</span>在<span class="math inline">\(x =x_0\)</span>处间断,但是<span class="math inline">\(\lim\limits_{x \tox_0^+}f(x),\lim\limits_{x \to x_0^-}f(x)\)</span>均存在.</p><ul><li>进一步分类讨论,当$<em>{x x_0^+}f(x)=</em>{x x_0^-}f(x) <spanclass="math inline">\(时,称该间断点为**可去间断点**.如函数\)</span>f(x)= <span class="math inline">\(在\)</span>x_0 = 0 $处.</li><li>当$<em>{x x_0^+}f(x)</em>{x x_0^-}f(x) <spanclass="math inline">\(时,称该间断点为**跳跃间断点**.如函数\)</span>f(x)= [x]<span class="math inline">\(在\)</span>x_0=1,2,3...$处.</li></ul>
+            <p><strong>Definition</strong>:函数$f(x)$在$x = x_0$处间断,但是$\lim\limits_{x \to x_0^+}f(x),\lim\limits_{x \to x_0^-}f(x)$均存在.</p><ul><li>进一步分类讨论,当$\lim\limits_{x \to x_0^+}f(x)=\lim\limits_{x \to x_0^-}f(x) $时,称该间断点为<strong>可去间断点</strong>.如函数$f(x) = \cfrac{\sin x}{x}$在$x_0 = 0 $处.</li><li>当$\lim\limits_{x \to x_0^+}f(x)\ne\lim\limits_{x \to x_0^-}f(x) $时,称该间断点为<strong>跳跃间断点</strong>.如函数$f(x) = [x]$在$x_0=1,2,3…$处.</li></ul>
           </div>
-<h3 id="第二类间断点">第二类间断点</h3>
-<p>再给出第二类间断点的定义:</p>
+<h3 id="第二类间断点"><a href="#第二类间断点" class="headerlink" title="第二类间断点"></a>第二类间断点</h3><p>再给出第二类间断点的定义:</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>:函数<spanclass="math inline">\(f(x)\)</span>在<span class="math inline">\(x =x_0\)</span>处间断,但是<span class="math inline">\(\lim\limits_{x \tox_0^+}f(x),\lim\limits_{x \to x_0^-}f(x)\)</span>至少有一个不存在.</p><ul><li>进一步讨论,考虑函数<span class="math inline">\(f(x) =\cfrac{1}{x}\)</span>,其在<spanclass="math inline">\(x_0=0\)</span>处的间断点被称为<strong>无穷间断点</strong>.</li><li>再考虑函数<span class="math inline">\(f(x) = \sin\cfrac{1}{x}\)</span>,其在<span class="math inline">\(x_0 =0\)</span>处的间断点被称为<strong>震荡间断点</strong>.</li></ul>
+            <p><strong>Definition</strong>:函数$f(x)$在$x = x_0$处间断,但是$\lim\limits_{x \to x_0^+}f(x),\lim\limits_{x \to x_0^-}f(x)$至少有一个不存在.</p><ul><li>进一步讨论,考虑函数$f(x) = \cfrac{1}{x}$,其在$x_0=0$处的间断点被称为<strong>无穷间断点</strong>.</li><li>再考虑函数$f(x) = \sin \cfrac{1}{x}$,其在$x_0 = 0$处的间断点被称为<strong>震荡间断点</strong>.</li></ul>
           </div>
 <p>下面给出几个例题吧:</p>
 <div class="note note-success">
-            <p><strong>exp1</strong>:考虑函数<span class="math inline">\(f(x) =\cfrac{x}{\sin x}\)</span>,求其间断点及类型</p><p><strong>Solution</strong>:显然,<span class="math inline">\(x_0 = n\pi(n \in Z)\)</span>是其间断点</p><p>当<span class="math inline">\(x_0 = 0\)</span>时,<spanclass="math inline">\(\lim\limits_{x \to 0^+}f(x)=\lim\limits_{x \to0^-}f(x)= 1\)</span>,故<span class="math inline">\(x_0 =0\)</span>是可去间断点.</p><p>当<span class="math inline">\(x_0 = n\pi(n \ne 0)\)</span>时,<spanclass="math inline">\(f(x) \to \infty\)</span>,故$x_0 =n$是第二类间断点（无穷间断点）</p>
+            <p><strong>exp1</strong>:考虑函数$f(x) = \cfrac{x}{\sin x}$,求其间断点及类型</p><p><strong>Solution</strong>:显然,$x_0 = n\pi (n \in Z)$是其间断点</p><p>当$x_0 = 0$时,$\lim\limits_{x \to 0^+}f(x)=\lim\limits_{x \to 0^-}f(x)= 1$,故$x_0 = 0$是可去间断点.</p><p>当$x_0 = n\pi(n \ne 0)$时,$f(x) \to \infty$,故$x_0 = n\pi $是第二类间断点（无穷间断点）</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp2</strong>:考虑函数<span class="math inline">\(f(x) =\begin{cases}(1+x)^{1/x} ,x\ne 0 \\ 1,x =0\end{cases}\)</span>,求其间断点及类型.</p><p><strong>Solution</strong>:易知,<span class="math inline">\(x_0 =0\)</span>是其间断点.</p><p>当<span class="math inline">\(x_0 = 0\)</span>时,<spanclass="math inline">\(\lim\limits_{x \to 0^+}f(x)=\lim\limits_{x \to0^-}f(x) = e \ne f(0)\)</span>,故<span class="math inline">\(x_0 =0\)</span>是可去间断点</p>
+            <p><strong>exp2</strong>:考虑函数$f(x) = \begin{cases}(1+x)^{1/x} ,x\ne 0 \\ 1,x =0 \end{cases}$,求其间断点及类型.</p><p><strong>Solution</strong>:易知,$x_0 = 0$是其间断点.</p><p>当$x_0 = 0$时,$\lim\limits_{x \to 0^+}f(x)=\lim\limits_{x \to 0^-}f(x) = e \ne f(0)$,故$x_0 = 0$是可去间断点</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp3</strong>:考虑函数<span class="math inline">\(f(x) =\arctan \cfrac{1}{x}\)</span>,求其间断点及类型.</p><p><strong>Solution</strong>:易知<span class="math inline">\(x_0 =0\)</span>是其间断点</p><p>当<span class="math inline">\(x_0=0\)</span>时,<spanclass="math inline">\(\lim\limits_{x \to 0^+}f(x) =\cfrac{\pi}{2},\lim\limits_{x \to 0^-}f(x) =-\cfrac{\pi}{2}\)</span>,故<spanclass="math inline">\(x_0\)</span>是跳跃间断点</p>
+            <p><strong>exp3</strong>:考虑函数$f(x) = \arctan \cfrac{1}{x}$,求其间断点及类型.</p><p><strong>Solution</strong>:易知$x_0 = 0$是其间断点</p><p>当$x_0=0$时,$\lim\limits_{x \to 0^+}f(x) = \cfrac{\pi}{2},\lim\limits_{x \to 0^-}f(x) = -\cfrac{\pi}{2}$,故$x_0$是跳跃间断点</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp4</strong>:考虑函数<span class="math inline">\(f(x)=\lim\limits_{n\to\infty}\cfrac{nx}{nx^2+1}\)</span>,求其间断点及类型.</p><p><strong>Solution</strong>:分情况讨论:当<span class="math inline">\(x= 0\)</span>时,<span class="math inline">\(f(x) = 0\)</span>,当$x <spanclass="math inline">\(时,\)</span>f(x) = $.</p><p>即<span class="math inline">\(f(x) = \begin{cases}\cfrac{1}{x},x\ne 0\\ 0,x= 0\end{cases}\)</span>,易知<span class="math inline">\(x_0 =0\)</span>是其间断点.</p><p>当<span class="math inline">\(x\to 0\)</span>时,<spanclass="math inline">\(f(x) \to \infty\)</span>,故<spanclass="math inline">\(x_0 = 0\)</span> 是第二类间断点（无穷间断点）.</p>
+            <p><strong>exp4</strong>:考虑函数$f(x)= \lim\limits_{n\to \infty}\cfrac{nx}{nx^2+1}$,求其间断点及类型.</p><p><strong>Solution</strong>:分情况讨论:当$x = 0$时,$f(x) = 0$,当$x \ne 0 $时,$f(x) = \cfrac{1}{x}$.</p><p>即$f(x) = \begin{cases}\cfrac{1}{x},x\ne 0 \\ 0,x= 0\end{cases}$,易知$x_0 = 0$是其间断点.</p><p>当$x\to 0$时,$f(x) \to \infty$,故$x_0 = 0$ 是第二类间断点（无穷间断点）.</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp5</strong>:考虑函数<span class="math inline">\(f(x) =\lim\limits_{n \to\infty}\cfrac{x+e^{xt}}{1+e^{xt}}\)</span>,求其间断点及类型.</p><p><strong>Solution</strong>:分情况讨论:</p><p>当<span class="math inline">\(x &gt; 0\)</span>时,<spanclass="math inline">\(f(x) = 1\)</span>.</p><p>当<span class="math inline">\(x = 0\)</span>时,<spanclass="math inline">\(f(x) = \cfrac{1}{2}\)</span>.</p><p>当<span class="math inline">\(x&lt; 0\)</span>时,<spanclass="math inline">\(f(x) = x\)</span></p><p>易知<span class="math inline">\(x_0 = 0\)</span>是其间断点,<spanclass="math inline">\(\lim\limits_{x \to 0^{+}}f(x) = 1,\lim\limits_{x\to 0^-}f(x) = 0\)</span>,故<spanclass="math inline">\(f(x)\)</span>是跳跃间断点</p>
+            <p><strong>exp5</strong>:考虑函数$f(x) = \lim\limits_{n \to \infty}\cfrac{x+e^{xt}}{1+e^{xt}}$,求其间断点及类型.</p><p><strong>Solution</strong>:分情况讨论:</p><p>当$x &gt; 0$时,$f(x) = 1$.</p><p>当$x = 0$时,$f(x) = \cfrac{1}{2}$.</p><p>当$x&lt; 0$时,$f(x) = x$</p><p>易知$x_0 = 0$是其间断点,$\lim\limits_{x \to 0^{+}}f(x) = 1,\lim\limits_{x \to 0^-}f(x) = 0$,故$f(x)$是跳跃间断点</p>
           </div>
 <p><strong>Note</strong>:在求间断点类型的题目中,我们经常遇到函数的极限表示式,遇到这种表达形式,需要分类讨论.</p>
-<h2 id="有限闭区间连续函数的性质">有限闭区间连续函数的性质</h2>
-<p>最后我们来讨论一下<span class="math inline">\(f(x) \in
-C[a,b]\)</span>的性质吧！</p>
-<h3 id="有界性定理">有界性定理</h3>
-<p>考虑一个函数<span class="math inline">\(f(x)\in
-C[a,b]\)</span>,其满足<strong>有界性定理</strong>:</p>
+<h2 id="有限闭区间连续函数的性质"><a href="#有限闭区间连续函数的性质" class="headerlink" title="有限闭区间连续函数的性质"></a>有限闭区间连续函数的性质</h2><p>最后我们来讨论一下$f(x) \in C[a,b]$的性质吧！</p>
+<h3 id="有界性定理"><a href="#有界性定理" class="headerlink" title="有界性定理"></a>有界性定理</h3><p>考虑一个函数$f(x)\in C[a,b]$,其满足<strong>有界性定理</strong>:</p>
 <div class="note note-danger">
-            <p><strong>Theorem(有界性定理)</strong>:<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>上一定有界.</p>
+            <p><strong>Theorem(有界性定理)</strong>:$f(x)$在$[a,b]$上一定有界.</p>
           </div>
-<p><strong>Note1</strong>:考虑函数<span class="math inline">\(f(x) =
-\cfrac{1}{x},x\in(0,1)\)</span>,易知<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\((0,1)\)</span>连续,但是<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\((0,1)\)</span>无界,故有界性定理只在<strong>闭区间</strong>上成立.</p>
-<p><strong>Note2</strong>:考虑函数<span class="math inline">\(f(x) =
-\begin{cases}\cfrac{1}{x},x\in(0,1] \\ 1,x =
-0\end{cases}\)</span>,易知<span class="math inline">\(f(x)\)</span><span
-class="math inline">\((0,1]\)</span>上连续但是无界,故有界性定理要求函数在闭区间上<strong>连续</strong>.</p>
-<h3 id="最值定理">最值定理</h3>
-<p>考虑一个函数<span class="math inline">\(f(x) \in
-C[a,b]\)</span>,其满足<strong>最值定理</strong>:</p>
+<p><strong>Note1</strong>:考虑函数$f(x) = \cfrac{1}{x},x\in(0,1)$,易知$f(x)$在$(0,1)$连续,但是$f(x)$在$(0,1)$无界,故有界性定理只在<strong>闭区间</strong>上成立.</p>
+<p><strong>Note2</strong>:考虑函数$f(x) = \begin{cases}\cfrac{1}{x},x\in(0,1] \\ 1,x = 0\end{cases}$,易知$f(x)$$(0,1]$上连续但是无界,故有界性定理要求函数在闭区间上<strong>连续</strong>.</p>
+<h3 id="最值定理"><a href="#最值定理" class="headerlink" title="最值定理"></a>最值定理</h3><p>考虑一个函数$f(x) \in C[a,b]$,其满足<strong>最值定理</strong>:</p>
 <div class="note note-danger">
-            <p><strong>Theorem(最值定理)</strong>:<spanclass="math inline">\(\exists x_1,x_2 \in [a,b]\)</span>使得<spanclass="math inline">\(m \leq f(x_1) \leq f(x_2) \leq M\)</span></p>
+            <p><strong>Theorem(最值定理)</strong>:$\exists x_1,x_2 \in [a,b]$使得$m \leq f(x_1) \leq f(x_2) \leq M$</p>
           </div>
-<p><strong>Note1</strong>:考虑函数<span class="math inline">\(f(x) =
-\cfrac{1}{1+e^{1/x}},x \in [-1,1]\)</span>,易知<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\([-1,1]\)</span>上无法取到最值,故最值定理要求函数在闭区间上<strong>连续</strong>.</p>
-<p><strong>Note2</strong>:考虑函数<span class="math inline">\(f(x) =
-x,x\in (-1,1)\)</span>,易知<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\((-1,1)\)</span>上无法取到最值,故最值定理只在<strong>闭区间</strong>上成立.</p>
-<h3 id="介值定理">介值定理</h3>
-<p>考虑一个函数<span class="math inline">\(f(x) \in
-C[a,b]\)</span>,其满足<strong>介值定理</strong>:</p>
+<p><strong>Note1</strong>:考虑函数$f(x) = \cfrac{1}{1+e^{1/x}},x \in [-1,1]$,易知$f(x)$在$[-1,1]$上无法取到最值,故最值定理要求函数在闭区间上<strong>连续</strong>.</p>
+<p><strong>Note2</strong>:考虑函数$f(x) = x,x\in (-1,1)$,易知$f(x)$在$(-1,1)$上无法取到最值,故最值定理只在<strong>闭区间</strong>上成立.</p>
+<h3 id="介值定理"><a href="#介值定理" class="headerlink" title="介值定理"></a>介值定理</h3><p>考虑一个函数$f(x) \in C[a,b]$,其满足<strong>介值定理</strong>:</p>
 <div class="note note-danger">
-            <p><strong>Theorem(介值定理)</strong>:若<spanclass="math inline">\(\mu\)</span>是介于<spanclass="math inline">\(f(a),f(b)\)</span>之间的任何值,则<spanclass="math inline">\(\exists \xi \in [a,b]\)</span>使得<spanclass="math inline">\(f(\xi ) = \mu\)</span></p>
+            <p><strong>Theorem(介值定理)</strong>:若$\mu$是介于$f(a),f(b)$之间的任何值,则$\exists \xi \in [a,b]$使得$f(\xi ) = \mu$</p>
           </div>
-<p>特别地,连续函数<span class="math inline">\(f(x)\)</span>在<span
-class="math inline">\([a,b]\)</span>上的最大值,最小值分别设为<span
-class="math inline">\(M,m\)</span>,则对于<span
-class="math inline">\(\forall \mu \in [m,M],\exists \xi \in
-[a,b]\)</span>使得<span class="math inline">\(f(\xi) = \mu\)</span>.</p>
-<h3 id="零点存在性定理">零点存在性定理</h3>
-<p>考虑函数<span class="math inline">\(f(x) \in
-C[a,b]\)</span>,其满足<strong>零点存在性定理</strong>:</p>
+<p>特别地,连续函数$f(x)$在$[a,b]$上的最大值,最小值分别设为$M,m$,则对于$\forall \mu \in [m,M],\exists \xi \in [a,b]$使得$f(\xi) = \mu$.</p>
+<h3 id="零点存在性定理"><a href="#零点存在性定理" class="headerlink" title="零点存在性定理"></a>零点存在性定理</h3><p>考虑函数$f(x) \in C[a,b]$,其满足<strong>零点存在性定理</strong>:</p>
 <div class="note note-danger">
-            <p><strong>Theorem</strong>:若函数<spanclass="math inline">\(f(x)\)</span>满足<spanclass="math inline">\(f(a)\cdot f(b) &lt; 0\)</span>,则<spanclass="math inline">\(\exists \xi \in (a,b)\)</span>,使得<spanclass="math inline">\(f(\xi) = 0\)</span></p>
+            <p><strong>Theorem</strong>:若函数$f(x)$满足$f(a)\cdot f(b) &lt; 0$,则$\exists \xi \in (a,b)$,使得$f(\xi) = 0$</p>
           </div>
 <p>利用零点存在性定理,我们往往可以判断一个连续函数的零点个数及其范围,给出几个例子:</p>
 <div class="note note-success">
-            <p><strong>exp1</strong>:求方程<spanclass="math inline">\(x^3+4x^2-3x-1=0\)</span>解的个数.</p><p><strong>Solution</strong>:记函数<span class="math inline">\(f(x)=x^3+4x^2-3x-1\)</span>,</p><p>易知<span class="math inline">\(f(-10) = -5 &lt; 0,f(-1) = 5 &gt; 0,f(0) = -1,f(1) = 1&gt; 0\)</span></p><p>故根据零点存在性定理,方程有两个解</p>
+            <p><strong>exp1</strong>:求方程$x^3+4x^2-3x-1=0$解的个数.</p><p><strong>Solution</strong>:记函数$f(x) =x^3+4x^2-3x-1$,</p><p>易知$f(-10) = -5 &lt; 0,f(-1) = 5 &gt; 0 ,f(0) = -1,f(1) = 1&gt; 0$</p><p>故根据零点存在性定理,方程有两个解</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp2</strong>:求方程<span class="math inline">\(4-x =2^x\)</span>在<span class="math inline">\([1,2]\)</span>的解的个数</p><p><strong>Solution</strong>:记<span class="math inline">\(f(x) =4-x-2^x,x\in[1,2]\)</span></p><p>易知<span class="math inline">\(f(1) =1,f(2)=-2\)</span>,且函数在<spanclass="math inline">\([1,2]\)</span>上单调递减,则有一个实根</p>
+            <p><strong>exp2</strong>:求方程$4-x = 2^x$在$[1,2]$的解的个数</p><p><strong>Solution</strong>:记$f(x) = 4-x-2^x,x\in[1,2]$</p><p>易知$f(1) = 1,f(2)=-2$,且函数在$[1,2]$上单调递减,则有一个实根</p>
           </div>
-<h3 id="例题">例题</h3>
-<p>关于本部分,最后给出几个例题:</p>
+<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p>关于本部分,最后给出几个例题:</p>
 <div class="note note-success">
-            <p><strong>exp1</strong>:<span class="math inline">\(\lim\limits_{x\to-1}\cfrac{ax^2-x-3}{x+1} = b\)</span>,求<spanclass="math inline">\(a,b\)</span>的值.</p><p><strong>Solution</strong>:<span class="math inline">\(I = -2a-1 =b\)</span></p><p>由极限的存在性可知<span class="math inline">\(a = 2,b =-5\)</span></p>
-          </div>
-<div class="note note-success">
-            <p><strong>exp2</strong>:已知<spanclass="math inline">\(\lim\limits_{n\to \infty}(3n-\sqrt{an^2+bn+1}) =2\)</span>,求<span class="math inline">\(a,b\)</span>的值.</p><p><strong>Solution</strong>:<span class="math inline">\(I =\lim\limits_{n\to \infty}\cfrac{(9-a)n^2-bn-1}{3n+\sqrt{an^2+bn+1}} =2\)</span></p><p>由极限的存在性可知<span class="math inline">\(a= 9,b=-12\)</span></p>
+            <p><strong>exp1</strong>:$\lim\limits_{x\to -1}\cfrac{ax^2-x-3}{x+1} = b$,求$a,b$的值.</p><p><strong>Solution</strong>:$I = -2a-1 = b$</p><p>由极限的存在性可知$a = 2,b = -5$</p>
           </div>
 <div class="note note-success">
-            <p><strong>exp3</strong>:已知函数<span class="math inline">\(f(x) =\lim\limits_{n\to\infty}\cfrac{x^{2n-1}+ax^2+bx}{x^{2n}+1}\)</span>在<spanclass="math inline">\(R\)</span>上连续,求<spanclass="math inline">\(a,b\)</span>的值.</p><p><strong>Solution</strong>:分情况讨论,可知函数<spanclass="math inline">\(f(x)\)</span>的表达形式为:</p><p><span class="math inline">\(f(x)=\begin{cases} \cfrac{1}{x},x&lt;-1\\\cfrac{1}{2}(a-b-1),x = -1\\ax^2+bx,-1&lt;x&lt;1\\\cfrac{1}{2}(a+b+1)\\\cfrac{1}{x},x&gt;1\end{cases}\)</span></p><p>根据连续的定义,我们可以求得<spanclass="math inline">\(a=0,b=1\)</span></p>
+            <p><strong>exp2</strong>:已知$\lim\limits_{n\to \infty}(3n-\sqrt{an^2+bn+1}) = 2$,求$a,b$的值.</p><p><strong>Solution</strong>:$I = \lim\limits_{n\to \infty}\cfrac{(9-a)n^2-bn-1}{3n+\sqrt{an^2+bn+1}} = 2$</p><p>由极限的存在性可知$a= 9,b=-12$</p>
+          </div>
+<div class="note note-success">
+            <p><strong>exp3</strong>:已知函数$f(x) = \lim\limits_{n\to\infty}\cfrac{x^{2n-1}+ax^2+bx}{x^{2n}+1}$在$R$上连续,求$a,b$的值.</p><p><strong>Solution</strong>:分情况讨论,可知函数$f(x)$的表达形式为:</p><p>$f(x)=\begin{cases} \cfrac{1}{x},x&lt;-1 \\\cfrac{1}{2}(a-b-1),x = -1\\ ax^2+bx,-1<x<1\\\cfrac{1}{2}(a+b+1)\\ \cfrac{1}{x},x>1\end{cases}$</p><p>根据连续的定义,我们可以求得$a=0,b=1$</p>
           </div>
 
                 

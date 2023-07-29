@@ -16,16 +16,16 @@
   <meta name="author" content="Tinhvon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="你好，在食用这份微积分教程前，不妨看看这个">
+    <meta name="description" content="在介绍完导数的基本概念后,我们讨论一下其四则运算吧！">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微积分-写在前面">
-<meta property="og:url" content="http://example.com/2023/06/29/%E5%BE%AE%E7%A7%AF%E5%88%86-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/index.html">
+<meta property="og:title" content="微积分-Chapter2-导数及其应用-导数的四则运算">
+<meta property="og:url" content="http://example.com/2023/07/29/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
-<meta property="og:description" content="你好，在食用这份微积分教程前，不妨看看这个">
+<meta property="og:description" content="在介绍完导数的基本概念后,我们讨论一下其四则运算吧！">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Calculus.png">
-<meta property="article:published_time" content="2023-06-29T13:10:04.000Z">
-<meta property="article:modified_time" content="2023-07-19T09:27:03.074Z">
+<meta property="article:published_time" content="2023-07-28T18:59:40.000Z">
+<meta property="article:modified_time" content="2023-07-29T18:59:55.325Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Study">
@@ -35,7 +35,7 @@
   
   
   
-  <title>微积分-写在前面 - Tinhvon&#39;s Space</title>
+  <title>微积分-Chapter2-导数及其应用-导数的四则运算 - Tinhvon&#39;s Space</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -217,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="微积分-写在前面"></span>
+            <span id="subtitle" data-typed-text="微积分-Chapter2-导数及其应用-导数的四则运算"></span>
           
         </div>
 
@@ -228,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-06-29 21:10" pubdate>
-          2023年6月29日 晚上
+        <time datetime="2023-07-29 02:59" pubdate>
+          2023年7月29日 凌晨
         </time>
       </span>
     
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          1.2k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          1 分钟
+          11 分钟
         
       </span>
     
@@ -288,12 +288,42 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">微积分-写在前面</h1>
+            <h1 id="seo-header">微积分-Chapter2-导数及其应用-导数的四则运算</h1>
             
             
               <div class="markdown-body">
                 
-                
+                <h1 id="导数及其应用"><a href="#导数及其应用" class="headerlink" title="导数及其应用"></a>导数及其应用</h1><h2 id="导数的运算"><a href="#导数的运算" class="headerlink" title="导数的运算"></a>导数的运算</h2><p>上一篇博文中,我们介绍了导数的基本概念,这篇博文我们介绍一下导数的运算.</p>
+<h3 id="四则运算"><a href="#四则运算" class="headerlink" title="四则运算"></a>四则运算</h3><p>我们不加证明地给出导数的<strong>四则运算法则</strong></p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:设$f(x),g(x)$是可导函数,则其满足以下运算规则:</p><ul><li>$[\alpha f(x)+\beta g(x)]’ = \alpha f’(x)+\beta g’(x)$</li><li>$[f(x)g(x)]’ = f’(x)g(x)+f(x)g’(x)$</li><li>$[\cfrac{f(x)}{g(x)}]’ = \cfrac{f’(x)g(x)-f(x)g’(x)}{g^2(x)},(g(x)\ne 0)$</li></ul>
+          </div>
+<p>根据导数运算的除法规则,我们可以得到一个特殊的导数公式:</p>
+<script type="math/tex; mode=display">
+(\tan x)' = [\cfrac{\sin x}{\cos x}]' = \cfrac{\cos^2 x+\sin^2 x }{\cos ^2x} = \sec^2x</script><p>关于导数四则运算法则的证明,直接套用导数的定义即可,这里不再讨论.</p>
+<h3 id="反函数求导"><a href="#反函数求导" class="headerlink" title="反函数求导"></a>反函数求导</h3><p>对于有反函数的函数求导,有<strong>反函数求导</strong>定律:</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:设$y=f(x)$是严格单调连续函数,在$x$点可导且$f’(x) \ne 0$,则其反函数$x = g(y)$在$x$的对应点$y$可导.（原函数的导数等于反函数导数的倒数.）数学表示形式为:$g’(y) = \cfrac{1}{f’(x)}$</p>
+          </div>
+<p>根据反函数求导法则,我们可以求反三角函数的导数,以$y = \arcsin x$为例:</p>
+<script type="math/tex; mode=display">
+x = \sin y,\cfrac{\mathrm{d}x}{\mathrm{d}y} = \cos y = \sqrt{1-x^2}\\
+\cfrac{\mathrm{d}y}{\mathrm{d}x} = \cfrac{1}{\cfrac{\mathrm{d}x}{\mathrm{d}y}} = \cfrac{1}{\sqrt{1-x^2}}</script><p>同理我们便可以得到反三角函数的导数公式:</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+(\arcsin{x})' &= \cfrac{1}{\sqrt{1-x^2}} \\
+(\arccos{x})' &= -\cfrac{1}{\sqrt{1-x^2}} \\
+(\arctan{x})' &= \cfrac{1}{1+x^2}\\
+(\mathrm{arccot}{x})' &= -\cfrac{1}{1+x^2}
+\end{aligned}</script><h3 id="复合函数求导"><a href="#复合函数求导" class="headerlink" title="复合函数求导"></a>复合函数求导</h3><p>我们在这里不加证明地引出复合函数求导的<strong>链式法则</strong>“:</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:设$f(x),g(x)$可导,则$f[g(x)]$可导,且$\{f[g(x)]\}’ = \cfrac{\mathrm{d}f(u)}{\mathrm{d}u}\cdot \cfrac{\mathrm{d}u}{\mathrm{d}x},u=g(x)$.</p>
+          </div>
+<p>根据链式法则,我们可以求一些复合函数的导数了.给出几个例子:</p>
+<div class="note note-success">
+            <p><strong>exp1</strong>:$f(x)=e^{\sin ^2 x}$,求其导数:</p><p><strong>Solution</strong>:$f’(x) = 2\sin^2x\cos xe^{\sin ^2x}$</p>
+          </div>
+
                 
               </div>
             
@@ -349,8 +379,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>微积分-写在前面</div>
-      <div>http://example.com/2023/06/29/微积分-写在前面/</div>
+      <div>微积分-Chapter2-导数及其应用-导数的四则运算</div>
+      <div>http://example.com/2023/07/29/微积分-Chapter2-导数及其应用-导数的四则运算/</div>
     </div>
     <div class="license-meta">
       
@@ -362,7 +392,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年6月29日</div>
+          <div>2023年7月29日</div>
         </div>
       
       
@@ -394,9 +424,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/07/01/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter0-%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/" title="微积分-Chapter0-预备知识">
+                      <a href="/2023/07/29/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" title="微积分-Chapter2-导数及其应用-基本概念">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">微积分-Chapter0-预备知识</span>
+                        <span class="hidden-mobile">微积分-Chapter2-导数及其应用-基本概念</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -404,8 +434,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/09/18/%E7%BB%8F%E5%85%B8%E5%8A%9B%E5%AD%A61-1-%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6%EF%BC%8C%E5%8F%82%E8%80%83%E7%B3%BB%E4%B8%8E%E5%9D%90%E6%A0%87%E7%B3%BB%EF%BC%8C%E7%9B%B8%E5%AF%B9%E8%BF%90%E5%8A%A8/" title="经典力学-Chapter1-矢量力学">
-                        <span class="hidden-mobile">经典力学-Chapter1-矢量力学</span>
+                      <a href="/2023/07/17/%E5%85%89%E5%AD%A6-Chapter2-%E5%85%89%E7%9A%84%E4%BC%A0%E6%92%AD/" title="光学-Chapter2-光的传播">
+                        <span class="hidden-mobile">光学-Chapter2-光的传播</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -425,8 +455,8 @@
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'http://example.com/2023/06/29/%E5%BE%AE%E7%A7%AF%E5%88%86-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/';
-          this.page.identifier = '/2023/06/29/%E5%BE%AE%E7%A7%AF%E5%88%86-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/';
+          this.page.url = 'http://example.com/2023/07/29/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/';
+          this.page.identifier = '/2023/07/29/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');
