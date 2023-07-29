@@ -4,68 +4,6 @@
   
   
   <entry>
-    <title>微积分-Chapter2-导数及其应用-基本概念</title>
-    <link href="/2023/07/29/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
-    <url>/2023/07/29/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    
-    <content type="html"><![CDATA[<h1 id="导数及其应用"><a href="#导数及其应用" class="headerlink" title="导数及其应用"></a>导数及其应用</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>在第一章中，我们介绍了<strong>极限</strong>这一研究函数的重要工具，本章我们借助极限，可以引入一个新的工具——<strong>导数</strong></p><h3 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h3><p>中学阶段我们已经接触过导数，下面我们给出其定义：</p><div class="note note-primary">            <p><strong>Definition</strong>:设$f(x)$在$(a,b)$有定义，对于$x\in(a,b)$,若$\lim\limits_{\Delta x \to 0}\cfrac{f(x+\Delta x)-f(x)}{\Delta x} = A,x+\Delta x \in (a,b)$，则称$y=f(x)$在$x$点<strong>可导</strong>，并称$A$为其<strong>导数值</strong>，记作$\cfrac{\mathrm{d}y}{\mathrm{d}x}=y’=f’(x)=\dot{y} = A$</p>          </div><p><strong>Note1</strong>:对于导数，物理学中我们常称其为“微商”，是一个新的函数（导函数），简称导数。对于$\cfrac{\mathrm{d}y}{\mathrm{d}x}$,我们常理解为函数的改变量与自变量改变量比值$\cfrac{\Delta y}{\Delta x}$的极限。</p><p><strong>Note2</strong>：对于一元函数$f(x)$，其<strong>可导一定连续</strong>，但是<strong>连续不一定可导</strong>，考虑函数$f(x) = |x|$在$x=0$处的行为即可。</p><p><strong>Note3</strong>：函数$f(x)$在$[a,b]$可导，指$f(x)$在$(a,b)$内任意一点可导，且在端点处存在单侧导数。</p><p><strong>Note4</strong>：$f(x)$在$[a,b]$可导，$f’(x)\in C[a,b]$,称$f(x)$在$[a,b]$连续可导，记为$f(x) \in C^1[a,b]$</p><h3 id="单侧导数"><a href="#单侧导数" class="headerlink" title="单侧导数"></a>单侧导数</h3><p>我们可以效仿单侧极限，给出单侧导数的定义：</p><div class="note note-primary">            <p><strong>Definition</strong>：设$f(x)$在$(a,b)$有定义，对于$x\in(a,b)$,则将$\lim\limits_{x\to x_0^+}\cfrac{f(x)-f(x_0)}{x-x_0}$定义为<strong>右导数</strong>，记作$f_{+}^{‘}(x_0)$.</p><p><strong>Definition</strong>：设$f(x)$在$(a,b)$有定义，对于$x\in(a,b)$,则将$\lim\limits_{x\to x_0^-}\cfrac{f(x)-f(x_0)}{x-x_0}$定义为<strong>左导数</strong>，记作$f_{+}^{‘}(x_0)$.</p>          </div><p>与极限相同，函数$f(x)$在$x=x_0$处可导的充要条件是函数在$x = x_0$的左右导数均存在，且相等。</p><p><strong>Note1</strong>：我们需要区分几种概念的符号表示，如$f(x_0^+)$表示的是$f(x)$在$x=x_0$处的<strong>右极限</strong>；$f^{‘}(x_0^+)$表示的是$f’(x)$在$x=x_0$处的<strong>右极限</strong>;而$f_{+}^{‘}(x_0)$表示的是<strong>右导数</strong>。一般而言，<strong>导函数的右极限</strong>不一定等于<strong>右导数</strong>。</p><h3 id="导数的几何意义"><a href="#导数的几何意义" class="headerlink" title="导数的几何意义"></a>导数的几何意义</h3><p>最后我们讨论一下导数的几何意义，给出严格的定理：</p><div class="note note-danger">            <p><strong>Theorem</strong>:$y = f(x)$在$x=x_0$处的导数，即为曲线$y=f(x)$在$x=x_0$处切线的<strong>斜率</strong>，其中$(x_0,f(x_0))$在曲线上，切线斜率为$f’(x_0)$,切线方程为$y-f(x_0)=f’(x_0)(x-x_0)$.</p>          </div><p><strong>Note1</strong>:在给出切线方程的同时，我们可以给出<strong>法线方程</strong>，此时仅有斜率的改变，即$y-f(x_0)=-\cfrac{1}{f’(x_0)}(x-x_0)$.</p><p>由此我们可以得知：可导$\Rightarrow$切线存在；切线存在$\Rightarrow $可导或者导数为$\infty$.</p><div class="note note-success">            <p><strong>exp1</strong>:求$y=x^2$在$(1,1)$处的切线方程。</p><p><strong>Solution</strong>:$f’(1) = 2 \times 1 = 2$</p><p>故切线方程为$y-1 = 2(x-1)$即$y=2x-1$</p>          </div><h3 id="基本初等函数导数表"><a href="#基本初等函数导数表" class="headerlink" title="基本初等函数导数表"></a>基本初等函数导数表</h3><p>最后附上基本初等函数表：</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>Calculus</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Notes</tag>
-      
-      <tag>Study</tag>
-      
-      <tag>Calculus</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>微积分-Chapter2-导数及其应用-导数的四则运算</title>
-    <link href="/2023/07/29/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/"/>
-    <url>/2023/07/29/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/</url>
-    
-    <content type="html"><![CDATA[<h1 id="导数及其应用"><a href="#导数及其应用" class="headerlink" title="导数及其应用"></a>导数及其应用</h1><h2 id="导数的运算"><a href="#导数的运算" class="headerlink" title="导数的运算"></a>导数的运算</h2><p>上一篇博文中,我们介绍了导数的基本概念,这篇博文我们介绍一下导数的运算.</p><h3 id="四则运算"><a href="#四则运算" class="headerlink" title="四则运算"></a>四则运算</h3><p>我们不加证明地给出导数的<strong>四则运算法则</strong></p><div class="note note-danger">            <p><strong>Theorem</strong>:设$f(x),g(x)$是可导函数,则其满足以下运算规则:</p><ul><li>$[\alpha f(x)+\beta g(x)]’ = \alpha f’(x)+\beta g’(x)$</li><li>$[f(x)g(x)]’ = f’(x)g(x)+f(x)g’(x)$</li><li>$[\cfrac{f(x)}{g(x)}]’ = \cfrac{f’(x)g(x)-f(x)g’(x)}{g^2(x)},(g(x)\ne 0)$</li></ul>          </div><p>根据导数运算的除法规则,我们可以得到一个特殊的导数公式:</p><script type="math/tex; mode=display">(\tan x)' = [\cfrac{\sin x}{\cos x}]' = \cfrac{\cos^2 x+\sin^2 x }{\cos ^2x} = \sec^2x</script><p>关于导数四则运算法则的证明,直接套用导数的定义即可,这里不再讨论.</p><h3 id="反函数求导"><a href="#反函数求导" class="headerlink" title="反函数求导"></a>反函数求导</h3><p>对于有反函数的函数求导,有<strong>反函数求导</strong>定律:</p><div class="note note-danger">            <p><strong>Theorem</strong>:设$y=f(x)$是严格单调连续函数,在$x$点可导且$f’(x) \ne 0$,则其反函数$x = g(y)$在$x$的对应点$y$可导.（原函数的导数等于反函数导数的倒数.）数学表示形式为:$g’(y) = \cfrac{1}{f’(x)}$</p>          </div><p>根据反函数求导法则,我们可以求反三角函数的导数,以$y = \arcsin x$为例:</p><script type="math/tex; mode=display">x = \sin y,\cfrac{\mathrm{d}x}{\mathrm{d}y} = \cos y = \sqrt{1-x^2}\\\cfrac{\mathrm{d}y}{\mathrm{d}x} = \cfrac{1}{\cfrac{\mathrm{d}x}{\mathrm{d}y}} = \cfrac{1}{\sqrt{1-x^2}}</script><p>同理我们便可以得到反三角函数的导数公式:</p><script type="math/tex; mode=display">\begin{aligned}(\arcsin{x})' &= \cfrac{1}{\sqrt{1-x^2}} \\(\arccos{x})' &= -\cfrac{1}{\sqrt{1-x^2}} \\(\arctan{x})' &= \cfrac{1}{1+x^2}\\(\mathrm{arccot}{x})' &= -\cfrac{1}{1+x^2}\end{aligned}</script><h3 id="复合函数求导"><a href="#复合函数求导" class="headerlink" title="复合函数求导"></a>复合函数求导</h3><p>我们在这里不加证明地引出复合函数求导的<strong>链式法则</strong>“:</p><div class="note note-danger">            <p><strong>Theorem</strong>:设$f(x),g(x)$可导,则$f[g(x)]$可导,且$\{f[g(x)]\}’ = \cfrac{\mathrm{d}f(u)}{\mathrm{d}u}\cdot \cfrac{\mathrm{d}u}{\mathrm{d}x},u=g(x)$.</p>          </div><p>根据链式法则,我们可以求一些复合函数的导数了.给出几个例子:</p><div class="note note-success">            <p><strong>exp1</strong>:$f(x)=e^{\sin ^2 x}$,求其导数:</p><p><strong>Solution</strong>:$f’(x) = 2\sin^2x\cos xe^{\sin ^2x}$</p>          </div>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>Calculus</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Notes</tag>
-      
-      <tag>Study</tag>
-      
-      <tag>Calculus</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>光学-Chapter2-光的传播</title>
     <link href="/2023/07/17/%E5%85%89%E5%AD%A6-Chapter2-%E5%85%89%E7%9A%84%E4%BC%A0%E6%92%AD/"/>
     <url>/2023/07/17/%E5%85%89%E5%AD%A6-Chapter2-%E5%85%89%E7%9A%84%E4%BC%A0%E6%92%AD/</url>
@@ -120,6 +58,99 @@
       <tag>Optics</tag>
       
       <tag>Study</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>微积分-Chapter2-导数及其应用-基本概念</title>
+    <link href="/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <url>/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    
+    <content type="html"><![CDATA[<h1 id="导数及其应用">导数及其应用</h1><h2 id="基本概念">基本概念</h2><p>在第一章中，我们介绍了<strong>极限</strong>这一研究函数的重要工具，本章我们借助极限，可以引入一个新的工具——<strong>导数</strong></p><h3 id="导数">导数</h3><p>中学阶段我们已经接触过导数，下面我们给出其定义：</p><div class="note note-primary">            <p><strong>Definition</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,若<spanclass="math inline">\(\lim\limits_{\Delta x \to 0}\cfrac{f(x+\Deltax)-f(x)}{\Delta x} = A,x+\Delta x \in (a,b)\)</span>，则称<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x\)</span>点<strong>可导</strong>，并称<spanclass="math inline">\(A\)</span>为其<strong>导数值</strong>，记作<spanclass="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x}=y&#39;=f&#39;(x)=\dot{y}= A\)</span></p>          </div><p><strong>Note1</strong>:对于导数，物理学中我们常称其为“微商”，是一个新的函数（导函数），简称导数。对于<spanclass="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x}\)</span>,我们常理解为函数的改变量与自变量改变量比值<spanclass="math inline">\(\cfrac{\Delta y}{\Delta x}\)</span>的极限。</p><p><strong>Note2</strong>：对于一元函数<spanclass="math inline">\(f(x)\)</span>，其<strong>可导一定连续</strong>，但是<strong>连续不一定可导</strong>，考虑函数<spanclass="math inline">\(f(x) = |x|\)</span>在<spanclass="math inline">\(x=0\)</span>处的行为即可。</p><p><strong>Note3</strong>：函数<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>可导，指<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>内任意一点可导，且在端点处存在单侧导数。</p><p><strong>Note4</strong>：<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>可导，<spanclass="math inline">\(f&#39;(x)\in C[a,b]\)</span>,称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>连续可导，记为<spanclass="math inline">\(f(x) \in C^1[a,b]\)</span></p><h3 id="单侧导数">单侧导数</h3><p>我们可以效仿单侧极限，给出单侧导数的定义：</p><div class="note note-primary">            <p><strong>Definition</strong>：设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,则将<spanclass="math inline">\(\lim\limits_{x\tox_0^+}\cfrac{f(x)-f(x_0)}{x-x_0}\)</span>定义为<strong>右导数</strong>，记作<spanclass="math inline">\(f_{+}^{&#39;}(x_0)\)</span>.</p><p><strong>Definition</strong>：设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,则将<spanclass="math inline">\(\lim\limits_{x\tox_0^-}\cfrac{f(x)-f(x_0)}{x-x_0}\)</span>定义为<strong>左导数</strong>，记作<spanclass="math inline">\(f_{+}^{&#39;}(x_0)\)</span>.</p>          </div><p>与极限相同，函数<span class="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处可导的充要条件是函数在<spanclass="math inline">\(x = x_0\)</span>的左右导数均存在，且相等。</p><p><strong>Note1</strong>：我们需要区分几种概念的符号表示，如<spanclass="math inline">\(f(x_0^+)\)</span>表示的是<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处的<strong>右极限</strong>；<spanclass="math inline">\(f^{&#39;}(x_0^+)\)</span>表示的是<spanclass="math inline">\(f&#39;(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处的<strong>右极限</strong>;而<spanclass="math inline">\(f_{+}^{&#39;}(x_0)\)</span>表示的是<strong>右导数</strong>。一般而言，<strong>导函数的右极限</strong>不一定等于<strong>右导数</strong>。</p><h3 id="导数的几何意义">导数的几何意义</h3><p>最后我们讨论一下导数的几何意义，给出严格的定理：</p><div class="note note-danger">            <p><strong>Theorem</strong>:<span class="math inline">\(y =f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处的导数，即为曲线<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处切线的<strong>斜率</strong>，其中<spanclass="math inline">\((x_0,f(x_0))\)</span>在曲线上，切线斜率为<spanclass="math inline">\(f&#39;(x_0)\)</span>,切线方程为<spanclass="math inline">\(y-f(x_0)=f&#39;(x_0)(x-x_0)\)</span>.</p>          </div><p><strong>Note1</strong>:在给出切线方程的同时，我们可以给出<strong>法线方程</strong>，此时仅有斜率的改变，即<spanclass="math inline">\(y-f(x_0)=-\cfrac{1}{f&#39;(x_0)}(x-x_0)\)</span>.</p><p>由此我们可以得知：可导<spanclass="math inline">\(\Rightarrow\)</span>切线存在；切线存在$<spanclass="math inline">\(可导或者导数为\)</span>$.</p><div class="note note-success">            <p><strong>exp1</strong>:求<spanclass="math inline">\(y=x^2\)</span>在<spanclass="math inline">\((1,1)\)</span>处的切线方程。</p><p><strong>Solution</strong>:<span class="math inline">\(f&#39;(1) = 2\times 1 = 2\)</span></p><p>故切线方程为<span class="math inline">\(y-1 = 2(x-1)\)</span>即<spanclass="math inline">\(y=2x-1\)</span></p>          </div><h3 id="基本初等函数导数表">基本初等函数导数表</h3><p>最后附上基本初等函数表：</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>Calculus</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Notes</tag>
+      
+      <tag>Study</tag>
+      
+      <tag>Calculus</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>微积分-Chapter2-导数及其应用-导数的四则运算</title>
+    <link href="/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/"/>
+    <url>/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/</url>
+    
+    <content type="html"><![CDATA[<h1 id="导数及其应用">导数及其应用</h1><h2 id="导数的运算">导数的运算</h2><p>上一篇博文中,我们介绍了导数的基本概念,这篇博文我们介绍一下导数的运算.</p><h3 id="四则运算">四则运算</h3><p>我们不加证明地给出导数的<strong>四则运算法则</strong></p><div class="note note-danger">            <p><strong>Theorem</strong>:设<spanclass="math inline">\(f(x),g(x)\)</span>是可导函数,则其满足以下运算规则:</p><ul><li><span class="math inline">\([\alpha f(x)+\beta g(x)]&#39; = \alphaf&#39;(x)+\beta g&#39;(x)\)</span></li><li><span class="math inline">\([f(x)g(x)]&#39; =f&#39;(x)g(x)+f(x)g&#39;(x)\)</span></li><li><span class="math inline">\([\cfrac{f(x)}{g(x)}]&#39; =\cfrac{f&#39;(x)g(x)-f(x)g&#39;(x)}{g^2(x)},(g(x)\ne 0)\)</span></li></ul>          </div><p>根据导数运算的除法规则,我们可以得到一个特殊的导数公式: <spanclass="math display">\[(\tan x)&#39; = [\cfrac{\sin x}{\cos x}]&#39; = \cfrac{\cos^2 x+\sin^2 x}{\cos ^2x} = \sec^2x\]</span>关于导数四则运算法则的证明,直接套用导数的定义即可,这里不再讨论.</p><h3 id="反函数求导">反函数求导</h3><p>对于有反函数的函数求导,有<strong>反函数求导</strong>定律:</p><div class="note note-danger">            <p><strong>Theorem</strong>:设<spanclass="math inline">\(y=f(x)\)</span>是严格单调连续函数,在<spanclass="math inline">\(x\)</span>点可导且<spanclass="math inline">\(f&#39;(x) \ne 0\)</span>,则其反函数<spanclass="math inline">\(x = g(y)\)</span>在<spanclass="math inline">\(x\)</span>的对应点<spanclass="math inline">\(y\)</span>可导.（原函数的导数等于反函数导数的倒数.）数学表示形式为:<spanclass="math inline">\(g&#39;(y) = \cfrac{1}{f&#39;(x)}\)</span></p>          </div><p>根据反函数求导法则,我们可以求反三角函数的导数,以<spanclass="math inline">\(y = \arcsin x\)</span>为例: <spanclass="math display">\[x = \sin y,\cfrac{\mathrm{d}x}{\mathrm{d}y} = \cos y = \sqrt{1-x^2}\\\cfrac{\mathrm{d}y}{\mathrm{d}x} =\cfrac{1}{\cfrac{\mathrm{d}x}{\mathrm{d}y}} = \cfrac{1}{\sqrt{1-x^2}}\]</span> 同理我们便可以得到反三角函数的导数公式: <spanclass="math display">\[\begin{aligned}(\arcsin{x})&#39; &amp;= \cfrac{1}{\sqrt{1-x^2}} \\(\arccos{x})&#39; &amp;= -\cfrac{1}{\sqrt{1-x^2}} \\(\arctan{x})&#39; &amp;= \cfrac{1}{1+x^2}\\(\mathrm{arccot}{x})&#39; &amp;= -\cfrac{1}{1+x^2}\end{aligned}\]</span></p><h3 id="复合函数求导">复合函数求导</h3><p>我们在这里不加证明地引出复合函数求导的<strong>链式法则</strong>“:</p><div class="note note-danger">            <p><strong>Theorem</strong>:设<spanclass="math inline">\(f(x),g(x)\)</span>可导,则<spanclass="math inline">\(f[g(x)]\)</span>可导,且<spanclass="math inline">\(\{f[g(x)]\}&#39; =\cfrac{\mathrm{d}f(u)}{\mathrm{d}u}\cdot\cfrac{\mathrm{d}u}{\mathrm{d}x},u=g(x)\)</span>.</p>          </div><p>根据链式法则,我们可以求一些复合函数的导数了.给出几个例子:</p><div class="note note-success">            <p><strong>exp1</strong>:<span class="math inline">\(f(x)=e^{\sin ^2x}\)</span>,求其导数:</p><p><strong>Solution</strong>:<span class="math inline">\(f&#39;(x) =2\sin^2x\cos xe^{\sin ^2x}\)</span></p>          </div><h3 id="连续可导性">连续可导性</h3>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>Calculus</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Notes</tag>
+      
+      <tag>Study</tag>
+      
+      <tag>Calculus</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>微积分-Chapter2-导数及其应用-求导方法</title>
+    <link href="/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E6%B1%82%E5%AF%BC%E6%96%B9%E6%B3%95/"/>
+    <url>/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E6%B1%82%E5%AF%BC%E6%96%B9%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<h1 id="导数及其应用">导数及其应用</h1><h2 id="求导方法">求导方法</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>Calculus</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Notes</tag>
+      
+      <tag>Study</tag>
+      
+      <tag>Calculus</tag>
       
     </tags>
     
