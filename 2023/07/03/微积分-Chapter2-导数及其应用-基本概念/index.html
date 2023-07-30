@@ -16,16 +16,16 @@
   <meta name="author" content="Tinhvon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="我们在了解导数的定义和四则运算后，已经可以求一些简单函数的导数，但是我们求导方法掌握的还是不够，下面就来介绍一些求导方法吧！">
+    <meta name="description" content="介绍完极限后，我们再介绍一个新的研究函数的工具——导数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微积分-Chapter2-导数及其应用-求导方法">
-<meta property="og:url" content="http://example.com/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E6%B1%82%E5%AF%BC%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:title" content="微积分-Chapter2-导数与微分-基本概念">
+<meta property="og:url" content="http://example.com/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
-<meta property="og:description" content="我们在了解导数的定义和四则运算后，已经可以求一些简单函数的导数，但是我们求导方法掌握的还是不够，下面就来介绍一些求导方法吧！">
+<meta property="og:description" content="介绍完极限后，我们再介绍一个新的研究函数的工具——导数">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Calculus.png">
-<meta property="article:published_time" content="2023-07-02T15:15:44.000Z">
-<meta property="article:modified_time" content="2023-07-29T19:05:28.618Z">
+<meta property="article:published_time" content="2023-07-02T18:00:00.000Z">
+<meta property="article:modified_time" content="2023-07-30T09:10:14.468Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Study">
@@ -35,7 +35,7 @@
   
   
   
-  <title>微积分-Chapter2-导数及其应用-求导方法 - Tinhvon&#39;s Space</title>
+  <title>微积分-Chapter2-导数与微分-基本概念 - Tinhvon&#39;s Space</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -217,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="微积分-Chapter2-导数及其应用-求导方法"></span>
+            <span id="subtitle" data-typed-text="微积分-Chapter2-导数与微分-基本概念"></span>
           
         </div>
 
@@ -228,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-02 23:15" pubdate>
-          2023年7月2日 晚上
+        <time datetime="2023-07-03 02:00" pubdate>
+          2023年7月3日 凌晨
         </time>
       </span>
     
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          10 字
+          1.6k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          1 分钟
+          14 分钟
         
       </span>
     
@@ -288,13 +288,69 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">微积分-Chapter2-导数及其应用-求导方法</h1>
+            <h1 id="seo-header">微积分-Chapter2-导数与微分-基本概念</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="导数及其应用">导数及其应用</h1>
-<h2 id="求导方法">求导方法</h2>
+                <h1 id="导数与微分">导数与微分</h1>
+<h2 id="基本概念">基本概念</h2>
+<p>在第一章中，我们介绍了<strong>极限</strong>这一研究函数的重要工具，本章我们借助极限，可以引入一个新的工具——<strong>导数</strong></p>
+<h3 id="导数">导数</h3>
+<p>中学阶段我们已经接触过导数，下面我们给出其定义：</p>
+<div class="note note-primary">
+            <p><strong>Definition</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,若<spanclass="math inline">\(\lim\limits_{\Delta x \to 0}\cfrac{f(x+\Deltax)-f(x)}{\Delta x} = A,x+\Delta x \in (a,b)\)</span>，则称<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x\)</span>点<strong>可导</strong>，并称<spanclass="math inline">\(A\)</span>为其<strong>导数值</strong>，记作<spanclass="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x}=y&#39;=f&#39;(x)=\dot{y}= A\)</span></p>
+          </div>
+<p><strong>Note1</strong>:对于导数，物理学中我们常称其为“微商”，是一个新的函数（导函数），简称导数。对于<span
+class="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x}\)</span>,我们常理解为函数的改变量与自变量改变量比值<span
+class="math inline">\(\cfrac{\Delta y}{\Delta x}\)</span>的极限。</p>
+<p><strong>Note2</strong>：对于一元函数<span
+class="math inline">\(f(x)\)</span>，其<strong>可导一定连续</strong>，但是<strong>连续不一定可导</strong>，考虑函数<span
+class="math inline">\(f(x) = |x|\)</span>在<span
+class="math inline">\(x=0\)</span>处的行为即可。</p>
+<p><strong>Note3</strong>：函数<span
+class="math inline">\(f(x)\)</span>在<span
+class="math inline">\([a,b]\)</span>可导，指<span
+class="math inline">\(f(x)\)</span>在<span
+class="math inline">\((a,b)\)</span>内任意一点可导，且在端点处存在单侧导数。</p>
+<p><strong>Note4</strong>：<span
+class="math inline">\(f(x)\)</span>在<span
+class="math inline">\([a,b]\)</span>可导，<span
+class="math inline">\(f&#39;(x)\in C[a,b]\)</span>,称<span
+class="math inline">\(f(x)\)</span>在<span
+class="math inline">\([a,b]\)</span>连续可导，记为<span
+class="math inline">\(f(x) \in C^1[a,b]\)</span></p>
+<h3 id="单侧导数">单侧导数</h3>
+<p>我们可以效仿单侧极限，给出单侧导数的定义：</p>
+<div class="note note-primary">
+            <p><strong>Definition</strong>：设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,则将<spanclass="math inline">\(\lim\limits_{x\tox_0^+}\cfrac{f(x)-f(x_0)}{x-x_0}\)</span>定义为<strong>右导数</strong>，记作<spanclass="math inline">\(f_{+}^{&#39;}(x_0)\)</span>.</p><p><strong>Definition</strong>：设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,则将<spanclass="math inline">\(\lim\limits_{x\tox_0^-}\cfrac{f(x)-f(x_0)}{x-x_0}\)</span>定义为<strong>左导数</strong>，记作<spanclass="math inline">\(f_{+}^{&#39;}(x_0)\)</span>.</p>
+          </div>
+<p>与极限相同，函数<span class="math inline">\(f(x)\)</span>在<span
+class="math inline">\(x=x_0\)</span>处可导的充要条件是函数在<span
+class="math inline">\(x = x_0\)</span>的左右导数均存在，且相等。</p>
+<p><strong>Note1</strong>：我们需要区分几种概念的符号表示，如<span
+class="math inline">\(f(x_0^+)\)</span>表示的是<span
+class="math inline">\(f(x)\)</span>在<span
+class="math inline">\(x=x_0\)</span>处的<strong>右极限</strong>；<span
+class="math inline">\(f^{&#39;}(x_0^+)\)</span>表示的是<span
+class="math inline">\(f&#39;(x)\)</span>在<span
+class="math inline">\(x=x_0\)</span>处的<strong>右极限</strong>;而<span
+class="math inline">\(f_{+}^{&#39;}(x_0)\)</span>表示的是<strong>右导数</strong>。一般而言，<strong>导函数的右极限</strong>不一定等于<strong>右导数</strong>。</p>
+<h3 id="导数的几何意义">导数的几何意义</h3>
+<p>最后我们讨论一下导数的几何意义，给出严格的定理：</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:<span class="math inline">\(y =f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处的导数，即为曲线<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处切线的<strong>斜率</strong>，其中<spanclass="math inline">\((x_0,f(x_0))\)</span>在曲线上，切线斜率为<spanclass="math inline">\(f&#39;(x_0)\)</span>,切线方程为<spanclass="math inline">\(y-f(x_0)=f&#39;(x_0)(x-x_0)\)</span>.</p>
+          </div>
+<p><strong>Note1</strong>:在给出切线方程的同时，我们可以给出<strong>法线方程</strong>，此时仅有斜率的改变，即<span
+class="math inline">\(y-f(x_0)=-\cfrac{1}{f&#39;(x_0)}(x-x_0)\)</span>.</p>
+<p>由此我们可以得知：可导<span
+class="math inline">\(\Rightarrow\)</span>切线存在；切线存在$<span
+class="math inline">\(可导或者导数为\)</span>$.</p>
+<div class="note note-success">
+            <p><strong>exp1</strong>:求<spanclass="math inline">\(y=x^2\)</span>在<spanclass="math inline">\((1,1)\)</span>处的切线方程。</p><p><strong>Solution</strong>:<span class="math inline">\(f&#39;(1) = 2\times 1 = 2\)</span></p><p>故切线方程为<span class="math inline">\(y-1 = 2(x-1)\)</span>即<spanclass="math inline">\(y=2x-1\)</span></p>
+          </div>
+<h3 id="基本初等函数导数表">基本初等函数导数表</h3>
+<p>最后附上基本初等函数表：</p>
 
                 
               </div>
@@ -351,8 +407,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>微积分-Chapter2-导数及其应用-求导方法</div>
-      <div>http://example.com/2023/07/02/微积分-Chapter2-导数及其应用-求导方法/</div>
+      <div>微积分-Chapter2-导数与微分-基本概念</div>
+      <div>http://example.com/2023/07/03/微积分-Chapter2-导数及其应用-基本概念/</div>
     </div>
     <div class="license-meta">
       
@@ -364,7 +420,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年7月2日</div>
+          <div>2023年7月3日</div>
         </div>
       
       
@@ -396,9 +452,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/" title="微积分-Chapter2-导数及其应用-导数的四则运算">
+                      <a href="/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/" title="微积分-Chapter2-导数与微分-导数的四则运算">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">微积分-Chapter2-导数及其应用-导数的四则运算</span>
+                        <span class="hidden-mobile">微积分-Chapter2-导数与微分-导数的四则运算</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -427,8 +483,8 @@
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'http://example.com/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E6%B1%82%E5%AF%BC%E6%96%B9%E6%B3%95/';
-          this.page.identifier = '/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E6%B1%82%E5%AF%BC%E6%96%B9%E6%B3%95/';
+          this.page.url = 'http://example.com/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/';
+          this.page.identifier = '/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');
@@ -768,5 +824,20 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
