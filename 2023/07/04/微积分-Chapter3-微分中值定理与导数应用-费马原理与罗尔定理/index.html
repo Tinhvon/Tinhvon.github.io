@@ -16,19 +16,26 @@
   <meta name="author" content="Tinhvon">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
-<meta property="og:title" content="微积分-Chapter3-微分中值定理与导数应用-函数性态研究">
-<meta property="og:url" content="http://example.com/2023/07/30/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter3-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8-%E5%87%BD%E6%95%B0%E6%80%A7%E6%80%81%E7%A0%94%E7%A9%B6/index.html">
+    <meta name="description" content="本篇博文中我们要介绍微分学中很重要的部分——微分中值定理。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微积分-Chapter3-微分中值定理与导数应用-费马原理与罗尔定理">
+<meta property="og:url" content="http://example.com/2023/07/04/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter3-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8-%E8%B4%B9%E9%A9%AC%E5%8E%9F%E7%90%86%E4%B8%8E%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
+<meta property="og:description" content="本篇博文中我们要介绍微分学中很重要的部分——微分中值定理。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-30T09:34:02.000Z">
-<meta property="article:modified_time" content="2023-07-30T09:34:02.725Z">
+<meta property="og:image" content="http://example.com/img/bg/Calculus.png">
+<meta property="article:published_time" content="2023-07-03T20:00:00.000Z">
+<meta property="article:modified_time" content="2023-07-30T18:04:17.544Z">
 <meta property="article:author" content="Tinhvon">
+<meta property="article:tag" content="Notes">
+<meta property="article:tag" content="Study">
+<meta property="article:tag" content="Calculus">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/bg/Calculus.png">
   
   
   
-  <title>微积分-Chapter3-微分中值定理与导数应用-函数性态研究 - Tinhvon&#39;s Space</title>
+  <title>微积分-Chapter3-微分中值定理与导数应用-费马原理与罗尔定理 - Tinhvon&#39;s Space</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -204,13 +211,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/bg/Calculus.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="微积分-Chapter3-微分中值定理与导数应用-函数性态研究"></span>
+            <span id="subtitle" data-typed-text="微积分-Chapter3-微分中值定理与导数应用-费马原理与罗尔定理"></span>
           
         </div>
 
@@ -221,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-30 17:34" pubdate>
-          2023年7月30日 下午
+        <time datetime="2023-07-04 04:00" pubdate>
+          2023年7月4日 凌晨
         </time>
       </span>
     
@@ -233,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          2.3k 字
         
       </span>
     
@@ -244,7 +251,7 @@
         
         
         
-          1 分钟
+          20 分钟
         
       </span>
     
@@ -281,12 +288,64 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">微积分-Chapter3-微分中值定理与导数应用-函数性态研究</h1>
+            <h1 id="seo-header">微积分-Chapter3-微分中值定理与导数应用-费马原理与罗尔定理</h1>
             
             
               <div class="markdown-body">
                 
-                
+                <h1 id="微分中值定理与导数的应用">微分中值定理与导数的应用</h1>
+<h2 id="费马原理与罗尔定理">费马原理与罗尔定理</h2>
+<h3 id="费马原理">费马原理</h3>
+<p>首先介绍一个最基本的原理——<strong>费马原理</strong>，其表述如下：</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>有定义，且在<spanclass="math inline">\([a,b]\)</span>内<spanclass="math inline">\(c\)</span>点处取最值，若<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x=c\)</span>处可导，则<spanclass="math inline">\(f&#39;(c)=0\)</span>.</p>
+          </div>
+<p>证明如下：</p>
+<div class="note note-info">
+            <p><strong>Proof</strong> 不妨假设<spanclass="math inline">\(y=f(x)\)</span>在<span class="math inline">\(x =c\)</span>处取最小值</p><p><span class="math inline">\(f&#39;(c) = f&#39;_+(c) = \lim\limits_{x\to c^+}\cfrac{f(x)-f(c)}{x-c} \geq 0\)</span></p><p><span class="math inline">\(f&#39;(c) = f&#39;_-(c) = \lim\limits_{x\to c^-}\cfrac{f(x)-f(c)}{x-c} \leq 0\)</span></p><p>故有<span class="math inline">\(f&#39;(c)=0\)</span>.</p>
+          </div>
+<p><strong>Note 1</strong>:<span
+class="math inline">\(y=f(x)\)</span>在<span
+class="math inline">\([a,b]\)</span>内有定义，则<span
+class="math inline">\(f(x)\)</span>在以下三种点取得最值:</p>
+<ul>
+<li>边界点</li>
+<li>不可导点</li>
+<li>导数为<span class="math inline">\(0\)</span>的点（驻点）</li>
+</ul>
+<p>在证明<strong>费马原理</strong>后，我们可以以此为基础，来推导处其他微分中值定理。</p>
+<h3 id="罗尔定理">罗尔定理</h3>
+<p>得到费马原理后，我们首先证明<strong>罗尔定理</strong>，其表述为：</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:设<spanclass="math inline">\(y=f(x)\)</span>满足在<spanclass="math inline">\([a,b]\)</span>上连续，在<spanclass="math inline">\((a,b)\)</span>上可导，且有<spanclass="math inline">\(f(a)=f(b)\)</span>,则<spanclass="math inline">\(\exists \xi \in (a,b)\)</span>,使得<spanclass="math inline">\(f(\xi)=0\)</span>.</p>
+          </div>
+<p>证明如下：</p>
+<div class="note note-info">
+            <p><strong>Proof</strong> <spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>上连续，则<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>上可以取到最大值<spanclass="math inline">\(M\)</span>,最小值<spanclass="math inline">\(m\)</span>.</p><p>分情况讨论：</p><ul><li>当<span class="math inline">\(M=m\)</span>时，显然有<spanclass="math inline">\(f(x) = C\)</span>,此时<spanclass="math inline">\(\forall \xi \in (a,b),f&#39;(\xi)=0\)</span></li><li>当<span class="math inline">\(M&gt;m\)</span>时，由<spanclass="math inline">\(f(a)=f(b)\)</span>可知，最大值最小值点最少有一点在<spanclass="math inline">\((a,b)\)</span>中，不妨设<spanclass="math inline">\(x= \xi \in(a,b)\)</span>处取得最值，根据费马原理，有<spanclass="math inline">\(f&#39;(\xi) = 0\)</span></li></ul>
+          </div>
+<p>根据罗尔定理，我们可以简单地判断导函数的零点个数，举例如下：</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong> :设<span class="math inline">\(f(x) =(x-1)(x-2)(x-3)(x-4)(x-5)(x-6)\)</span>,判断<spanclass="math inline">\(f&#39;(x) = 0\)</span>的实根个数.</p><p><strong>Solution</strong>: 根据罗尔定理，其实根个数至少为5</p><p>且分别落在<spanclass="math inline">\([1,2],[2,3],[3,4],[4,5],[5,6]\)</span>中.</p>
+          </div>
+<p><strong>Note 1</strong>:考虑函数<span class="math inline">\(f(x) =
+\begin{cases} x ,x\in [0,1) \\ 0,x=1 \end{cases},f&#39;(x) =
+1\)</span>,其显然不满足罗尔定理，原因是<span
+class="math inline">\(f(x)\)</span>在<span
+class="math inline">\([0,1]\)</span>不连续.</p>
+<p><strong>Note 2</strong>：考虑函数<span class="math inline">\(f(x) =
+\begin{cases} x ,x\in [0,\cfrac{1}{2}] \\ 1-x,x\in (\cfrac{1}{2},1]
+\end{cases},f&#39;(x) \ne 0\)</span>,其显然不满足罗尔定理，原因是<span
+class="math inline">\(f(x)\)</span>在<span
+class="math inline">\((0,1)\)</span>并非处处可导.</p>
+<p><strong>Note 3</strong>:考虑函数<span
+class="math inline">\(f(x)=x,x\in[0,1],f&#39;(x)=
+1\)</span>,其显然不满足罗尔定理，原因是端点处的函数值不相同.</p>
+<div class="note note-success">
+            <p><strong>Example 2 </strong>:设<span class="math inline">\(F(x) =x^2f(x)\)</span>在<spanclass="math inline">\([0,1]\)</span>三次可导，且<spanclass="math inline">\(f(0)=f(1)=0\)</span>,求证：<spanclass="math inline">\(\exists \xi \in (0,1)\)</span>,使得<spanclass="math inline">\(F&#39;&#39;(\xi) = 0\)</span>.</p><p><strong>Proof</strong> 由题可知<spanclass="math inline">\(F(0)=F(1)=0\)</span>,根据罗尔定理:<spanclass="math inline">\(\exists \xi_1 \in(0,1),F&#39;(\xi_1)=0\)</span></p><p>又<spanclass="math inline">\(F&#39;(\xi)=3x^2f(x)+x^3f&#39;(x),F&#39;(0)=0\)</span></p><p>在<spanclass="math inline">\((0,\xi_1)\)</span>上，根据罗尔定理，可知<spanclass="math inline">\(\exists \xi_2 \in (0,\xi_1),F&#39;&#39;(\xi_2) =0\)</span>,原命题得证.</p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 3</strong>:设<spanclass="math inline">\(f(x),g(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>连续，<spanclass="math inline">\((a,b)\)</span>可导，且<spanclass="math inline">\(f(a) = f(b) = 0\)</span>,则有</p><ul><li><span class="math inline">\(\exists \xi \in(a,b),f&#39;(\xi)=0\)</span>,罗尔定理显然可证.</li><li><span class="math inline">\(\exists \xi \in (a,b),f(\xi)+\xif&#39;(\xi)=0\)</span>,构造函数<span class="math inline">\(F(x) =xf(x)\)</span>,然后使用罗尔定理可证.</li><li><span class="math inline">\(\exists \xi \in (a,b),f(\xi)-\xif&#39;(\xi)=0\)</span>,构造函数<span class="math inline">\(F(x) =\cfrac{f(x)}{x}\)</span>,然后使用罗尔定理可证.</li><li><span class="math inline">\(\exists \xi \in(a,b),f&#39;(\xi)+\lambda f(\xi)=0\)</span>,构造函数<spanclass="math inline">\(F(x) = e^{\lambdax}f(x)\)</span>,然后使用罗尔定理可证.</li><li><span class="math inline">\(\exists \xi \in(a,b),f&#39;(\xi)+f(\xi)g&#39;(\xi)=0\)</span>,构造函数<spanclass="math inline">\(F(x) =e^{g(x)}f(x)\)</span>,然后使用罗尔定理可证.</li><li><span class="math inline">\(\exists \xi \in(a,b),f&#39;(\xi)g(\xi)+f(\xi)g&#39;(\xi)=0\)</span>,构造函数<spanclass="math inline">\(F(x) =f(x)g(x)\)</span>,然后使用罗尔定理可证.</li><li><span class="math inline">\(\exists \xi \in(a,b),f&#39;(\xi)g(\xi)-f(\xi)g&#39;(\xi)=0\)</span>,构造函数<spanclass="math inline">\(F(x) =\cfrac{f(x)}{g(x)}\)</span>,然后使用罗尔定理可证.</li></ul>
+          </div>
 
                 
               </div>
@@ -295,6 +354,45 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Notes/" class="category-chain-item">Notes</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Notes/Calculus/" class="category-chain-item">Calculus</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Notes/" class="print-no-link">#Notes</a>
+      
+        <a href="/tags/Study/" class="print-no-link">#Study</a>
+      
+        <a href="/tags/Calculus/" class="print-no-link">#Calculus</a>
+      
+    </div>
   
 </div>
 
@@ -304,8 +402,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>微积分-Chapter3-微分中值定理与导数应用-函数性态研究</div>
-      <div>http://example.com/2023/07/30/微积分-Chapter3-微分中值定理与导数应用-函数性态研究/</div>
+      <div>微积分-Chapter3-微分中值定理与导数应用-费马原理与罗尔定理</div>
+      <div>http://example.com/2023/07/04/微积分-Chapter3-微分中值定理与导数应用-费马原理与罗尔定理/</div>
     </div>
     <div class="license-meta">
       
@@ -317,7 +415,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年7月30日</div>
+          <div>2023年7月4日</div>
         </div>
       
       
@@ -349,9 +447,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/07/31/Chapter3-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8-%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E6%9F%AF%E8%A5%BF%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86/" title="Chapter3-微分中值定理与导数应用-拉格朗日中值定理与柯西中值定理">
+                      <a href="/2023/07/16/%E5%85%89%E5%AD%A6-Chapter1-%E5%85%89%E7%9A%84%E7%94%B5%E7%A3%81%E7%90%86%E8%AE%BA/" title="光学 Chapter1-光的电磁理论">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Chapter3-微分中值定理与导数应用-拉格朗日中值定理与柯西中值定理</span>
+                        <span class="hidden-mobile">光学 Chapter1-光的电磁理论</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -359,8 +457,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/30/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter3-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8-%E6%B3%B0%E5%8B%92%E5%85%AC%E5%BC%8F/" title="微积分-Chapter3-微分中值定理与导数应用-泰勒公式">
-                        <span class="hidden-mobile">微积分-Chapter3-微分中值定理与导数应用-泰勒公式</span>
+                      <a href="/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E5%BE%AE%E5%88%86/" title="微积分-Chapter2-导数与微分-微分">
+                        <span class="hidden-mobile">微积分-Chapter2-导数与微分-微分</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -380,8 +478,8 @@
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'http://example.com/2023/07/30/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter3-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8-%E5%87%BD%E6%95%B0%E6%80%A7%E6%80%81%E7%A0%94%E7%A9%B6/';
-          this.page.identifier = '/2023/07/30/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter3-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8-%E5%87%BD%E6%95%B0%E6%80%A7%E6%80%81%E7%A0%94%E7%A9%B6/';
+          this.page.url = 'http://example.com/2023/07/04/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter3-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8-%E8%B4%B9%E9%A9%AC%E5%8E%9F%E7%90%86%E4%B8%8E%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86/';
+          this.page.identifier = '/2023/07/04/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter3-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8-%E8%B4%B9%E9%A9%AC%E5%8E%9F%E7%90%86%E4%B8%8E%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');
