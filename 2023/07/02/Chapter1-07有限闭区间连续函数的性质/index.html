@@ -16,16 +16,16 @@
   <meta name="author" content="Tinhvon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="我们在了解导数的定义和四则运算后,已经可以求一些简单函数的导数,但是我们求导方法掌握的还是不够,下面就来介绍一些求导方法吧！">
+    <meta name="description" content="最后我们研究一下有限闭区间连续函数的性质.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微积分-Chapter2-导数与微分-求导方法">
-<meta property="og:url" content="http://example.com/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E6%B1%82%E5%AF%BC%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:title" content="Chapter1-07有限闭区间连续函数的性质">
+<meta property="og:url" content="http://example.com/2023/07/02/Chapter1-07%E6%9C%89%E9%99%90%E9%97%AD%E5%8C%BA%E9%97%B4%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
-<meta property="og:description" content="我们在了解导数的定义和四则运算后,已经可以求一些简单函数的导数,但是我们求导方法掌握的还是不够,下面就来介绍一些求导方法吧！">
+<meta property="og:description" content="最后我们研究一下有限闭区间连续函数的性质.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Calculus.png">
-<meta property="article:published_time" content="2023-07-02T18:30:00.000Z">
-<meta property="article:modified_time" content="2023-07-30T18:17:31.653Z">
+<meta property="article:published_time" content="2023-07-01T21:00:00.000Z">
+<meta property="article:modified_time" content="2023-07-31T12:27:27.435Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Study">
@@ -35,7 +35,7 @@
   
   
   
-  <title>微积分-Chapter2-导数与微分-求导方法 - Tinhvon&#39;s Space</title>
+  <title>Chapter1-07有限闭区间连续函数的性质 - Tinhvon&#39;s Space</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -217,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="微积分-Chapter2-导数与微分-求导方法"></span>
+            <span id="subtitle" data-typed-text="Chapter1-07有限闭区间连续函数的性质"></span>
           
         </div>
 
@@ -228,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-03 02:30" pubdate>
-          2023年7月3日 凌晨
+        <time datetime="2023-07-02 05:00" pubdate>
+          2023年7月2日 凌晨
         </time>
       </span>
     
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.1k 字
+          1.9k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          18 分钟
+          16 分钟
         
       </span>
     
@@ -288,58 +288,79 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">微积分-Chapter2-导数与微分-求导方法</h1>
+            <h1 id="seo-header">Chapter1-07有限闭区间连续函数的性质</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="导数与微分">导数与微分</h1>
-<h2 id="求导方法">求导方法</h2>
-<p>下面我们介绍较复杂函数的求导方法.</p>
-<h3 id="隐函数求导法">隐函数求导法</h3>
-<p>首先给出<strong>隐函数</strong>的定义:</p>
-<div class="note note-primary">
-            <p><strong>Definition</strong>:设关于<spanclass="math inline">\(x,y\)</span>的代数式<spanclass="math inline">\(F(x,y)\)</span>,且方程<spanclass="math inline">\(F(x,y )=0\)</span>可以确定<spanclass="math inline">\(y\)</span>是<spanclass="math inline">\(x\)</span>的函数,则称这种方式表示的函数是<strong>隐函数</strong>.</p>
-          </div>
-<p><strong>Note1</strong>:相比于隐函数,显函数一般可以用<span
-class="math inline">\(y=f(x)\)</span>直接表示.</p>
-<p>对于隐函数<span class="math inline">\(F(x,y)=0\)</span>,求导数<span
-class="math inline">\(y&#39;\)</span>的方法如下:</p>
+                <h1 id="极限与连续">极限与连续</h1>
+<h2 id="有限闭区间连续函数的性质">有限闭区间连续函数的性质</h2>
+<p>最后我们来讨论一下<span class="math inline">\(f(x) \in
+C[a,b]\)</span>的性质吧！</p>
+<h3 id="有界性定理">有界性定理</h3>
+<p>考虑一个函数<span class="math inline">\(f(x)\in
+C[a,b]\)</span>,其满足<strong>有界性定理</strong>:</p>
 <div class="note note-danger">
-            <ul><li>关于<span class="math inline">\(x\)</span>求导,其中<spanclass="math inline">\(y\)</span>是<spanclass="math inline">\(x\)</span>的函数.</li><li>解出<span class="math inline">\(y&#39;\)</span>即可.</li></ul>
+            <p><strong>Theorem(有界性定理)</strong>:<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>上一定有界.</p>
           </div>
-<p>下面给一个例子来应用这种方法:</p>
-<div class="note note-success">
-            <p><strong>Example 1</strong>:已知<span class="math inline">\(y =\cos{(x+y)}\)</span>,<span class="math inline">\(y\)</span>是<spanclass="math inline">\(x\)</span>的函数,求<spanclass="math inline">\(y&#39;\)</span>.</p><p><strong>Solution</strong> 对等式两边求导有:<spanclass="math inline">\(y&#39; = -\sin(x+y)(1+y&#39;)\)</span></p><p>解得<spanclass="math inline">\(y&#39;=-\cfrac{\sin(x+y)}{1+\sin(x+y)}\)</span></p>
-          </div>
-<div class="note note-success">
-            <p><strong>Example 2</strong>:已知<spanclass="math inline">\(e^y-e^{-x}+xy=0\)</span>,求<spanclass="math inline">\(y&#39;\)</span>.</p><p><strong>Solution</strong> 对等式两边求导有:<spanclass="math inline">\(y&#39;e^{y}+e^{-x}+y+xy&#39;=0\)</span></p><p>解得<spanclass="math inline">\(y&#39;=-\cfrac{y+e^{-x}}{x+e^{y}}\)</span></p>
-          </div>
-<h3 id="对数求导法">对数求导法</h3>
-<p>当所求函数可以写成函数相乘(<em>特别是指数相乘</em>)的形式时,常用<strong>对数求导法</strong>,方法如下:</p>
+<p><strong>Note 1</strong>:考虑函数<span class="math inline">\(f(x) =
+\cfrac{1}{x},x\in(0,1)\)</span>,易知<span
+class="math inline">\(f(x)\)</span>在<span
+class="math inline">\((0,1)\)</span>连续,但是<span
+class="math inline">\(f(x)\)</span>在<span
+class="math inline">\((0,1)\)</span>无界,故有界性定理只在<strong>闭区间</strong>上成立.</p>
+<p><strong>Note 2</strong>:考虑函数<span class="math inline">\(f(x) =
+\begin{cases}\cfrac{1}{x},x\in(0,1] \\ 1,x =
+0\end{cases}\)</span>,易知<span class="math inline">\(f(x)\)</span><span
+class="math inline">\((0,1]\)</span>上连续但是无界,故有界性定理要求函数在闭区间上<strong>连续</strong>.</p>
+<h3 id="最值定理">最值定理</h3>
+<p>考虑一个函数<span class="math inline">\(f(x) \in
+C[a,b]\)</span>,其满足<strong>最值定理</strong>:</p>
 <div class="note note-danger">
-            <p>设函数<span class="math inline">\(y=f_1(x)\cdot f_2(x)\cdot ...\cdotf_n(x)\)</span></p><p>对两边取对数<span class="math inline">\(\ln{y} = \ln f_1(x)+\lnf_2(x)+...+\ln f_n(x)\)</span></p><p>两边求导,即有:<span class="math inline">\(\cfrac{y&#39;}{y} =\cfrac{f_1&#39;(x)}{f_1(x)}+\cfrac{f_2&#39;(x)}{f_2(x)}+...+\cfrac{f_n&#39;(x)}{f_n(x)}\)</span></p><p>可得<span class="math inline">\(y = \sum\limits_{k=1}^{n}f_1(x)\cdot...\cdot f_k&#39;(x)\cdot ... f_n(x)\)</span></p>
+            <p><strong>Theorem(最值定理)</strong>:<spanclass="math inline">\(\exists x_1,x_2 \in [a,b]\)</span>使得<spanclass="math inline">\(m \leq f(x_1) \leq f(x_2) \leq M\)</span></p>
           </div>
-<p>当所求函数形式为指数形式时,对数求导法可以发挥其最大的效用.给出一个应用的例子:</p>
-<div class="note note-success">
-            <p><strong>Example 1</strong>:已知函数<spanclass="math inline">\(y=(\sin{x})^{\cos{x}}+(\cos{x})^{\sin{x}}\)</span>,求<spanclass="math inline">\(y&#39;\)</span>.</p><p><strong>Solution</strong> 两边取对数:<spanclass="math inline">\(\ln{y} = \cos{x}\ln{\sin{x}} +\sin{x}\ln{\cos{x}}\)</span></p><p>两边求导:<span class="math inline">\(\cfrac{y&#39;}{y} =\cos{x}\ln{\sin{x}}-\sin{x}\ln{\sin{x}}+\cfrac{\cos^2x}{\sin{x}}-\cfrac{\sin^2{x}}{\cos{x}}\)</span></p><p>最终化简即可</p>
-          </div>
-<h3 id="参数方程求导法">参数方程求导法</h3>
-<p>当函数是用参数方程表示的形式时,如: <span class="math display">\[
-\begin{cases} x = x(t)\\
-y = y(t)
-\end{cases},a\leq t \leq b
-\]</span>
-其求导方法本质不变.对于参数方程表示的函数,求其导数,有以下<strong>参数方程求导法</strong>:</p>
+<p><strong>Note 1</strong>:考虑函数<span class="math inline">\(f(x) =
+\cfrac{1}{1+e^{1/x}},x \in [-1,1]\)</span>,易知<span
+class="math inline">\(f(x)\)</span>在<span
+class="math inline">\([-1,1]\)</span>上无法取到最值,故最值定理要求函数在闭区间上<strong>连续</strong>.</p>
+<p><strong>Note 2</strong>:考虑函数<span class="math inline">\(f(x) =
+x,x\in (-1,1)\)</span>,易知<span
+class="math inline">\(f(x)\)</span>在<span
+class="math inline">\((-1,1)\)</span>上无法取到最值,故最值定理只在<strong>闭区间</strong>上成立.</p>
+<h3 id="介值定理">介值定理</h3>
+<p>考虑一个函数<span class="math inline">\(f(x) \in
+C[a,b]\)</span>,其满足<strong>介值定理</strong>:</p>
 <div class="note note-danger">
-            <p><span class="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x} =\cfrac{\mathrm{d}y}{\mathrm{d}t}\cdot \cfrac{\mathrm{d}t}{\mathrm{d}x} =\cfrac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t}\)</span></p>
+            <p><strong>Theorem(介值定理)</strong>:若<spanclass="math inline">\(\mu\)</span>是介于<spanclass="math inline">\(f(a),f(b)\)</span>之间的任何值,则<spanclass="math inline">\(\exists \xi \in [a,b]\)</span>使得<spanclass="math inline">\(f(\xi ) = \mu\)</span></p>
           </div>
-<p>给出几个例子:</p>
+<p>特别地,连续函数<span class="math inline">\(f(x)\)</span>在<span
+class="math inline">\([a,b]\)</span>上的最大值,最小值分别设为<span
+class="math inline">\(M,m\)</span>,则对于<span
+class="math inline">\(\forall \mu \in [m,M],\exists \xi \in
+[a,b]\)</span>使得<span class="math inline">\(f(\xi) = \mu\)</span>.</p>
+<h3 id="零点存在性定理">零点存在性定理</h3>
+<p>考虑函数<span class="math inline">\(f(x) \in
+C[a,b]\)</span>,其满足<strong>零点存在性定理</strong>:</p>
+<div class="note note-danger">
+            <p><strong>Theorem(零点存在性定理)</strong>:若函数<spanclass="math inline">\(f(x)\)</span>满足<spanclass="math inline">\(f(a)\cdot f(b) &lt; 0\)</span>,则<spanclass="math inline">\(\exists \xi \in (a,b)\)</span>,使得<spanclass="math inline">\(f(\xi) = 0\)</span></p>
+          </div>
+<p>利用零点存在性定理,我们往往可以判断一个连续函数的零点个数及其范围,给出几个例子:</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:已知摆线的参数方程为:<spanclass="math inline">\(\begin{cases}x =a(t-\sin{t})\\y=a(1-\cos{t})\end{cases},0\leq t\leq2\pi\)</span>,求其导数.</p><p><strong>Solution</strong> 易知:<spanclass="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x} =\cfrac{y&#39;(t)}{x&#39;(t)} = \cfrac{\sin{t}}{1-\cos{t}}\)</span></p>
+            <p><strong>Example 1</strong>:求方程<spanclass="math inline">\(x^3+4x^2-3x-1=0\)</span>解的个数.</p><p><strong>Solution</strong> 记函数<span class="math inline">\(f(x)=x^3+4x^2-3x-1\)</span>,</p><p>易知<span class="math inline">\(f(-10) = -5 &lt; 0,f(-1) = 5 &gt; 0,f(0) = -1,f(1) = 1&gt; 0\)</span></p><p>故根据零点存在性定理,方程有两个解</p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 2</strong>:极坐标系下,心型线的极坐标方程为<spanclass="math inline">\(r=a(1+\cos{\theta})\)</span>,求<spanclass="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x}\)</span>.</p><p><strong>Solution</strong> 直角坐标与极坐标之间的代换关系为:<spanclass="math inline">\(\begin{cases}x=r\cos{\theta}\\y=r\sin{\theta}\end{cases}\)</span></p><p>化简有:<spanclass="math inline">\(\begin{cases}x=a(1+\cos{\theta})\cos{\theta}\\y=a(1+\cos{\theta})\sin{\theta}\end{cases}\)</span></p><p>由参数方程求导法:<spanclass="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x} =\cfrac{y&#39;(\theta)}{x&#39;(\theta)} =-\cfrac{\cos2\theta+\cos{\theta}}{\sin{2\theta+\sin{\theta}}}\)</span>.</p>
+            <p><strong>Example 2</strong>:求方程<span class="math inline">\(4-x =2^x\)</span>在<span class="math inline">\([1,2]\)</span>的解的个数</p><p><strong>Solution</strong> 记<span class="math inline">\(f(x) =4-x-2^x,x\in[1,2]\)</span></p><p>易知<span class="math inline">\(f(1) =1,f(2)=-2\)</span>,且函数在<spanclass="math inline">\([1,2]\)</span>上单调递减,则有一个实根</p>
+          </div>
+<h3 id="例题">例题</h3>
+<p>关于本部分,最后给出几个例题:</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:<spanclass="math inline">\(\lim\limits_{x\to -1}\cfrac{ax^2-x-3}{x+1} =b\)</span>,求<span class="math inline">\(a,b\)</span>的值.</p><p><strong>Solution</strong> <span class="math inline">\(I = -2a-1 =b\)</span></p><p>由极限的存在性可知<span class="math inline">\(a = 2,b =-5\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 2</strong>:已知<spanclass="math inline">\(\lim\limits_{n\to \infty}(3n-\sqrt{an^2+bn+1}) =2\)</span>,求<span class="math inline">\(a,b\)</span>的值.</p><p><strong>Solution</strong> <span class="math inline">\(I =\lim\limits_{n\to \infty}\cfrac{(9-a)n^2-bn-1}{3n+\sqrt{an^2+bn+1}} =2\)</span></p><p>由极限的存在性可知<span class="math inline">\(a= 9,b=-12\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 3</strong>:已知函数<span class="math inline">\(f(x) =\lim\limits_{n\to\infty}\cfrac{x^{2n-1}+ax^2+bx}{x^{2n}+1}\)</span>在<spanclass="math inline">\(R\)</span>上连续,求<spanclass="math inline">\(a,b\)</span>的值.</p><p><strong>Solution</strong> 分情况讨论,可知函数<spanclass="math inline">\(f(x)\)</span>的表达形式为:</p><p><span class="math inline">\(f(x)=\begin{cases} \cfrac{1}{x},x&lt;-1\\\cfrac{1}{2}(a-b-1),x = -1\\ax^2+bx,-1&lt;x&lt;1\\\cfrac{1}{2}(a+b+1)\\\cfrac{1}{x},x&gt;1\end{cases}\)</span></p><p>根据连续的定义,我们可以求得<spanclass="math inline">\(a=0,b=1\)</span></p>
           </div>
 
                 
@@ -397,8 +418,8 @@ y = y(t)
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>微积分-Chapter2-导数与微分-求导方法</div>
-      <div>http://example.com/2023/07/03/微积分-Chapter2-导数与微分-求导方法/</div>
+      <div>Chapter1-07有限闭区间连续函数的性质</div>
+      <div>http://example.com/2023/07/02/Chapter1-07有限闭区间连续函数的性质/</div>
     </div>
     <div class="license-meta">
       
@@ -410,7 +431,7 @@ y = y(t)
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年7月3日</div>
+          <div>2023年7月2日</div>
         </div>
       
       
@@ -442,9 +463,9 @@ y = y(t)
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0/" title="微积分-Chapter2-导数与微分-高阶导数">
+                      <a href="/2023/07/03/Chapter2-01%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" title="微积分-Chapter2-导数与微分-基本概念">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">微积分-Chapter2-导数与微分-高阶导数</span>
+                        <span class="hidden-mobile">微积分-Chapter2-导数与微分-基本概念</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -452,8 +473,8 @@ y = y(t)
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/" title="微积分-Chapter2-导数与微分-导数的四则运算">
-                        <span class="hidden-mobile">微积分-Chapter2-导数与微分-导数的四则运算</span>
+                      <a href="/2023/07/02/Chapter1-06%E9%97%B4%E6%96%AD/" title="Chapter1-06间断&quot;">
+                        <span class="hidden-mobile">Chapter1-06间断&quot;</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -473,8 +494,8 @@ y = y(t)
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'http://example.com/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E6%B1%82%E5%AF%BC%E6%96%B9%E6%B3%95/';
-          this.page.identifier = '/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E6%B1%82%E5%AF%BC%E6%96%B9%E6%B3%95/';
+          this.page.url = 'http://example.com/2023/07/02/Chapter1-07%E6%9C%89%E9%99%90%E9%97%AD%E5%8C%BA%E9%97%B4%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8/';
+          this.page.identifier = '/2023/07/02/Chapter1-07%E6%9C%89%E9%99%90%E9%97%AD%E5%8C%BA%E9%97%B4%E8%BF%9E%E7%BB%AD%E5%87%BD%E6%95%B0%E7%9A%84%E6%80%A7%E8%B4%A8/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');

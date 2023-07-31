@@ -16,16 +16,16 @@
   <meta name="author" content="Tinhvon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="介绍完极限后，我们再介绍一个新的研究函数的工具——导数">
+    <meta name="description" content="此前我们讨论的导数最多是一阶导数,现在我们讨论一下高阶导数吧！">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微积分-Chapter2-导数与微分-基本概念">
-<meta property="og:url" content="http://example.com/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/index.html">
+<meta property="og:title" content="微积分-Chapter2-导数与微分-高阶导数">
+<meta property="og:url" content="http://example.com/2023/07/03/Chapter2-04%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
-<meta property="og:description" content="介绍完极限后，我们再介绍一个新的研究函数的工具——导数">
+<meta property="og:description" content="此前我们讨论的导数最多是一阶导数,现在我们讨论一下高阶导数吧！">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Calculus.png">
-<meta property="article:published_time" content="2023-07-02T18:00:00.000Z">
-<meta property="article:modified_time" content="2023-07-30T09:37:27.533Z">
+<meta property="article:published_time" content="2023-07-02T19:00:00.000Z">
+<meta property="article:modified_time" content="2023-07-30T18:19:17.151Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Study">
@@ -35,7 +35,7 @@
   
   
   
-  <title>微积分-Chapter2-导数与微分-基本概念 - Tinhvon&#39;s Space</title>
+  <title>微积分-Chapter2-导数与微分-高阶导数 - Tinhvon&#39;s Space</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -217,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="微积分-Chapter2-导数与微分-基本概念"></span>
+            <span id="subtitle" data-typed-text="微积分-Chapter2-导数与微分-高阶导数"></span>
           
         </div>
 
@@ -228,7 +228,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-03 02:00" pubdate>
+        <time datetime="2023-07-03 03:00" pubdate>
           2023年7月3日 凌晨
         </time>
       </span>
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.6k 字
+          3.2k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          14 分钟
+          27 分钟
         
       </span>
     
@@ -288,69 +288,81 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">微积分-Chapter2-导数与微分-基本概念</h1>
+            <h1 id="seo-header">微积分-Chapter2-导数与微分-高阶导数</h1>
             
             
               <div class="markdown-body">
                 
                 <h1 id="导数与微分">导数与微分</h1>
-<h2 id="基本概念">基本概念</h2>
-<p>在第一章中，我们介绍了<strong>极限</strong>这一研究函数的重要工具，本章我们借助极限，可以引入一个新的工具——<strong>导数</strong></p>
-<h3 id="导数">导数</h3>
-<p>中学阶段我们已经接触过导数，下面我们给出其定义：</p>
-<div class="note note-primary">
-            <p><strong>Definition</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,若<spanclass="math inline">\(\lim\limits_{\Delta x \to 0}\cfrac{f(x+\Deltax)-f(x)}{\Delta x} = A,x+\Delta x \in (a,b)\)</span>，则称<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x\)</span>点<strong>可导</strong>，并称<spanclass="math inline">\(A\)</span>为其<strong>导数值</strong>，记作<spanclass="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x}=y&#39;=f&#39;(x)=\dot{y}= A\)</span></p>
-          </div>
-<p><strong>Note1</strong>:对于导数，物理学中我们常称其为“微商”，是一个新的函数（导函数），简称导数。对于<span
-class="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x}\)</span>,我们常理解为函数的改变量与自变量改变量比值<span
-class="math inline">\(\cfrac{\Delta y}{\Delta x}\)</span>的极限。</p>
-<p><strong>Note2</strong>：对于一元函数<span
-class="math inline">\(f(x)\)</span>，其<strong>可导一定连续</strong>，但是<strong>连续不一定可导</strong>，考虑函数<span
-class="math inline">\(f(x) = |x|\)</span>在<span
-class="math inline">\(x=0\)</span>处的行为即可。</p>
-<p><strong>Note3</strong>：函数<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\([a,b]\)</span>可导，指<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\((a,b)\)</span>内任意一点可导，且在端点处存在单侧导数。</p>
-<p><strong>Note4</strong>：<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\([a,b]\)</span>可导，<span
-class="math inline">\(f&#39;(x)\in C[a,b]\)</span>,称<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\([a,b]\)</span>连续可导，记为<span
-class="math inline">\(f(x) \in C^1[a,b]\)</span></p>
-<h3 id="单侧导数">单侧导数</h3>
-<p>我们可以效仿单侧极限，给出单侧导数的定义：</p>
-<div class="note note-primary">
-            <p><strong>Definition</strong>：设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,则将<spanclass="math inline">\(\lim\limits_{x\tox_0^+}\cfrac{f(x)-f(x_0)}{x-x_0}\)</span>定义为<strong>右导数</strong>，记作<spanclass="math inline">\(f_{+}^{&#39;}(x_0)\)</span>.</p><p><strong>Definition</strong>：设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，对于<spanclass="math inline">\(x\in(a,b)\)</span>,则将<spanclass="math inline">\(\lim\limits_{x\tox_0^-}\cfrac{f(x)-f(x_0)}{x-x_0}\)</span>定义为<strong>左导数</strong>，记作<spanclass="math inline">\(f_{+}^{&#39;}(x_0)\)</span>.</p>
-          </div>
-<p>与极限相同，函数<span class="math inline">\(f(x)\)</span>在<span
-class="math inline">\(x=x_0\)</span>处可导的充要条件是函数在<span
-class="math inline">\(x = x_0\)</span>的左右导数均存在，且相等。</p>
-<p><strong>Note1</strong>：我们需要区分几种概念的符号表示，如<span
-class="math inline">\(f(x_0^+)\)</span>表示的是<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\(x=x_0\)</span>处的<strong>右极限</strong>；<span
-class="math inline">\(f^{&#39;}(x_0^+)\)</span>表示的是<span
-class="math inline">\(f&#39;(x)\)</span>在<span
-class="math inline">\(x=x_0\)</span>处的<strong>右极限</strong>;而<span
-class="math inline">\(f_{+}^{&#39;}(x_0)\)</span>表示的是<strong>右导数</strong>。一般而言，<strong>导函数的右极限</strong>不一定等于<strong>右导数</strong>。</p>
-<h3 id="导数的几何意义">导数的几何意义</h3>
-<p>最后我们讨论一下导数的几何意义，给出严格的定理：</p>
-<div class="note note-danger">
-            <p><strong>Theorem</strong>:<span class="math inline">\(y =f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处的导数，即为曲线<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span>处切线的<strong>斜率</strong>，其中<spanclass="math inline">\((x_0,f(x_0))\)</span>在曲线上，切线斜率为<spanclass="math inline">\(f&#39;(x_0)\)</span>,切线方程为<spanclass="math inline">\(y-f(x_0)=f&#39;(x_0)(x-x_0)\)</span>.</p>
-          </div>
-<p><strong>Note1</strong>:在给出切线方程的同时，我们可以给出<strong>法线方程</strong>，此时仅有斜率的改变，即<span
-class="math inline">\(y-f(x_0)=-\cfrac{1}{f&#39;(x_0)}(x-x_0)\)</span>.</p>
-<p>由此我们可以得知：可导<span
-class="math inline">\(\Rightarrow\)</span>切线存在；切线存在$<span
-class="math inline">\(可导或者导数为\)</span>$.</p>
+<h2 id="高阶导数">高阶导数</h2>
+<p>此前我们已经系统地讨论了导数的概念,运算法则,求导方法.但这些都仅仅讨论了一阶导数(即求导次数为1).这篇文章里,我们将接触高阶导数.</p>
+<h3 id="常见函数的高阶导数">常见函数的高阶导数</h3>
+<p>我们先从<strong>二阶导数</strong>入手,其定义很简单： <span
+class="math display">\[
+\cfrac{\mathrm{d}^2y}{\mathrm{d}x^2} =
+\cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{\mathrm{d}y}{\mathrm{d}x})
+\]</span> 即在求出导函数<span
+class="math inline">\(y&#39;\)</span>后,再对<span
+class="math inline">\(y&#39;\)</span>求一次导数,得到<span
+class="math inline">\(y&#39;&#39;\)</span>,此即称为<span
+class="math inline">\(y\)</span>的二阶导数.</p>
+<p>同理,我们可以定义<strong>n阶导数</strong>： <span
+class="math display">\[
+\cfrac{\mathrm{d}^ny}{\mathrm{d}x^n} =
+\cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{\mathrm{d}^{n-1}y}{\mathrm{d}x^{n-1}})
+\]</span> 假设<span class="math inline">\(u(x),v(x)\)</span>有<span
+class="math inline">\(n\)</span>阶导数,则有： <span
+class="math display">\[
+[au(x)+bv(x)]^{(n)} = au^n(x)+bv^n(x)\\
+[u(ax+b)]^{(n)} = a^nu^{(n)}(ax+b)
+\]</span> 给出几个高阶导数的例子：</p>
 <div class="note note-success">
-            <p><strong>exp1</strong>:求<spanclass="math inline">\(y=x^2\)</span>在<spanclass="math inline">\((1,1)\)</span>处的切线方程。</p><p><strong>Solution</strong>:<span class="math inline">\(f&#39;(1) = 2\times 1 = 2\)</span></p><p>故切线方程为<span class="math inline">\(y-1 = 2(x-1)\)</span>即<spanclass="math inline">\(y=2x-1\)</span></p>
+            <ul><li><span class="math inline">\((e^x)^{(n)} = e^x,(e^{ax+b})^{(n)} =a^ne^{ax+b}\)</span></li><li><span class="math inline">\((x^{\alpha})^n =\alpha(\alpha-1)...(\alpha-n+1)x^{\alpha-n}\)</span></li><li><span class="math inline">\((\ln(1+x))^{(n)} =(-1)^{n-1}\cfrac{(n-1)!}{(1+x)^n},\ln(ax+b))^{(n)} =(-1)^{n-1}\cfrac{(n-1)!a^n}{(ax+b)^n}\)</span></li><li><span class="math inline">\((\sin{x})^{(n)} =\sin({\cfrac{n\pi}{2}+x)},[\sin{(ax+b})]^{(n)} =a^n\sin({\cfrac{n\pi}{2}+ax+b})\)</span></li><li><span class="math inline">\((\cos x)^{(n)} =\cos({\cfrac{n\pi}{2}+x)},[\cos{(ax+b})]^{(n)} =a^n\cos({\cfrac{n\pi}{2}+ax+b})\)</span></li><li><span class="math inline">\((\cfrac{1}{1-x})^{(n)} =\cfrac{n!}{(1-x)^{n+1}},(\cfrac{1}{1+x})^{(n)} =\cfrac{(-1)^nn!}{(1-x)^{n+1}},(\cfrac{1}{ax+b})^{(n)} = \cfrac{(-1)^na^n n!}{(ax+b)^{n+1}}\)</span></li></ul>
           </div>
-<h3 id="基本初等函数导数表">基本初等函数导数表</h3>
-<p>最后附上基本初等函数表：</p>
+<p>以上给出的是一些基本函数的<span
+class="math inline">\(n\)</span>阶导数,其可用来求基本初等函数的高阶导数,例子如下：</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:已知函数<span class="math inline">\(y =\cfrac{x^3}{1-x}\)</span>,求<spanclass="math inline">\(y^{(n)}\)</span></p><p><strong>Solution</strong> <span class="math inline">\(y =\cfrac{1}{1-x}-(x^2+x+1)\)</span></p><p>分情况讨论：</p><ul><li><span class="math inline">\(y&#39; =\cfrac{1}{(1-x)^2}-2x-1\)</span></li><li><span class="math inline">\(y&#39;&#39; =\cfrac{2}{(1-x)^3}-2\)</span></li><li><span class="math inline">\(y^{(n)} = \cfrac{n!}{(1-x)^{n+1}}(n \geq3)\)</span></li></ul>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 2</strong>: 已知函数<spanclass="math inline">\(y=\cfrac{1}{x^2+2x-3}\)</span>,求<spanclass="math inline">\(y^{(n)}\)</span></p><p><strong>Solution</strong> <span class="math inline">\(y =\cfrac{1}{4}(\cfrac{1}{x-1}-\cfrac{1}{x+3})\)</span></p><p><span class="math inline">\(y^{(n)} =\cfrac{1}{4}[\cfrac{n!}{(1-x)^{n+1}} -\cfrac{(-1)^nn!}{(3+x)^{n+1}}]\)</span></p>
+          </div>
+<h3 id="参数方程的高二阶导数">参数方程的高(<em>二</em>)阶导数</h3>
+<p>对于函数的参数方程表达式,我们只讨论其二阶导数,不妨假设：<span
+class="math inline">\(\begin{cases} x = x(t)\\ y = y(t)
+\end{cases},a\leq t \leq b\)</span>,则其二阶导数公式如下： <span
+class="math display">\[
+\cfrac{\mathrm{d}y}{\mathrm{d}x} = \cfrac{y&#39;(t)}{x&#39;(t)}
+\Rightarrow \cfrac{\mathrm{d}^2y}{\mathrm{d}x^2} =
+\cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{\mathrm{d}y}{\mathrm{d}x}) \\
+= \cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{y&#39;(t)}{x&#39;(t)}) =
+\cfrac{\mathrm{d}}{\mathrm{d}t}(\cfrac{y&#39;(t)}{x&#39;(t)})\cfrac{\mathrm{d}t}{\mathrm{d}x}
+= \cfrac{x&#39;(t)y&#39;&#39;(t)-x&#39;&#39;(t)y&#39;(t)}{[x&#39;(t)]^3}
+\]</span></p>
+<h3 id="隐函数的高阶导数">隐函数的高阶导数</h3>
+<p>此前我们讨论过一阶导数情况下的<strong>隐函数求导法</strong>,若想求得其高阶导数,则两边求<span
+class="math inline">\(n\)</span>阶导即可.</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:已知<spanclass="math inline">\(x-y+\cfrac{1}{2}\sin{y} = 0\)</span>,求<spanclass="math inline">\(y&#39;&#39;\)</span></p><p><strong>Solution</strong> 先对等式两边求导,有：<spanclass="math inline">\(1-y&#39;+\cfrac{1}{2}y&#39;\cos{y} =0\)</span></p><p>解得:<span class="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x} =\cfrac{2}{2-\cos{y}}\)</span></p><p>再求一次导,有:<spanclass="math inline">\(-y&#39;&#39;+\cfrac{1}{2}y&#39;&#39;\cos{y}-\cfrac{1}{2}\sin{y}(y&#39;)^2=0\)</span></p><p>解得:<span class="math inline">\(\cfrac{\mathrm{d}^2y}{\mathrm{d}x^2}= \cfrac{-4\sin{y}}{(2-\cos{y})^3}\)</span></p>
+          </div>
+<h3 id="莱布尼兹公式">莱布尼兹公式</h3>
+<p>我们不加证明地给出高阶导数的<strong>莱布尼兹公式</strong>：</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:设<spanclass="math inline">\(u(x),v(x)\)</span>有<spanclass="math inline">\(n\)</span>阶导数,则：<spanclass="math inline">\([u(x)v(x)]^{(n)} =\sum\limits_{k=0}^nC_{n}^{k}u^{(n-k)}(x)v^{(k)}(x)\)</span>,此即高阶导数的莱布尼兹公式.</p>
+          </div>
+<p>下面给出一个应用的例子：</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:已知函数<span class="math inline">\(f(x) =x^2e^x\)</span>,求<span class="math inline">\(f^{(n)}(x)\)</span></p><p><strong>Solution</strong> 根据莱布尼兹公式,有<spanclass="math inline">\(f^{(n)}(x) = x^2e^x+2nxe^x+n(n-1)e^x\)</span>.</p>
+          </div>
+<h3 id="导数极限定理">导数极限定理</h3>
+<p>我们不加证明地给出<strong>导数极限定理</strong>：</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(N_0(x_0,\delta)\)</span>可导,在<spanclass="math inline">\(x_0\)</span>连续,且<spanclass="math inline">\(\lim\limits_{x\to x_0}f&#39;(x) =A\)</span>,则<span class="math inline">\(f&#39;(x_0)=A\)</span>.</p>
+          </div>
+<p>直接给出例题：</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:已知<span class="math inline">\(f(x) =\begin{cases}e^x,x&lt;0 \\ ax^2+bx+c,x \geq0\end{cases}\)</span>,现已知<spanclass="math inline">\(f&#39;&#39;(0)\)</span>存在,求<spanclass="math inline">\(a,b,c\)</span>.</p><p><strong>Solution</strong> <span class="math inline">\(f&#39;(x) =\begin{cases}e^x,x&lt;0 \\ 2ax+b,x \geq0\end{cases}\)</span>,根据连续性可知<spanclass="math inline">\(b=1\)</span>.</p><p><span class="math inline">\(f&#39;&#39;(x) = \begin{cases}e^x,x&lt;0\\ 2a,x \geq 0\end{cases}\)</span>,根据连续性可知<spanclass="math inline">\(a = \cfrac{1}{2},c=1\)</span></p><p>综上:<span class="math inline">\(a=\cfrac{1}{2},b=1,c=1\)</span></p>
+          </div>
 
                 
               </div>
@@ -407,8 +419,8 @@ class="math inline">\(可导或者导数为\)</span>$.</p>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>微积分-Chapter2-导数与微分-基本概念</div>
-      <div>http://example.com/2023/07/03/微积分-Chapter2-导数与微分-基本概念/</div>
+      <div>微积分-Chapter2-导数与微分-高阶导数</div>
+      <div>http://example.com/2023/07/03/Chapter2-04高阶导数/</div>
     </div>
     <div class="license-meta">
       
@@ -452,9 +464,9 @@ class="math inline">\(可导或者导数为\)</span>$.</p>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/" title="微积分-Chapter2-导数与微分-导数的四则运算">
+                      <a href="/2023/07/03/Chapter2-05%E5%BE%AE%E5%88%86/" title="微积分-Chapter2-导数与微分-微分">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">微积分-Chapter2-导数与微分-导数的四则运算</span>
+                        <span class="hidden-mobile">微积分-Chapter2-导数与微分-微分</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -462,8 +474,8 @@ class="math inline">\(可导或者导数为\)</span>$.</p>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/02/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter1-%E6%9E%81%E9%99%90%E4%B8%8E%E8%BF%9E%E7%BB%AD3/" title="微积分-Chapter1-极限与连续（Part 3）">
-                        <span class="hidden-mobile">微积分-Chapter1-极限与连续（Part 3）</span>
+                      <a href="/2023/07/03/Chapter2-03%E6%B1%82%E5%AF%BC%E6%96%B9%E6%B3%95/" title="微积分-Chapter2-导数与微分-求导方法">
+                        <span class="hidden-mobile">微积分-Chapter2-导数与微分-求导方法</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -483,8 +495,8 @@ class="math inline">\(可导或者导数为\)</span>$.</p>
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'http://example.com/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/';
-          this.page.identifier = '/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/';
+          this.page.url = 'http://example.com/2023/07/03/Chapter2-04%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0/';
+          this.page.identifier = '/2023/07/03/Chapter2-04%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');

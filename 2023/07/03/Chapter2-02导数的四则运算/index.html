@@ -16,16 +16,16 @@
   <meta name="author" content="Tinhvon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="在正式学习微积分之前,我们先来回顾一下预备知识吧!">
+    <meta name="description" content="在介绍完导数的基本概念后,我们讨论一下其四则运算吧！">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微积分-Chapter0-预备知识">
-<meta property="og:url" content="http://example.com/2023/07/01/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter0-%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/index.html">
+<meta property="og:title" content="微积分-Chapter2-导数与微分-导数的四则运算">
+<meta property="og:url" content="http://example.com/2023/07/03/Chapter2-02%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
-<meta property="og:description" content="在正式学习微积分之前,我们先来回顾一下预备知识吧!">
+<meta property="og:description" content="在介绍完导数的基本概念后,我们讨论一下其四则运算吧！">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Calculus.png">
-<meta property="article:published_time" content="2023-07-01T13:10:23.000Z">
-<meta property="article:modified_time" content="2023-07-19T08:19:08.823Z">
+<meta property="article:published_time" content="2023-07-02T18:10:00.000Z">
+<meta property="article:modified_time" content="2023-07-30T18:19:46.713Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Study">
@@ -35,7 +35,7 @@
   
   
   
-  <title>微积分-Chapter0-预备知识 - Tinhvon&#39;s Space</title>
+  <title>微积分-Chapter2-导数与微分-导数的四则运算 - Tinhvon&#39;s Space</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -217,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="微积分-Chapter0-预备知识"></span>
+            <span id="subtitle" data-typed-text="微积分-Chapter2-导数与微分-导数的四则运算"></span>
           
         </div>
 
@@ -228,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-01 21:10" pubdate>
-          2023年7月1日 晚上
+        <time datetime="2023-07-03 02:10" pubdate>
+          2023年7月3日 凌晨
         </time>
       </span>
     
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.7k 字
+          1.4k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          31 分钟
+          12 分钟
         
       </span>
     
@@ -288,126 +288,55 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">微积分-Chapter0-预备知识</h1>
+            <h1 id="seo-header">微积分-Chapter2-导数与微分-导数的四则运算</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="预备知识">预备知识</h1>
-<h2 id="集合">集合</h2>
-<h3 id="集合-1">集合</h3>
-<p>首先给出<strong>集合</strong>的定义</p>
-<div class="note note-primary">
-            <p><strong>定义</strong>:具有某种特定性质的元素的汇总所成的集体.其中,构成集合的对象称为<strong>元素</strong>.一般,用大写字母表示集合,如<spanclass="math inline">\(N\)</span>,<spanclass="math inline">\(R\)</span>,<spanclass="math inline">\(Q\)</span>等；而用小写字母表示元素,如<spanclass="math inline">\(x\)</span>,<spanclass="math inline">\(y\)</span>等.常记为: <span class="math display">\[A = \{ x | x \in A\} \quad or\quad A = \{x|x的特性\}\]</span></p>
-          </div>
-<p>一般表示集合的方法有:</p>
-<p><strong>列举法</strong>:<span class="math inline">\(A = \{
-1,3,5,7,...,2021\}\)</span></p>
-<p><strong>特性表示法</strong>:<span class="math inline">\(A = \{x| x
-&gt; 1986\}\)</span></p>
-<p>了解集合的定义后,便可以讨论<strong>集合之间的关系</strong>与<strong>集合之间的运算</strong>.</p>
-<p>首先讨论集合之间的关系,定义如下:</p>
-<div class="note note-primary">
-            <p>若<span class="math inline">\(\forall x \in A \Rightarrow x \inB\)</span>,则称<span class="math inline">\(A\)</span>是<spanclass="math inline">\(B\)</span>的<strong>子集</strong>,记为<spanclass="math inline">\(A \subseteq B\)</span>.</p><p>若<span class="math inline">\(A \subseteq B,\exists x \in B,x \notinA\)</span>,则称<span class="math inline">\(A\)</span>是<spanclass="math inline">\(B\)</span>的<strong>真子集</strong>.</p><p>若<span class="math inline">\(A \subseteq B,B \subseteqA\)</span>,称两个集合相等,记为<spanclass="math inline">\(A=B\)</span></p>
-          </div>
-<p>再讨论集合之间的运算,定义如下:</p>
-<div class="note note-primary">
-            <p><strong>并集</strong>:<span class="math inline">\(A \cup B = \{x \inA \quad or \quad x \in B\}\)</span></p><p><strong>交集</strong>:<span class="math inline">\(A \cap B = \{x \inA \quad and \quad x \in B\}\)</span></p><p><strong>差集</strong>:<span class="math inline">\(A - B = \{x \in A\quad and \quad x \notin B\}\)</span></p><p><strong>补集</strong>:定义一个非空集合<spanclass="math inline">\(X\)</span>,<span class="math inline">\(A \subseteqX\)</span>,则<span class="math inline">\(A^{c} = X - A\)</span>是<spanclass="math inline">\(A\)</span>的补集.</p><p><strong>乘积</strong>:考虑集合$A = { x | x A},B = { y | yA} <spanclass="math inline">\(,则\)</span>A B ={ (x,y) | x A ,y B} $</p>
-          </div>
-<h3 id="区间">区间</h3>
-<p>定义集合后,我们可以用<strong>区间</strong>来表述数轴上的一个范围,现有两个实数<span
-class="math inline">\(a,b\)</span>,不妨假设<span class="math inline">\(a
-&lt; b\)</span>,则定义如下:</p>
-<div class="note note-primary">
-            <p><span class="math inline">\((a,b) =\{x|a&lt;x&lt;b\}\)</span>,称该区间为<strong>开区间</strong></p><p><span class="math inline">\([a,b] = \{x|a\leq x \leqb\}\)</span>,称该区间为<strong>闭区间</strong></p><p><span class="math inline">\((a,b] =\{x|a &lt; x \leq b\}\)</span>与<span class="math inline">\([a,b) =\{x|a \leq x &lt; b\}\)</span>统称为<strong>半开半闭区间</strong>.</p><p><span class="math inline">\((a,+∞) = \{x|x &gt; a\}\)</span></p><p><span class="math inline">\((-∞,b] = \{x|x \leq b\}\)</span></p><p><span class="math inline">\((-∞,+∞) = \{x|-∞ &lt; x &lt; +∞ \} =R\)</span></p>
-          </div>
-<h3 id="邻域">邻域</h3>
-<p>在函数论中,我们经常遇到<strong>邻域</strong>的概念,假设<span
-class="math inline">\(x_0 \in R,\delta &gt; 0\)</span>,则:</p>
-<div class="note note-primary">
-            <p><span class="math inline">\(x_0\)</span>的<spanclass="math inline">\(\delta\)</span>邻域定义为:<spanclass="math inline">\(N(x_0,\delta) = \{x| \quad|x-x_0|&lt;\delta\}\)</span></p><p><span class="math inline">\(x_0\)</span>的<spanclass="math inline">\(\delta\)</span>去心邻域定义为:<spanclass="math inline">\(N_0(x_0,\delta) =\{x| 0&lt;|x-x_0|&lt;\delta\}\)</span></p>
-          </div>
-<p>下面给出常用邻域的例子:</p>
-<div class="note note-success">
-            <p><strong>右邻域</strong>:<span class="math inline">\(N^{+}(x_0,\delta)= \{x| 0\leq x-x_0&lt;\delta \}\)</span></p><p><strong>去心右邻域</strong>:<spanclass="math inline">\(N^{+}_{0}(x_0,\delta) = \{x|0&lt; x-x_0&lt;\delta\}\)</span></p><p><strong>左邻域</strong>:<span class="math inline">\(N^{-}(x_0,\delta)= \{x| -\delta &lt; x-x_0\leq 0 \}\)</span></p><p><strong>去心左邻域</strong>:<spanclass="math inline">\(N^{-}_{0}(x_0,\delta) = \{x| -\delta &lt;x-x_0\leq 0 \}\)</span></p><p><strong><span class="math inline">\(+∞\)</span>邻域</strong>:即<spanclass="math inline">\((a,+∞)\)</span></p><p><strong><span class="math inline">\(-∞\)</span>邻域</strong>:即<spanclass="math inline">\((-∞,b)\)</span></p><p><strong><span class="math inline">\(∞\)</span>邻域</strong>:即<spanclass="math inline">\((-∞,b) \cup (a,+∞)\)</span></p>
-          </div>
-<h3 id="常用不等式">常用不等式</h3>
-<p>高中阶段学过的常见不等式如下(取等条件略):</p>
-<div class="note note-primary">
-            <p><strong>绝对值不等式</strong>:<spanclass="math inline">\(|a_1+a_2+...+a_n| \leq |a_1|+|a_2|+... +|a_n|\)</span></p><p><strong>Bernoulli 不等式</strong>: 对于<spanclass="math inline">\(\forall x &gt; -1\)</span>,<spanclass="math inline">\((1+x)^{n}\geq 1+nx\)</span>.</p><p><strong>平均值不等式</strong>:<spanclass="math inline">\(x_i&gt;0,i=1,2,...n\)</span>,有<spanclass="math inline">\(\sqrt[n]{x_1x_2...x_n}\leq\cfrac{x_1+x_2+...+x_n}{n}\)</span></p>
-          </div>
-<h2 id="实数理论初步">实数理论初步</h2>
-<p><em>该部分严格证明需要学习《数学分析》,普通微积分对此不作要求,了解即可.</em></p>
-<p>实数有以下性质:</p>
-<p>1.实数对四则运算是<strong>封闭的</strong>,即实数通过四则运算仍为实数.</p>
-<p>2.实数是<strong>有序集合</strong>,数学语言表述即为: <span
-class="math display">\[
-\forall a,b\in R \Rightarrow a&lt;b或a=b或a&gt;b
-\]</span>
-3.实数具有<strong>稠密性</strong>,即任意两个实数之间一定存在实数.</p>
-<p>4.实数与数轴上的点一一对应.</p>
-<h3 id="确界">确界</h3>
-<p>现引入<strong>确界</strong>概念</p>
-<div class="note note-primary">
-            <p>实数集<spanclass="math inline">\(E\)</span>的最小上界定义为<strong>上确界</strong>,用<spanclass="math inline">\(\sup E\)</span>表示.</p><p>实数集<spanclass="math inline">\(E\)</span>的最大下界定义为<strong>下确界</strong>,用<spanclass="math inline">\(\inf E\)</span>表示.</p>
-          </div>
-<p>实数理论中很重要的一个定理是<strong>确界存在原理</strong>,其表述为</p>
+                <h1 id="导数与微分">导数与微分</h1>
+<h2 id="导数的运算">导数的运算</h2>
+<p>上一篇博文中,我们介绍了导数的基本概念,这篇博文我们介绍一下导数的运算.</p>
+<h3 id="四则运算">四则运算</h3>
+<p>我们不加证明地给出导数的<strong>四则运算法则</strong></p>
 <div class="note note-danger">
-            <p>设集合<span class="math inline">\(S\)</span>为非空实数集,若<spanclass="math inline">\(S\)</span>有上界,则<spanclass="math inline">\(S\)</span>必有上确界；若<spanclass="math inline">\(S\)</span>有下界,则<spanclass="math inline">\(S\)</span>必有下确界.</p>
+            <p><strong>Theorem</strong>:设<spanclass="math inline">\(f(x),g(x)\)</span>是可导函数,则其满足以下运算规则:</p><ul><li><span class="math inline">\([\alpha f(x)+\beta g(x)]&#39; = \alphaf&#39;(x)+\beta g&#39;(x)\)</span></li><li><span class="math inline">\([f(x)g(x)]&#39; =f&#39;(x)g(x)+f(x)g&#39;(x)\)</span></li><li><span class="math inline">\([\cfrac{f(x)}{g(x)}]&#39; =\cfrac{f&#39;(x)g(x)-f(x)g&#39;(x)}{g^2(x)},(g(x)\ne 0)\)</span></li></ul>
           </div>
-<h2 id="映射与函数">映射与函数</h2>
-<h3 id="映射">映射</h3>
-<p>下面引入<strong>映射</strong>的定义:</p>
-<div class="note note-primary">
-            <p>设<spanclass="math inline">\(A,B\)</span>为两个非空集合,若存在对应法则<spanclass="math inline">\(f\)</span>,使得<span class="math inline">\(\forallx\in A\)</span>,存在唯一的<span class="math inline">\(y \inB\)</span>与之对应,则称<span class="math inline">\(f\)</span>为$A B$的一个映射,记为: <span class="math display">\[f:A\to B或f:x\to y或y=f(x)\]</span> 称<spanclass="math inline">\(y\)</span>为映射下的<strong>像</strong>,称<spanclass="math inline">\(A\)</span>为<spanclass="math inline">\(f\)</span>的<strong>定义域</strong>,<spanclass="math inline">\(f(A)\)</span>为<spanclass="math inline">\(f\)</span>的<strong>值域</strong>.</p>
+<p>根据导数运算的除法规则,我们可以得到一个特殊的导数公式: <span
+class="math display">\[
+(\tan x)&#39; = [\cfrac{\sin x}{\cos x}]&#39; = \cfrac{\cos^2 x+\sin^2 x
+}{\cos ^2x} = \sec^2x
+\]</span>
+关于导数四则运算法则的证明,直接套用导数的定义即可,这里不再讨论.</p>
+<h3 id="反函数求导">反函数求导</h3>
+<p>对于有反函数的函数求导,有<strong>反函数求导</strong>定律:</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:设<spanclass="math inline">\(y=f(x)\)</span>是严格单调连续函数,在<spanclass="math inline">\(x\)</span>点可导且<spanclass="math inline">\(f&#39;(x) \ne 0\)</span>,则其反函数<spanclass="math inline">\(x = g(y)\)</span>在<spanclass="math inline">\(x\)</span>的对应点<spanclass="math inline">\(y\)</span>可导.(原函数的导数等于反函数导数的倒数).数学表示形式为:<spanclass="math inline">\(g&#39;(y) = \cfrac{1}{f&#39;(x)}\)</span></p>
           </div>
-<p>由定义可知,映射的三要素分别为定义域、值域、对应法则.</p>
-<h3 id="函数">函数</h3>
-<p>定义映射后,我们讨论一种特殊的映射—<strong>函数</strong>.其定义为:</p>
-<div class="note note-primary">
-            <p>考虑映射<spanclass="math inline">\(f\)</span>,若其定义域与值域均为实数集,则称<spanclass="math inline">\(f\)</span>是一个(实)函数.</p><p>一元函数的表示为:<span class="math inline">\(f:R\to R\)</span></p><p>n元函数的表示为:<span class="math inline">\(f:R^{n} \toR\)</span></p>
+<p>根据反函数求导法则,我们可以求反三角函数的导数,以<span
+class="math inline">\(y = \arcsin x\)</span>为例: <span
+class="math display">\[
+x = \sin y,\cfrac{\mathrm{d}x}{\mathrm{d}y} = \cos y = \sqrt{1-x^2}\\
+\cfrac{\mathrm{d}y}{\mathrm{d}x} =
+\cfrac{1}{\cfrac{\mathrm{d}x}{\mathrm{d}y}} = \cfrac{1}{\sqrt{1-x^2}}
+\]</span> 同理我们便可以得到反三角函数的导数公式: <span
+class="math display">\[
+\begin{aligned}
+(\arcsin{x})&#39; &amp;= \cfrac{1}{\sqrt{1-x^2}} \\
+(\arccos{x})&#39; &amp;= -\cfrac{1}{\sqrt{1-x^2}} \\
+(\arctan{x})&#39; &amp;= \cfrac{1}{1+x^2}\\
+(\mathrm{arccot}{x})&#39; &amp;= -\cfrac{1}{1+x^2}
+\end{aligned}
+\]</span></p>
+<h3 id="复合函数求导">复合函数求导</h3>
+<p>我们在这里不加证明地引出复合函数求导的<strong>链式法则</strong>“:</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:设<spanclass="math inline">\(f(x),g(x)\)</span>可导,则<spanclass="math inline">\(f[g(x)]\)</span>可导,且<spanclass="math inline">\(\{f[g(x)]\}&#39; =\cfrac{\mathrm{d}f(u)}{\mathrm{d}u}\cdot\cfrac{\mathrm{d}u}{\mathrm{d}x},u=g(x)\)</span>.</p>
           </div>
-<p>下面给出几个特殊的函数例子</p>
+<p>根据链式法则,我们可以求一些复合函数的导数了.给出几个例子:</p>
 <div class="note note-success">
-            <p><strong>符号函数</strong>: <span class="math display">\[\mathrm{sgn} (x) =\begin{cases}-1 ,x&lt;0 \\0, x= 0 \\1,x &gt;0\end{cases}\]</span> <strong>狄利克雷函数</strong>: <span class="math display">\[D(x) =\begin{cases}1,x\in Q \\0,x\notin Q\end{cases}\]</span> <strong>黎曼函数</strong>: <span class="math display">\[R(x) =\begin{cases}\cfrac{1}{q},x = \cfrac{p}{q},q&gt;p&gt;0 \\0,x=0,1or无理数\end{cases}\]</span></p>
+            <p><strong>Example 1</strong>:<span class="math inline">\(f(x)=e^{\sin^2 x}\)</span>,求其导数:</p><p><strong>Solution</strong> <span class="math inline">\(f&#39;(x) =2\sin^2x\cos xe^{\sin ^2x}\)</span></p>
           </div>
-<p>我们同样可以定义<strong>函数的运算</strong>:</p>
-<h4 id="四则运算">四则运算</h4>
-<div class="note note-primary">
-            <p>与实数一样,也可以定义函数的加减乘除,其中记<spanclass="math inline">\(\alpha f(x)+\beta g(x)\)</span>是函数<spanclass="math inline">\(f(x),g(x)\)</span>的线性组合</p>
-          </div>
-<h4 id="复合运算">复合运算</h4>
-<div class="note note-primary">
-            <p>设函数<span class="math inline">\(f(x),g(x)\)</span>,称<spanclass="math inline">\(f[g(x)]\)</span>为<spanclass="math inline">\(f(x),g(x)\)</span>的复合函数,其中定义域为 <spanclass="math display">\[D = \{ x|x \in D(g)andg(x)\in D(f)\}\]</span></p>
-          </div>
-<h4 id="反函数运算">反函数运算</h4>
-<div class="note note-primary">
-            <p>考虑函数<span class="math inline">\(y=f(x),x\in D,\forall x_1 \ne x_2\Rightarrow f(x_1)\ne f(x_2)\)</span>,此时可以推断映射<spanclass="math inline">\(f\)</span>是单射,满射,记为<spanclass="math inline">\(f:D\to J\)</span>,此时我们可定义映射<spanclass="math inline">\(g:D \to J\)</span>,称<spanclass="math inline">\(g\)</span>是<spanclass="math inline">\(f\)</span>的反函数,记为<spanclass="math inline">\(g=f^{-1}\)</span></p>
-          </div>
-<p>函数有以下特性:</p>
-<p>1.<strong>有界性</strong>:若函数<span
-class="math inline">\(f(x)\)</span>满足<span
-class="math inline">\(\forall x \in D,|f(x)|\leq
-M\)</span>,则称函数有界.</p>
-<p>2.<strong>单调性</strong>:对于<span class="math inline">\(\forall x_1
-\ne x_2\)</span>,<span class="math inline">\((x_2-x_1)[f(x_2)-f(x_1)]
-\leq (\geq)0\)</span>,则称函数<strong>单调递减(增)</strong>,若<span
-class="math inline">\(\leq\)</span>改为<span
-class="math inline">\(&lt;\)</span>(<span
-class="math inline">\(\geq\)</span>改为&gt;),则称为<strong>严格单调递减(增)</strong>.</p>
-<p>3.<strong>奇偶性</strong>:若函数定义域关于原点对称,且<span
-class="math inline">\(f(x)=f(-x)\)</span>,则称函数为偶函数；若<span
-class="math inline">\(f(x)=-f(-x)\)</span>,则称函数为奇函数</p>
-<p>4.<strong>周期性</strong>:<span class="math inline">\(\exists
-T&gt;0\)</span>,若<span
-class="math inline">\(f(x+T)=f(x)\)</span>,则称<span
-class="math inline">\(y=f(x)\)</span>为以<span
-class="math inline">\(T\)</span>为周期的函数,满足条件的$T的最小值成为函数的最小正周期.</p>
-<p>最后给出基本初等函数:</p>
-<div class="note note-success">
-            <p><strong>常函数</strong>:即<span class="math inline">\(f(x) =C\)</span>,<span class="math inline">\(C\)</span>为常数.</p><p><strong>幂函数</strong>:即<span class="math inline">\(f(x) =x^{\alpha} = e^{\alpha \ln x}\)</span></p><p><strong>指数函数</strong>:即<span class="math inline">\(f(x) =a^{x}(a&gt;0,a\ne1)\)</span>,常用的指数函数为<spanclass="math inline">\(f(x) = e^{x}\)</span></p><p><strong>对数函数</strong>:即<span class="math inline">\(f(x) =\log_{a}(x)(a&gt;0,a\ne1)\)</span>,若底数为<spanclass="math inline">\(e\)</span>,则函数为<spanclass="math inline">\(f(x) = \ln x\)</span></p><p><strong>三角函数</strong>:常见的三角函数为<spanclass="math inline">\(\sin x,\cos x,\tan x ,\cot x,\sec x,\cscx\)</span></p><p><strong>反三角函数</strong>:表示方法为<spanclass="math inline">\(\arcsin x,\arccos x,\arctan x\)</span></p><p><strong>双曲函数</strong>:双曲正弦函数<spanclass="math inline">\(\sinh x =\frac{e^x-e^{-x}}{2}\)</span>,双曲余弦为<spanclass="math inline">\(\cosh x =\frac{e^x+e^{-x}}{2}\)</span>,双曲正切为:<spanclass="math inline">\(\tanh x =\frac{e^x-e^{-x}}{e^x+e^{-x}}\)</span></p>
-          </div>
-<p>初等函数可以由基本函数表示.</p>
+<h3 id="连续可导性">连续可导性</h3>
 
                 
               </div>
@@ -464,8 +393,8 @@ class="math inline">\(T\)</span>为周期的函数,满足条件的$T的最小值
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>微积分-Chapter0-预备知识</div>
-      <div>http://example.com/2023/07/01/微积分-Chapter0-预备知识/</div>
+      <div>微积分-Chapter2-导数与微分-导数的四则运算</div>
+      <div>http://example.com/2023/07/03/Chapter2-02导数的四则运算/</div>
     </div>
     <div class="license-meta">
       
@@ -477,7 +406,7 @@ class="math inline">\(T\)</span>为周期的函数,满足条件的$T的最小值
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年7月1日</div>
+          <div>2023年7月3日</div>
         </div>
       
       
@@ -509,9 +438,9 @@ class="math inline">\(T\)</span>为周期的函数,满足条件的$T的最小值
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/07/02/Chapter1-01%E6%9E%81%E9%99%90%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" title="Chapter1-01极限的基本概念">
+                      <a href="/2023/07/03/Chapter2-03%E6%B1%82%E5%AF%BC%E6%96%B9%E6%B3%95/" title="微积分-Chapter2-导数与微分-求导方法">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Chapter1-01极限的基本概念</span>
+                        <span class="hidden-mobile">微积分-Chapter2-导数与微分-求导方法</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -519,8 +448,8 @@ class="math inline">\(T\)</span>为周期的函数,满足条件的$T的最小值
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/06/29/%E5%BE%AE%E7%A7%AF%E5%88%86-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" title="微积分-写在前面">
-                        <span class="hidden-mobile">微积分-写在前面</span>
+                      <a href="/2023/07/03/Chapter2-01%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" title="微积分-Chapter2-导数与微分-基本概念">
+                        <span class="hidden-mobile">微积分-Chapter2-导数与微分-基本概念</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -540,8 +469,8 @@ class="math inline">\(T\)</span>为周期的函数,满足条件的$T的最小值
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'http://example.com/2023/07/01/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter0-%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/';
-          this.page.identifier = '/2023/07/01/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter0-%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/';
+          this.page.url = 'http://example.com/2023/07/03/Chapter2-02%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/';
+          this.page.identifier = '/2023/07/03/Chapter2-02%E5%AF%BC%E6%95%B0%E7%9A%84%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');

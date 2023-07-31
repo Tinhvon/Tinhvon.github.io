@@ -16,16 +16,16 @@
   <meta name="author" content="Tinhvon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="此前我们讨论的导数最多是一阶导数,现在我们讨论一下高阶导数吧！">
+    <meta name="description" content="在介绍完基础知识后,我们开始介绍分析学中基本的一个模块——极限吧.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微积分-Chapter2-导数与微分-高阶导数">
-<meta property="og:url" content="http://example.com/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0/index.html">
+<meta property="og:title" content="Chapter1-01极限的基本概念">
+<meta property="og:url" content="http://example.com/2023/07/02/Chapter1-01%E6%9E%81%E9%99%90%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
-<meta property="og:description" content="此前我们讨论的导数最多是一阶导数,现在我们讨论一下高阶导数吧！">
+<meta property="og:description" content="在介绍完基础知识后,我们开始介绍分析学中基本的一个模块——极限吧.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Calculus.png">
-<meta property="article:published_time" content="2023-07-02T19:00:00.000Z">
-<meta property="article:modified_time" content="2023-07-30T18:19:17.151Z">
+<meta property="article:published_time" content="2023-07-01T20:00:00.000Z">
+<meta property="article:modified_time" content="2023-07-31T12:22:22.284Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Study">
@@ -35,7 +35,7 @@
   
   
   
-  <title>微积分-Chapter2-导数与微分-高阶导数 - Tinhvon&#39;s Space</title>
+  <title>Chapter1-01极限的基本概念 - Tinhvon&#39;s Space</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -217,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="微积分-Chapter2-导数与微分-高阶导数"></span>
+            <span id="subtitle" data-typed-text="Chapter1-01极限的基本概念"></span>
           
         </div>
 
@@ -228,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-03 03:00" pubdate>
-          2023年7月3日 凌晨
+        <time datetime="2023-07-02 04:00" pubdate>
+          2023年7月2日 凌晨
         </time>
       </span>
     
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.2k 字
+          4.1k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          27 分钟
+          34 分钟
         
       </span>
     
@@ -288,80 +288,59 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">微积分-Chapter2-导数与微分-高阶导数</h1>
+            <h1 id="seo-header">Chapter1-01极限的基本概念</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="导数与微分">导数与微分</h1>
-<h2 id="高阶导数">高阶导数</h2>
-<p>此前我们已经系统地讨论了导数的概念,运算法则,求导方法.但这些都仅仅讨论了一阶导数(即求导次数为1).这篇文章里,我们将接触高阶导数.</p>
-<h3 id="常见函数的高阶导数">常见函数的高阶导数</h3>
-<p>我们先从<strong>二阶导数</strong>入手,其定义很简单： <span
-class="math display">\[
-\cfrac{\mathrm{d}^2y}{\mathrm{d}x^2} =
-\cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{\mathrm{d}y}{\mathrm{d}x})
-\]</span> 即在求出导函数<span
-class="math inline">\(y&#39;\)</span>后,再对<span
-class="math inline">\(y&#39;\)</span>求一次导数,得到<span
-class="math inline">\(y&#39;&#39;\)</span>,此即称为<span
-class="math inline">\(y\)</span>的二阶导数.</p>
-<p>同理,我们可以定义<strong>n阶导数</strong>： <span
-class="math display">\[
-\cfrac{\mathrm{d}^ny}{\mathrm{d}x^n} =
-\cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{\mathrm{d}^{n-1}y}{\mathrm{d}x^{n-1}})
-\]</span> 假设<span class="math inline">\(u(x),v(x)\)</span>有<span
-class="math inline">\(n\)</span>阶导数,则有： <span
-class="math display">\[
-[au(x)+bv(x)]^{(n)} = au^n(x)+bv^n(x)\\
-[u(ax+b)]^{(n)} = a^nu^{(n)}(ax+b)
-\]</span> 给出几个高阶导数的例子：</p>
-<div class="note note-success">
-            <ul><li><span class="math inline">\((e^x)^{(n)} = e^x,(e^{ax+b})^{(n)} =a^ne^{ax+b}\)</span></li><li><span class="math inline">\((x^{\alpha})^n =\alpha(\alpha-1)...(\alpha-n+1)x^{\alpha-n}\)</span></li><li><span class="math inline">\((\ln(1+x))^{(n)} =(-1)^{n-1}\cfrac{(n-1)!}{(1+x)^n},\ln(ax+b))^{(n)} =(-1)^{n-1}\cfrac{(n-1)!a^n}{(ax+b)^n}\)</span></li><li><span class="math inline">\((\sin{x})^{(n)} =\sin({\cfrac{n\pi}{2}+x)},[\sin{(ax+b})]^{(n)} =a^n\sin({\cfrac{n\pi}{2}+ax+b})\)</span></li><li><span class="math inline">\((\cos x)^{(n)} =\cos({\cfrac{n\pi}{2}+x)},[\cos{(ax+b})]^{(n)} =a^n\cos({\cfrac{n\pi}{2}+ax+b})\)</span></li><li><span class="math inline">\((\cfrac{1}{1-x})^{(n)} =\cfrac{n!}{(1-x)^{n+1}},(\cfrac{1}{1+x})^{(n)} =\cfrac{(-1)^nn!}{(1-x)^{n+1}},(\cfrac{1}{ax+b})^{(n)} = \cfrac{(-1)^na^n n!}{(ax+b)^{n+1}}\)</span></li></ul>
-          </div>
-<p>以上给出的是一些基本函数的<span
-class="math inline">\(n\)</span>阶导数,其可用来求基本初等函数的高阶导数,例子如下：</p>
-<div class="note note-success">
-            <p><strong>Example 1</strong>:已知函数<span class="math inline">\(y =\cfrac{x^3}{1-x}\)</span>,求<spanclass="math inline">\(y^{(n)}\)</span></p><p><strong>Solution</strong> <span class="math inline">\(y =\cfrac{1}{1-x}-(x^2+x+1)\)</span></p><p>分情况讨论：</p><ul><li><span class="math inline">\(y&#39; =\cfrac{1}{(1-x)^2}-2x-1\)</span></li><li><span class="math inline">\(y&#39;&#39; =\cfrac{2}{(1-x)^3}-2\)</span></li><li><span class="math inline">\(y^{(n)} = \cfrac{n!}{(1-x)^{n+1}}(n \geq3)\)</span></li></ul>
+                <h1 id="极限与连续">极限与连续</h1>
+<h2 id="极限的基本概念">极限的基本概念</h2>
+<h3 id="极限的定义">极限的定义</h3>
+<p>言简意赅,我们首先给出在<strong>某点处函数极限</strong>的定义:</p>
+<div class="note note-primary">
+            <p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(N_{0}(x_0,\delta)\)</span>有定义,则对于<spanclass="math inline">\(\forall \varepsilon &gt; 0,\exists \delta&gt;0\)</span>,当<span class="math inline">\(x \inN_0(x_0,\delta)\)</span>时,有<span class="math inline">\(|f(x)-A| &lt;\varepsilon\)</span>,则称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x_0\)</span>处的<strong>极限</strong>为<spanclass="math inline">\(A\)</span>,记为<spanclass="math inline">\(\lim\limits_{x \to x_0} f(x) = A\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 2</strong>: 已知函数<spanclass="math inline">\(y=\cfrac{1}{x^2+2x-3}\)</span>,求<spanclass="math inline">\(y^{(n)}\)</span></p><p><strong>Solution</strong> <span class="math inline">\(y =\cfrac{1}{4}(\cfrac{1}{x-1}-\cfrac{1}{x+3})\)</span></p><p><span class="math inline">\(y^{(n)} =\cfrac{1}{4}[\cfrac{n!}{(1-x)^{n+1}} -\cfrac{(-1)^nn!}{(3+x)^{n+1}}]\)</span></p>
+            <p><strong>Example 1</strong>:证明: <spanclass="math inline">\(\lim\limits_{x \to x_0}x = x_0\)</span></p><p><strong>Proof</strong> 对于<span class="math inline">\(\forall\varepsilon &gt;0\)</span>,取<span class="math inline">\(\delta =\varepsilon\)</span>.,当<spanclass="math inline">\(0&lt;|x-x_0|&lt;\delta\)</span>时,有:</p><p><span class="math inline">\(|x-x_0|&lt;\varepsilon\)</span></p><p><span class="math inline">\(\Rightarrow \lim\limits_{x \to x_0}x =x_0\)</span></p><p><strong>Example 2</strong>:证明<spanclass="math inline">\(\lim\limits_{x \to x_0}\cfrac{1}{x} =\cfrac{1}{x_0}\)</span></p><p><strong>Proof</strong> 对于$&gt;0,|x-x_0| &lt; |x| &gt; $</p><p>取<span class="math inline">\(\delta = \min \{\cfrac{|x_0|}{2},\cfrac{|x_0|^2}{2}\varepsilon\}\)</span></p><p>当<span class="math inline">\(x \in N_{0}(x_0,\delta) \Rightarrow|\cfrac{1}{x}-\cfrac{1}{x_0}| &lt; \varepsilon\)</span></p><p><span class="math inline">\(\Rightarrow \lim\limits_{x \tox_0}\cfrac{1}{x} = \cfrac{1}{x_0}\)</span></p>
           </div>
-<h3 id="参数方程的高二阶导数">参数方程的高(<em>二</em>)阶导数</h3>
-<p>对于函数的参数方程表达式,我们只讨论其二阶导数,不妨假设：<span
-class="math inline">\(\begin{cases} x = x(t)\\ y = y(t)
-\end{cases},a\leq t \leq b\)</span>,则其二阶导数公式如下： <span
-class="math display">\[
-\cfrac{\mathrm{d}y}{\mathrm{d}x} = \cfrac{y&#39;(t)}{x&#39;(t)}
-\Rightarrow \cfrac{\mathrm{d}^2y}{\mathrm{d}x^2} =
-\cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{\mathrm{d}y}{\mathrm{d}x}) \\
-= \cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{y&#39;(t)}{x&#39;(t)}) =
-\cfrac{\mathrm{d}}{\mathrm{d}t}(\cfrac{y&#39;(t)}{x&#39;(t)})\cfrac{\mathrm{d}t}{\mathrm{d}x}
-= \cfrac{x&#39;(t)y&#39;&#39;(t)-x&#39;&#39;(t)y&#39;(t)}{[x&#39;(t)]^3}
-\]</span></p>
-<h3 id="隐函数的高阶导数">隐函数的高阶导数</h3>
-<p>此前我们讨论过一阶导数情况下的<strong>隐函数求导法</strong>,若想求得其高阶导数,则两边求<span
-class="math inline">\(n\)</span>阶导即可.</p>
-<div class="note note-success">
-            <p><strong>Example 1</strong>:已知<spanclass="math inline">\(x-y+\cfrac{1}{2}\sin{y} = 0\)</span>,求<spanclass="math inline">\(y&#39;&#39;\)</span></p><p><strong>Solution</strong> 先对等式两边求导,有：<spanclass="math inline">\(1-y&#39;+\cfrac{1}{2}y&#39;\cos{y} =0\)</span></p><p>解得:<span class="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x} =\cfrac{2}{2-\cos{y}}\)</span></p><p>再求一次导,有:<spanclass="math inline">\(-y&#39;&#39;+\cfrac{1}{2}y&#39;&#39;\cos{y}-\cfrac{1}{2}\sin{y}(y&#39;)^2=0\)</span></p><p>解得:<span class="math inline">\(\cfrac{\mathrm{d}^2y}{\mathrm{d}x^2}= \cfrac{-4\sin{y}}{(2-\cos{y})^3}\)</span></p>
+<h3 id="单侧极限">单侧极限</h3>
+<p>给出普遍的函数极限定义后,我们可更进一步,给出<strong>单侧极限</strong>的定义:</p>
+<div class="note note-primary">
+            <p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(N_{0}^{+}(x_0,\delta)\)</span>有定义,则对于<spanclass="math inline">\(\forall \varepsilon &gt; 0,\exists \delta&gt;0\)</span>,当<span class="math inline">\(x \inN_0^{+}(x_0,\delta)\)</span>时,有<span class="math inline">\(|f(x)-A|&lt; \varepsilon\)</span>,则称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x_0\)</span>处的<strong>右极限</strong>为<spanclass="math inline">\(A\)</span>,记为<spanclass="math inline">\(\lim\limits_{x \to x_0^{+}} f(x) = A\)</span></p><p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(N_{0}^{-}(x_0,\delta)\)</span>有定义,则对于<spanclass="math inline">\(\forall \varepsilon &gt; 0,\exists \delta&gt;0\)</span>,当<span class="math inline">\(x \inN_0^{-}(x_0,\delta)\)</span>时,有<span class="math inline">\(|f(x)-A|&lt; \varepsilon\)</span>,则称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x_0\)</span>处的<strong>左极限</strong>为<spanclass="math inline">\(A\)</span>,记为<spanclass="math inline">\(\lim\limits_{x \to x_0^{-}} f(x) = A\)</span></p>
           </div>
-<h3 id="莱布尼兹公式">莱布尼兹公式</h3>
-<p>我们不加证明地给出高阶导数的<strong>莱布尼兹公式</strong>：</p>
+<p>给出单侧极限的定义后,我们可以得到其推论:</p>
 <div class="note note-danger">
-            <p><strong>Theorem</strong>:设<spanclass="math inline">\(u(x),v(x)\)</span>有<spanclass="math inline">\(n\)</span>阶导数,则：<spanclass="math inline">\([u(x)v(x)]^{(n)} =\sum\limits_{k=0}^nC_{n}^{k}u^{(n-k)}(x)v^{(k)}(x)\)</span>,此即高阶导数的莱布尼兹公式.</p>
+            <p><span class="math inline">\(\lim\limits_{x\to x_0}f(x)=A\Leftrightarrow \lim\limits_{x \to x_0^{+}} f(x)=\lim\limits_{x \tox_0^{-}} f(x) = A\)</span></p>
           </div>
-<p>下面给出一个应用的例子：</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:已知函数<span class="math inline">\(f(x) =x^2e^x\)</span>,求<span class="math inline">\(f^{(n)}(x)\)</span></p><p><strong>Solution</strong> 根据莱布尼兹公式,有<spanclass="math inline">\(f^{(n)}(x) = x^2e^x+2nxe^x+n(n-1)e^x\)</span>.</p>
+            <p><strong>Example 3</strong>:已知函数: <span class="math display">\[f(x) = \mathrm{sgn}x =\begin{cases}-1,x&lt;0 \\0,x=0  \\1,x&gt;0\end{cases}\]</span> 证明:<span class="math inline">\(\lim\limits_{x \to0}f(x)\)</span>不存在</p><p><strong>Proof</strong> <span class="math inline">\(\lim\limits_{x\to0^{+}}=1,\lim\limits_{x\to0^{-}}=-1\)</span>两者不相同,故极限不存在.</p>
           </div>
-<h3 id="导数极限定理">导数极限定理</h3>
-<p>我们不加证明地给出<strong>导数极限定理</strong>：</p>
-<div class="note note-danger">
-            <p><strong>Theorem</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(N_0(x_0,\delta)\)</span>可导,在<spanclass="math inline">\(x_0\)</span>连续,且<spanclass="math inline">\(\lim\limits_{x\to x_0}f&#39;(x) =A\)</span>,则<span class="math inline">\(f&#39;(x_0)=A\)</span>.</p>
+<h3 id="无穷远点的极限">无穷远点的极限</h3>
+<p>现在我们讨论<strong>无穷远点的极限</strong>的<span
+class="math inline">\(\varepsilon-\delta\)</span>语言描述:</p>
+<div class="note note-primary">
+            <p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<span class="math inline">\(\{x||x|&gt;M\}\)</span>有定义,则对于<span class="math inline">\(\forall\varepsilon &gt; 0,\exists x_{0} &gt;0\)</span>,当<spanclass="math inline">\(|x|&gt;x_{0}\)</span>时,有<spanclass="math inline">\(|f(x)-A| &lt; \varepsilon\)</span>,则称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(∞\)</span>处的<strong>极限</strong>为<spanclass="math inline">\(A\)</span>,记为<spanclass="math inline">\(\lim\limits_{x \to ∞} f(x) = A\)</span></p><p>在定义无穷远点极限的基础上,我们也可将单侧极限的定义引入进来,定义如下:</p><p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<span class="math inline">\(\{x||x|&gt;M\}\)</span>有定义,则对于<span class="math inline">\(\forall\varepsilon &gt; 0,\exists x_{0} &gt;0\)</span>,当<spanclass="math inline">\(x&gt;x_{0}\)</span>时,有<spanclass="math inline">\(|f(x)-A| &lt; \varepsilon\)</span>,则称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(+∞\)</span>处的<strong>极限</strong>为<spanclass="math inline">\(A\)</span>,记为<spanclass="math inline">\(\lim\limits_{x \to +∞} f(x) = A\)</span></p><p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<span class="math inline">\(\{x||x|&gt;M\}\)</span>有定义,则对于<span class="math inline">\(\forall\varepsilon &gt; 0,\exists x_{0} &gt;0\)</span>,当<spanclass="math inline">\(x&lt;-x_{0}\)</span>时,有<spanclass="math inline">\(|f(x)-A| &lt; \varepsilon\)</span>,则称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(-∞\)</span>处的<strong>极限</strong>为<spanclass="math inline">\(A\)</span>,记为<spanclass="math inline">\(\lim\limits_{x \to -∞} f(x) = A\)</span></p>
           </div>
-<p>直接给出例题：</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:已知<span class="math inline">\(f(x) =\begin{cases}e^x,x&lt;0 \\ ax^2+bx+c,x \geq0\end{cases}\)</span>,现已知<spanclass="math inline">\(f&#39;&#39;(0)\)</span>存在,求<spanclass="math inline">\(a,b,c\)</span>.</p><p><strong>Solution</strong> <span class="math inline">\(f&#39;(x) =\begin{cases}e^x,x&lt;0 \\ 2ax+b,x \geq0\end{cases}\)</span>,根据连续性可知<spanclass="math inline">\(b=1\)</span>.</p><p><span class="math inline">\(f&#39;&#39;(x) = \begin{cases}e^x,x&lt;0\\ 2a,x \geq 0\end{cases}\)</span>,根据连续性可知<spanclass="math inline">\(a = \cfrac{1}{2},c=1\)</span></p><p>综上:<span class="math inline">\(a=\cfrac{1}{2},b=1,c=1\)</span></p>
+            <p><strong>Example 4</strong>:证明<spanclass="math inline">\(\lim\limits_{x \to ∞}\cfrac{1}{x} = 0\)</span></p><p><strong>Proof</strong> 对<span class="math inline">\(\forall\varepsilon &gt; 0\)</span>,取<span class="math inline">\(x_{0} =\cfrac{1}{\varepsilon}+ 1\)</span>,当<spanclass="math inline">\(|x|&gt;x_0\)</span>时:</p><p><span class="math inline">\(|\cfrac{1}{x} - 0| &lt; \varepsilon\Rightarrow \lim\limits_{x \to ∞}\cfrac{1}{x} = 0\)</span></p>
+          </div>
+<h3 id="极限为无穷大">极限为无穷大</h3>
+<p>下面给出极限为无穷大的<span
+class="math inline">\(\varepsilon-\delta\)</span>语言描述</p>
+<div class="note note-primary">
+            <p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(N_{0}(x_0,\delta)\)</span>有定义,且对于<spanclass="math inline">\(\forall M &gt; 0,\exists \delta&gt;0\)</span>,当<span class="math inline">\(x \inN_{0}(x_0,\delta)\)</span>时,有<spanclass="math inline">\(|f(x)|&gt;M\)</span>,则称<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x_0\)</span>处的<strong>极限</strong>为<spanclass="math inline">\(∞\)</span>(<em>极限不存在</em>),记为<spanclass="math inline">\(\lim\limits_{x \to x_0} f(x) = ∞\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 5</strong>:<span class="math inline">\(\lim\limits_{x \to 1} \cfrac{x}{(x-1)^{2}} = ∞\)</span></p>
+          </div>
+<h3 id="数列的极限">数列的极限</h3>
+<p>此前我们讨论的均为函数的极限,数列是特殊的函数,其极限的$-
+$语言描述如下:</p>
+<div class="note note-primary">
+            <p><strong>Definition</strong>:设数列<spanclass="math inline">\(\{a_n\}\)</span>,对于<spanclass="math inline">\(\forall \varepsilon &gt; 0\)</span>,当<spanclass="math inline">\(n &gt; N\)</span>时,<spanclass="math inline">\(|a_n - A| &lt;\varepsilon\)</span>,则称数列的极限为<spanclass="math inline">\(A\)</span>,记为<spanclass="math inline">\(\lim\limits _{n \to ∞} a_n = A\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 6</strong>:证明<spanclass="math inline">\(\lim\limits_{n \to ∞} \sqrt[n]a =1(a&gt;1)\)</span></p><p><strong>Proof</strong> <span class="math inline">\(\sqrt[n]a =\sqrt[n]{a \cdot 1 \cdot1 ... \cdot 1}(n-1个1)\)</span></p><p>由均值不等式:<span class="math inline">\(\sqrt[n]a = \sqrt[n]{a \cdot1 \cdot1 ... \cdot 1} \leq \cfrac{a + n - 1}{n} = 1 +\cfrac{a-1}{n}\)</span></p><p>故有$0 &lt;-1 &lt; $</p><p>对于<span class="math inline">\(\forall \varepsilon &gt;0\)</span>,取<span class="math inline">\(N =[\cfrac{a-1}{\varepsilon}]+1\)</span>,当<spanclass="math inline">\(n&gt;N\)</span>时有:</p><p><span class="math inline">\(|\sqrt[n]a - 1 | &lt; \varepsilon\Rightarrow \lim\limits_{n \to ∞} \sqrt[n]a = 1\)</span></p><p><strong>Example 7</strong>:证明<spanclass="math inline">\(\lim\limits _{n \to ∞} q ^{n}= 0(|q| &lt; 1)\)</span></p><p><strong>Proof</strong> 分两种情况讨论:</p><p>①:<span class="math inline">\(q = 0\)</span> ,显然成立</p><p>②:<span class="math inline">\(0 &lt; |q| &lt; 1\)</span>时,记<spanclass="math inline">\(h = \cfrac{1}{|q|} - 1\)</span></p><p>则有<span class="math inline">\(|q^n| = \cfrac{1}{(1+h)^{n}} \leq\cfrac{1}{1+nh} \leq \cfrac{1}{nh}\)</span></p><p>对于<span class="math inline">\(\forall \varepsilon &gt;0\)</span>,取<span class="math inline">\(N = [\cfrac{1}{\varepsilon h}]+1\)</span>,当$n &gt; N $时,有:</p><p><span class="math inline">\(|q^n - 0| &lt; \varepsilon \Rightarrow\lim\limits _{n \to ∞} q ^{n}= 0(|q| &lt; 1 )\)</span></p><p><strong>Example 8</strong>: 证明<spanclass="math inline">\(\lim\limits _{n \to ∞} \sqrt[n]{n} =1\)</span></p><p><strong>Proof</strong> 记<span class="math inline">\(\sqrt[n]{n} =a_n,n&gt;1 \Rightarrow a_n &gt; 1\)</span></p><p>记<span class="math inline">\(a_n = 1 + \alpha_n ,\alpha &gt;0\)</span></p><p>故<span class="math inline">\(n = (1 + \alpha_n)^{n} \geq\cfrac{n}{2}(n-1)\alpha_{n}^{2}\Rightarrow 0&lt; \alpha_n \leq\sqrt{\cfrac{2}{n-1}}\)</span></p><p>对于<span class="math inline">\(\forall \varepsilon &gt;0\)</span>,取<span class="math inline">\(N = [\cfrac{2}{\varepsilon ^2}+ 1] + 1\)</span>,当$n &gt; N $时,有:</p><p><span class="math inline">\(|\sqrt[n]{n} - 1| &lt; \varepsilon\Rightarrow \lim\limits _{n \to ∞} \sqrt[n]{n} = 1\)</span></p>
           </div>
 
                 
@@ -419,8 +398,8 @@ class="math inline">\(n\)</span>阶导即可.</p>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>微积分-Chapter2-导数与微分-高阶导数</div>
-      <div>http://example.com/2023/07/03/微积分-Chapter2-导数与微分-高阶导数/</div>
+      <div>Chapter1-01极限的基本概念</div>
+      <div>http://example.com/2023/07/02/Chapter1-01极限的基本概念/</div>
     </div>
     <div class="license-meta">
       
@@ -432,7 +411,7 @@ class="math inline">\(n\)</span>阶导即可.</p>
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年7月3日</div>
+          <div>2023年7月2日</div>
         </div>
       
       
@@ -464,9 +443,9 @@ class="math inline">\(n\)</span>阶导即可.</p>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E5%BE%AE%E5%88%86/" title="微积分-Chapter2-导数与微分-微分">
+                      <a href="/2023/07/02/Chapter1-02%E6%9E%81%E9%99%90%E7%9A%84%E6%80%A7%E8%B4%A8/" title="Chapter1-02极限的性质">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">微积分-Chapter2-导数与微分-微分</span>
+                        <span class="hidden-mobile">Chapter1-02极限的性质</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -474,8 +453,8 @@ class="math inline">\(n\)</span>阶导即可.</p>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E6%B1%82%E5%AF%BC%E6%96%B9%E6%B3%95/" title="微积分-Chapter2-导数与微分-求导方法">
-                        <span class="hidden-mobile">微积分-Chapter2-导数与微分-求导方法</span>
+                      <a href="/2023/07/01/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter0-%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/" title="微积分-Chapter0-预备知识">
+                        <span class="hidden-mobile">微积分-Chapter0-预备知识</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -495,8 +474,8 @@ class="math inline">\(n\)</span>阶导即可.</p>
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'http://example.com/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0/';
-          this.page.identifier = '/2023/07/03/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter2-%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86-%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0/';
+          this.page.url = 'http://example.com/2023/07/02/Chapter1-01%E6%9E%81%E9%99%90%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/';
+          this.page.identifier = '/2023/07/02/Chapter1-01%E6%9E%81%E9%99%90%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');

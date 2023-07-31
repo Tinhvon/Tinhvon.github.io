@@ -16,19 +16,26 @@
   <meta name="author" content="Tinhvon">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
-<meta property="og:title" content="微积分-Chapter3-微分中值定理与导数应用-函数性态研究">
-<meta property="og:url" content="http://example.com/2023/07/30/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter3-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8-%E5%87%BD%E6%95%B0%E6%80%A7%E6%80%81%E7%A0%94%E7%A9%B6/index.html">
+    <meta name="description" content="最后我们介绍一下微分。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微积分-Chapter2-导数与微分-微分">
+<meta property="og:url" content="http://example.com/2023/07/03/Chapter2-05%E5%BE%AE%E5%88%86/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
+<meta property="og:description" content="最后我们介绍一下微分。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-30T09:34:02.000Z">
-<meta property="article:modified_time" content="2023-07-30T09:34:02.725Z">
+<meta property="og:image" content="http://example.com/img/bg/Calculus.png">
+<meta property="article:published_time" content="2023-07-02T20:00:00.000Z">
+<meta property="article:modified_time" content="2023-07-30T14:47:57.554Z">
 <meta property="article:author" content="Tinhvon">
+<meta property="article:tag" content="Notes">
+<meta property="article:tag" content="Study">
+<meta property="article:tag" content="Calculus">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/bg/Calculus.png">
   
   
   
-  <title>微积分-Chapter3-微分中值定理与导数应用-函数性态研究 - Tinhvon&#39;s Space</title>
+  <title>微积分-Chapter2-导数与微分-微分 - Tinhvon&#39;s Space</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -204,13 +211,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/bg/Calculus.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="微积分-Chapter3-微分中值定理与导数应用-函数性态研究"></span>
+            <span id="subtitle" data-typed-text="微积分-Chapter2-导数与微分-微分"></span>
           
         </div>
 
@@ -221,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-30 17:34" pubdate>
-          2023年7月30日 下午
+        <time datetime="2023-07-03 04:00" pubdate>
+          2023年7月3日 凌晨
         </time>
       </span>
     
@@ -233,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          1.3k 字
         
       </span>
     
@@ -244,7 +251,7 @@
         
         
         
-          1 分钟
+          12 分钟
         
       </span>
     
@@ -281,12 +288,69 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">微积分-Chapter3-微分中值定理与导数应用-函数性态研究</h1>
+            <h1 id="seo-header">微积分-Chapter2-导数与微分-微分</h1>
             
             
               <div class="markdown-body">
                 
-                
+                <h1 id="导数与微分">导数与微分</h1>
+<h2 id="微分">微分</h2>
+<p>在系统地谈论导数后，我们最后来谈论一下微分。在谈论微分之前，我们先讨论一下局部线性化。</p>
+<h3 id="局部线性化">局部线性化</h3>
+<p>根据下图，设直线<span class="math inline">\(T\)</span>与<span
+class="math inline">\(y=f(x)\)</span>在<span
+class="math inline">\(x=x_0\)</span>处相切，则<span
+class="math inline">\(T:f(x)-f(x_0) = f&#39;(x_0)(x-x_0)\)</span>.</p>
+<p>如图，用<span class="math inline">\(KN\)</span>替代<span
+class="math inline">\(PN\)</span>,则有<span class="math inline">\(PN =
+\Delta y = f(x_0+\Delta x)-f(x_0),KN =
+f&#39;(x_0)(x-x_0)\)</span>,联立后有<span
+class="math inline">\(f(x_0+\Delta x)-f(x_0)=f&#39;(x_0)\Delta
+x+o(x-x_0)\)</span>,其中<span class="math inline">\(PK = o(x-x_0) =
+o(\Delta x)\)</span>,此即化曲为直，即局部线性化。</p>
+<h3 id="基本概念">基本概念</h3>
+<p>然后我们严格地给出微分的定义：</p>
+<div class="note note-primary">
+            <p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，且<spanclass="math inline">\(\Delta y = f(x+\Delta x)-f(x) = Ax+o(\Deltax),\Delta x \to 0\)</span>.其中<spanclass="math inline">\(A\)</span>与<span class="math inline">\(\Deltax\)</span>无关，则称<span class="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x\)</span>可微，并称<spanclass="math inline">\(A\Delta x\)</span>为<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x\)</span>的<strong>微分</strong>，记作<spanclass="math inline">\(\mathrm{d}y = A\Delta x\)</span>.</p>
+          </div>
+<p><strong>Note 1</strong>:其中我们称<span class="math inline">\(A\Delta
+x\)</span>是<span class="math inline">\(\Delta
+y\)</span>的线性主部，故我们有<span class="math inline">\(\Delta
+y-\mathrm{d}y = o(\Delta x),\Delta x \to 0\)</span>.</p>
+<p><strong>Note 2</strong>:对一元函数来说，<span
+class="math inline">\(y=f(x)\)</span>在<span
+class="math inline">\(x=x_0\)</span>处可微<span
+class="math inline">\(\Leftrightarrow y = f(x)\)</span>在<span
+class="math inline">\(x =
+x_0\)</span>可导，这里直接套用定义证明即可，具体证明略。</p>
+<p><strong>Note 3</strong>:对<span
+class="math inline">\(y=f(x),\mathrm{d}y = f&#39;(x)\Delta x =
+f&#39;(x)\mathrm{d}x\)</span>.</p>
+<p><strong>Note
+4</strong>:微分公式及其运算法则，与导数的运算法则相同。</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:已知<spanclass="math inline">\(y=\sin{x^2}\)</span>,求<spanclass="math inline">\(\mathrm{d}y\)</span>.</p><p><strong>Solution</strong> <span class="math inline">\(\mathrm{d}y =2x\cos{x^2}\mathrm{d}x\)</span></p>
+          </div>
+<p><strong>Note 5</strong>:微分的几何意义：<span
+class="math inline">\(y=f(x)\)</span>在<span
+class="math inline">\(P(x,y)\)</span>处的微分，即曲线<span
+class="math inline">\(y=f(x)\)</span>在<span
+class="math inline">\(P\)</span>切线在<span
+class="math inline">\(P\)</span>点纵坐标的改变量。</p>
+<p><strong>Note 6</strong>:一阶微分具有形式不变性，即<span
+class="math inline">\(y=f(u),u=g(x)\Rightarrow
+y=f[g(x)]\)</span>,则有<span class="math inline">\(\mathrm{d}y =
+f&#39;[g(x)]g&#39;(x)\mathrm{d}x = f&#39;(u)\mathrm{d}u\)</span>
+.但是高阶微分不具有微分形式不变性。</p>
+<h3 id="近似计算">近似计算</h3>
+<p>利用微分的概念，我们可以近似计算一些复杂的代数式。原理如下：</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:根据局部线性化原理，我们有<spanclass="math inline">\(f(x) = f(x_0)+f&#39;(x_0)(x-x_0)\)</span>.</p>
+          </div>
+<p>这里我们给出一个例子：</p>
+<div class="note note-success">
+            <p><strong>Example </strong>:近似计算<spanclass="math inline">\(\sqrt[3]{29}\)</span></p><p><strong>Solution</strong> 设<span class="math inline">\(f(x) =\sqrt[3]{x}\)</span>,则<span class="math inline">\(f(29) =f(27)+f&#39;(27)\times(29-27) = 3+\cfrac{2}{27} = 3.0741\)</span></p>
+          </div>
 
                 
               </div>
@@ -295,6 +359,45 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Notes/" class="category-chain-item">Notes</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Notes/Calculus/" class="category-chain-item">Calculus</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Notes/" class="print-no-link">#Notes</a>
+      
+        <a href="/tags/Study/" class="print-no-link">#Study</a>
+      
+        <a href="/tags/Calculus/" class="print-no-link">#Calculus</a>
+      
+    </div>
   
 </div>
 
@@ -304,8 +407,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>微积分-Chapter3-微分中值定理与导数应用-函数性态研究</div>
-      <div>http://example.com/2023/07/30/微积分-Chapter3-微分中值定理与导数应用-函数性态研究/</div>
+      <div>微积分-Chapter2-导数与微分-微分</div>
+      <div>http://example.com/2023/07/03/Chapter2-05微分/</div>
     </div>
     <div class="license-meta">
       
@@ -317,7 +420,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年7月30日</div>
+          <div>2023年7月3日</div>
         </div>
       
       
@@ -349,12 +452,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2023/07/04/Chapter3-01%E8%B4%B9%E9%A9%AC%E5%8E%9F%E7%90%86%E4%B8%8E%E7%BD%97%E5%B0%94%E5%AE%9A%E7%90%86/" title="微积分-Chapter3-微分中值定理与导数应用-费马原理与罗尔定理">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">微积分-Chapter3-微分中值定理与导数应用-费马原理与罗尔定理</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/30/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter3-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8-%E6%B3%B0%E5%8B%92%E5%85%AC%E5%BC%8F/" title="微积分-Chapter3-微分中值定理与导数应用-泰勒公式">
-                        <span class="hidden-mobile">微积分-Chapter3-微分中值定理与导数应用-泰勒公式</span>
+                      <a href="/2023/07/03/Chapter2-04%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0/" title="微积分-Chapter2-导数与微分-高阶导数">
+                        <span class="hidden-mobile">微积分-Chapter2-导数与微分-高阶导数</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -374,8 +483,8 @@
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'http://example.com/2023/07/30/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter3-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8-%E5%87%BD%E6%95%B0%E6%80%A7%E6%80%81%E7%A0%94%E7%A9%B6/';
-          this.page.identifier = '/2023/07/30/%E5%BE%AE%E7%A7%AF%E5%88%86-Chapter3-%E5%BE%AE%E5%88%86%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AF%BC%E6%95%B0%E5%BA%94%E7%94%A8-%E5%87%BD%E6%95%B0%E6%80%A7%E6%80%81%E7%A0%94%E7%A9%B6/';
+          this.page.url = 'http://example.com/2023/07/03/Chapter2-05%E5%BE%AE%E5%88%86/';
+          this.page.identifier = '/2023/07/03/Chapter2-05%E5%BE%AE%E5%88%86/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');
