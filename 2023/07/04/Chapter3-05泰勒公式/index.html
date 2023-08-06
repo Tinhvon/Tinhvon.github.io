@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Calculus.png">
 <meta property="article:published_time" content="2023-07-03T20:40:00.000Z">
-<meta property="article:modified_time" content="2023-08-06T00:21:19.070Z">
+<meta property="article:modified_time" content="2023-08-06T03:52:47.581Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Study">
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          896 字
+          2.5k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          8 分钟
+          22 分钟
         
       </span>
     
@@ -330,6 +330,48 @@ P_n(x) = f(x_0)+f&#39;(x_0)(x-x_0)+...+\cfrac{f^{(n)}(x_0)}{n!}(x-x_0)^n
 <p>下面我们给出泰勒中值定理.其表述如下：</p>
 <div class="note note-danger">
             <p><strong>Taylor Theorem</strong>:如果<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>处有<spanclass="math inline">\(n+1\)</span>阶导数，<spanclass="math inline">\(x_0 \in (a,b)\)</span>,则对于<spanclass="math inline">\(\forall x \in (a,b),f(x) =f(x_0)+f&#39;(x_0)(x-x_0)+...+\cfrac{1}{n!}f^{(n)}(x_0)(x-x_0)^n +R_n(x) = P_n(x)+R_n(x)\)</span>.其中<span class="math inline">\(R_n(x) =\cfrac{1}{(n+1)!}f^{(n+1)}(\xi)(x-x_0)^{n+1}\)</span>,其中<spanclass="math inline">\(\xi\)</span>介于<spanclass="math inline">\(x,x_0\)</span>之间</p>
+          </div>
+<p>证明如下:</p>
+<div class="note note-info">
+            <p><strong>Proof</strong> 记<spanclass="math inline">\(R_n(x)=f(x)-P_n(x),R_n^{(k)}(x_0)=0,k=0,1,...n\)</span></p><p>由柯西中值定理可知：</p><p><span class="math inline">\(\cfrac{R_n(x)}{(x-x_0)^{n+1}} =\cfrac{R_n(x)-R_n(x_1)}{(x-x_0)^{n+1}} =\cfrac{R_n&#39;(\xi_1)}{(n+1)(\xi_1-x_0)^n}=...=\cfrac{1}{(n+1)!}\cfrac{R^{(n)}(\xi_n-R^{n}(x_0))}{\xi_0-x_0}\)</span></p><p>根据拉格朗日中值定理，原式$ = R^{n+1}(),(x,x_0)$</p><p>而<span class="math inline">\(R^{(n+1)(x)} = f^{(n+1)}(x),R_n(x) =\cfrac{1}{(n+1)!}f^{(n+1)}(\xi)(x-x_0)^{n+1}\)</span></p>
+          </div>
+<p><strong>Note 1</strong>:一般称<span class="math inline">\(f(x) =
+f(x_0)+f&#39;(x_0)(x-x_0)+...+\cfrac{1}{n!}f^{(n)}(x_0)(x-x_0)^n +
+R_n(x) = P_n(x)+R_n(x)\)</span>为<span
+class="math inline">\(n\)</span>阶<span
+class="math inline">\(Taylor\)</span>公式，<span
+class="math inline">\(P_n(x)\)</span>称为<span
+class="math inline">\(n\)</span>次<span
+class="math inline">\(Taylor\)</span>多项式,由<span
+class="math inline">\(|f^{(n+1)}(x)|\leq M,|R_n(x)|\leq
+\cfrac{M}{(n+1)!}|(x-x_0)^{n+1}| \Rightarrow \cfrac{R_n(x)}{(x-x_0)^n}
+\to 0,x \to x_0\)</span>.</p>
+<p><strong>Note 2</strong>:我们一般称<span class="math inline">\(R_n(x)
+=
+\cfrac{1}{(n+1)!}f^{(n+1}(\xi)(x-x_0)^{n+1}\)</span>为<strong>Lagrange</strong>型余项,<span
+class="math inline">\(R_n(x)=
+o(x-x_0)^n\)</span>为<strong>Peano</strong>型余项。当<span
+class="math inline">\(x_0=0\)</span>时，我们称<strong>Taylor公式</strong>为<strong>Maclaurin</strong>公式。</p>
+<p><strong>Note 3</strong>:常见函数的Maclaurin公式如下: <span
+class="math display">\[
+e^x = 1+x+\cfrac{x^2}{2!}+...+\cfrac{x^n}{n!}+\cfrac{e^{\theta
+x}}{(n+1)!}x^{n+1},R_n(x) = o(x^n),x\in R \\
+\sin x =x -
+\cfrac{x^3}{3!}+...+(-1)^{n-1}\cfrac{x^{2n-1}}{(2n-1)!}+(-1)^n\cfrac{\cos
+\theta x}{(2n+1)!}x^{2n+1},x\in R \\
+\cos x = 1 -
+\cfrac{x^2}{2}+...+(-1)^n\cfrac{x^{2n}}{(2n)!}+(-1)^{n+1}\cfrac{\cos
+\theta x}{(2n+2)!}x^{2n+2},R_n(x) = o(x^{2n}) \\
+\ln(1+x) = x - \cfrac{x^2}{2}+...+(-1)^{n}\cfrac{x^{n+1}}{(n+1)(1+\theta
+x)^{n+1}},R_n(x) = o(x^n),x\in (-1,1] \\
+(1+x)^{\alpha} = 1+\alpha x+...+\cfrac{\alpha (\alpha -1)...(\alpha
+-n+1)}{n!}x^n + \cfrac{\alpha (\alpha -1)...(\alpha -n)}{(n+1)!(1+\theta
+x)^{n+1}}x^{n+1},R_n(x) = o(x^n) \\
+\cfrac{1}{1-x} = 1+x+x^2+...+x^n+o(x^n),x\in (-1,1) \\
+\cfrac{1}{1+x} = 1-x+x^2-...+(-1)^nx^n+o(x^n),x\in (-1,1)
+\]</span> 下面给出一些<strong>Taylor</strong>展开的例题:</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:<span class="math inline">\(f(x) = \sin(x^2)\)</span>,写出其Maclaurin展开式.</p><p><strong>Solution</strong> 将<span class="math inline">\(\sinx\)</span>的Maclaurin展开式中的<spanclass="math inline">\(x\)</span>全部用<spanclass="math inline">\(x^2\)</span>代替即可</p>
           </div>
 
                 
