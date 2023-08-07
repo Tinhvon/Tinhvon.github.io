@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>Chapter4-01不定积分的概念</title>
+    <link href="/2023/08/05/Chapter4-01%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%A6%82%E5%BF%B5/"/>
+    <url>/2023/08/05/Chapter4-01%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%A6%82%E5%BF%B5/</url>
+    
+    <content type="html"><![CDATA[<h1 id="一元函数积分学"><a href="#一元函数积分学" class="headerlink" title="一元函数积分学"></a>一元函数积分学</h1><h2 id="不定积分的概念"><a href="#不定积分的概念" class="headerlink" title="不定积分的概念"></a>不定积分的概念</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>首先我们给出<strong>原函数</strong>与<strong>不定积分</strong>的定义:</p><div class="note note-primary">            <p><strong>Definition</strong>:设$f(x),F(x)$在区间$I$上有定义,若$F’(x)=f(x),x\in I$,则称$F(x)$为$f(x)$的一个原函数.</p><p><strong>Definition</strong>:$f(x)$在$I$上全体原函数称为$f(x)$在$I$上的不定积分,记作$\int f(x) \mathrm{d}x$</p>          </div><p>在给出这些定义后,我们做一些补充.</p><p><strong>Note 1</strong>:若$F(x)$是$f(x)$的一个原函数,则$F(x)+C$也是$f(x)$的原函数,且任意两个原函数之间相差一个常数.即:</p><script type="math/tex; mode=display">\int{f(x)}\mathrm{d}x=F(x)+C(F'(x)=f(x))</script><p><strong>Note 2</strong>:连续函数一定存在原函数.</p><p><strong>Note 3</strong>:积分与微分在相差一个常数的意义下,互为逆运算.即:</p><script type="math/tex; mode=display">\int{f'(x)}\mathrm{d}x = f(x)+C\cdot\int{\mathrm{d}f(x)}=f(x)+C \\\cfrac{\mathrm{d}}{\mathrm{d}x}\int{f(x)}\mathrm{d}x = f(x)</script><p><strong>Note 4</strong>:积分运算满足线性关系,即:</p><script type="math/tex; mode=display">\int{[\alpha f(x)+\beta g(x)]}\mathrm{d}x = \alpha \int{f(x)}\mathrm{d}x+\beta \int{g(x)}\mathrm{d}x</script><p><strong>Note 5</strong>:积分常数的确定方法:先求出原函数,再根据条件确定常数$C$.</p><p>针对<strong>Note 5</strong>给出一个例题:</p><div class="note note-success">            <p><strong>Example 1</strong>:已知曲线上任意一点切线斜率为该点横坐标的2倍,且曲线过$(1,2)$,求曲线方程.</p><p><strong>Solution</strong>:根据题意有$\cfrac{\mathrm{d}y}{\mathrm{d}x} = 2x \Rightarrow y = x^2+C$</p><p>代入有$2=1+C \Rightarrow C = 1$</p><p>故曲线方程为$C:y=x^2+1$</p>          </div><p><strong>Note 6</strong>不定积分的几何意义:若$F(x)$是$f(x)$的一个原函数,则称$y=F(x)$是$f(x)$的一条<strong>积分曲线</strong>.$\int{f(x)}\mathrm{d}x$为$y=F(x)$沿纵轴任意平移所得的<strong>积分曲线族</strong>.</p><h3 id="基本积分公式"><a href="#基本积分公式" class="headerlink" title="基本积分公式"></a>基本积分公式</h3><p>得到不定积分的概念后,我们给出基本函数的积分公式,证明略:</p><div class="note note-success">            <p><strong>1 </strong>: $\int{0}\mathrm{d}x = C$</p><p><strong>2 </strong>: $\int{x^\alpha}\mathrm{d}x = \cfrac{x^{\alpha+1}}{\alpha+1}+C$</p><p><strong>3 </strong>:$\int{\cfrac{\mathrm{d}x}{x}} = \ln{|x|}+C$</p><p><strong>4 </strong>:$\int{a^x}\mathrm{d}x = \cfrac{a^x}{\ln a}+C,\int{e^x}\mathrm{d}x = e^x+C$</p><p><strong>5 </strong>:$\int{\sin{x}}\mathrm{d}x = -\cos{x}+C$</p><p><strong>6 </strong>:$\int{\cos{x}}\mathrm{d}x=\sin{x}+C$</p><p><strong>7 </strong>:$\int{\cfrac{1}{\cos^2{x}}}\mathrm{d}x = \tan{x} + C$</p><p><strong>8 </strong>:$\int{\cfrac{1}{\sin^2{x}}}\mathrm{d}x = -\cot{x} + C$</p><p><strong>9 </strong>:$\int{\cfrac{\mathrm{d}x}{\sqrt{1-x^2}}} =  \arcsin{x} + C$</p><p><strong>10 </strong>:$\int{\cfrac{\mathrm{d}x}{1+x^2}} = \arctan{x}+C$</p>          </div><h3 id="部分“特殊情况”"><a href="#部分“特殊情况”" class="headerlink" title="部分“特殊情况”"></a>部分“特殊情况”</h3><p>不存在有效的方法判定,对于给定的初等函数是初等可积的.有部分函数的不定积分无法用初等函数表示,给出几个例子:</p><div class="note note-success">            <p><strong>Example 1</strong>:$\int{e^{x^2}}\mathrm{d}x$</p><p><strong>Example 2</strong>:$\int{\cfrac{\sin{x}}{x}}\mathrm{d}x$</p><p><strong>Example 3</strong>:$\int{\cfrac{x}{\ln{x}}}\mathrm{d}x$</p><p><strong>Example 4</strong>:$\int{\sin{x^2}}\mathrm{d}x$</p><p><strong>Example 5</strong>:$\int{\sqrt{1-k^2\sin^2{\theta}}}\mathrm{d}\theta$</p>          </div>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>Calculus</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Notes</tag>
+      
+      <tag>Study</tag>
+      
+      <tag>Calculus</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>光学-Chapter2-光的传播</title>
     <link href="/2023/07/17/%E5%85%89%E5%AD%A6-Chapter2-%E5%85%89%E7%9A%84%E4%BC%A0%E6%92%AD/"/>
     <url>/2023/07/17/%E5%85%89%E5%AD%A6-Chapter2-%E5%85%89%E7%9A%84%E4%BC%A0%E6%92%AD/</url>
