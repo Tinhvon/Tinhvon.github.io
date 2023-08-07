@@ -16,16 +16,16 @@
   <meta name="author" content="Tinhvon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="本文将介绍一个重要的中值定理——泰勒中值定理，并给出其应用">
+    <meta name="description" content="本文将介绍一个重要的中值定理——泰勒中值定理,并给出其应用">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Chapter3-05泰勒公式">
 <meta property="og:url" content="http://example.com/2023/07/04/Chapter3-05%E6%B3%B0%E5%8B%92%E5%85%AC%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
-<meta property="og:description" content="本文将介绍一个重要的中值定理——泰勒中值定理，并给出其应用">
+<meta property="og:description" content="本文将介绍一个重要的中值定理——泰勒中值定理,并给出其应用">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Calculus.png">
 <meta property="article:published_time" content="2023-07-03T20:40:00.000Z">
-<meta property="article:modified_time" content="2023-08-06T04:12:29.050Z">
+<meta property="article:modified_time" content="2023-08-07T13:36:16.657Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Study">
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.3k 字
+          3.6k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          28 分钟
+          31 分钟
         
       </span>
     
@@ -296,24 +296,24 @@
                 <h1 id="微分中值定理与导数的应用">微分中值定理与导数的应用</h1>
 <h2 id="泰勒公式">泰勒公式</h2>
 <h3 id="在开始前">在开始前</h3>
-<p>我们在学习<strong>微分</strong>的过程中，曾使用过函数的线性近似公式，即:
+<p>我们在学习<strong>微分</strong>的过程中,曾使用过函数的线性近似公式,即:
 <span class="math display">\[
 f(x) = f(x_0)+f&#39;(\xi)(x-x_0) \\
 f(x) = f(x_0)+f&#39;(\xi)(x-x_0)+o(x-x_0)
-\]</span> 受其启发，对于函数<span
-class="math inline">\(f(x)\)</span>,我们能否构造一个简单函数（如多项式<span
-class="math inline">\(p(x)\)</span>），使得<span
-class="math inline">\(|f(x)-p(x)|\)</span>可以为任意小，如果这样的多项式<span
-class="math inline">\(p(x)\)</span>存在，则:</p>
+\]</span> 受其启发,对于函数<span
+class="math inline">\(f(x)\)</span>,我们能否构造一个简单函数(如多项式<span
+class="math inline">\(p(x)\)</span>),使得<span
+class="math inline">\(|f(x)-p(x)|\)</span>可以为任意小,如果这样的多项式<span
+class="math inline">\(p(x)\)</span>存在,则:</p>
 <ul>
 <li><span class="math inline">\(f(x)\)</span>应当满足何条件?</li>
 <li><span class="math inline">\(p(x)\)</span>如何构造?</li>
 <li><span class="math inline">\(p(x)\)</span>是否唯一？</li>
 </ul>
-<p>讨论具有以下性质的<span class="math inline">\(f(x)\)</span>：</p>
+<p>讨论具有以下性质的<span class="math inline">\(f(x)\)</span>:</p>
 <p><span class="math inline">\(f(x)\)</span>在<span
 class="math inline">\(x=x_0\)</span>及其附近有<span
-class="math inline">\(n+1\)</span>阶导数，寻找关于<span
+class="math inline">\(n+1\)</span>阶导数,寻找关于<span
 class="math inline">\((x-x_0)\)</span>的多项式<span
 class="math inline">\(P_n(x) =
 a_n(x-x_0)^n+...+a_1(x-x_0)+a_0\)</span>,用<span
@@ -326,20 +326,20 @@ f^{(k)}(x),k=0,1,2,...,n\)</span>由此可得: <span class="math display">\[
 a_k = \cfrac{1}{k!}f^{(k)}(x),k=0,1,2,...,n \\
 P_n(x) = f(x_0)+f&#39;(x_0)(x-x_0)+...+\cfrac{f^{(n)}(x_0)}{n!}(x-x_0)^n
 \]</span></p>
-<h3 id="泰勒中值定理taylor公式">泰勒中值定理（Taylor公式）</h3>
-<p>下面我们给出泰勒中值定理.其表述如下：</p>
+<h3 id="泰勒中值定理taylor公式">泰勒中值定理(Taylor公式)</h3>
+<p>下面我们给出泰勒中值定理.其表述如下:</p>
 <div class="note note-danger">
-            <p><strong>Taylor Theorem</strong>:如果<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>处有<spanclass="math inline">\(n+1\)</span>阶导数，<spanclass="math inline">\(x_0 \in (a,b)\)</span>,则对于<spanclass="math inline">\(\forall x \in (a,b),f(x) =f(x_0)+f&#39;(x_0)(x-x_0)+...+\cfrac{1}{n!}f^{(n)}(x_0)(x-x_0)^n +R_n(x) = P_n(x)+R_n(x)\)</span>.其中<span class="math inline">\(R_n(x) =\cfrac{1}{(n+1)!}f^{(n+1)}(\xi)(x-x_0)^{n+1}\)</span>,其中<spanclass="math inline">\(\xi\)</span>介于<spanclass="math inline">\(x,x_0\)</span>之间</p>
+            <p><strong>Taylor Theorem</strong>:如果<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>处有<spanclass="math inline">\(n+1\)</span>阶导数,<span class="math inline">\(x_0\in (a,b)\)</span>,则对于<span class="math inline">\(\forall x \in(a,b),f(x) =f(x_0)+f&#39;(x_0)(x-x_0)+...+\cfrac{1}{n!}f^{(n)}(x_0)(x-x_0)^n +R_n(x) = P_n(x)+R_n(x)\)</span>.其中<span class="math inline">\(R_n(x) =\cfrac{1}{(n+1)!}f^{(n+1)}(\xi)(x-x_0)^{n+1}\)</span>,其中<spanclass="math inline">\(\xi\)</span>介于<spanclass="math inline">\(x,x_0\)</span>之间</p>
           </div>
 <p>证明如下:</p>
 <div class="note note-info">
-            <p><strong>Proof</strong> 记<spanclass="math inline">\(R_n(x)=f(x)-P_n(x),R_n^{(k)}(x_0)=0,k=0,1,...n\)</span></p><p>由柯西中值定理可知：</p><p><span class="math inline">\(\cfrac{R_n(x)}{(x-x_0)^{n+1}} =\cfrac{R_n(x)-R_n(x_1)}{(x-x_0)^{n+1}} =\cfrac{R_n&#39;(\xi_1)}{(n+1)(\xi_1-x_0)^n}=...=\cfrac{1}{(n+1)!}\cfrac{R^{(n)}(\xi_n-R^{n}(x_0))}{\xi_0-x_0}\)</span></p><p>根据拉格朗日中值定理，原式$ = R^{n+1}(),(x,x_0)$</p><p>而<span class="math inline">\(R^{(n+1)(x)} = f^{(n+1)}(x),R_n(x) =\cfrac{1}{(n+1)!}f^{(n+1)}(\xi)(x-x_0)^{n+1}\)</span></p>
+            <p><strong>Proof</strong> 记<spanclass="math inline">\(R_n(x)=f(x)-P_n(x),R_n^{(k)}(x_0)=0,k=0,1,...n\)</span></p><p>由柯西中值定理可知:</p><p><span class="math inline">\(\cfrac{R_n(x)}{(x-x_0)^{n+1}} =\cfrac{R_n(x)-R_n(x_1)}{(x-x_0)^{n+1}} =\cfrac{R_n&#39;(\xi_1)}{(n+1)(\xi_1-x_0)^n}=...=\cfrac{1}{(n+1)!}\cfrac{R^{(n)}(\xi_n-R^{n}(x_0))}{\xi_0-x_0}\)</span></p><p>根据拉格朗日中值定理,原式$ = R^{n+1}(),(x,x_0)$</p><p>而<span class="math inline">\(R^{(n+1)(x)} = f^{(n+1)}(x),R_n(x) =\cfrac{1}{(n+1)!}f^{(n+1)}(\xi)(x-x_0)^{n+1}\)</span></p>
           </div>
 <p><strong>Note 1</strong>:一般称<span class="math inline">\(f(x) =
 f(x_0)+f&#39;(x_0)(x-x_0)+...+\cfrac{1}{n!}f^{(n)}(x_0)(x-x_0)^n +
 R_n(x) = P_n(x)+R_n(x)\)</span>为<span
 class="math inline">\(n\)</span>阶<span
-class="math inline">\(Taylor\)</span>公式，<span
+class="math inline">\(Taylor\)</span>公式,<span
 class="math inline">\(P_n(x)\)</span>称为<span
 class="math inline">\(n\)</span>次<span
 class="math inline">\(Taylor\)</span>多项式,由<span
@@ -350,8 +350,8 @@ class="math inline">\(|f^{(n+1)}(x)|\leq M,|R_n(x)|\leq
 =
 \cfrac{1}{(n+1)!}f^{(n+1}(\xi)(x-x_0)^{n+1}\)</span>为<strong>Lagrange</strong>型余项,<span
 class="math inline">\(R_n(x)=
-o(x-x_0)^n\)</span>为<strong>Peano</strong>型余项。当<span
-class="math inline">\(x_0=0\)</span>时，我们称<strong>Taylor公式</strong>为<strong>Maclaurin</strong>公式。</p>
+o(x-x_0)^n\)</span>为<strong>Peano</strong>型余项.当<span
+class="math inline">\(x_0=0\)</span>时,我们称<strong>Taylor公式</strong>为<strong>Maclaurin</strong>公式.</p>
 <p><strong>Note 3</strong>:常见函数的Maclaurin公式如下: <span
 class="math display">\[
 e^x = 1+x+\cfrac{x^2}{2!}+...+\cfrac{x^n}{n!}+\cfrac{e^{\theta
@@ -376,14 +376,18 @@ x)^{n+1}}x^{n+1},R_n(x) = o(x^n) \\
 <div class="note note-success">
             <p><strong>Example 2</strong>:<span class="math inline">\(f(x) =xe^{x+1}\)</span>,写出其Maclaurin展开式</p><p><strong>Solution</strong> <span class="math inline">\(f(x) = exe^x =ex(\sum\limits_{k=0}^n\cfrac{x^k}{k!})+o(x^n+1) =e\sum\limits_{k=0}^n\cfrac{x^{k+1}}{k!}+o(x^n+1),x\in R\)</span></p>
           </div>
-<h3 id="应用">应用</h3>
-<p>泰勒公式在求解较复杂的极限时有很大的用途，下面给出几个例题：</p>
+<h3 id="应用i-求解极限">应用I 求解极限</h3>
+<p>泰勒公式在求解较复杂的极限时有很大的用途,下面给出几个例题:</p>
 <div class="note note-success">
             <p><strong>Example 1</strong>:计算<spanclass="math inline">\(\lim\limits_{x\to0}\cfrac{\cosx-e^{-x^2/2}+x^4}{x^4}\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{align}I &amp;=\lim\limits_{x\to0}\cfrac{[1-\frac{x^2}{2!}+\frac{x^4}{4!}+o(x^4)]-[1-\frac{x^2}{2}+\frac{x^4}{8}+o(x^4)]+x^4}{x^4}\\ &amp;= \lim\limits_{x\to0} \cfrac{\frac{11}{12}x^4+o(x^4)}{x^4} \\&amp;= \cfrac{11}{12}\end{align}\)</span></p>
           </div>
 <div class="note note-success">
             <p><strong>Example 2</strong>:计算<spanclass="math inline">\(\lim\limits_{x\to0}\cfrac{e^x\sinx-x(1+x)}{x^3}\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{align}I &amp;=\lim\limits_{x\to0}\cfrac{[1+x+\frac{x^2}{2}+o(x^3)][x-\frac{x^3}{3!}+o(x^3)]-x-x^2}{x^3}\\ &amp;= \lim\limits_{x\to0}\cfrac{\frac{1}{3}x^3+o(x^3)}{x^3} \\&amp;= \cfrac{1}{3}\end{align}\)</span></p>
           </div>
+<div class="note note-success">
+            <p><strong>Example 3</strong>:计算<spanclass="math inline">\(\lim\limits_{x \to 0}\cfrac{e^x -\sum\limits_{n=0}^{99}\frac{x^n}{n!}}{x^{100}}\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(I=\lim\limits_{x \rightarrow 0}\cfrac{\sum\limits_{n=0}^{99} \frac{x^n}{n !}+\frac{x^{100}}{100!}+o\left(x^{100}\right)-\sum\limits_{n=0}^{99}\frac{x^{n}}{n!}}{x^{100}} = \cfrac{1}{100!}\)</span></p>
+          </div>
+<h3 id="应用ii-综合证明">应用II 综合证明</h3>
 
                 
               </div>
@@ -495,8 +499,8 @@ x)^{n+1}}x^{n+1},R_n(x) = o(x^n) \\
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/04/Chapter3-04-%E6%B4%9B%E5%BF%85%E8%BE%BE%E6%B3%95%E5%88%99/" title="Chapter3-04-洛必达法则">
-                        <span class="hidden-mobile">Chapter3-04-洛必达法则</span>
+                      <a href="/2023/07/04/Chapter3-04%E6%B4%9B%E5%BF%85%E8%BE%BE%E6%B3%95%E5%88%99/" title="Chapter3-04洛必达法则">
+                        <span class="hidden-mobile">Chapter3-04洛必达法则</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
