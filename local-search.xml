@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>【科研工具】Tables Generator简介</title>
+    <link href="/2023/08/08/%E3%80%90%E7%A7%91%E7%A0%94%E5%B7%A5%E5%85%B7%E3%80%91Tables-Generator/"/>
+    <url>/2023/08/08/%E3%80%90%E7%A7%91%E7%A0%94%E5%B7%A5%E5%85%B7%E3%80%91Tables-Generator/</url>
+    
+    <content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2><p>大家都会在大一的第二个学期接触“基础物理实验”这一课程,实验中会遇到大量的数据.当用<spanclass="math inline">\(\LaTeX\)</span>代码写实验报告时,将复杂的表格数据转化为TeX代码往往是一件痛苦的事情.本篇博文旨在介绍一个能将表格转化为<spanclass="math inline">\(\LaTeX\)</span>代码的网站及其基本用法,以帮助各位提高完成实验报告的效率.</p><h2 id="网站基本应用">网站基本应用</h2><p><a href="https://www.tablesgenerator.com/">TablesGenerator</a>网站的基本页面如下: <imgsrc="/img/Tables%20Generator/background.png" srcset="/img/loading.gif" lazyload /></p><ul><li>一般而言,我们可以直接在网站上填写数据,操作方法与WPS完全相同,填写完毕后点击“表格”下方的<code>'Generate'</code>,这时我们便可以得到相关的<spanclass="math inline">\(\LaTeX\)</span>代码,复制粘贴到我们的编译器中即可.</li><li>当我们做实验的过程中,我们往往选择先创建一个<code>’Excel‘</code>来存储数据,存储完毕后.我们可以点击<code>’File‘</code>,选择<code>’Paste table data...‘</code>后,将我们想要的数据粘贴进去,最后编辑好表格后点击<code>'Generate'</code>便可得到对应的<spanclass="math inline">\(\LaTeX\)</span>代码.</li></ul><h2 id="对于markdown用户">对于Markdown用户</h2><p>习惯使用<strong>Markdown</strong>撰写笔记的用户,也可以使用该网站来将表格转化为<strong>Markdown</strong>代码,在第一行中将<spanclass="math inline">\(\LaTeX\)</span>页面切换为<strong>Markdown</strong>页面即可.剩余的操作与之前类似.</p><p>(<em>未完待续...</em>)</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Tools</category>
+      
+      <category>LaTeX</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Notes</tag>
+      
+      <tag>LaTeX</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>华中科技大学2018级力学期末试题</title>
     <link href="/2023/08/08/%E5%8D%8E%E4%B8%AD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A62018%E7%BA%A7%E5%8A%9B%E5%AD%A6%E6%9C%9F%E6%9C%AB%E8%AF%95%E9%A2%98/"/>
     <url>/2023/08/08/%E5%8D%8E%E4%B8%AD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A62018%E7%BA%A7%E5%8A%9B%E5%AD%A6%E6%9C%9F%E6%9C%AB%E8%AF%95%E9%A2%98/</url>
