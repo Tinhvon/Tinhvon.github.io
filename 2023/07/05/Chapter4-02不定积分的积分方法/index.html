@@ -19,13 +19,13 @@
     <meta name="description" content="在了解不定积分的相关概念后,我们还尚未知道如何求解所给函数的不定积分.这篇文章介绍了一些积分方法.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Chapter4-02不定积分的积分方法">
-<meta property="og:url" content="http://example.com/2023/08/05/Chapter4-02%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E7%A7%AF%E5%88%86%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:url" content="http://example.com/2023/07/05/Chapter4-02%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E7%A7%AF%E5%88%86%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
 <meta property="og:description" content="在了解不定积分的相关概念后,我们还尚未知道如何求解所给函数的不定积分.这篇文章介绍了一些积分方法.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Calculus.png">
-<meta property="article:published_time" content="2023-08-04T17:00:00.000Z">
-<meta property="article:modified_time" content="2023-08-08T03:28:10.750Z">
+<meta property="article:published_time" content="2023-07-04T17:20:00.000Z">
+<meta property="article:modified_time" content="2023-08-08T06:42:50.254Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Study">
@@ -228,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-05 01:00" pubdate>
-          2023年8月5日 凌晨
+        <time datetime="2023-07-05 01:20" pubdate>
+          2023年7月5日 凌晨
         </time>
       </span>
     
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2k 字
+          5.2k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          17 分钟
+          44 分钟
         
       </span>
     
@@ -307,7 +307,7 @@
 <div class="note note-success">
             <p><strong>Example 3</strong>:计算<span class="math inline">\(I = \int\cfrac{\mathrm{d} x}{\sin ^2 x\cos ^2 x}\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{align} I &amp;=\int \cfrac{\sin ^2x+\cos ^2 x}{\sin ^2 x \cos ^2 x} \mathrm{d}x \\ &amp;= \tan x-\cot x+C\end{align}\)</span></p>
           </div>
-<h3 id="凑微分法第一换元积分法">凑微分法(第一换元积分法)</h3>
+<h3 id="凑微分法第一类换元积分法">凑微分法(第一类换元积分法)</h3>
 <p>第一换元积分法很简单,其即是以下公式的应用: <span
 class="math display">\[
 \int{f[\varphi(t)]}\varphi&#39;(t)\mathrm{d}t =
@@ -329,6 +329,62 @@ class="math display">\[
           </div>
 <div class="note note-success">
             <p><strong>Example 5</strong>:计算<spanclass="math inline">\(\int{\tan{x}}\mathrm{d}x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{align}I &amp;= \int{\cfrac{\sinx}{\cos x}}\mathrm{d}x \\ &amp;=-\int{\cfrac{\mathrm{d}\cos{x}}{\cos{x}}} \\ &amp;= -\ln{|\cos{x}|} +C\end{align}\)</span></p><p><em>同理我们有</em>:</p><p><span class="math inline">\(\int{\cot{x}}\mathrm{d}x =\ln{|\sin{x}|}+C\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 6</strong>:计算<span class="math inline">\(\int \secx d x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{align} I &amp;=\int \cfrac{1}{\cosx} d x \\ &amp; =\int \cfrac{d \sin x}{\cos ^2 x} \\ &amp;=\int \cfrac{d\sin x}{1-\sin ^2 x} \\ &amp; =\cfrac{1}{2} \int \sqrt{1-\sinx}+\frac{1}{1+\sin x} d \sin x \\ &amp; =\frac{1}{2}\ln| \frac{1+\sinx}{1-\sin x}|+C=\ln | \frac{1+\sin x}{\cos x} \mid+C \\ &amp; =\ln| \secx+\tan x \mid+C \end{align}\)</span></p><p><em>同理我们有</em>:</p><p><span class="math inline">\(\int{\csc{x}}\mathrm{d}x =\ln|\tan{\cfrac{x}{2}}|+C\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 7</strong>:计算$ x$</p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I &amp; =\int\cfrac{1+x}{x\left(1+x e^x\right)} d x \\ &amp; =\int \cfrac{(1+x) e^x dx}{x e^x\left(1+x e^x\right)}=\int \frac{d\left(x e^x\right)}{\left(xe^x\right)\left(1+x e^x\right)} \\ &amp; =\int\left[\cfrac{1}{xe^x}-\cfrac{1}{1+x e^x}\right] d\left(x e^x\right) \\ &amp; =\ln\left|\cfrac{x e^x}{1+x e^x}\right|+C \end{aligned}\)</span></p>
+          </div>
+<h3 id="第二类换元积分法">第二类换元积分法</h3>
+<p>针对积分<span
+class="math inline">\(\int{f(x)}\mathrm{d}x\)</span>,若我们作代换<span
+class="math inline">\(x=x(t)\)</span>,此时积分变为<span
+class="math inline">\(\int{f[x(t)]}x&#39;(t)\mathrm{d}t\)</span>.且后者积分更容易求出.我们称这种换元方法为<strong>第二类换元积分法</strong>.</p>
+<p>下面我们给出几个例题:</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:计算:$ $</p><p><strong>Solution</strong> 作代换<spanclass="math inline">\(t=\sqrt[6]{x} \Rightarrow x = t^6\)</span></p><p><span class="math inline">\(\begin{aligned} I &amp;= \int \cfrac{6t^3 \mathrm{d} t}{t+1} \\ &amp;=6\int\left(\cfrac{t^3+1}{t+1}-\frac{1}{t+1}\right) \mathrm{d} t \\ &amp;=2\sqrt{x}-3\sqrt[3]{x}+6\sqrt[6]{x}-6\ln{(1+\sqrt[6]{x})}+C\end{aligned}\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 2</strong>:计算$ $</p><p><strong>Solution</strong> 作代换<span class="math inline">\(x=a \tant\)</span></p><p><span class="math inline">\(\begin{aligned}I &amp; =\frac{1}{a^2}\int \frac{\sec ^2 t}{\sec ^3 t} \mathrm{d}t=\frac{1}{a^2} \int \cos t\mathrm{d}t \\ &amp;= \cfrac{1}{a^2}\sin{t}+C \\ &amp;=\cfrac{1}{a^2}\cfrac{x}{\sqrt{x^2+a^2}}+C \end{aligned}\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 3</strong>:计算$ $</p><p><strong>Solution</strong> 作代换$x=a t $</p><p><span class="math inline">\(\begin{aligned} I &amp; =\frac{1}{a^2}\int \frac{\sec t \tan t}{\tan ^3 t} \mathrm{d}t=\frac{1}{a^2} \int\frac{\cos t}{\sin t} \mathrm{d}t \\ &amp; =-\frac{1}{a^2} \frac{1}{\sint}+C=-\frac{1}{a^2} \frac{x}{\sqrt{x}-a^2}+C \end{aligned}\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 4</strong>:计算<span class="math inline">\(\int\cfrac{\mathrm{d}x}{\left(a^2-x^2\right)^{\frac{3}{3}}}\)</span></p><p><strong>Solution</strong> 作代换<span class="math inline">\(x=a \sint\)</span> <span class="math inline">\(\begin{aligned} I &amp;=\frac{1}{a^2} \int \frac{\cos t}{\cos ^3 t} d t=\frac{1}{a^2} \tan t+C\\ &amp; =\frac{1}{a^2} \frac{x}{\sqrt{a^2-x^2}}+C\end{aligned}\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 5</strong>:计算$ $</p><p><strong>Solution</strong> 作代换<span class="math inline">\(x=a \sinht\)</span></p><p><span class="math inline">\(\begin{aligned} I &amp; =\int\mathrm{d}t=t+C=\ln \left(x+\sqrt{x^2+a^2}\right)+C\end{aligned}\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 6</strong>:计算$ $</p><p><strong>Solution</strong> 作代换<span class="math inline">\(x=a \cosht\)</span> <span class="math inline">\(\begin{aligned} I &amp; =\int dt=t+C=\ln\left|x+\sqrt{x^2-a^2}\right|+C \end{aligned}\)</span></p>
+          </div>
+<h3 id="分部积分法">分部积分法</h3>
+<p><strong>分部积分法</strong>基于导数的乘积公式<span
+class="math inline">\((uv)&#39; =
+u&#39;v+uv&#39;\)</span>.对乘积公式两边积分,则有<span
+class="math inline">\(uv = \int{v}\mathrm{d}u +
+\int{u}\mathrm{d}v\)</span>.</p>
+<p>移项后,我们有: <span class="math display">\[
+\int{u}\mathrm{d}v = uv- \int{v}\mathrm{d}u
+\]</span> 此即分部积分法的内容,下面我们给出一些例题:</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:计算<span class="math inline">\(\int x e^x\mathrm{d}x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I &amp;=\int x\mathrm{d}e^x\\ &amp;=x e^x-\int e^x d x \\ &amp; =x e^x-e^x+C\end{aligned}\)</span></p>
+          </div>
+<p><strong>Note</strong>:这种方法可以求解类似于<span
+class="math inline">\(\int{p(x)e^{\alpha
+x}}\mathrm{d}x\)</span>的积分.</p>
+<div class="note note-success">
+            <p><strong>Example 2</strong>:计算<span class="math inline">\(\int x\cos x d x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned}I &amp;= \int x\mathrm{d}\sin x \\ &amp;=x \sin x -\int \sin x \mathrm{d}x \\ &amp;=x\sin x+\cos x+C \end{aligned}\)</span></p>
+          </div>
+<p><strong>Note</strong>:这种方法可以求解类似于<span
+class="math inline">\(\int{p(x)\cos{x}}\mathrm{d}x,\int{p(x)\sin{x}}\mathrm{d}x\)</span>的积分.</p>
+<div class="note note-success">
+            <p><strong>Example 3</strong>:计算<span class="math inline">\(\int 2 x\ln x d x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I &amp;=\int \ln x\mathrm{d}x^2 \\ &amp;=x^2 \ln x-\int x\mathrm{d}x \\ &amp;=x^2 \lnx-\cfrac{x^2}{2}+C \end{aligned}\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 4</strong>:计算<span class="math inline">\(\int e^x\sin x d x\)</span></p><p><strong>Solution</strong> <spanclass="math inline">\(\begin{aligned}I &amp;= \int \sin x \mathrm{d}e^x\\ &amp;=e^x \sin x-\int e^x \cos x \mathrm{d}x \\ &amp;=e^x \sin x-\int\cos x \mathrm{d}e^x \\ &amp;=e^x \sin x-e^x \cos x-\int e^x \sin x\mathrm{d}x\\ &amp; \Rightarrow\int e^x \sin x \mathrm{d}x=\cfrac{1}{2}e^x(\sin x-\cos x)+C \end{aligned}\)</span></p><p><em>同理可以求出$x = e^x(x+x)+C $</em></p>
           </div>
 
                 
@@ -387,7 +443,7 @@ class="math display">\[
   <div class="license-box my-3">
     <div class="license-title">
       <div>Chapter4-02不定积分的积分方法</div>
-      <div>http://example.com/2023/08/05/Chapter4-02不定积分的积分方法/</div>
+      <div>http://example.com/2023/07/05/Chapter4-02不定积分的积分方法/</div>
     </div>
     <div class="license-meta">
       
@@ -399,7 +455,7 @@ class="math display">\[
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年8月5日</div>
+          <div>2023年7月5日</div>
         </div>
       
       
@@ -431,9 +487,9 @@ class="math display">\[
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/08/05/Chapter4-01%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%A6%82%E5%BF%B5/" title="Chapter4-01不定积分的概念">
+                      <a href="/2023/07/16/%E5%85%89%E5%AD%A6-Chapter1-%E5%85%89%E7%9A%84%E7%94%B5%E7%A3%81%E7%90%86%E8%AE%BA/" title="光学 Chapter1-光的电磁理论">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Chapter4-01不定积分的概念</span>
+                        <span class="hidden-mobile">光学 Chapter1-光的电磁理论</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -441,8 +497,8 @@ class="math display">\[
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/17/%E5%85%89%E5%AD%A6-Chapter2-%E5%85%89%E7%9A%84%E4%BC%A0%E6%92%AD/" title="光学-Chapter2-光的传播">
-                        <span class="hidden-mobile">光学-Chapter2-光的传播</span>
+                      <a href="/2023/07/05/Chapter4-01%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%A6%82%E5%BF%B5/" title="Chapter4-01不定积分的概念">
+                        <span class="hidden-mobile">Chapter4-01不定积分的概念</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -462,8 +518,8 @@ class="math display">\[
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'http://example.com/2023/08/05/Chapter4-02%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E7%A7%AF%E5%88%86%E6%96%B9%E6%B3%95/';
-          this.page.identifier = '/2023/08/05/Chapter4-02%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E7%A7%AF%E5%88%86%E6%96%B9%E6%B3%95/';
+          this.page.url = 'http://example.com/2023/07/05/Chapter4-02%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E7%A7%AF%E5%88%86%E6%96%B9%E6%B3%95/';
+          this.page.identifier = '/2023/07/05/Chapter4-02%E4%B8%8D%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E7%A7%AF%E5%88%86%E6%96%B9%E6%B3%95/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');
