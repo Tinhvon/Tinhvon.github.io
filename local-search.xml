@@ -4,19 +4,6 @@
   
   
   <entry>
-    <title>Chapter4-03积分类型</title>
-    <link href="/2023/08/08/Chapter4-03%E7%A7%AF%E5%88%86%E7%B1%BB%E5%9E%8B/"/>
-    <url>/2023/08/08/Chapter4-03%E7%A7%AF%E5%88%86%E7%B1%BB%E5%9E%8B/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>光学-Chapter2-光的传播</title>
     <link href="/2023/07/17/%E5%85%89%E5%AD%A6-Chapter2-%E5%85%89%E7%9A%84%E4%BC%A0%E6%92%AD/"/>
     <url>/2023/07/17/%E5%85%89%E5%AD%A6-Chapter2-%E5%85%89%E7%9A%84%E4%BC%A0%E6%92%AD/</url>
@@ -71,6 +58,68 @@
       <tag>Optics</tag>
       
       <tag>Study</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Chapter4-04例题</title>
+    <link href="/2023/07/05/Chapter4-04%E4%BE%8B%E9%A2%98/"/>
+    <url>/2023/07/05/Chapter4-04%E4%BE%8B%E9%A2%98/</url>
+    
+    <content type="html"><![CDATA[<h1 id="不定积分">不定积分</h1><h2 id="例题">例题</h2><p>最后给出一些例题吧.</p><div class="note note-success">            <p><strong>Example 1</strong>:$==2 ^{-1} +C $ <strong>Example2</strong>:<span class="math inline">\(\int \cfrac{d x}{\sqrt{x^2 \pma^2}}=\ln \mid x+\sqrt{x^2 \pm a^2} \mid+C\)</span> <strong>Example3</strong>:<span class="math inline">\(\int \cfrac{dx}{\sqrt{a^2-x^2}}=\arcsin \cfrac{x}{a}+C\)</span> <strong>Example4</strong>:<span class="math inline">\(\int \cfrac{M x+N}{\sqrt{a x^2+bx+C}} d x=\cfrac{M}{2 a} \int \cfrac{2 a x+b}{\sqrt{a x^2+b x+c}} dx+\left(N-\frac{M}{2 a}\right) \int \cfrac{d x}{\sqrt{a x^2+bx+c}}\)</span></p>          </div>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>Calculus</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Notes</tag>
+      
+      <tag>Study</tag>
+      
+      <tag>Calculus</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Chapter4-03积分类型</title>
+    <link href="/2023/07/05/Chapter4-03%E7%A7%AF%E5%88%86%E7%B1%BB%E5%9E%8B/"/>
+    <url>/2023/07/05/Chapter4-03%E7%A7%AF%E5%88%86%E7%B1%BB%E5%9E%8B/</url>
+    
+    <content type="html"><![CDATA[<h1 id="不定积分">不定积分</h1><h2 id="积分类型">积分类型</h2><p>在了解基本的不定积分积分方法后,我们已经可以求出大部分函数的不定积分.下面我们就来利用这些方法求解几种类型函数的不定积分.</p><h3 id="最简积分">最简积分</h3><p>求解这些函数的不定积分,均可通过对其进行代数变形,换元等方式求出.直接给出例题:</p><div class="note note-success">            <p><strong>Example 1</strong>:计算<span class="math inline">\(\int\cfrac{d x}{1+e^x}\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned}I &amp;=\int\frac{1+e^x-e^x}{1+e^x} d x \\ &amp; =x-\ln \left(1+e^x\right)+C\end{aligned}\)</span></p>          </div><div class="note note-success">            <p><strong>Example 2</strong>:<spanclass="math inline">\(\int{x^x(1+\ln{x})}\mathrm{d}x = x^x +C\)</span>.求解过程略</p>          </div><div class="note note-success">            <p><strong>Example 3</strong>:计算<span class="math inline">\(\int\cfrac{\ln \left(x+\sqrt{1+x^2}\right)}{\sqrt{1+x^2}} \mathrm{d}x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I&amp; =\cfrac{1}{2} \ln\left(x+\sqrt{1+x^2}\right)+C \\ &amp; =\int \ln\left(x+\sqrt{1+x^2}\right) \mathrm{d}\ln \left(x+\sqrt{1+x^2}\right)\end{aligned}\)</span></p>          </div><h3 id="有理函数的积分">有理函数的积分</h3><p>首先给出<strong>有理函数</strong>的定义:</p><div class="note note-primary">            <p><strong>Definition</strong>:形如<span class="math inline">\(R(x) =\cfrac{b_mx^m+b_{m-1}x^{m-1}+...+b_1x+b_0}{a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0}=\cfrac{P(x)}{Q(x)}\)</span>这样的函数被称为<strong>有理函数</strong>.一般来讲,当<spanclass="math inline">\(m \geq n\)</span>时,为假分式,反之为真分式.</p><p><spanclass="math inline">\(R(x)\)</span>可以写成多项式与真分式的和.</p>          </div><p>给出有理函数的定义后,我们不加证明地给出<strong>多项式分解定理</strong>,内容如下:</p><div class="note note-danger">            <p><strong>Theorem</strong>:任何实函数多项式<spanclass="math inline">\(Q(x)\)</span>总可以唯一分解成若干一次因式与二次因式之积.即:<span class="math display">\[Q(x)=a_n(x-\alpha_1)^{r_1}...(x-\alpha_k)^{r_k}(x^2+p_1x+q_1)^{s_1}...(x^2+p_lx+q_l)^{s_l},(\sumr_i+2\sum s_i=n,p_i^2-4q_i&lt;0)\]</span></p>          </div><p>有理函数的积分基于<strong>部分分式定理</strong>,其内容如下:</p><div class="note note-danger">            <p><strong>Theorem</strong>:真分式<spanclass="math inline">\(\cfrac{P(x)}{Q(x)}\)</span>可唯一分解为如下形式:</p><p>$=+...++...+ \ ++ ...$</p>          </div><p>在以上定理基础下,有理函数的积分可以拆解为以下积分的线性组合:</p><div class="note note-danger">            <p><strong>Integral 1</strong>: <spanclass="math inline">\(\int{p(x)}\mathrm{d}x\)</span></p><p><strong>Integral 2</strong>: <spanclass="math inline">\(\int{\cfrac{\mathrm{d}x}{x-a}}\)</span></p><p><strong>Integral 3</strong>: <spanclass="math inline">\(\int{\cfrac{\mathrm{d}x}{(x-a)^n}}(n \ne1)\)</span></p><p><strong>Integral 4</strong>: <spanclass="math inline">\(\int{\cfrac{Mx+N}{x^2+px+q}}\mathrm{d}x\)</span></p><p><strong>Integral 5</strong>: <spanclass="math inline">\(\int{\cfrac{Mx+N}{(x^2+px+q)^n}}\mathrm{d}x\)</span></p>          </div><p>关于<strong>Integral 5</strong>其求解方法如下:</p><div class="note note-info">            <p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned}I &amp;=\cfrac{M}{2} \int\cfrac{2 x+p}{\left(x^2+p x^2+q\right)^n} \mathrm{d}x +( N - \cfrac{Mp}{2} ) \int \cfrac {\mathrm{d}x } { ( x ^ { 2 } + p x + q ) ^ { n } }\\ \end{aligned}\)</span></p><p>现在我们求解<span class="math inline">\(\int \cfrac{d x}{\left(x^2+px+q\right)^n}\)</span>即可,通过代换我们可以化为<spanclass="math inline">\(\int \cfrac{dx}{\left(x^2+a^2\right)^n}=J_n\)</span> 易知<spanclass="math inline">\(J_1=\cfrac{1}{a}\arctan{\cfrac{x}{a}}+C\)</span></p><p>利用分部积分法有:</p><p><span class="math inline">\(\begin{aligned} J_n &amp;=\frac{x}{\left(x^2+a^2\right)^n}-\int x d\frac{1}{\left(a^2+a^2\right)^n} \\&amp;=\frac{x}{\left(x^2+a^2\right)^n}+2 n \int\frac{x^2+a^2-a^2}{\left(x^2+a^2\right)^{n+1}} d x \\ &amp;=\frac{x}{(x^2+a^2)^n)}+2 n J_n-2 n a^2 J_{n+1} \\ &amp;\RightarrowJ_{n+1}=\cfrac{2 n-1}{2na^2} J n+\cfrac{x}{\left.2 na^2(x^2+a^2\right)^n} \end{aligned}\)</span></p>          </div><p>利用递推关系即可求得.</p><p>求出<strong>Integral 1</strong>到<strong>Integral5</strong>后,我们便可求出所有的有理函数积分.下面给出几个例题:</p><div class="note note-success">            <p><strong>Example 1</strong>:计算<spanclass="math inline">\(\cfrac{\mathrm{d}x}{1+x^3}\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I &amp;=\int\cfrac{\mathrm{d}x}{(x+1)\left(x^2-x+1\right)} \\ &amp; =\int\cfrac{\frac{1}{3}}{1+x} \mathrm{d}x -\int\frac{x-2}{3\left(x^2-x+1\right)} \mathrm{d}x \\ &amp; =\frac{1}{3} \ln|1+x|-\frac{1}{6}|\ln | x^2-x+1 \mid+\frac{1}{\sqrt{3}} \tan ^{-1}\frac{2 x-1}{\sqrt{3}}+C \end{aligned}\)</span></p>          </div><div class="note note-success">            <p><strong>Example 2</strong>:计算$ d x</p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I &amp;=\int 2 x d x+\cfrac{1}{3} \int \cfrac{x^2+3-x^2}{x^2\left(x^2+3\right)} d x \\&amp;=x^2-\cfrac{1}{3 x} -\cfrac{1}{3 \sqrt{3}} \tan ^{-1}\cfrac{x}{\sqrt{3}}+C \end{aligned}\)</span></p>          </div><h3 id="三角函数有理式积分">三角函数有理式积分</h3><p>当被积函数可以写为三角函数形式时,即<spanclass="math inline">\(\int{R(\sin{x},\cos{x})}\mathrm{d}x\)</span>时,其有以下通法:</p><div class="note note-danger">            <ul><li>记<span class="math inline">\(t = \tan{\cfrac{x}{2}} \Rightarrow\sin{x} = \cfrac{2t}{1+t^2},\cos{x} = \cfrac{1-t^2}{1+t^2},\mathrm{d}x =\cfrac{2\mathrm{d}t}{1+t^2}\)</span></li><li>原积分化为<spanclass="math inline">\(\int{R(\cfrac{2t}{1+t^2},\cfrac{1-t^2}{1+t^2})}\cfrac{2\mathrm{d}t}{1+t^2}\)</span>,此时转化为有理函数的积分,此时可解.</li></ul>          </div><p>下面给出几个例题:</p><div class="note note-success">            <p><strong>Example 1</strong>:计算<span class="math inline">\(\int\cfrac{\cos ^4 x}{\sin ^3 x} d x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I &amp;=\int \frac{\cos^4 x}{\sin ^4 x} \mathrm{d}\cos x \\ &amp; =\int \frac{-\cos ^4x}{\left(1-\cos ^2 x\right)^2} \mathrm{d}\cos x \quad \cos x=t\end{aligned}\)</span></p>          </div><p><strong>Note</strong>:当被积函数满足<spanclass="math inline">\(R(-\sin{x},\cos{x}) =-R(\sin{x},\cos{x})\)</span>时,直接换元<span class="math inline">\(t =\cos{x}\)</span>即可.</p><div class="note note-success">            <p><strong>Example 2</strong>:计算<span class="math inline">\(\int\cfrac{\cos ^3 x}{\sin ^4 x} d x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(I = \int \cfrac{(1-\sin^2x)}{\sin ^4 x}d({\sin{x}})\)</span></p>          </div><p><strong>Note</strong>:当被积函数满足<spanclass="math inline">\(R(\sin{x},-\cos{x}) =-R(\sin{x},\cos{x})\)</span>时,直接换元<span class="math inline">\(t =\sin{x}\)</span>即可.</p><div class="note note-success">            <p><strong>Example 3</strong>:计算<span class="math inline">\(\int\cfrac{d x}{\sin ^4 x \cos ^2 x}\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I &amp;=\int \frac{d \tanx}{\left(1-\cos ^2 x\right)^2} \\ &amp; =\int \frac{d \tanx}{\left(1-\frac{1}{1+\tan ^2 x}\right)^2} ,\tan x=t \\ &amp;\end{aligned}\)</span></p>          </div><p><strong>Note</strong>:当被积函数满足<spanclass="math inline">\(R(-\sin{x},-\cos{x}) =-R(\sin{x},\cos{x})\)</span>时,直接换元<span class="math inline">\(t =\tan{x}\)</span>即可.</p><h3 id="无理根式积分">无理根式积分</h3><ul><li>对于<spanclass="math inline">\(\int{R(x,\sqrt[m_1]{(\cfrac{ax+b}{cx+d})^{n_1}},...,\sqrt[m_r]{(\cfrac{ax+b}{cx+d})^{n_r}})}\mathrm{d}x\)</span>类型的积分,我们直接换元<spanclass="math inline">\(t =\sqrt[m]{\cfrac{ax+b}{cx+d}}\)</span>,其中<spanclass="math inline">\(m\)</span>是<spanclass="math inline">\(m_i\)</span>的最小公倍数</li><li>对于<spanclass="math inline">\(\int{R(x,\sqrt{ax^2+bx+c})}\mathrm{d}x\)</span>类的积分我们直接利用<strong>Euler变换</strong>,如下:</li></ul><p><span class="math inline">\(a &gt; 0\)</span>,令<spanclass="math inline">\(\sqrt{ax^2+bx+c}= t \pm \sqrt{a}x\)</span></p><p>$c &gt; 0 <span class="math inline">\(,令\)</span>= xt $</p><p><span class="math inline">\(ax^2+bx+c\)</span>有两个不等实根<spanclass="math inline">\(\lambda ,\mu\)</span>时,<spanclass="math inline">\(\sqrt{ax^2+bx+c} = t(x-\lambda)\)</span>.</p><p>这里不再给出例题</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>Calculus</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Notes</tag>
+      
+      <tag>Study</tag>
+      
+      <tag>Calculus</tag>
       
     </tags>
     
