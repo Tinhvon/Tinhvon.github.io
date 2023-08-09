@@ -16,21 +16,26 @@
   <meta name="author" content="Tinhvon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="定积分 微积分基本定理 本文我们将要介绍微积分学中重要的定理——微积分基本定理.其包括原函数存在定理与微积分基本定理(牛顿-莱布尼兹公式). 原函数存在定理 首先我们介绍原函数存在定理,其表述如下:              Theorem:设\(f(x)\inC[a,b]\),则变上限积分\(F(x) &#x3D; \int_a^xf(t)\mathrm{d}t\)是\(f(x)\)的原函数.">
+    <meta name="description" content="直到现在我们对定积分已经有一个很全面的了解了,我们正式开始计算所给的定积分吧.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Chapter5-03微积分基本定理">
-<meta property="og:url" content="http://example.com/2023/08/09/Chapter5-03%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86/index.html">
+<meta property="og:title" content="Chapter5-04定积分的计算">
+<meta property="og:url" content="http://example.com/2023/07/05/Chapter5-04%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
-<meta property="og:description" content="定积分 微积分基本定理 本文我们将要介绍微积分学中重要的定理——微积分基本定理.其包括原函数存在定理与微积分基本定理(牛顿-莱布尼兹公式). 原函数存在定理 首先我们介绍原函数存在定理,其表述如下:              Theorem:设\(f(x)\inC[a,b]\),则变上限积分\(F(x) &#x3D; \int_a^xf(t)\mathrm{d}t\)是\(f(x)\)的原函数.">
+<meta property="og:description" content="直到现在我们对定积分已经有一个很全面的了解了,我们正式开始计算所给的定积分吧.">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-08-09T05:53:15.000Z">
-<meta property="article:modified_time" content="2023-08-09T06:53:05.439Z">
+<meta property="og:image" content="http://example.com/img/bg/Calculus.png">
+<meta property="article:published_time" content="2023-07-04T18:30:00.000Z">
+<meta property="article:modified_time" content="2023-08-09T08:50:17.160Z">
 <meta property="article:author" content="Tinhvon">
+<meta property="article:tag" content="Notes">
+<meta property="article:tag" content="Calculus">
+<meta property="article:tag" content="Study">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/img/bg/Calculus.png">
   
   
   
-  <title>Chapter5-03微积分基本定理 - Tinhvon&#39;s Space</title>
+  <title>Chapter5-04定积分的计算 - Tinhvon&#39;s Space</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -206,13 +211,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/bg/Calculus.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Chapter5-03微积分基本定理"></span>
+            <span id="subtitle" data-typed-text="Chapter5-04定积分的计算"></span>
           
         </div>
 
@@ -223,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-08-09 13:53" pubdate>
-          2023年8月9日 下午
+        <time datetime="2023-07-05 02:30" pubdate>
+          2023年7月5日 凌晨
         </time>
       </span>
     
@@ -235,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k 字
+          3.1k 字
         
       </span>
     
@@ -246,7 +251,7 @@
         
         
         
-          11 分钟
+          26 分钟
         
       </span>
     
@@ -283,45 +288,53 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Chapter5-03微积分基本定理</h1>
+            <h1 id="seo-header">Chapter5-04定积分的计算</h1>
             
             
               <div class="markdown-body">
                 
                 <h1 id="定积分">定积分</h1>
-<h2 id="微积分基本定理">微积分基本定理</h2>
-<p>本文我们将要介绍微积分学中重要的定理——微积分基本定理.其包括<strong>原函数存在定理</strong>与<strong>微积分基本定理(牛顿-莱布尼兹公式)</strong>.</p>
-<h3 id="原函数存在定理">原函数存在定理</h3>
-<p>首先我们介绍<strong>原函数存在定理</strong>,其表述如下:</p>
+<h2 id="定积分的计算">定积分的计算</h2>
+<h3 id="定积分换元积分法">定积分换元积分法</h3>
+<p>第一种计算方法,与不定积分类似,是换元积分法,其表述如下:</p>
 <div class="note note-danger">
-            <p><strong>Theorem</strong>:设<span class="math inline">\(f(x)\inC[a,b]\)</span>,则<strong>变上限积分</strong><spanclass="math inline">\(F(x) = \int_a^xf(t)\mathrm{d}t\)</span>是<spanclass="math inline">\(f(x)\)</span>的原函数.即:</p><p><span class="math inline">\(F&#39;(x) =(\int_a^xf(t)\mathrm{d}t)&#39; = f(x)\)</span></p>
+            <p>设<span class="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>上连续,作变换<spanclass="math inline">\(x=x(t)\)</span>满足</p><ul><li><span class="math inline">\(x(\alpha)=a,x(\beta)=b\)</span></li><li><spanclass="math inline">\(t\in[\alpha,\beta],x(t)\in[a,b]\)</span></li><li><span class="math inline">\(x&#39;(t)\inC[\alpha,\beta]\)</span></li></ul><p>则<span class="math inline">\(\int_a^bf(x)\mathrm{d}x =\int_\alpha^\beta f[x(t)]x&#39;(t)\mathrm{d}t\)</span></p>
           </div>
-<p>证明如下:</p>
-<div class="note note-info">
-            <p><strong>Proof</strong></p><p><span class="math inline">\(F(x+\Delta x) = \int_a^{x+\Deltax}f(t)\mathrm{d}t,F(x)=\int_a^xf(t)\mathrm{d}t\)</span></p><p>两者相减,有:</p><p><span class="math inline">\(F(x+\Delta x)-F(x) = \int_x^{x+\Deltax}f(t)\mathrm{d}t = f(\xi)\Delta x,\xi \in (x,x+\Delta x)\)</span></p><p>故有<span class="math inline">\(\lim\limits_{\Delta x \to 0}\cfrac{F(x+\Delta x)-F(x)}{\Delta x} = \lim\limits_{\Delta x \to0}f(\xi) = f(x)\)</span></p><p>即<span class="math inline">\(F&#39;(x) = f(x)\)</span></p>
+<p>下面针对换元积分法,给出一个例题:</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:计算<spanclass="math inline">\(\int_0^2{\sqrt{e^x}}\mathrm{d}x\)</span></p><p><strong>Solution</strong> 作变换<span class="math inline">\(t =\cfrac{x}{2}\)</span></p><p>则<span class="math inline">\(I =\int_0^1 2 e^t \mathrm{d}t =2(e-1)\)</span></p>
           </div>
-<p><strong>Note
-1</strong>:根据变上限积分,我们可以得到以下两个比较常见的公式,证明略:</p>
+<h3 id="定积分分部积分法">定积分分部积分法</h3>
+<p>与不定积分相同,定积分也能通过分部积分法计算,方法如下:</p>
 <div class="note note-danger">
-            <ul><li><spanclass="math inline">\((\int_x^bf(t)\mathrm{d}t)&#39;=-f(x)\)</span></li><li><spanclass="math inline">\((\int_{\alpha(x)}^{\beta(x)}f(t)\mathrm{d}t)&#39;=f[(\beta(x))]\beta&#39;(x)-f[\alpha(x)]\alpha&#39;(x)\)</span></li></ul>
+            <p><span class="math inline">\(\int_a^b{u(x)}\mathrm{d}v(x) =u(x)v(x)|_a^b-\int_a^bv(x)\mathrm{d}u(x)\)</span></p>
           </div>
-<p><strong>Note 2</strong>:可积不一定说明原函数存在,如<span
-class="math inline">\(f(x) =
-\mathrm{sgn}x\)</span>;原函数存在不一定说明可积,如<span
-class="math inline">\(F(x)=\left\{\begin{array}{cc} x^{3/2} \sin
-\frac{1}{x} &amp; 0&lt;x \leqslant 1 \\ 0 &amp; -1 \leq x \leq 0
-\end{array}\right.\)</span>.</p>
-<p><strong>Note 3</strong>:注意<span
-class="math inline">\(\cfrac{\mathrm{d}}{\mathrm{d}x}(\int_a^bf(x)\mathrm{d}x)=0\)</span>.</p>
-<h3
-id="微积分基本定理牛顿-莱布尼兹公式">微积分基本定理(牛顿-莱布尼兹公式)</h3>
-<p>然后我们介绍微积分基本定理,也称为牛顿-莱布尼兹公式,其内容如下:</p>
-<div class="note note-danger">
-            <p><strong>Theorem</strong>:设<span class="math inline">\(f(x)\inC[a,b]\)</span>,<span class="math inline">\(F(x)\)</span>是<spanclass="math inline">\(f(x)\)</span>的一个原函数,则:</p><p><span class="math inline">\(\int_a^bf(x)\mathrm{d}x = F(b)-F(a) =F(x)|^b_a\)</span></p>
+<p>如:</p>
+<div class="note note-success">
+            <p><span class="math inline">\(\int_0^1xe^x\mathrm{d}x =xe^x|_0^1-\int_0^1e^x\mathrm{d}x = 1\)</span></p>
           </div>
-<p>证明如下:</p>
-<div class="note note-info">
-            <p><strong>Proof</strong></p><p>令<spanclass="math inline">\(G(x)=\int_a^xf(t)\mathrm{d}t\)</span>是<spanclass="math inline">\(f(x)\)</span>的一个原函数.</p><p>易知<span class="math inline">\(F(x)=G(x)+C\)</span>,由<spanclass="math inline">\(G(a) = 0 \Rightarrow G(x)=F(x)-C\RightarrowF(a)=C\)</span></p><p><span class="math inline">\(G(b) = F(b)-F(a)\)</span>,即:</p><p><span class="math inline">\(\int_a^bf(x)\mathrm{d}x =F(b)-F(a)\)</span></p>
+<h3 id="例题">例题</h3>
+<p>最后来一些例题吧:</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:已知<span class="math inline">\(\int_0^ye^t \mathrm{d}t-\int_0^x \cos t \mathrm{d}t=0\)</span>,求<spanclass="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x}\)</span>.</p><p><strong>Solution</strong> 两边求导,有<spanclass="math inline">\(e^{y} y^{\prime}+\cos x=0 \Rightarrowy^{\prime}=-e^{-y} \cos x\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 2</strong>:计算<spanclass="math inline">\(\cfrac{\mathrm{d}}{\mathrm{d}x}\int_1^xxf(t)\mathrm{d}t\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} &amp;\cfrac{\mathrm{d}}{\mathrm{d} x} \int_1^x x f(x)\mathrm{d}t=\cfrac{\mathrm{d}}{\mathrm{d}x} x \cdot \int_1^x f(t)\mathrm{d}t \\ &amp; =\int_1^x f(t) \mathrm{d}t+x f(x)\end{aligned}\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 3</strong>:计算<spanclass="math inline">\(\cfrac{\mathrm{d}}{\mathrm{d} x} \int_0^xt\left(x^2-t^2\right) \mathrm{d}t\)</span></p><p><strong>Solution</strong> 作代换<span class="math inline">\(x^2-t^2 =u\)</span></p><p>则原式变为$- _{x<sup>2}</sup>0 f(u) u=x f(x^2) $</p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 4</strong>:计算$_{x } </p><p><strong>Solution</strong> 根据洛必达法则<span class="math inline">\(I=\lim\limits_{x \rightarrow 0} \cos x^2=1\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 5</strong>:讨论<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x=0\)</span>处的连续性,可导性.</p><p><span class="math inline">\(f(x)= \begin{cases}\cfrac{1-\cos x}{x}&amp; x&lt;0 \\ 0 &amp; x=0 \\ \int_0^{x^2}\cfrac{\cost^2\mathrm{d}t}{x} &amp; x&gt;0\end{cases}\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\lim\limits_{x\to0^+}f(x) =\lim\limits_{x\to0}\int_0^{x^2}\cfrac{\cos t^2\mathrm{d}t}{x} = 0=f(0)\)</span></p><p><spanclass="math inline">\(\lim\limits_{x\to0^+}f(x)=\lim\limits_{x\to0^+}\cfrac{1-\cosx}{x}=0 =f(0)\)</span></p><p>故函数连续.</p><p><span class="math inline">\(\begin{aligned} &amp;f_+^{\prime}(0)=\lim\limits_{x\to0^+}\cfrac{f(x)-f(0)}{x}=\lim\limits_{x\to0^+}\cfrac{\int_0^x\cost^2\mathrm{d}t}{x^2}=1 \\ &amp; f_-^{\prime}(0)=\lim _{x \rightarrow0^{-}} \frac{f(x)-f(0)}{x}=\lim _{x \rightarrow 0} \frac{1-\cosx}{x^2}=\frac{1}{2} \\ &amp; f_+^{\prime}(0) \neq f_{-}^{\prime}(0)\end{aligned}\)</span></p><p>故<span class="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x=0\)</span>处不可导</p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 5</strong>:<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([0,2]\)</span>可导,<spanclass="math inline">\(|f&#39;(x)|\leq 1\)</span>,<spanclass="math inline">\(f(0)=f(2)=0\)</span>,求证:<spanclass="math inline">\(-1 \leq \int_0^2f(x)\mathrm{d}x \leq1\)</span>.</p><p><strong>Proof</strong></p><p>根据柯西-施瓦兹不等式:<span class="math inline">\(\left|\int_0^2 f(x)d x\right| \leqslant \int_0^2|f(x)| d x=\int_0^1|f(x)-f(0)| dx+\int_1^2|f(x)-f(2)| d x\)</span></p><p>根据积分中值定理:<span class="math inline">\(RHS = \int_0^1 \midf^{\prime}(\xi) \mid x d x+\int_1^2 \mid f^{\prime}(\eta)\mid (2-x)\mathrm{d}x \leq \int_0^1 x d x+\int_1^2(2-x) d x=1\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 6</strong>:与定积分有关的极限</p><p><strong>(1)</strong>计算<span class="math inline">\(\lim\limits_{n\rightarrow\infty}\left(\cfrac{1}{n+1}+\cdots+\cfrac{1}{n+n}\right)\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I &amp; =\lim\limits_{n\rightarrow\infty}\left(\frac{1}{1+\frac{1}{n}}+\cdots+\frac{1}{1+\frac{n}{n}}\right)\cdot \frac{1}{n} \\ &amp; =\lim\limits_{n \rightarrow\infty}\sum_{k=1}^n \frac{1}{1+\frac{k}{n}} \cdot \frac{1}{n} \\&amp;=\int_0^1 \frac{1}{1+x} d x \\ &amp;= \ln 2\end{aligned}\)</span></p><p><strong>(2)</strong>计算<span class="math inline">\(\lim\limits_{n\rightarrow \infty}\left[\left(1+\cfrac{1}{n^2}\right)\cdots\left(1+\cfrac{n^2}{n^2}\right)\right]^{1 / n}\)</span></p><p><strong>Solution</strong> 记<span class="math inline">\(a_n =\left[\left(1+\cfrac{1}{n^2}\right)\cdots\left(1+\cfrac{n^2}{n^2}\right)\right]^{1 / n}\)</span></p><p>则<span class="math inline">\(\ln a_n=\sum\limits_{k=1}^n \ln\left(1+\cfrac{k^2}{n^2}\right) \cdot \cfrac{1}{n}=\int_0^1 \ln\left(1+x^2\right) d x=\cfrac{\pi}{4}+\ln 2-2\)</span></p><p>故<span class="math inline">\(I = \lim\limits_{n \rightarrow\infty}a_n = 2e^{\pi/4-2}\)</span></p>
           </div>
 
                 
@@ -331,6 +344,45 @@ id="微积分基本定理牛顿-莱布尼兹公式">微积分基本定理(牛顿
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Notes/" class="category-chain-item">Notes</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Notes/Calculus/" class="category-chain-item">Calculus</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Notes/" class="print-no-link">#Notes</a>
+      
+        <a href="/tags/Calculus/" class="print-no-link">#Calculus</a>
+      
+        <a href="/tags/Study/" class="print-no-link">#Study</a>
+      
+    </div>
   
 </div>
 
@@ -340,8 +392,8 @@ id="微积分基本定理牛顿-莱布尼兹公式">微积分基本定理(牛顿
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Chapter5-03微积分基本定理</div>
-      <div>http://example.com/2023/08/09/Chapter5-03微积分基本定理/</div>
+      <div>Chapter5-04定积分的计算</div>
+      <div>http://example.com/2023/07/05/Chapter5-04定积分的计算/</div>
     </div>
     <div class="license-meta">
       
@@ -353,7 +405,7 @@ id="微积分基本定理牛顿-莱布尼兹公式">微积分基本定理(牛顿
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年8月9日</div>
+          <div>2023年7月5日</div>
         </div>
       
       
@@ -385,12 +437,18 @@ id="微积分基本定理牛顿-莱布尼兹公式">微积分基本定理(牛顿
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2023/07/05/Chapter5-03%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86/" title="Chapter5-03微积分基本定理">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Chapter5-03微积分基本定理</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/08/08/%E3%80%90%E7%A7%91%E7%A0%94%E5%B7%A5%E5%85%B7%E3%80%91Tables-Generator/" title="【科研工具】Tables Generator简介">
-                        <span class="hidden-mobile">【科研工具】Tables Generator简介</span>
+                      <a href="/2023/07/05/Chapter5-05%E5%B9%BF%E4%B9%89%E7%A7%AF%E5%88%86/" title="Chapter-05广义积分">
+                        <span class="hidden-mobile">Chapter-05广义积分</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -410,8 +468,8 @@ id="微积分基本定理牛顿-莱布尼兹公式">微积分基本定理(牛顿
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'http://example.com/2023/08/09/Chapter5-03%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86/';
-          this.page.identifier = '/2023/08/09/Chapter5-03%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86/';
+          this.page.url = 'http://example.com/2023/07/05/Chapter5-04%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97/';
+          this.page.identifier = '/2023/07/05/Chapter5-04%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');

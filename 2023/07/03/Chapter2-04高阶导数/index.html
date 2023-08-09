@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.9k 字
+          3.2k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          25 分钟
+          27 分钟
         
       </span>
     
@@ -293,48 +293,75 @@
             
               <div class="markdown-body">
                 
-                <h1 id="导数与微分"><a href="#导数与微分" class="headerlink" title="导数与微分"></a>导数与微分</h1><h2 id="高阶导数"><a href="#高阶导数" class="headerlink" title="高阶导数"></a>高阶导数</h2><p>此前我们已经系统地讨论了导数的概念,运算法则,求导方法.但这些都仅仅讨论了一阶导数(即求导次数为1).这篇文章里,我们将接触高阶导数.</p>
-<h3 id="常见函数的高阶导数"><a href="#常见函数的高阶导数" class="headerlink" title="常见函数的高阶导数"></a>常见函数的高阶导数</h3><p>我们先从<strong>二阶导数</strong>入手,其定义很简单：</p>
-<script type="math/tex; mode=display">
-\cfrac{\mathrm{d}^2y}{\mathrm{d}x^2} = \cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{\mathrm{d}y}{\mathrm{d}x})</script><p>即在求出导函数$y’$后,再对$y’$求一次导数,得到$y’’$,此即称为$y$的二阶导数.</p>
-<p>同理,我们可以定义<strong>n阶导数</strong>：</p>
-<script type="math/tex; mode=display">
-\cfrac{\mathrm{d}^ny}{\mathrm{d}x^n} = \cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{\mathrm{d}^{n-1}y}{\mathrm{d}x^{n-1}})</script><p>假设$u(x),v(x)$有$n$阶导数,则有：</p>
-<script type="math/tex; mode=display">
+                <h1 id="导数与微分">导数与微分</h1>
+<h2 id="高阶导数">高阶导数</h2>
+<p>此前我们已经系统地讨论了导数的概念,运算法则,求导方法.但这些都仅仅讨论了一阶导数(即求导次数为1).这篇文章里,我们将接触高阶导数.</p>
+<h3 id="常见函数的高阶导数">常见函数的高阶导数</h3>
+<p>我们先从<strong>二阶导数</strong>入手,其定义很简单： <span
+class="math display">\[
+\cfrac{\mathrm{d}^2y}{\mathrm{d}x^2} =
+\cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{\mathrm{d}y}{\mathrm{d}x})
+\]</span> 即在求出导函数<span
+class="math inline">\(y&#39;\)</span>后,再对<span
+class="math inline">\(y&#39;\)</span>求一次导数,得到<span
+class="math inline">\(y&#39;&#39;\)</span>,此即称为<span
+class="math inline">\(y\)</span>的二阶导数.</p>
+<p>同理,我们可以定义<strong>n阶导数</strong>： <span
+class="math display">\[
+\cfrac{\mathrm{d}^ny}{\mathrm{d}x^n} =
+\cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{\mathrm{d}^{n-1}y}{\mathrm{d}x^{n-1}})
+\]</span> 假设<span class="math inline">\(u(x),v(x)\)</span>有<span
+class="math inline">\(n\)</span>阶导数,则有： <span
+class="math display">\[
 [au(x)+bv(x)]^{(n)} = au^n(x)+bv^n(x)\\
-[u(ax+b)]^{(n)} = a^nu^{(n)}(ax+b)</script><p>给出几个高阶导数的例子：</p>
+[u(ax+b)]^{(n)} = a^nu^{(n)}(ax+b)
+\]</span> 给出几个高阶导数的例子：</p>
 <div class="note note-success">
-            <ul><li>$(e^x)^{(n)} = e^x,(e^{ax+b})^{(n)} = a^ne^{ax+b}$</li><li>$(x^{\alpha})^n = \alpha(\alpha-1)…(\alpha-n+1)x^{\alpha-n}$</li><li>$(\ln(1+x))^{(n)} = (-1)^{n-1}\cfrac{(n-1)!}{(1+x)^n},\ln(ax+b))^{(n)} = (-1)^{n-1}\cfrac{(n-1)!a^n}{(ax+b)^n}$</li><li>$(\sin{x})^{(n)} = \sin({\cfrac{n\pi}{2}+x)},[\sin{(ax+b})]^{(n)} = a^n\sin({\cfrac{n\pi}{2}+ax+b})$</li><li>$(\cos x)^{(n)} = \cos({\cfrac{n\pi}{2}+x)},[\cos{(ax+b})]^{(n)} = a^n\cos({\cfrac{n\pi}{2}+ax+b})$</li><li>$(\cfrac{1}{1-x})^{(n)} = \cfrac{n!}{(1-x)^{n+1}},(\cfrac{1}{1+x})^{(n)} = \cfrac{(-1)^nn!}{(1-x)^{n+1}},(\cfrac{1}{ax+b})^{(n)} = \cfrac{(-1)^n a^n n!}{(ax+b)^{n+1}}$</li></ul>
+            <ul><li><span class="math inline">\((e^x)^{(n)} = e^x,(e^{ax+b})^{(n)} =a^ne^{ax+b}\)</span></li><li><span class="math inline">\((x^{\alpha})^n =\alpha(\alpha-1)...(\alpha-n+1)x^{\alpha-n}\)</span></li><li><span class="math inline">\((\ln(1+x))^{(n)} =(-1)^{n-1}\cfrac{(n-1)!}{(1+x)^n},\ln(ax+b))^{(n)} =(-1)^{n-1}\cfrac{(n-1)!a^n}{(ax+b)^n}\)</span></li><li><span class="math inline">\((\sin{x})^{(n)} =\sin({\cfrac{n\pi}{2}+x)},[\sin{(ax+b})]^{(n)} =a^n\sin({\cfrac{n\pi}{2}+ax+b})\)</span></li><li><span class="math inline">\((\cos x)^{(n)} =\cos({\cfrac{n\pi}{2}+x)},[\cos{(ax+b})]^{(n)} =a^n\cos({\cfrac{n\pi}{2}+ax+b})\)</span></li><li><span class="math inline">\((\cfrac{1}{1-x})^{(n)} =\cfrac{n!}{(1-x)^{n+1}},(\cfrac{1}{1+x})^{(n)} =\cfrac{(-1)^nn!}{(1-x)^{n+1}},(\cfrac{1}{ax+b})^{(n)} = \cfrac{(-1)^na^n n!}{(ax+b)^{n+1}}\)</span></li></ul>
           </div>
-<p>以上给出的是一些基本函数的$n$阶导数,其可用来求基本初等函数的高阶导数,例子如下：</p>
+<p>以上给出的是一些基本函数的<span
+class="math inline">\(n\)</span>阶导数,其可用来求基本初等函数的高阶导数,例子如下：</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:已知函数$y = \cfrac{x^3}{1-x}$,求$y^{(n)}$</p><p><strong>Solution</strong> $y = \cfrac{1}{1-x}-(x^2+x+1)$</p><p>分情况讨论：</p><ul><li>$y’ = \cfrac{1}{(1-x)^2}-2x-1$</li><li>$y’’ = \cfrac{2}{(1-x)^3}-2$</li><li>$y^{(n)} = \cfrac{n!}{(1-x)^{n+1}}(n \geq 3)$</li></ul>
+            <p><strong>Example 1</strong>:已知函数<span class="math inline">\(y =\cfrac{x^3}{1-x}\)</span>,求<spanclass="math inline">\(y^{(n)}\)</span></p><p><strong>Solution</strong> <span class="math inline">\(y =\cfrac{1}{1-x}-(x^2+x+1)\)</span></p><p>分情况讨论：</p><ul><li><span class="math inline">\(y&#39; =\cfrac{1}{(1-x)^2}-2x-1\)</span></li><li><span class="math inline">\(y&#39;&#39; =\cfrac{2}{(1-x)^3}-2\)</span></li><li><span class="math inline">\(y^{(n)} = \cfrac{n!}{(1-x)^{n+1}}(n \geq3)\)</span></li></ul>
           </div>
 <div class="note note-success">
-            <p><strong>Example 2</strong>: 已知函数$y=\cfrac{1}{x^2+2x-3}$,求$y^{(n)}$</p><p><strong>Solution</strong> $y = \cfrac{1}{4}(\cfrac{1}{x-1}-\cfrac{1}{x+3})$</p><p>$y^{(n)} = \cfrac{1}{4}[\cfrac{n!}{(1-x)^{n+1}} - \cfrac{(-1)^nn!}{(3+x)^{n+1}}]$</p>
+            <p><strong>Example 2</strong>: 已知函数<spanclass="math inline">\(y=\cfrac{1}{x^2+2x-3}\)</span>,求<spanclass="math inline">\(y^{(n)}\)</span></p><p><strong>Solution</strong> <span class="math inline">\(y =\cfrac{1}{4}(\cfrac{1}{x-1}-\cfrac{1}{x+3})\)</span></p><p><span class="math inline">\(y^{(n)} =\cfrac{1}{4}[\cfrac{n!}{(1-x)^{n+1}} -\cfrac{(-1)^nn!}{(3+x)^{n+1}}]\)</span></p>
           </div>
-<h3 id="参数方程的高-二-阶导数"><a href="#参数方程的高-二-阶导数" class="headerlink" title="参数方程的高(二)阶导数"></a>参数方程的高(<em>二</em>)阶导数</h3><p>对于函数的参数方程表达式,我们只讨论其二阶导数,不妨假设：$\begin{cases} x = x(t)\\<br>y = y(t)<br>\end{cases},a\leq t \leq b$,则其二阶导数公式如下：</p>
-<script type="math/tex; mode=display">
-\cfrac{\mathrm{d}y}{\mathrm{d}x} = \cfrac{y'(t)}{x'(t)} \Rightarrow \cfrac{\mathrm{d}^2y}{\mathrm{d}x^2} = \cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{\mathrm{d}y}{\mathrm{d}x}) \\
- = \cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{y'(t)}{x'(t)}) = \cfrac{\mathrm{d}}{\mathrm{d}t}(\cfrac{y'(t)}{x'(t)})\cfrac{\mathrm{d}t}{\mathrm{d}x} = \cfrac{x'(t)y''(t)-x''(t)y'(t)}{[x'(t)]^3}</script><h3 id="隐函数的高阶导数"><a href="#隐函数的高阶导数" class="headerlink" title="隐函数的高阶导数"></a>隐函数的高阶导数</h3><p>此前我们讨论过一阶导数情况下的<strong>隐函数求导法</strong>,若想求得其高阶导数,则两边求$n$阶导即可.</p>
+<h3 id="参数方程的高二阶导数">参数方程的高(<em>二</em>)阶导数</h3>
+<p>对于函数的参数方程表达式,我们只讨论其二阶导数,不妨假设：<span
+class="math inline">\(\begin{cases} x = x(t)\\ y = y(t)
+\end{cases},a\leq t \leq b\)</span>,则其二阶导数公式如下： <span
+class="math display">\[
+\cfrac{\mathrm{d}y}{\mathrm{d}x} = \cfrac{y&#39;(t)}{x&#39;(t)}
+\Rightarrow \cfrac{\mathrm{d}^2y}{\mathrm{d}x^2} =
+\cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{\mathrm{d}y}{\mathrm{d}x}) \\
+= \cfrac{\mathrm{d}}{\mathrm{d}x}(\cfrac{y&#39;(t)}{x&#39;(t)}) =
+\cfrac{\mathrm{d}}{\mathrm{d}t}(\cfrac{y&#39;(t)}{x&#39;(t)})\cfrac{\mathrm{d}t}{\mathrm{d}x}
+= \cfrac{x&#39;(t)y&#39;&#39;(t)-x&#39;&#39;(t)y&#39;(t)}{[x&#39;(t)]^3}
+\]</span></p>
+<h3 id="隐函数的高阶导数">隐函数的高阶导数</h3>
+<p>此前我们讨论过一阶导数情况下的<strong>隐函数求导法</strong>,若想求得其高阶导数,则两边求<span
+class="math inline">\(n\)</span>阶导即可.</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:已知$x-y+\cfrac{1}{2}\sin{y} = 0$,求$y’’$</p><p><strong>Solution</strong> 先对等式两边求导,有：$1-y’+\cfrac{1}{2}y’\cos{y} = 0$</p><p>解得:$\cfrac{\mathrm{d}y}{\mathrm{d}x} = \cfrac{2}{2-\cos{y}}$</p><p>再求一次导,有:$-y’’+\cfrac{1}{2}y’’\cos{y}-\cfrac{1}{2}\sin{y}(y’)^2=0$</p><p>解得:$\cfrac{\mathrm{d}^2y}{\mathrm{d}x^2} = \cfrac{-4\sin{y}}{(2-\cos{y})^3}$</p>
+            <p><strong>Example 1</strong>:已知<spanclass="math inline">\(x-y+\cfrac{1}{2}\sin{y} = 0\)</span>,求<spanclass="math inline">\(y&#39;&#39;\)</span></p><p><strong>Solution</strong> 先对等式两边求导,有：<spanclass="math inline">\(1-y&#39;+\cfrac{1}{2}y&#39;\cos{y} =0\)</span></p><p>解得:<span class="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x} =\cfrac{2}{2-\cos{y}}\)</span></p><p>再求一次导,有:<spanclass="math inline">\(-y&#39;&#39;+\cfrac{1}{2}y&#39;&#39;\cos{y}-\cfrac{1}{2}\sin{y}(y&#39;)^2=0\)</span></p><p>解得:<span class="math inline">\(\cfrac{\mathrm{d}^2y}{\mathrm{d}x^2}= \cfrac{-4\sin{y}}{(2-\cos{y})^3}\)</span></p>
           </div>
-<h3 id="莱布尼兹公式"><a href="#莱布尼兹公式" class="headerlink" title="莱布尼兹公式"></a>莱布尼兹公式</h3><p>我们不加证明地给出高阶导数的<strong>莱布尼兹公式</strong>：</p>
+<h3 id="莱布尼兹公式">莱布尼兹公式</h3>
+<p>我们不加证明地给出高阶导数的<strong>莱布尼兹公式</strong>：</p>
 <div class="note note-danger">
-            <p><strong>Theorem</strong>:设$u(x),v(x)$有$n$阶导数,则：$[u(x)v(x)]^{(n)} = \sum\limits_{k=0}^nC_{n}^{k}u^{(n-k)}(x)v^{(k)}(x)$,此即高阶导数的莱布尼兹公式.</p>
+            <p><strong>Theorem</strong>:设<spanclass="math inline">\(u(x),v(x)\)</span>有<spanclass="math inline">\(n\)</span>阶导数,则：<spanclass="math inline">\([u(x)v(x)]^{(n)} =\sum\limits_{k=0}^nC_{n}^{k}u^{(n-k)}(x)v^{(k)}(x)\)</span>,此即高阶导数的莱布尼兹公式.</p>
           </div>
 <p>下面给出一个应用的例子：</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:已知函数$f(x) = x^2e^x$,求$f^{(n)}(x)$</p><p><strong>Solution</strong> 根据莱布尼兹公式,有$f^{(n)}(x) = x^2e^x+2nxe^x+n(n-1)e^x$.</p>
+            <p><strong>Example 1</strong>:已知函数<span class="math inline">\(f(x) =x^2e^x\)</span>,求<span class="math inline">\(f^{(n)}(x)\)</span></p><p><strong>Solution</strong> 根据莱布尼兹公式,有<spanclass="math inline">\(f^{(n)}(x) = x^2e^x+2nxe^x+n(n-1)e^x\)</span>.</p>
           </div>
-<h3 id="导数极限定理"><a href="#导数极限定理" class="headerlink" title="导数极限定理"></a>导数极限定理</h3><p>我们不加证明地给出<strong>导数极限定理</strong>：</p>
+<h3 id="导数极限定理">导数极限定理</h3>
+<p>我们不加证明地给出<strong>导数极限定理</strong>：</p>
 <div class="note note-danger">
-            <p><strong>Theorem</strong>:设$f(x)$在$N_0(x_0,\delta)$可导,在$x_0$连续,且$\lim\limits_{x\to x_0}f’(x) = A$,则$f’(x_0)=A$.</p>
+            <p><strong>Theorem</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(N_0(x_0,\delta)\)</span>可导,在<spanclass="math inline">\(x_0\)</span>连续,且<spanclass="math inline">\(\lim\limits_{x\to x_0}f&#39;(x) =A\)</span>,则<span class="math inline">\(f&#39;(x_0)=A\)</span>.</p>
           </div>
 <p>直接给出例题：</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:已知$f(x) = \begin{cases}e^x,x&lt;0 \\ ax^2+bx+c,x \geq 0\end{cases}$,现已知$f’’(0)$存在,求$a,b,c$.</p><p><strong>Solution</strong> $f’(x) = \begin{cases}e^x,x&lt;0 \\ 2ax+b,x \geq 0\end{cases}$,根据连续性可知$b=1$.</p><p>$f’’(x) = \begin{cases}e^x,x&lt;0 \\ 2a,x \geq 0\end{cases}$,根据连续性可知$a = \cfrac{1}{2},c=1$</p><p>综上:$a=\cfrac{1}{2},b=1,c=1$</p>
+            <p><strong>Example 1</strong>:已知<span class="math inline">\(f(x) =\begin{cases}e^x,x&lt;0 \\ ax^2+bx+c,x \geq0\end{cases}\)</span>,现已知<spanclass="math inline">\(f&#39;&#39;(0)\)</span>存在,求<spanclass="math inline">\(a,b,c\)</span>.</p><p><strong>Solution</strong> <span class="math inline">\(f&#39;(x) =\begin{cases}e^x,x&lt;0 \\ 2ax+b,x \geq0\end{cases}\)</span>,根据连续性可知<spanclass="math inline">\(b=1\)</span>.</p><p><span class="math inline">\(f&#39;&#39;(x) = \begin{cases}e^x,x&lt;0\\ 2a,x \geq 0\end{cases}\)</span>,根据连续性可知<spanclass="math inline">\(a = \cfrac{1}{2},c=1\)</span></p><p>综上:<span class="math inline">\(a=\cfrac{1}{2},b=1,c=1\)</span></p>
           </div>
 
                 

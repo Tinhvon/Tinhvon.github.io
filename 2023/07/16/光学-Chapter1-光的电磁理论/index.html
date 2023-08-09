@@ -16,12 +16,12 @@
   <meta name="author" content="Tinhvon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="光的电磁理论数学基础标量与矢量标量(scalar):只有大小,没有方向的物理量,如:温度$T$. 矢量(vector):不仅有大小,且有方向,相加满足平行四边形法则的物理量,如:力$F$. 对一个矢量,考虑任意一个坐标系,我们均可以将其分解到坐标轴上.考虑空间直角坐标系,给定矢量$\vec{A}$,其分量形式为:  \vec{A} &#x3D; A_{x}\vec{e_x} + A_y\vec{e_y} +">
+    <meta name="description" content="光的电磁理论 数学基础 标量与矢量 标量(scalar):只有大小,没有方向的物理量,如:温度\(T\). 矢量(vector):不仅有大小,且有方向,相加满足平行四边形法则的物理量,如:力\(F\). 对一个矢量,考虑任意一个坐标系,我们均可以将其分解到坐标轴上.考虑空间直角坐标系,给定矢量\(\vec{A}\),其分量形式为: \[ \vec{A} &#x3D; A_{x}\vec{e_x}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="光学 Chapter1-光的电磁理论">
 <meta property="og:url" content="http://example.com/2023/07/16/%E5%85%89%E5%AD%A6-Chapter1-%E5%85%89%E7%9A%84%E7%94%B5%E7%A3%81%E7%90%86%E8%AE%BA/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
-<meta property="og:description" content="光的电磁理论数学基础标量与矢量标量(scalar):只有大小,没有方向的物理量,如:温度$T$. 矢量(vector):不仅有大小,且有方向,相加满足平行四边形法则的物理量,如:力$F$. 对一个矢量,考虑任意一个坐标系,我们均可以将其分解到坐标轴上.考虑空间直角坐标系,给定矢量$\vec{A}$,其分量形式为:  \vec{A} &#x3D; A_{x}\vec{e_x} + A_y\vec{e_y} +">
+<meta property="og:description" content="光的电磁理论 数学基础 标量与矢量 标量(scalar):只有大小,没有方向的物理量,如:温度\(T\). 矢量(vector):不仅有大小,且有方向,相加满足平行四边形法则的物理量,如:力\(F\). 对一个矢量,考虑任意一个坐标系,我们均可以将其分解到坐标轴上.考虑空间直角坐标系,给定矢量\(\vec{A}\),其分量形式为: \[ \vec{A} &#x3D; A_{x}\vec{e_x}">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Optics.png">
 <meta property="article:published_time" content="2023-07-16T11:40:14.000Z">
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          8.6k 字
+          9k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          72 分钟
+          75 分钟
         
       </span>
     
@@ -293,155 +293,332 @@
             
               <div class="markdown-body">
                 
-                <h1 id="光的电磁理论"><a href="#光的电磁理论" class="headerlink" title="光的电磁理论"></a>光的电磁理论</h1><h2 id="数学基础"><a href="#数学基础" class="headerlink" title="数学基础"></a>数学基础</h2><h3 id="标量与矢量"><a href="#标量与矢量" class="headerlink" title="标量与矢量"></a>标量与矢量</h3><p><strong>标量(scalar)</strong>:只有大小,没有方向的物理量,如:温度$T$.</p>
-<p><strong>矢量(vector)</strong>:不仅有大小,且有方向,相加满足平行四边形法则的物理量,如:力$F$.</p>
-<p>对一个矢量,考虑任意一个坐标系,我们均可以将其分解到坐标轴上.考虑空间直角坐标系,给定矢量$\vec{A}$,其分量形式为:</p>
-<script type="math/tex; mode=display">
-\vec{A} = A_{x}\vec{e_x} + A_y\vec{e_y} + A_z\vec{e_z}</script><h3 id="标量场与矢量场"><a href="#标量场与矢量场" class="headerlink" title="标量场与矢量场"></a>标量场与矢量场</h3><p>物理学中,常常需要研究物理量在空间的分布和变化规律.如果物理量是标量,那么在某一时刻,空间中任意一点对应着该物理量的一个确定数值,此时我们称该空间为<strong>标量场(scalar field)</strong>,如:温度场$T(x,y,z,t)$,电势场$U(x,y,z,t)$.</p>
-<p>同理物理量是矢量,空间每一点都存在着其大小与方向,则称该空间为<strong>矢量场(vector field)</strong>.如:电场$\vec{ \mathbf{ E } }(x,y,z,t)$,磁感应强度$\vec{ \mathbf{ B } }(x,y,z,t)$.</p>
-<p>由矢量分解的原理,矢量场可以分解到对应的坐标轴上,对于空间直角坐标系,我们有:</p>
-<script type="math/tex; mode=display">
-\vec{A}(x,y,z,t) = A_{x}(x,y,z,t)\vec{e_x} + A_y(x,y,z,t)\vec{e_y} + A_z(x,y,z,t)\vec{e_z}</script><h3 id="梯度、散度与旋度"><a href="#梯度、散度与旋度" class="headerlink" title="梯度、散度与旋度"></a>梯度、散度与旋度</h3><p><strong>梯度(gradient)</strong>:一个标量场的梯度,是一个矢量场.某点处的梯度是该点处标量场变化最快的方向,梯度的大小(模)是标量场的变化率.</p>
-<p>直角坐标系中,梯度可以表示为:</p>
-<script type="math/tex; mode=display">
-\nabla f = \cfrac{\partial f}{\partial x} \vec{e_x} +\cfrac{\partial f}{\partial y} \vec{e_y} +\cfrac{\partial f}{\partial z} \vec{e_z}</script><p><strong>散度(divergence)</strong>：考虑一个闭合曲面$\mathbf{S}$,其向某点无限收缩,矢量$\vec{\mathbf{A}}$通过该闭合面的通量与该闭合面包含的体积之比的极限称为该矢量场在该点的散度,其定义式为:</p>
-<script type="math/tex; mode=display">
-\nabla \cdot \vec{\mathbf{A}} = \lim_{\Delta V \rightarrow 0}{\cfrac{\oint_{S}\vec{\mathbf{A}}\cdot \mathrm{d}\vec{\mathbf{S}}}{\Delta V}}</script><p>其中$\Delta V$是闭合曲面$\mathbf{S}$包围的体积,散度可以理解为通过包围单位体积闭合面的通量.</p>
-<p>直角坐标系中,散度可以表示为:</p>
-<script type="math/tex; mode=display">
-\nabla \cdot \vec{\mathbf{A}} =\cfrac{\partial A_x}{\partial x}  +\cfrac{\partial A_y}{\partial y}  +\cfrac{\partial A_z}{\partial z}</script><p><strong>旋度(rotation)</strong>:矢量场$\vec{\mathbf{A}}$的旋度的分量形式可以表示为:</p>
-<script type="math/tex; mode=display">
-(\nabla \times \vec{\mathbf{A}}) \cdot \widehat{\mathbf{n}}=\lim _{\Delta S_n \rightarrow 0} \frac{1}{\left|\Delta S_n\right|} \oint_l \vec{\mathbf{A}} \cdot d \vec{\boldsymbol{l}}</script><p>其中$\Delta S$是指以单位向量为法向量的面元,$\vec{\mathbf{l}}$是他的边界曲线,在直角坐标系中,旋度可以表示为:</p>
-<script type="math/tex; mode=display">
-\nabla \times \vec{\mathbf{A}}=\left(\frac{\partial A_z}{\partial y}-\frac{\partial A_y}{\partial z}\right) \vec{e_x}+\left(\frac{\partial A_x}{\partial z}-\frac{\partial A_z}{\partial x}\right) \vec{e_y}+\left(\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y}\right) \vec{e_z}</script><p>常用的公式有:</p>
-<script type="math/tex; mode=display">
+                <h1 id="光的电磁理论">光的电磁理论</h1>
+<h2 id="数学基础">数学基础</h2>
+<h3 id="标量与矢量">标量与矢量</h3>
+<p><strong>标量(scalar)</strong>:只有大小,没有方向的物理量,如:温度<span
+class="math inline">\(T\)</span>.</p>
+<p><strong>矢量(vector)</strong>:不仅有大小,且有方向,相加满足平行四边形法则的物理量,如:力<span
+class="math inline">\(F\)</span>.</p>
+<p>对一个矢量,考虑任意一个坐标系,我们均可以将其分解到坐标轴上.考虑空间直角坐标系,给定矢量<span
+class="math inline">\(\vec{A}\)</span>,其分量形式为: <span
+class="math display">\[
+\vec{A} = A_{x}\vec{e_x} + A_y\vec{e_y} + A_z\vec{e_z}
+\]</span></p>
+<h3 id="标量场与矢量场">标量场与矢量场</h3>
+<p>物理学中,常常需要研究物理量在空间的分布和变化规律.如果物理量是标量,那么在某一时刻,空间中任意一点对应着该物理量的一个确定数值,此时我们称该空间为<strong>标量场(scalar
+field)</strong>,如:温度场<span
+class="math inline">\(T(x,y,z,t)\)</span>,电势场<span
+class="math inline">\(U(x,y,z,t)\)</span>.</p>
+<p>同理物理量是矢量,空间每一点都存在着其大小与方向,则称该空间为<strong>矢量场(vector
+field)</strong>.如:电场<span class="math inline">\(\vec{ \mathbf{ E }
+}(x,y,z,t)\)</span>,磁感应强度<span class="math inline">\(\vec{ \mathbf{
+B } }(x,y,z,t)\)</span>.</p>
+<p>由矢量分解的原理,矢量场可以分解到对应的坐标轴上,对于空间直角坐标系,我们有:
+<span class="math display">\[
+\vec{A}(x,y,z,t) = A_{x}(x,y,z,t)\vec{e_x} + A_y(x,y,z,t)\vec{e_y} +
+A_z(x,y,z,t)\vec{e_z}
+\]</span></p>
+<h3 id="梯度散度与旋度">梯度、散度与旋度</h3>
+<p><strong>梯度(gradient)</strong>:一个标量场的梯度,是一个矢量场.某点处的梯度是该点处标量场变化最快的方向,梯度的大小(模)是标量场的变化率.</p>
+<p>直角坐标系中,梯度可以表示为: <span class="math display">\[
+\nabla f = \cfrac{\partial f}{\partial x} \vec{e_x} +\cfrac{\partial
+f}{\partial y} \vec{e_y} +\cfrac{\partial f}{\partial z} \vec{e_z}
+\]</span> <strong>散度(divergence)</strong>：考虑一个闭合曲面<span
+class="math inline">\(\mathbf{S}\)</span>,其向某点无限收缩,矢量<span
+class="math inline">\(\vec{\mathbf{A}}\)</span>通过该闭合面的通量与该闭合面包含的体积之比的极限称为该矢量场在该点的散度,其定义式为:
+<span class="math display">\[
+\nabla \cdot \vec{\mathbf{A}} = \lim_{\Delta V \rightarrow
+0}{\cfrac{\oint_{S}\vec{\mathbf{A}}\cdot
+\mathrm{d}\vec{\mathbf{S}}}{\Delta V}}
+\]</span> 其中<span class="math inline">\(\Delta
+V\)</span>是闭合曲面<span
+class="math inline">\(\mathbf{S}\)</span>包围的体积,散度可以理解为通过包围单位体积闭合面的通量.</p>
+<p>直角坐标系中,散度可以表示为: <span class="math display">\[
+\nabla \cdot \vec{\mathbf{A}} =\cfrac{\partial A_x}{\partial
+x}  +\cfrac{\partial A_y}{\partial y}  +\cfrac{\partial A_z}{\partial z}
+\]</span> <strong>旋度(rotation)</strong>:矢量场<span
+class="math inline">\(\vec{\mathbf{A}}\)</span>的旋度的分量形式可以表示为:
+<span class="math display">\[
+(\nabla \times \vec{\mathbf{A}}) \cdot \widehat{\mathbf{n}}=\lim
+_{\Delta S_n \rightarrow 0} \frac{1}{\left|\Delta S_n\right|} \oint_l
+\vec{\mathbf{A}} \cdot d \vec{\boldsymbol{l}}
+\]</span> 其中<span class="math inline">\(\Delta
+S\)</span>是指以单位向量为法向量的面元,<span
+class="math inline">\(\vec{\mathbf{l}}\)</span>是他的边界曲线,在直角坐标系中,旋度可以表示为:
+<span class="math display">\[
+\nabla \times \vec{\mathbf{A}}=\left(\frac{\partial A_z}{\partial
+y}-\frac{\partial A_y}{\partial z}\right) \vec{e_x}+\left(\frac{\partial
+A_x}{\partial z}-\frac{\partial A_z}{\partial x}\right)
+\vec{e_y}+\left(\frac{\partial A_y}{\partial x}-\frac{\partial
+A_x}{\partial y}\right) \vec{e_z}
+\]</span> 常用的公式有: <span class="math display">\[
 \nabla \cdot (\nabla \times \vec{\mathbf{A}}) = 0 \\
 \nabla \times (\nabla f) = 0 \\
-\nabla \times (\nabla \times \vec{\mathbf{A}}) = \nabla (\nabla \cdot \vec{\mathbf{A}}) - \nabla^2 \vec{\mathbf {A}}</script><h3 id="一维波动"><a href="#一维波动" class="headerlink" title="一维波动"></a>一维波动</h3><p>在力学中,我们已经学习过以为波动方程的形式:</p>
-<script type="math/tex; mode=display">
-\cfrac{\partial^2 \Psi }{\partial t^2} - v^2\cfrac{\partial^2 \Psi}{\partial x^2} = 0</script><p>其解为:</p>
-<script type="math/tex; mode=display">
-\Psi(x,t) = A\cos [k(x-vt)+\varphi_0]</script><p>为了描述这个解,我们定义了以下物理量:</p>
-<p><strong>波长(wavelength)</strong>:表示波的空间周期,其定义式为:$\lambda = \frac{2\pi}{k}$,其中$k$为波矢.</p>
-<p><strong>初相位(initial phase)</strong>:$\varphi_0$.</p>
-<p><strong>波数(wavenumber)</strong>:$\frac{1}{\lambda}$,表示单位长度内波的周期数.</p>
-<p><strong>周期(period)</strong>:定义式为:$T = \frac{\lambda}{v}$.</p>
-<p><strong>圆频率(circular frequency)</strong>:$\omega = \frac{2\pi}{T} = kv$</p>
-<p><strong>相速度(phase velocity)</strong>:$v_{p} = \frac{dx}{dt}=\frac{\omega}{k} = v$</p>
-<p>在此基础上,解的形式也可写为:</p>
-<script type="math/tex; mode=display">
-\Psi = A\cos(kx-\omega t+\varphi_0)</script><p>考虑一列简谐波$A\cos(kx-\omega t)$ ,定义其<strong>相位(phase)</strong>为:$\varphi = kx-\omega t$</p>
-<h3 id="波的复数表示"><a href="#波的复数表示" class="headerlink" title="波的复数表示"></a>波的复数表示</h3><p>考虑复数$z$,其形式为:</p>
-<script type="math/tex; mode=display">
-z = x+iy=r(\cos\theta+i\sin\theta)</script><p>考虑<strong>欧拉公式</strong>:</p>
-<script type="math/tex; mode=display">
-z = r\exp(i\theta)</script><p>简谐波$\Psi(x,t) = A\cos (kx-\omega t)$可以用一个复数的实部或虚部表示,为了计算方便,直接用复数表示:</p>
-<script type="math/tex; mode=display">
-\Psi(x,t) = A\exp[i(kx-\omega t)]</script><p>得到结果后,取实部便可得到结果.</p>
-<h3 id="三维波动"><a href="#三维波动" class="headerlink" title="三维波动"></a>三维波动</h3><p>三维波动方程的数学形式为:</p>
-<script type="math/tex; mode=display">
-\cfrac{\partial^2 \Psi}{\partial^2 t} - v^2\nabla^2\Psi = 0</script><p>对于简谐振动:</p>
-<script type="math/tex; mode=display">
-\Psi(x,y,z,t) = \Psi(x,y,z)\exp(-i\omega t)</script><p>带入可以得到<strong>亥姆霍兹方程(Helmholtz Equation)</strong></p>
-<script type="math/tex; mode=display">
-\nabla^2\Psi(x,y,z)+k^2\Psi(x,y,z) =0</script><h3 id="标量波与矢量波"><a href="#标量波与矢量波" class="headerlink" title="标量波与矢量波"></a>标量波与矢量波</h3><p>标量波由以下函数给出:</p>
-<script type="math/tex; mode=display">
-\Psi(x,y,z,t) = \Psi(x,y,z)\exp(-i\omega t)</script><p>矢量波的每一个方向的分量是一个标量波:</p>
-<script type="math/tex; mode=display">
-\boldsymbol{\Psi}(x, y, z, t)=\left[\Psi_x(x, y, z) \vec{e_x}+\Psi_y(x, y, z) \vec{e_y}+\Psi_z(x, y, z) \vec{e_z}\right] \exp (-i \omega t)</script><h2 id="电磁理论的基本定律"><a href="#电磁理论的基本定律" class="headerlink" title="电磁理论的基本定律"></a>电磁理论的基本定律</h2><h3 id="Maxwell方程组"><a href="#Maxwell方程组" class="headerlink" title="Maxwell方程组"></a>Maxwell方程组</h3><p>我们在电磁学中曾接触过<strong>Maxwell方程组</strong>,自由空间(没有自由电荷,传导电流)的<strong>Maxwell方程组</strong>可表示为:</p>
-<script type="math/tex; mode=display">
-\begin{cases} 
+\nabla \times (\nabla \times \vec{\mathbf{A}}) = \nabla (\nabla \cdot
+\vec{\mathbf{A}}) - \nabla^2 \vec{\mathbf {A}}
+\]</span></p>
+<h3 id="一维波动">一维波动</h3>
+<p>在力学中,我们已经学习过以为波动方程的形式: <span
+class="math display">\[
+\cfrac{\partial^2 \Psi }{\partial t^2} - v^2\cfrac{\partial^2
+\Psi}{\partial x^2} = 0
+\]</span> 其解为: <span class="math display">\[
+\Psi(x,t) = A\cos [k(x-vt)+\varphi_0]
+\]</span> 为了描述这个解,我们定义了以下物理量:</p>
+<p><strong>波长(wavelength)</strong>:表示波的空间周期,其定义式为:<span
+class="math inline">\(\lambda = \frac{2\pi}{k}\)</span>,其中<span
+class="math inline">\(k\)</span>为波矢.</p>
+<p><strong>初相位(initial phase)</strong>:<span
+class="math inline">\(\varphi_0\)</span>.</p>
+<p><strong>波数(wavenumber)</strong>:<span
+class="math inline">\(\frac{1}{\lambda}\)</span>,表示单位长度内波的周期数.</p>
+<p><strong>周期(period)</strong>:定义式为:<span class="math inline">\(T
+= \frac{\lambda}{v}\)</span>.</p>
+<p><strong>圆频率(circular frequency)</strong>:<span
+class="math inline">\(\omega = \frac{2\pi}{T} = kv\)</span></p>
+<p><strong>相速度(phase velocity)</strong>:<span
+class="math inline">\(v_{p} = \frac{dx}{dt}=\frac{\omega}{k} =
+v\)</span></p>
+<p>在此基础上,解的形式也可写为: <span class="math display">\[
+\Psi = A\cos(kx-\omega t+\varphi_0)
+\]</span> 考虑一列简谐波<span class="math inline">\(A\cos(kx-\omega
+t)\)</span> ,定义其<strong>相位(phase)</strong>为:<span
+class="math inline">\(\varphi = kx-\omega t\)</span></p>
+<h3 id="波的复数表示">波的复数表示</h3>
+<p>考虑复数<span class="math inline">\(z\)</span>,其形式为: <span
+class="math display">\[
+z = x+iy=r(\cos\theta+i\sin\theta)
+\]</span> 考虑<strong>欧拉公式</strong>: <span class="math display">\[
+z = r\exp(i\theta)
+\]</span> 简谐波<span class="math inline">\(\Psi(x,t) = A\cos (kx-\omega
+t)\)</span>可以用一个复数的实部或虚部表示,为了计算方便,直接用复数表示:
+<span class="math display">\[
+\Psi(x,t) = A\exp[i(kx-\omega t)]
+\]</span> 得到结果后,取实部便可得到结果.</p>
+<h3 id="三维波动">三维波动</h3>
+<p>三维波动方程的数学形式为: <span class="math display">\[
+\cfrac{\partial^2 \Psi}{\partial^2 t} - v^2\nabla^2\Psi = 0
+\]</span> 对于简谐振动: <span class="math display">\[
+\Psi(x,y,z,t) = \Psi(x,y,z)\exp(-i\omega t)
+\]</span> 带入可以得到<strong>亥姆霍兹方程(Helmholtz Equation)</strong>
+<span class="math display">\[
+\nabla^2\Psi(x,y,z)+k^2\Psi(x,y,z) =0
+\]</span></p>
+<h3 id="标量波与矢量波">标量波与矢量波</h3>
+<p>标量波由以下函数给出: <span class="math display">\[
+\Psi(x,y,z,t) = \Psi(x,y,z)\exp(-i\omega t)
+\]</span> 矢量波的每一个方向的分量是一个标量波: <span
+class="math display">\[
+\boldsymbol{\Psi}(x, y, z, t)=\left[\Psi_x(x, y, z) \vec{e_x}+\Psi_y(x,
+y, z) \vec{e_y}+\Psi_z(x, y, z) \vec{e_z}\right] \exp (-i \omega t)
+\]</span></p>
+<h2 id="电磁理论的基本定律">电磁理论的基本定律</h2>
+<h3 id="maxwell方程组">Maxwell方程组</h3>
+<p>我们在电磁学中曾接触过<strong>Maxwell方程组</strong>,自由空间(没有自由电荷,传导电流)的<strong>Maxwell方程组</strong>可表示为:
+<span class="math display">\[
+\begin{cases}
 \begin{aligned}
-& \nabla \times \vec{\mathbf{E}}=-\frac{\partial \vec{\mathbf{B}}}{\partial t} \quad\left(\vec{\mathbf{B}}=\mu_0 \vec{\mathbf{H}}\right) \\
-& \nabla \times \vec{\mathbf{B}}=\mu_0 \frac{\partial \vec{\mathbf{D}}}{\partial t} \quad\left(\vec{\mathbf{D}}=\epsilon_0 \vec{\mathbf{E}}\right) \\
-& \nabla \cdot \vec{\mathbf{B}}=0 \\
-& \nabla \cdot \vec{\mathbf{E}}=0
+&amp; \nabla \times \vec{\mathbf{E}}=-\frac{\partial
+\vec{\mathbf{B}}}{\partial t} \quad\left(\vec{\mathbf{B}}=\mu_0
+\vec{\mathbf{H}}\right) \\
+&amp; \nabla \times \vec{\mathbf{B}}=\mu_0 \frac{\partial
+\vec{\mathbf{D}}}{\partial t} \quad\left(\vec{\mathbf{D}}=\epsilon_0
+\vec{\mathbf{E}}\right) \\
+&amp; \nabla \cdot \vec{\mathbf{B}}=0 \\
+&amp; \nabla \cdot \vec{\mathbf{E}}=0
 \end{aligned}
-\end{cases}</script><p>空间中的电场和磁场通过Maxwell方程组联系在一起.</p>
-<h3 id="波动方程"><a href="#波动方程" class="headerlink" title="波动方程"></a>波动方程</h3><p>一个随时间变化的电场$\vec{\mathbf{E}}$产生一个磁场$\vec{\mathbf{B}}$,它处处垂直于E的变化方向.同理,一个随时间变化的磁场$\vec{\mathbf{B}}$产生一个电场$\vec{\mathbf{E}}$,它处处垂直于$\vec{\mathbf{B}}$的变化方向.这样我们可以预见电磁场中电场和磁场的横向特性.</p>
-<p>现证明自由空间的电磁波是横波,由Maxwell方程组:</p>
-<script type="math/tex; mode=display">
+\end{cases}
+\]</span> 空间中的电场和磁场通过Maxwell方程组联系在一起.</p>
+<h3 id="波动方程">波动方程</h3>
+<p>一个随时间变化的电场<span
+class="math inline">\(\vec{\mathbf{E}}\)</span>产生一个磁场<span
+class="math inline">\(\vec{\mathbf{B}}\)</span>,它处处垂直于E的变化方向.同理,一个随时间变化的磁场<span
+class="math inline">\(\vec{\mathbf{B}}\)</span>产生一个电场<span
+class="math inline">\(\vec{\mathbf{E}}\)</span>,它处处垂直于<span
+class="math inline">\(\vec{\mathbf{B}}\)</span>的变化方向.这样我们可以预见电磁场中电场和磁场的横向特性.</p>
+<p>现证明自由空间的电磁波是横波,由Maxwell方程组: <span
+class="math display">\[
 \begin{aligned}
-& \nabla \times \vec{\mathbf{E}}=-\frac{\partial \vec{\mathbf{B}}}{\partial t} \quad \nabla \times \vec{\mathbf{B}}=\mu_0 \frac{\partial \vec{\mathbf{D}}}{\partial t}=\varepsilon_0 \mu_0 \frac{\partial \vec{\mathbf{E}}}{\partial t} \\
-& \nabla \times (\nabla \times \vec{\mathbf{E}})=-\nabla \times \frac{\partial \vec{\mathbf{B}}}{\partial t}=-\frac{\partial}{\partial t}(\nabla \times \vec{\mathbf{B}})=-\varepsilon_0 \mu_0 \frac{\partial^2 \vec{\mathbf{E}}}{\partial t^2}
-\end{aligned}</script><p>得到:</p>
-<script type="math/tex; mode=display">
-\nabla^2 \vec{\mathbf{E}}=\epsilon_0 \mu_0 \frac{\partial^2 \vec{\mathbf{E}}}{\partial t^2} \quad \nabla^2 \vec{\mathbf{B}}=\epsilon_0 \mu_0 \frac{\partial^2 \vec{\mathbf{B}}}{\partial t^2}</script><p>由电磁学理论,我们推断出真空中电磁波的传播速度:</p>
-<script type="math/tex; mode=display">
-v = \cfrac{1}{\sqrt{\varepsilon_0\mu_0}} \approx3.0 \times 10 ^8 \mathrm{m}/ \mathrm s</script><h3 id="平面电磁波"><a href="#平面电磁波" class="headerlink" title="平面电磁波"></a>平面电磁波</h3><p>考虑自由空间一列沿$z$方向传播的电磁波,电磁场分量只沿着$z$轴方向有变化,即:</p>
-<script type="math/tex; mode=display">
-\cfrac{\partial \vec{\mathbf{E}}}{\partial x} = 0,\cfrac{\partial \vec{\mathbf{E}}}{\partial y} = 0,\cfrac{\partial \vec{\mathbf{B}}}{\partial x} = 0,\cfrac{\partial \vec{\mathbf{B}}}{\partial y} = 0</script><p>假设电场沿着$x$方向传播:$\vec{\mathbf{E}} = E_x \vec{e_x}$,带入Maxwell方程组,只有沿着$y$方向的磁场$B_y$,故电磁波是横波.</p>
-<p>考虑电场方向沿$x$方向振动的电磁波:</p>
-<script type="math/tex; mode=display">
-\frac{\partial E_x}{\partial z}=-\frac{\partial B_y}{\partial t}, \quad \frac{\partial B_y}{\partial z}=-\varepsilon_0 \mu_0 \frac{\partial E_x}{\partial t}</script><p>波动方程变为:</p>
-<script type="math/tex; mode=display">
-\cfrac{\partial^2 E_x }{\partial t^2} - c^2\cfrac{\partial^2 E_x}{\partial z^2} = 0</script><p>对于简谐波,有:</p>
-<script type="math/tex; mode=display">
-E_x(z,t) = E_x(z)\exp(-i\omega t)</script><p>得到:</p>
-<script type="math/tex; mode=display">
-\cfrac{\partial^2 E_x }{\partial t^2} - (\cfrac{\omega}{c})^2\cfrac{\partial^2 E_x}{\partial z^2} = 0</script><p>定义:$k=\frac{\omega}{c}$</p>
-<p>得到:</p>
-<script type="math/tex; mode=display">
-E_x(z,t) = A\exp(i(kz-\omega t))</script><p>(这里我们只考虑沿着$z$正方向传播的平面波)</p>
+&amp; \nabla \times \vec{\mathbf{E}}=-\frac{\partial
+\vec{\mathbf{B}}}{\partial t} \quad \nabla \times \vec{\mathbf{B}}=\mu_0
+\frac{\partial \vec{\mathbf{D}}}{\partial t}=\varepsilon_0 \mu_0
+\frac{\partial \vec{\mathbf{E}}}{\partial t} \\
+&amp; \nabla \times (\nabla \times \vec{\mathbf{E}})=-\nabla \times
+\frac{\partial \vec{\mathbf{B}}}{\partial t}=-\frac{\partial}{\partial
+t}(\nabla \times \vec{\mathbf{B}})=-\varepsilon_0 \mu_0 \frac{\partial^2
+\vec{\mathbf{E}}}{\partial t^2}
+\end{aligned}
+\]</span> 得到: <span class="math display">\[
+\nabla^2 \vec{\mathbf{E}}=\epsilon_0 \mu_0 \frac{\partial^2
+\vec{\mathbf{E}}}{\partial t^2} \quad \nabla^2
+\vec{\mathbf{B}}=\epsilon_0 \mu_0 \frac{\partial^2
+\vec{\mathbf{B}}}{\partial t^2}
+\]</span> 由电磁学理论,我们推断出真空中电磁波的传播速度: <span
+class="math display">\[
+v = \cfrac{1}{\sqrt{\varepsilon_0\mu_0}} \approx3.0 \times 10 ^8
+\mathrm{m}/ \mathrm s
+\]</span></p>
+<h3 id="平面电磁波">平面电磁波</h3>
+<p>考虑自由空间一列沿<span
+class="math inline">\(z\)</span>方向传播的电磁波,电磁场分量只沿着<span
+class="math inline">\(z\)</span>轴方向有变化,即: <span
+class="math display">\[
+\cfrac{\partial \vec{\mathbf{E}}}{\partial x} = 0,\cfrac{\partial
+\vec{\mathbf{E}}}{\partial y} = 0,\cfrac{\partial
+\vec{\mathbf{B}}}{\partial x} = 0,\cfrac{\partial
+\vec{\mathbf{B}}}{\partial y} = 0
+\]</span> 假设电场沿着<span
+class="math inline">\(x\)</span>方向传播:<span
+class="math inline">\(\vec{\mathbf{E}} = E_x
+\vec{e_x}\)</span>,带入Maxwell方程组,只有沿着<span
+class="math inline">\(y\)</span>方向的磁场<span
+class="math inline">\(B_y\)</span>,故电磁波是横波.</p>
+<p>考虑电场方向沿<span class="math inline">\(x\)</span>方向振动的电磁波:
+<span class="math display">\[
+\frac{\partial E_x}{\partial z}=-\frac{\partial B_y}{\partial t}, \quad
+\frac{\partial B_y}{\partial z}=-\varepsilon_0 \mu_0 \frac{\partial
+E_x}{\partial t}
+\]</span> 波动方程变为: <span class="math display">\[
+\cfrac{\partial^2 E_x }{\partial t^2} - c^2\cfrac{\partial^2
+E_x}{\partial z^2} = 0
+\]</span> 对于简谐波,有: <span class="math display">\[
+E_x(z,t) = E_x(z)\exp(-i\omega t)
+\]</span> 得到: <span class="math display">\[
+\cfrac{\partial^2 E_x }{\partial t^2} -
+(\cfrac{\omega}{c})^2\cfrac{\partial^2 E_x}{\partial z^2} = 0
+\]</span> 定义:<span
+class="math inline">\(k=\frac{\omega}{c}\)</span></p>
+<p>得到: <span class="math display">\[
+E_x(z,t) = A\exp(i(kz-\omega t))
+\]</span> (这里我们只考虑沿着<span
+class="math inline">\(z\)</span>正方向传播的平面波)</p>
 <p>已知电场分布,可以通过Maxwell方程组求出磁场分布,列出Maxwell方程组的分量形式即可.</p>
-<p>一般我们以平面波的传播方向为$z$轴建立坐标系,电磁场位于$x-y$平面内,为描述平面电磁波,我们定义以下概念:</p>
+<p>一般我们以平面波的传播方向为<span
+class="math inline">\(z\)</span>轴建立坐标系,电磁场位于<span
+class="math inline">\(x-y\)</span>平面内,为描述平面电磁波,我们定义以下概念:</p>
 <p><strong>等相面</strong>:同一时刻相位相同的点的空间位置叫做等相面或波面,其中最前面的波面称为波前.平面波的等相面是平面.</p>
-<p><strong>偏振方向</strong>:电场$\vec{\mathbf{E}}$的振荡方向.</p>
-<p><strong>偏振面</strong>:电场$\vec{\mathbf{E}}$和传播方向$\vec{k}$构成的平面.</p>
-<p>若电磁波沿着任意方向传播,波矢为$\vec{k}$,则空间中任意一点$\vec{r}$处的电场强度为:</p>
-<script type="math/tex; mode=display">
-\vec{\mathbf{E}}(\vec{r},t) = \vec{\mathbf{E_0}}\cos(\vec{k} \cdot \vec{r}-\omega t)</script><h2 id="能量与动量"><a href="#能量与动量" class="headerlink" title="能量与动量"></a>能量与动量</h2><h3 id="坡印廷矢量"><a href="#坡印廷矢量" class="headerlink" title="坡印廷矢量"></a>坡印廷矢量</h3><p>在电磁学中我们曾接触过,静电场与静磁场的<strong>能量密度</strong>分别为:</p>
-<script type="math/tex; mode=display">
-w_e =\cfrac{1}{2}\varepsilon_0 E^2,w_m = \cfrac{1}{2\mu_0}B^2</script><p>空气中,有:</p>
-<script type="math/tex; mode=display">
-|\vec{E}| = c|\vec{B}|</script><p>电磁场的总能量密度为:</p>
-<script type="math/tex; mode=display">
-w = w_e + w_m = \varepsilon_0 E^2 = \cfrac{B^2}{\mu_0}</script><p>我们还接触过<strong>能流密度</strong>的概念,其定义为:单位时间流过单位面积的能量.</p>
-<p><strong>能流密度矢量</strong>,即<strong>坡英廷矢量(Poynting vector)</strong>,其定义式为:$\vec{\mathbf{S}} = \cfrac{1}{\mu_0}\vec{\mathbf{E}}\times \vec{\mathbf{B}}$</p>
-<h3 id="光强"><a href="#光强" class="headerlink" title="光强"></a>光强</h3><p>为了形象描述光的亮度,从能量角度,我们定义<strong>光强</strong>:单位时间单位面积内的平均能量(平均能流密度),用$I$表示.</p>
-<p>对于简谐波,能流密度在一个周期$T$的平均为:</p>
-<script type="math/tex; mode=display">
-\langle S(t)\rangle_T \equiv \frac{1}{T} \int_t^{t+T} S\left(t^{\prime}\right) d t^{\prime}=c^2 \varepsilon_0\left|\vec{\mathbf{E}}_0 \times \vec{\mathbf{B}}_0\right|\left\langle\cos ^2(\vec{\mathbf{k}} \cdot \vec{\mathbf{r}}-\omega t)\right\rangle_T = \cfrac{1}{2}c^2\varepsilon_0 |\vec{\mathbf{E}}_0 \times \vec{\mathbf{B}}|</script><p><strong>光强的反平方定律</strong>:从一个点光源发出的球面光波,在空间某处的光强与其到光源距离的平方成反比.用能量守恒定律即可轻松证明.</p>
-<h3 id="光子"><a href="#光子" class="headerlink" title="光子"></a>光子</h3><p>进入20世纪,黑体辐射,X射线作用体现出的能量不连续性,光电效应等现象表明,光并不是纯粹的电磁波,为了解释这种现象,光子理论因此诞生.光子的能量与动量满足<strong>De Brogile关系</strong>:</p>
-<script type="math/tex; mode=display">
-E = \hbar \omega,\vec{p} = \hbar \vec{k}</script><h2 id="辐射"><a href="#辐射" class="headerlink" title="辐射"></a>辐射</h2><h3 id="电偶极子辐射"><a href="#电偶极子辐射" class="headerlink" title="电偶极子辐射"></a>电偶极子辐射</h3><p>电动力学中我们曾学过,电偶极矩的辐射光强为:</p>
-<script type="math/tex; mode=display">
-I(\theta) = \cfrac{\mu_0 \omega^4}{32\pi^2 c^3 \varepsilon_0}\cfrac{\sin ^2 \theta}{r^2}</script><p>当$\theta = \frac{\pi}{2}$时,辐射最强.</p>
-<p>当$\theta = 0$时,辐射为0.</p>
+<p><strong>偏振方向</strong>:电场<span
+class="math inline">\(\vec{\mathbf{E}}\)</span>的振荡方向.</p>
+<p><strong>偏振面</strong>:电场<span
+class="math inline">\(\vec{\mathbf{E}}\)</span>和传播方向<span
+class="math inline">\(\vec{k}\)</span>构成的平面.</p>
+<p>若电磁波沿着任意方向传播,波矢为<span
+class="math inline">\(\vec{k}\)</span>,则空间中任意一点<span
+class="math inline">\(\vec{r}\)</span>处的电场强度为: <span
+class="math display">\[
+\vec{\mathbf{E}}(\vec{r},t) = \vec{\mathbf{E_0}}\cos(\vec{k} \cdot
+\vec{r}-\omega t)
+\]</span></p>
+<h2 id="能量与动量">能量与动量</h2>
+<h3 id="坡印廷矢量">坡印廷矢量</h3>
+<p>在电磁学中我们曾接触过,静电场与静磁场的<strong>能量密度</strong>分别为:
+<span class="math display">\[
+w_e =\cfrac{1}{2}\varepsilon_0 E^2,w_m = \cfrac{1}{2\mu_0}B^2
+\]</span> 空气中,有: <span class="math display">\[
+|\vec{E}| = c|\vec{B}|
+\]</span> 电磁场的总能量密度为: <span class="math display">\[
+w = w_e + w_m = \varepsilon_0 E^2 = \cfrac{B^2}{\mu_0}
+\]</span>
+我们还接触过<strong>能流密度</strong>的概念,其定义为:单位时间流过单位面积的能量.</p>
+<p><strong>能流密度矢量</strong>,即<strong>坡英廷矢量(Poynting
+vector)</strong>,其定义式为:<span class="math inline">\(\vec{\mathbf{S}}
+= \cfrac{1}{\mu_0}\vec{\mathbf{E}}\times \vec{\mathbf{B}}\)</span></p>
+<h3 id="光强">光强</h3>
+<p>为了形象描述光的亮度,从能量角度,我们定义<strong>光强</strong>:单位时间单位面积内的平均能量(平均能流密度),用<span
+class="math inline">\(I\)</span>表示.</p>
+<p>对于简谐波,能流密度在一个周期<span
+class="math inline">\(T\)</span>的平均为: <span class="math display">\[
+\langle S(t)\rangle_T \equiv \frac{1}{T} \int_t^{t+T}
+S\left(t^{\prime}\right) d t^{\prime}=c^2
+\varepsilon_0\left|\vec{\mathbf{E}}_0 \times
+\vec{\mathbf{B}}_0\right|\left\langle\cos ^2(\vec{\mathbf{k}} \cdot
+\vec{\mathbf{r}}-\omega t)\right\rangle_T = \cfrac{1}{2}c^2\varepsilon_0
+|\vec{\mathbf{E}}_0 \times \vec{\mathbf{B}}|
+\]</span>
+<strong>光强的反平方定律</strong>:从一个点光源发出的球面光波,在空间某处的光强与其到光源距离的平方成反比.用能量守恒定律即可轻松证明.</p>
+<h3 id="光子">光子</h3>
+<p>进入20世纪,黑体辐射,X射线作用体现出的能量不连续性,光电效应等现象表明,光并不是纯粹的电磁波,为了解释这种现象,光子理论因此诞生.光子的能量与动量满足<strong>De
+Brogile关系</strong>: <span class="math display">\[
+E = \hbar \omega,\vec{p} = \hbar \vec{k}
+\]</span></p>
+<h2 id="辐射">辐射</h2>
+<h3 id="电偶极子辐射">电偶极子辐射</h3>
+<p>电动力学中我们曾学过,电偶极矩的辐射光强为: <span
+class="math display">\[
+I(\theta) = \cfrac{\mu_0 \omega^4}{32\pi^2 c^3 \varepsilon_0}\cfrac{\sin
+^2 \theta}{r^2}
+\]</span> 当<span class="math inline">\(\theta =
+\frac{\pi}{2}\)</span>时,辐射最强.</p>
+<p>当<span class="math inline">\(\theta = 0\)</span>时,辐射为0.</p>
 <p>在日常生活中,经常通过拨动收音机或电视机天线的方位为获得最佳音响和清晰图象,接收天线的方向要和电场方向平行.</p>
-<h2 id="色散"><a href="#色散" class="headerlink" title="色散"></a>色散</h2><h3 id="折射率"><a href="#折射率" class="headerlink" title="折射率"></a>折射率</h3><p>光在介质中传播的速度为:</p>
-<script type="math/tex; mode=display">
-v = \cfrac{1}{\sqrt{\varepsilon \mu}}</script><p>介质的<strong>折射率</strong>定义为光在真空中的传播速度与光在该介质传播速度的比值,即:</p>
-<script type="math/tex; mode=display">
-n = \cfrac{c}{v} = \sqrt{\varepsilon_r \mu _r}</script><p>对于一般的非磁性材料:$\mu_r = 1$,因此折射率一般可以表示为:$n = \sqrt{\varepsilon_r}$</p>
+<h2 id="色散">色散</h2>
+<h3 id="折射率">折射率</h3>
+<p>光在介质中传播的速度为: <span class="math display">\[
+v = \cfrac{1}{\sqrt{\varepsilon \mu}}
+\]</span>
+介质的<strong>折射率</strong>定义为光在真空中的传播速度与光在该介质传播速度的比值,即:
+<span class="math display">\[
+n = \cfrac{c}{v} = \sqrt{\varepsilon_r \mu _r}
+\]</span> 对于一般的非磁性材料:<span class="math inline">\(\mu_r =
+1\)</span>,因此折射率一般可以表示为:<span class="math inline">\(n =
+\sqrt{\varepsilon_r}\)</span></p>
 <p>一般情况下,介质的折射率与光的频率、偏振和光强都有关系.其中,人们把介质折射率随频率变化而改变的现象称为<strong>色散</strong>现象.</p>
-<h3 id="介电常数"><a href="#介电常数" class="headerlink" title="介电常数"></a>介电常数</h3><p>电磁学中,有以下关系:</p>
-<script type="math/tex; mode=display">
-\vec{\mathbf{D}} = \varepsilon_0\vec{\mathbf{E}} + \vec{\mathbf{P}}</script><p>其中,考虑电极化的微观机制,</p>
-<p>电极化强度$\vec{\mathbf{P}}$为单位体积内电偶极子电矩的矢量和,也就是电偶极矩的体密度.</p>
-<script type="math/tex; mode=display">
-\vec{\mathbf{P}} = \lim_{\Delta V \rightarrow 0}{\cfrac{\Sigma_{i=1}^n \vec{\mathbf{p_i}}}{\Delta V}}</script><p>其中$\vec{\mathbf{p_i}}$是第$i$个电偶极子的电偶极矩,由电子位移产生的电偶极矩为:</p>
-<script type="math/tex; mode=display">
-\vec{\mathbf{\mu}} = -e\vec{r}</script><p>这里的负号表示电偶极矩与电子位移方向相反.假设构成介质的原子或分子都可以看做是相同的电偶极子,则$\vec{p_i} = \vec{\mu}$. 宏观电极化强度：</p>
-<script type="math/tex; mode=display">
-\vec{\mathbf{P}} = -Ne\vec{r}</script><p>其中,$N$为单位体积内有贡献的电子数.</p>
-<h3 id="色散关系"><a href="#色散关系" class="headerlink" title="色散关系"></a>色散关系</h3><p><strong>一维谐振子模型</strong>：把组成介质的原子看成是谐振子（电偶极子）,介质由很多个谐振子构成.沿某个方向的电场作用到介质中,谐振子就会沿这个方向产生受迫振动,电偶极矩也会发生相应的改变.考虑电子运动时会产生阻尼力,电子的运动方程由下列微分方程描述:</p>
-<script type="math/tex; mode=display">
-m_e \frac{d^2 x}{d t^2}+\gamma m_e \frac{d x}{d t}+m_e \omega_0^2 x=0</script><p>外加电场时,微分方程变为:</p>
-<script type="math/tex; mode=display">
-m_e \frac{d^2 x}{d t^2}+\gamma m_e \frac{d x}{d t}+m_e \omega_0^2 x=qE(t),E(t) = E_0\exp(-i\omega t)</script><p>令$x = x_0 \exp(-i\omega t)$,其中电荷$q = -e$,带入可得:</p>
-<script type="math/tex; mode=display">
-x_0 = \cfrac{-eE_0}{m_e(\omega_0^2-\omega^2-i\gamma\omega)},x(t)=\cfrac{-eE(t)}{m_e(\omega_0^2-\omega^2-i\gamma\omega)}</script><p>根据电极化强度的定义,有:</p>
-<script type="math/tex; mode=display">
-P(t) = -Nex(t) =\cfrac{-Ne^2E(t)}{m_e(\omega_0^2-\omega^2-i\gamma\omega)}</script><p>因此得到相对介电常数:</p>
-<script type="math/tex; mode=display">
-\varepsilon_r = n^2 = 1 + \cfrac{P}{\varepsilon_0 E} = 1 +\cfrac{Ne^2}{\varepsilon_0m_e(\omega_0^2-\omega^2-i\gamma\omega)} \\
-Re(\varepsilon_r) = 1 + \cfrac{Ne^2(\omega_0^2-\omega^2)}{\varepsilon_0m_e[(\omega_0^2-\omega^2)^2+\gamma^2\omega^2]},Im(\varepsilon_r) =\cfrac{Ne^2\gamma\omega}{\varepsilon_0m_e[(\omega_0^2-\omega^2)^2+\gamma^2\omega^2]}</script><p>若忽略电子的损耗,即$\gamma = 0$,我们可得:</p>
-<script type="math/tex; mode=display">
-n(\omega) = [1+\cfrac{Ne^2}{\varepsilon_0m_e(\omega_0^2-\omega^2)}]^{1/2}</script><p>此即<strong>色散关系</strong>,一般情况下介质的本征频率远大于光波频率$\omega_0&gt;&gt;\omega$,故光波频率越大,折射率越大,一般介质都是正常色散介质.</p>
-<p>如果单位体积内有多个谐振子,且谐振子的频率各不相同,则色散关系为:</p>
-<script type="math/tex; mode=display">
-n^2(\omega)=1+\frac{N q_e^2}{\epsilon_0 m_e} \sum_j\left(\frac{f_j}{\omega_{0 j}^2-\omega^2}\right)</script><p>其中$f_i$表示振子强度,表示每个不同频率的谐振子权重.</p>
+<h3 id="介电常数">介电常数</h3>
+<p>电磁学中,有以下关系: <span class="math display">\[
+\vec{\mathbf{D}} = \varepsilon_0\vec{\mathbf{E}} + \vec{\mathbf{P}}
+\]</span> 其中,考虑电极化的微观机制,</p>
+<p>电极化强度<span
+class="math inline">\(\vec{\mathbf{P}}\)</span>为单位体积内电偶极子电矩的矢量和,也就是电偶极矩的体密度.
+<span class="math display">\[
+\vec{\mathbf{P}} = \lim_{\Delta V \rightarrow 0}{\cfrac{\Sigma_{i=1}^n
+\vec{\mathbf{p_i}}}{\Delta V}}
+\]</span> 其中<span
+class="math inline">\(\vec{\mathbf{p_i}}\)</span>是第<span
+class="math inline">\(i\)</span>个电偶极子的电偶极矩,由电子位移产生的电偶极矩为:
+<span class="math display">\[
+\vec{\mathbf{\mu}} = -e\vec{r}
+\]</span>
+这里的负号表示电偶极矩与电子位移方向相反.假设构成介质的原子或分子都可以看做是相同的电偶极子,则<span
+class="math inline">\(\vec{p_i} = \vec{\mu}\)</span>. 宏观电极化强度：
+<span class="math display">\[
+\vec{\mathbf{P}} = -Ne\vec{r}
+\]</span> 其中,<span
+class="math inline">\(N\)</span>为单位体积内有贡献的电子数.</p>
+<h3 id="色散关系">色散关系</h3>
+<p><strong>一维谐振子模型</strong>：把组成介质的原子看成是谐振子（电偶极子）,介质由很多个谐振子构成.沿某个方向的电场作用到介质中,谐振子就会沿这个方向产生受迫振动,电偶极矩也会发生相应的改变.考虑电子运动时会产生阻尼力,电子的运动方程由下列微分方程描述:
+<span class="math display">\[
+m_e \frac{d^2 x}{d t^2}+\gamma m_e \frac{d x}{d t}+m_e \omega_0^2 x=0
+\]</span> 外加电场时,微分方程变为: <span class="math display">\[
+m_e \frac{d^2 x}{d t^2}+\gamma m_e \frac{d x}{d t}+m_e \omega_0^2
+x=qE(t),E(t) = E_0\exp(-i\omega t)
+\]</span> 令<span class="math inline">\(x = x_0 \exp(-i\omega
+t)\)</span>,其中电荷<span class="math inline">\(q =
+-e\)</span>,带入可得: <span class="math display">\[
+x_0 =
+\cfrac{-eE_0}{m_e(\omega_0^2-\omega^2-i\gamma\omega)},x(t)=\cfrac{-eE(t)}{m_e(\omega_0^2-\omega^2-i\gamma\omega)}
+\]</span> 根据电极化强度的定义,有: <span class="math display">\[
+P(t) = -Nex(t)
+=\cfrac{-Ne^2E(t)}{m_e(\omega_0^2-\omega^2-i\gamma\omega)}
+\]</span> 因此得到相对介电常数: <span class="math display">\[
+\varepsilon_r = n^2 = 1 + \cfrac{P}{\varepsilon_0 E} = 1
++\cfrac{Ne^2}{\varepsilon_0m_e(\omega_0^2-\omega^2-i\gamma\omega)} \\
+Re(\varepsilon_r) = 1 +
+\cfrac{Ne^2(\omega_0^2-\omega^2)}{\varepsilon_0m_e[(\omega_0^2-\omega^2)^2+\gamma^2\omega^2]},Im(\varepsilon_r)
+=\cfrac{Ne^2\gamma\omega}{\varepsilon_0m_e[(\omega_0^2-\omega^2)^2+\gamma^2\omega^2]}
+\]</span> 若忽略电子的损耗,即<span class="math inline">\(\gamma =
+0\)</span>,我们可得: <span class="math display">\[
+n(\omega) =
+[1+\cfrac{Ne^2}{\varepsilon_0m_e(\omega_0^2-\omega^2)}]^{1/2}
+\]</span>
+此即<strong>色散关系</strong>,一般情况下介质的本征频率远大于光波频率<span
+class="math inline">\(\omega_0&gt;&gt;\omega\)</span>,故光波频率越大,折射率越大,一般介质都是正常色散介质.</p>
+<p>如果单位体积内有多个谐振子,且谐振子的频率各不相同,则色散关系为: <span
+class="math display">\[
+n^2(\omega)=1+\frac{N q_e^2}{\epsilon_0 m_e}
+\sum_j\left(\frac{f_j}{\omega_{0 j}^2-\omega^2}\right)
+\]</span> 其中<span
+class="math inline">\(f_i\)</span>表示振子强度,表示每个不同频率的谐振子权重.</p>
 
                 
               </div>
@@ -553,8 +730,8 @@ n^2(\omega)=1+\frac{N q_e^2}{\epsilon_0 m_e} \sum_j\left(\frac{f_j}{\omega_{0 j}
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/05/Chapter5-02%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%80%A7%E8%B4%A8/" title="Chapter5-02定积分的性质">
-                        <span class="hidden-mobile">Chapter5-02定积分的性质</span>
+                      <a href="/2023/07/05/Chapter5-03%E5%BE%AE%E7%A7%AF%E5%88%86%E5%9F%BA%E6%9C%AC%E5%AE%9A%E7%90%86/" title="Chapter5-03微积分基本定理">
+                        <span class="hidden-mobile">Chapter5-03微积分基本定理</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.9k 字
+          2.1k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          16 分钟
+          18 分钟
         
       </span>
     
@@ -293,45 +293,53 @@
             
               <div class="markdown-body">
                 
-                <h1 id="导数与微分"><a href="#导数与微分" class="headerlink" title="导数与微分"></a>导数与微分</h1><h2 id="求导方法"><a href="#求导方法" class="headerlink" title="求导方法"></a>求导方法</h2><p>下面我们介绍较复杂函数的求导方法.</p>
-<h3 id="隐函数求导法"><a href="#隐函数求导法" class="headerlink" title="隐函数求导法"></a>隐函数求导法</h3><p>首先给出<strong>隐函数</strong>的定义:</p>
+                <h1 id="导数与微分">导数与微分</h1>
+<h2 id="求导方法">求导方法</h2>
+<p>下面我们介绍较复杂函数的求导方法.</p>
+<h3 id="隐函数求导法">隐函数求导法</h3>
+<p>首先给出<strong>隐函数</strong>的定义:</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>:设关于$x,y$的代数式$F(x,y)$,且方程$F(x,y )=0$可以确定$y$是$x$的函数,则称这种方式表示的函数是<strong>隐函数</strong>.</p>
+            <p><strong>Definition</strong>:设关于<spanclass="math inline">\(x,y\)</span>的代数式<spanclass="math inline">\(F(x,y)\)</span>,且方程<spanclass="math inline">\(F(x,y )=0\)</span>可以确定<spanclass="math inline">\(y\)</span>是<spanclass="math inline">\(x\)</span>的函数,则称这种方式表示的函数是<strong>隐函数</strong>.</p>
           </div>
-<p><strong>Note1</strong>:相比于隐函数,显函数一般可以用$y=f(x)$直接表示.</p>
-<p>对于隐函数$F(x,y)=0$,求导数$y’$的方法如下:</p>
+<p><strong>Note1</strong>:相比于隐函数,显函数一般可以用<span
+class="math inline">\(y=f(x)\)</span>直接表示.</p>
+<p>对于隐函数<span class="math inline">\(F(x,y)=0\)</span>,求导数<span
+class="math inline">\(y&#39;\)</span>的方法如下:</p>
 <div class="note note-danger">
-            <ul><li>关于$x$求导,其中$y$是$x$的函数.</li><li>解出$y’$即可.</li></ul>
+            <ul><li>关于<span class="math inline">\(x\)</span>求导,其中<spanclass="math inline">\(y\)</span>是<spanclass="math inline">\(x\)</span>的函数.</li><li>解出<span class="math inline">\(y&#39;\)</span>即可.</li></ul>
           </div>
 <p>下面给一个例子来应用这种方法:</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:已知$y = \cos{(x+y)}$,$y$是$x$的函数,求$y’$.</p><p><strong>Solution</strong> 对等式两边求导有:$y’ = -\sin(x+y)(1+y’)$</p><p>解得$y’=-\cfrac{\sin(x+y)}{1+\sin(x+y)}$</p>
+            <p><strong>Example 1</strong>:已知<span class="math inline">\(y =\cos{(x+y)}\)</span>,<span class="math inline">\(y\)</span>是<spanclass="math inline">\(x\)</span>的函数,求<spanclass="math inline">\(y&#39;\)</span>.</p><p><strong>Solution</strong> 对等式两边求导有:<spanclass="math inline">\(y&#39; = -\sin(x+y)(1+y&#39;)\)</span></p><p>解得<spanclass="math inline">\(y&#39;=-\cfrac{\sin(x+y)}{1+\sin(x+y)}\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 2</strong>:已知$e^y-e^{-x}+xy=0$,求$y’$.</p><p><strong>Solution</strong> 对等式两边求导有:$y’e^{y}+e^{-x}+y+xy’=0$</p><p>解得$y’=-\cfrac{y+e^{-x}}{x+e^{y}}$</p>
+            <p><strong>Example 2</strong>:已知<spanclass="math inline">\(e^y-e^{-x}+xy=0\)</span>,求<spanclass="math inline">\(y&#39;\)</span>.</p><p><strong>Solution</strong> 对等式两边求导有:<spanclass="math inline">\(y&#39;e^{y}+e^{-x}+y+xy&#39;=0\)</span></p><p>解得<spanclass="math inline">\(y&#39;=-\cfrac{y+e^{-x}}{x+e^{y}}\)</span></p>
           </div>
-<h3 id="对数求导法"><a href="#对数求导法" class="headerlink" title="对数求导法"></a>对数求导法</h3><p>当所求函数可以写成函数相乘(<em>特别是指数相乘</em>)的形式时,常用<strong>对数求导法</strong>,方法如下:</p>
+<h3 id="对数求导法">对数求导法</h3>
+<p>当所求函数可以写成函数相乘(<em>特别是指数相乘</em>)的形式时,常用<strong>对数求导法</strong>,方法如下:</p>
 <div class="note note-danger">
-            <p>设函数$y=f_1(x)\cdot f_2(x)\cdot …\cdot f_n(x)$</p><p>对两边取对数$\ln{y} = \ln f_1(x)+\ln f_2(x)+…+\ln f_n(x)$</p><p>两边求导,即有:$\cfrac{y’}{y} = \cfrac{f_1’(x)}{f_1(x)}+\cfrac{f_2’(x)}{f_2(x)}+…+\cfrac{f_n’(x)}{f_n(x)}$</p><p>可得$y = \sum\limits_{k=1}^{n}f_1(x)\cdot …\cdot f_k’(x)\cdot … f_n(x)$</p>
+            <p>设函数<span class="math inline">\(y=f_1(x)\cdot f_2(x)\cdot ...\cdotf_n(x)\)</span></p><p>对两边取对数<span class="math inline">\(\ln{y} = \ln f_1(x)+\lnf_2(x)+...+\ln f_n(x)\)</span></p><p>两边求导,即有:<span class="math inline">\(\cfrac{y&#39;}{y} =\cfrac{f_1&#39;(x)}{f_1(x)}+\cfrac{f_2&#39;(x)}{f_2(x)}+...+\cfrac{f_n&#39;(x)}{f_n(x)}\)</span></p><p>可得<span class="math inline">\(y = \sum\limits_{k=1}^{n}f_1(x)\cdot...\cdot f_k&#39;(x)\cdot ... f_n(x)\)</span></p>
           </div>
 <p>当所求函数形式为指数形式时,对数求导法可以发挥其最大的效用.给出一个应用的例子:</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:已知函数$y=(\sin{x})^{\cos{x}}+(\cos{x})^{\sin{x}}$,求$y’$.</p><p><strong>Solution</strong> 两边取对数:$\ln{y} = \cos{x}\ln{\sin{x}} + \sin{x}\ln{\cos{x}}$</p><p>两边求导:$\cfrac{y’}{y} = \cos{x}\ln{\sin{x}}-\sin{x}\ln{\sin{x}}+\cfrac{\cos^2x}{\sin{x}}-\cfrac{\sin^2{x}}{\cos{x}}$</p><p>最终化简即可</p>
+            <p><strong>Example 1</strong>:已知函数<spanclass="math inline">\(y=(\sin{x})^{\cos{x}}+(\cos{x})^{\sin{x}}\)</span>,求<spanclass="math inline">\(y&#39;\)</span>.</p><p><strong>Solution</strong> 两边取对数:<spanclass="math inline">\(\ln{y} = \cos{x}\ln{\sin{x}} +\sin{x}\ln{\cos{x}}\)</span></p><p>两边求导:<span class="math inline">\(\cfrac{y&#39;}{y} =\cos{x}\ln{\sin{x}}-\sin{x}\ln{\sin{x}}+\cfrac{\cos^2x}{\sin{x}}-\cfrac{\sin^2{x}}{\cos{x}}\)</span></p><p>最终化简即可</p>
           </div>
-<h3 id="参数方程求导法"><a href="#参数方程求导法" class="headerlink" title="参数方程求导法"></a>参数方程求导法</h3><p>当函数是用参数方程表示的形式时,如:</p>
-<script type="math/tex; mode=display">
-\begin{cases} x = x(t)\\ 
+<h3 id="参数方程求导法">参数方程求导法</h3>
+<p>当函数是用参数方程表示的形式时,如: <span class="math display">\[
+\begin{cases} x = x(t)\\
 y = y(t)
-\end{cases},a\leq t \leq b</script><p>其求导方法本质不变.对于参数方程表示的函数,求其导数,有以下<strong>参数方程求导法</strong>:</p>
+\end{cases},a\leq t \leq b
+\]</span>
+其求导方法本质不变.对于参数方程表示的函数,求其导数,有以下<strong>参数方程求导法</strong>:</p>
 <div class="note note-danger">
-            <p>$\cfrac{\mathrm{d}y}{\mathrm{d}x} = \cfrac{\mathrm{d}y}{\mathrm{d}t}\cdot \cfrac{\mathrm{d}t}{\mathrm{d}x} = \cfrac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t}$</p>
+            <p><span class="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x} =\cfrac{\mathrm{d}y}{\mathrm{d}t}\cdot \cfrac{\mathrm{d}t}{\mathrm{d}x} =\cfrac{\mathrm{d}y/\mathrm{d}t}{\mathrm{d}x/\mathrm{d}t}\)</span></p>
           </div>
 <p>给出几个例子:</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:已知摆线的参数方程为:$\begin{cases}x = a(t-\sin{t})\\y=a(1-\cos{t})\end{cases},0\leq t\leq 2\pi$,求其导数.</p><p><strong>Solution</strong> 易知:$\cfrac{\mathrm{d}y}{\mathrm{d}x} = \cfrac{y’(t)}{x’(t)} = \cfrac{\sin{t}}{1-\cos{t}}$</p>
+            <p><strong>Example 1</strong>:已知摆线的参数方程为:<spanclass="math inline">\(\begin{cases}x =a(t-\sin{t})\\y=a(1-\cos{t})\end{cases},0\leq t\leq2\pi\)</span>,求其导数.</p><p><strong>Solution</strong> 易知:<spanclass="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x} =\cfrac{y&#39;(t)}{x&#39;(t)} = \cfrac{\sin{t}}{1-\cos{t}}\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 2</strong>:极坐标系下,心型线的极坐标方程为$r=a(1+\cos{\theta})$,求$\cfrac{\mathrm{d}y}{\mathrm{d}x}$.</p><p><strong>Solution</strong> 直角坐标与极坐标之间的代换关系为:$\begin{cases}x=r\cos{\theta}\\y=r\sin{\theta}\end{cases}$</p><p>化简有:$\begin{cases}x=a(1+\cos{\theta})\cos{\theta}\\y=a(1+\cos{\theta})\sin{\theta}\end{cases}$</p><p>由参数方程求导法:$\cfrac{\mathrm{d}y}{\mathrm{d}x} = \cfrac{y’(\theta)}{x’(\theta)} = -\cfrac{\cos2\theta+\cos{\theta}}{\sin{2\theta+\sin{\theta}}}$.</p>
+            <p><strong>Example 2</strong>:极坐标系下,心型线的极坐标方程为<spanclass="math inline">\(r=a(1+\cos{\theta})\)</span>,求<spanclass="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x}\)</span>.</p><p><strong>Solution</strong> 直角坐标与极坐标之间的代换关系为:<spanclass="math inline">\(\begin{cases}x=r\cos{\theta}\\y=r\sin{\theta}\end{cases}\)</span></p><p>化简有:<spanclass="math inline">\(\begin{cases}x=a(1+\cos{\theta})\cos{\theta}\\y=a(1+\cos{\theta})\sin{\theta}\end{cases}\)</span></p><p>由参数方程求导法:<spanclass="math inline">\(\cfrac{\mathrm{d}y}{\mathrm{d}x} =\cfrac{y&#39;(\theta)}{x&#39;(\theta)} =-\cfrac{\cos2\theta+\cos{\theta}}{\sin{2\theta+\sin{\theta}}}\)</span>.</p>
           </div>
 
                 

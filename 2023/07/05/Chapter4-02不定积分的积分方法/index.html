@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          5.4k 字
+          5.2k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          46 分钟
+          44 分钟
         
       </span>
     
@@ -293,79 +293,98 @@
             
               <div class="markdown-body">
                 
-                <h1 id="不定积分"><a href="#不定积分" class="headerlink" title="不定积分"></a>不定积分</h1><h2 id="不定积分的积分方法"><a href="#不定积分的积分方法" class="headerlink" title="不定积分的积分方法"></a>不定积分的积分方法</h2><p>在上一篇博文中,我们了解了不定积分的概念.但是我们对如何求解不定积分仍存在着不少困惑.这里我们将介绍一些积分方法.</p>
-<h3 id="公式法"><a href="#公式法" class="headerlink" title="公式法"></a>公式法</h3><p><strong>公式法</strong>即利用基本函数的不定积分,以及积分运算的线性性.这里不多赘述,直接给出例题:</p>
+                <h1 id="不定积分">不定积分</h1>
+<h2 id="不定积分的积分方法">不定积分的积分方法</h2>
+<p>在上一篇博文中,我们了解了不定积分的概念.但是我们对如何求解不定积分仍存在着不少困惑.这里我们将介绍一些积分方法.</p>
+<h3 id="公式法">公式法</h3>
+<p><strong>公式法</strong>即利用基本函数的不定积分,以及积分运算的线性性.这里不多赘述,直接给出例题:</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:求解$\int[2^x-\sin x+2 \cos x+\cfrac{3}{1+x^2}-\cfrac{1}{x}+\cfrac{5}{\sqrt{1-x^2}}-x^2+\cfrac{6}{\cos ^2 x}-\cfrac{9}{\sin ^2 x}+1] \mathrm{d} x$</p><p><strong>Solution</strong> 利用基本函数的不定积分,可得:</p><p>$I =<br>\cfrac{2^x}{\ln 2}+\cos x+2 \sin x+3 \tan ^{-1} x-\ln x+5 \sin ^{-1} x<br>-\cfrac{x^3}{3}+6 \tan x+9 \cot x+x+C$</p>
+            <p><strong>Example 1</strong>:求解<spanclass="math inline">\(\int[2^x-\sin x+2 \cosx+\cfrac{3}{1+x^2}-\cfrac{1}{x}+\cfrac{5}{\sqrt{1-x^2}}-x^2+\cfrac{6}{\cos^2 x}-\cfrac{9}{\sin ^2 x}+1] \mathrm{d} x\)</span></p><p><strong>Solution</strong> 利用基本函数的不定积分,可得:</p><p><span class="math inline">\(I = \cfrac{2^x}{\ln 2}+\cos x+2 \sin x+3\tan ^{-1} x-\ln x+5 \sin ^{-1} x -\cfrac{x^3}{3}+6 \tan x+9 \cotx+x+C\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 2</strong>:计算$\int \frac{x^4+1}{x^2+1} \mathrm{d} x$</p><p><strong>Solution</strong> </p><p>$\begin{align}I &amp;= \int \cfrac{x^4+1}{x^2+1} \mathrm{d} x \\&amp;= \int \cfrac{x^4+2-1}{x^2+1} \mathrm{d} x \\ &amp;= \int\left[\left(x^2-1\right)+\cfrac{2}{1+x^2}\right]\mathrm{d}x \\ &amp;=  \cfrac{1}{3} x^3-x+2 \tan ^{-1} x+C\end{align}$</p>
+            <p><strong>Example 2</strong>:计算<span class="math inline">\(\int\frac{x^4+1}{x^2+1} \mathrm{d} x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{align}I &amp;= \int\cfrac{x^4+1}{x^2+1} \mathrm{d} x \\&amp;= \int \cfrac{x^4+2-1}{x^2+1}\mathrm{d} x \\ &amp;=\int\left[\left(x^2-1\right)+\cfrac{2}{1+x^2}\right]\mathrm{d}x \\&amp;= \cfrac{1}{3} x^3-x+2 \tan ^{-1} x+C\end{align}\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 3</strong>:计算$I = \int \cfrac{\mathrm{d} x}{\sin ^2 x\cos ^2 x}$</p><p><strong>Solution</strong></p><p>$\begin{align} I &amp;=\int \cfrac{\sin ^2 x+\cos ^2 x}{\sin ^2 x \cos ^2 x} \mathrm{d}x \\ &amp;= \tan x-\cot x+C \end{align}$</p>
+            <p><strong>Example 3</strong>:计算<span class="math inline">\(I = \int\cfrac{\mathrm{d} x}{\sin ^2 x\cos ^2 x}\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{align} I &amp;=\int \cfrac{\sin ^2x+\cos ^2 x}{\sin ^2 x \cos ^2 x} \mathrm{d}x \\ &amp;= \tan x-\cot x+C\end{align}\)</span></p>
           </div>
-<h3 id="凑微分法-第一类换元积分法"><a href="#凑微分法-第一类换元积分法" class="headerlink" title="凑微分法(第一类换元积分法)"></a>凑微分法(第一类换元积分法)</h3><p>第一换元积分法很简单,其即是以下公式的应用:</p>
-<script type="math/tex; mode=display">
-\int{f[\varphi(t)]}\varphi'(t)\mathrm{d}t = \int{f[\varphi(t)]}\mathrm{d}\varphi(t)</script><p>在求解积分过程中,若发现函数的某些部分恰好是某些函数的导数时,可将其移至微分号内.</p>
+<h3 id="凑微分法第一类换元积分法">凑微分法(第一类换元积分法)</h3>
+<p>第一换元积分法很简单,其即是以下公式的应用: <span
+class="math display">\[
+\int{f[\varphi(t)]}\varphi&#39;(t)\mathrm{d}t =
+\int{f[\varphi(t)]}\mathrm{d}\varphi(t)
+\]</span>
+在求解积分过程中,若发现函数的某些部分恰好是某些函数的导数时,可将其移至微分号内.</p>
 <p>直接给出例题:</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:计算$\int \cfrac{d x}{\sqrt{a^2-x^2}}$</p><p><strong>Solution</strong></p><p>$\begin{align}I &amp;= \int \cfrac{d\left(\frac{x}{a}\right)}{\sqrt{1-\left(\frac{x}{a}\right)^2}} \\ &amp;= \arcsin (\cfrac{x}{a})+C \end{align}$</p>
+            <p><strong>Example 1</strong>:计算<span class="math inline">\(\int\cfrac{d x}{\sqrt{a^2-x^2}}\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{align}I &amp;= \int\cfrac{d\left(\frac{x}{a}\right)}{\sqrt{1-\left(\frac{x}{a}\right)^2}}\\ &amp;= \arcsin (\cfrac{x}{a})+C \end{align}\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 2</strong>:计算$\int \cfrac{d x}{a+x^2}$</p><p><strong>Solution</strong> </p><p>$\begin{align} I &amp;= \frac{1}{a} \int \frac{\mathrm{d} (\frac{x}{a})}{1+\left(\frac{x}{a}\right)^2} \\ &amp;= \cfrac{1}{a} \arctan (\cfrac{x}{a})+C \end{align}$</p>
+            <p><strong>Example 2</strong>:计算<span class="math inline">\(\int\cfrac{d x}{a+x^2}\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{align} I &amp;= \frac{1}{a} \int\frac{\mathrm{d} (\frac{x}{a})}{1+\left(\frac{x}{a}\right)^2} \\ &amp;=\cfrac{1}{a} \arctan (\cfrac{x}{a})+C \end{align}\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 3</strong>:计算$\int \sec x \tan x d x$</p><p><strong>Solution</strong> </p><p>$\begin{align}I &amp;= \int \cfrac{\sin x}{\cos ^2 x} \mathrm{d} x \\ &amp;=-\int \frac{\mathrm{d} \cos x}{\cos ^2 x} \\ &amp;= \sec{x} +C\end{align}$</p>
+            <p><strong>Example 3</strong>:计算<span class="math inline">\(\int \secx \tan x d x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{align}I &amp;= \int \cfrac{\sinx}{\cos ^2 x} \mathrm{d} x \\ &amp;=-\int \frac{\mathrm{d} \cos x}{\cos^2 x} \\ &amp;= \sec{x} +C\end{align}\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 4</strong>:计算$\int \csc x \cot x \mathrm{d} x$</p><p><strong>Solution</strong></p><p>$\begin{align}I &amp;=\int-\frac{\cos x}{\sin ^2 x}\mathrm{d}x \\<br>&amp;=\int \frac{\mathrm{d}\sin x}{\sin ^2 x}\\ &amp;=-\csc x+c<br>\end{align}$</p>
+            <p><strong>Example 4</strong>:计算<span class="math inline">\(\int \cscx \cot x \mathrm{d} x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{align}I &amp;=\int-\frac{\cosx}{\sin ^2 x}\mathrm{d}x \\ &amp;=\int \frac{\mathrm{d}\sin x}{\sin ^2x}\\ &amp;=-\csc x+c \end{align}\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 5</strong>:计算$\int{\tan{x}}\mathrm{d}x$</p><p><strong>Solution</strong> </p><p>$\begin{align}I &amp;= \int{\cfrac{\sin x}{\cos x}}\mathrm{d}x \\ &amp;= -\int{\cfrac{\mathrm{d}\cos{x}}{\cos{x}}} \\ &amp;= -\ln{|\cos{x}|} + C\end{align}$</p><p><em>同理我们有</em>:</p><p>$\int{\cot{x}}\mathrm{d}x = \ln{|\sin{x}|}+C$</p>
+            <p><strong>Example 5</strong>:计算<spanclass="math inline">\(\int{\tan{x}}\mathrm{d}x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{align}I &amp;= \int{\cfrac{\sinx}{\cos x}}\mathrm{d}x \\ &amp;=-\int{\cfrac{\mathrm{d}\cos{x}}{\cos{x}}} \\ &amp;= -\ln{|\cos{x}|} +C\end{align}\)</span></p><p><em>同理我们有</em>:</p><p><span class="math inline">\(\int{\cot{x}}\mathrm{d}x =\ln{|\sin{x}|}+C\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 6</strong>:计算$\int \sec x d x$</p><p><strong>Solution</strong></p><p>$\begin{align} I &amp;=\int \cfrac{1}{\cos x} d x \\<br>&amp; =\int \cfrac{d \sin x}{\cos ^2 x} \\ &amp;=\int \cfrac{d \sin x}{1-\sin ^2 x} \\<br>&amp; =\cfrac{1}{2} \int \sqrt{1-\sin x}+\frac{1}{1+\sin x} d \sin x \\<br>&amp; =\frac{1}{2}\ln| \frac{1+\sin x}{1-\sin x}|+C=\ln | \frac{1+\sin x}{\cos x} \mid+C \\<br>&amp; =\ln| \sec x+\tan x \mid+C<br>\end{align}$</p><p><em>同理我们有</em>:</p><p>$\int{\csc{x}}\mathrm{d}x = \ln|\tan{\cfrac{x}{2}}|+C$</p>
+            <p><strong>Example 6</strong>:计算<span class="math inline">\(\int \secx d x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{align} I &amp;=\int \cfrac{1}{\cosx} d x \\ &amp; =\int \cfrac{d \sin x}{\cos ^2 x} \\ &amp;=\int \cfrac{d\sin x}{1-\sin ^2 x} \\ &amp; =\cfrac{1}{2} \int \sqrt{1-\sinx}+\frac{1}{1+\sin x} d \sin x \\ &amp; =\frac{1}{2}\ln| \frac{1+\sinx}{1-\sin x}|+C=\ln | \frac{1+\sin x}{\cos x} \mid+C \\ &amp; =\ln| \secx+\tan x \mid+C \end{align}\)</span></p><p><em>同理我们有</em>:</p><p><span class="math inline">\(\int{\csc{x}}\mathrm{d}x =\ln|\tan{\cfrac{x}{2}}|+C\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 7</strong>:计算$<br>\int \frac{1+x}{x\left(1+x e^x\right)} \mathrm{d}x$ </p><p><strong>Solution</strong></p><p>$\begin{aligned}<br>I &amp; =\int \cfrac{1+x}{x\left(1+x e^x\right)} d x \\<br>&amp; =\int \cfrac{(1+x) e^x d x}{x e^x\left(1+x e^x\right)}=\int \frac{d\left(x e^x\right)}{\left(x e^x\right)\left(1+x e^x\right)} \\<br>&amp; =\int\left[\cfrac{1}{x e^x}-\cfrac{1}{1+x e^x}\right] d\left(x e^x\right) \\<br>&amp; =\ln \left|\cfrac{x e^x}{1+x e^x}\right|+C<br>\end{aligned}$</p>
+            <p><strong>Example 7</strong>:计算$ x$</p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I &amp; =\int\cfrac{1+x}{x\left(1+x e^x\right)} d x \\ &amp; =\int \cfrac{(1+x) e^x dx}{x e^x\left(1+x e^x\right)}=\int \frac{d\left(x e^x\right)}{\left(xe^x\right)\left(1+x e^x\right)} \\ &amp; =\int\left[\cfrac{1}{xe^x}-\cfrac{1}{1+x e^x}\right] d\left(x e^x\right) \\ &amp; =\ln\left|\cfrac{x e^x}{1+x e^x}\right|+C \end{aligned}\)</span></p>
           </div>
-<h3 id="第二类换元积分法"><a href="#第二类换元积分法" class="headerlink" title="第二类换元积分法"></a>第二类换元积分法</h3><p>针对积分$\int{f(x)}\mathrm{d}x$,若我们作代换$x=x(t)$,此时积分变为$\int{f[x(t)]}x’(t)\mathrm{d}t$.且后者积分更容易求出.我们称这种换元方法为<strong>第二类换元积分法</strong>.</p>
+<h3 id="第二类换元积分法">第二类换元积分法</h3>
+<p>针对积分<span
+class="math inline">\(\int{f(x)}\mathrm{d}x\)</span>,若我们作代换<span
+class="math inline">\(x=x(t)\)</span>,此时积分变为<span
+class="math inline">\(\int{f[x(t)]}x&#39;(t)\mathrm{d}t\)</span>.且后者积分更容易求出.我们称这种换元方法为<strong>第二类换元积分法</strong>.</p>
 <p>下面我们给出几个例题:</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:计算:$<br>\int\cfrac{\mathrm{d} x}{\sqrt{x}+\sqrt[3]{x}}$ </p><p><strong>Solution</strong> 作代换$t=\sqrt[6]{x} \Rightarrow x = t^6$</p><p>$\begin{aligned} I &amp;= \int \cfrac{6 t^3 \mathrm{d} t}{t+1} \\<br>&amp;=6 \int\left(\cfrac{t^3+1}{t+1}-\frac{1}{t+1}\right) \mathrm{d} t \\ &amp;= 2\sqrt{x}-3\sqrt[3]{x}+6\sqrt[6]{x}-6\ln{(1+\sqrt[6]{x})}+C<br>\end{aligned}$</p>
+            <p><strong>Example 1</strong>:计算:$ $</p><p><strong>Solution</strong> 作代换<spanclass="math inline">\(t=\sqrt[6]{x} \Rightarrow x = t^6\)</span></p><p><span class="math inline">\(\begin{aligned} I &amp;= \int \cfrac{6t^3 \mathrm{d} t}{t+1} \\ &amp;=6\int\left(\cfrac{t^3+1}{t+1}-\frac{1}{t+1}\right) \mathrm{d} t \\ &amp;=2\sqrt{x}-3\sqrt[3]{x}+6\sqrt[6]{x}-6\ln{(1+\sqrt[6]{x})}+C\end{aligned}\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 2</strong>:计算$<br>\int{\cfrac{\mathrm{d} x}{\left(x^2+a^2\right)^{3 / 2}}} $</p><p><strong>Solution</strong> 作代换$x=a \tan t$</p><p>$\begin{aligned}I &amp; =\frac{1}{a^2} \int \frac{\sec ^2 t}{\sec ^3 t} \mathrm{d}t=\frac{1}{a^2} \int \cos t \mathrm{d}t \\ &amp;= \cfrac{1}{a^2}\sin{t}+C \\ &amp;= \cfrac{1}{a^2}\cfrac{x}{\sqrt{x^2+a^2}}+C<br>\end{aligned}$</p>
+            <p><strong>Example 2</strong>:计算$ $</p><p><strong>Solution</strong> 作代换<span class="math inline">\(x=a \tant\)</span></p><p><span class="math inline">\(\begin{aligned}I &amp; =\frac{1}{a^2}\int \frac{\sec ^2 t}{\sec ^3 t} \mathrm{d}t=\frac{1}{a^2} \int \cos t\mathrm{d}t \\ &amp;= \cfrac{1}{a^2}\sin{t}+C \\ &amp;=\cfrac{1}{a^2}\cfrac{x}{\sqrt{x^2+a^2}}+C \end{aligned}\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 3</strong>:计算$<br>\int \cfrac{\mathrm{d}x}{\left(x^2-a^2\right)^{\frac{3}{2}}} $</p><p><strong>Solution</strong> 作代换$x=a \sec t $</p><p>$\begin{aligned} I &amp; =\frac{1}{a^2} \int \frac{\sec t \tan t}{\tan ^3 t} \mathrm{d}t=\frac{1}{a^2} \int \frac{\cos t}{\sin t} \mathrm{d}t \\<br>&amp; =-\frac{1}{a^2} \frac{1}{\sin t}+C=-\frac{1}{a^2} \frac{x}{\sqrt{x}-a^2}+C<br>\end{aligned}$</p>
+            <p><strong>Example 3</strong>:计算$ $</p><p><strong>Solution</strong> 作代换$x=a t $</p><p><span class="math inline">\(\begin{aligned} I &amp; =\frac{1}{a^2}\int \frac{\sec t \tan t}{\tan ^3 t} \mathrm{d}t=\frac{1}{a^2} \int\frac{\cos t}{\sin t} \mathrm{d}t \\ &amp; =-\frac{1}{a^2} \frac{1}{\sint}+C=-\frac{1}{a^2} \frac{x}{\sqrt{x}-a^2}+C \end{aligned}\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 4</strong>:计算$\int \cfrac{\mathrm{d}x}{\left(a^2-x^2\right)^{\frac{3}{3}}}$</p><p><strong>Solution</strong> 作代换$x=a \sin t$<br>$\begin{aligned} I &amp; =\frac{1}{a^2} \int \frac{\cos t}{\cos ^3 t} d t=\frac{1}{a^2} \tan t+C \\<br>&amp; =\frac{1}{a^2} \frac{x}{\sqrt{a^2-x^2}}+C<br>\end{aligned}$</p>
+            <p><strong>Example 4</strong>:计算<span class="math inline">\(\int\cfrac{\mathrm{d}x}{\left(a^2-x^2\right)^{\frac{3}{3}}}\)</span></p><p><strong>Solution</strong> 作代换<span class="math inline">\(x=a \sint\)</span> <span class="math inline">\(\begin{aligned} I &amp;=\frac{1}{a^2} \int \frac{\cos t}{\cos ^3 t} d t=\frac{1}{a^2} \tan t+C\\ &amp; =\frac{1}{a^2} \frac{x}{\sqrt{a^2-x^2}}+C\end{aligned}\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 5</strong>:计算$\int \cfrac{\mathrm{d}x}{\sqrt{x^2+a^2}} $</p><p><strong>Solution</strong> 作代换$x=a \sinh t$</p><p>$\begin{aligned} I &amp; =\int \mathrm{d}t=t+C=\ln \left(x+\sqrt{x^2+a^2}\right)+C<br>\end{aligned}$</p>
+            <p><strong>Example 5</strong>:计算$ $</p><p><strong>Solution</strong> 作代换<span class="math inline">\(x=a \sinht\)</span></p><p><span class="math inline">\(\begin{aligned} I &amp; =\int\mathrm{d}t=t+C=\ln \left(x+\sqrt{x^2+a^2}\right)+C\end{aligned}\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 6</strong>:计算$\int \cfrac{\mathrm{d}x}{\sqrt{x^2-a^2}} $</p><p><strong>Solution</strong> 作代换$x=a \cosh t$<br>$\begin{aligned} I &amp; =\int d t=t+C=\ln\left|x+\sqrt{x^2-a^2}\right|+C<br>\end{aligned}$</p>
+            <p><strong>Example 6</strong>:计算$ $</p><p><strong>Solution</strong> 作代换<span class="math inline">\(x=a \cosht\)</span> <span class="math inline">\(\begin{aligned} I &amp; =\int dt=t+C=\ln\left|x+\sqrt{x^2-a^2}\right|+C \end{aligned}\)</span></p>
           </div>
-<h3 id="分部积分法"><a href="#分部积分法" class="headerlink" title="分部积分法"></a>分部积分法</h3><p><strong>分部积分法</strong>基于导数的乘积公式$(uv)’ = u’v+uv’$.对乘积公式两边积分,则有$uv = \int{v}\mathrm{d}u + \int{u}\mathrm{d}v$.</p>
-<p>移项后,我们有:</p>
-<script type="math/tex; mode=display">
-\int{u}\mathrm{d}v = uv- \int{v}\mathrm{d}u</script><p>此即分部积分法的内容,下面我们给出一些例题:</p>
+<h3 id="分部积分法">分部积分法</h3>
+<p><strong>分部积分法</strong>基于导数的乘积公式<span
+class="math inline">\((uv)&#39; =
+u&#39;v+uv&#39;\)</span>.对乘积公式两边积分,则有<span
+class="math inline">\(uv = \int{v}\mathrm{d}u +
+\int{u}\mathrm{d}v\)</span>.</p>
+<p>移项后,我们有: <span class="math display">\[
+\int{u}\mathrm{d}v = uv- \int{v}\mathrm{d}u
+\]</span> 此即分部积分法的内容,下面我们给出一些例题:</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:计算$\int x e^x \mathrm{d}x$</p><p><strong>Solution</strong></p><p>$\begin{aligned} I &amp;=\int x \mathrm{d}e^x\\ &amp;=x e^x-\int e^x d x \\<br>&amp; =x e^x-e^x+C<br>\end{aligned}$</p>
+            <p><strong>Example 1</strong>:计算<span class="math inline">\(\int x e^x\mathrm{d}x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I &amp;=\int x\mathrm{d}e^x\\ &amp;=x e^x-\int e^x d x \\ &amp; =x e^x-e^x+C\end{aligned}\)</span></p>
           </div>
-<p><strong>Note</strong>:这种方法可以求解类似于$\int{p(x)e^{\alpha x}}\mathrm{d}x$的积分.</p>
+<p><strong>Note</strong>:这种方法可以求解类似于<span
+class="math inline">\(\int{p(x)e^{\alpha
+x}}\mathrm{d}x\)</span>的积分.</p>
 <div class="note note-success">
-            <p><strong>Example 2</strong>:计算$\int x \cos x d x$</p><p><strong>Solution</strong> </p><p>$\begin{aligned}I &amp;=  \int x \mathrm{d}\sin x \\ &amp;=x \sin x -\int \sin x \mathrm{d}x \\ &amp;=x \sin x+\cos x+C<br>\end{aligned}$</p>
+            <p><strong>Example 2</strong>:计算<span class="math inline">\(\int x\cos x d x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned}I &amp;= \int x\mathrm{d}\sin x \\ &amp;=x \sin x -\int \sin x \mathrm{d}x \\ &amp;=x\sin x+\cos x+C \end{aligned}\)</span></p>
           </div>
-<p><strong>Note</strong>:这种方法可以求解类似于$\int{p(x)\cos{x}}\mathrm{d}x,\int{p(x)\sin{x}}\mathrm{d}x$的积分.</p>
+<p><strong>Note</strong>:这种方法可以求解类似于<span
+class="math inline">\(\int{p(x)\cos{x}}\mathrm{d}x,\int{p(x)\sin{x}}\mathrm{d}x\)</span>的积分.</p>
 <div class="note note-success">
-            <p><strong>Example 3</strong>:计算$\int 2 x \ln x d x$</p><p><strong>Solution</strong> </p><p>$\begin{aligned} I &amp;=\int \ln x \mathrm{d}x^2 \\<br>&amp;=x^2 \ln x-\int x\mathrm{d}x \\ &amp;=x^2 \ln x-\cfrac{x^2}{2}+C<br>\end{aligned}$</p>
+            <p><strong>Example 3</strong>:计算<span class="math inline">\(\int 2 x\ln x d x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I &amp;=\int \ln x\mathrm{d}x^2 \\ &amp;=x^2 \ln x-\int x\mathrm{d}x \\ &amp;=x^2 \lnx-\cfrac{x^2}{2}+C \end{aligned}\)</span></p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 4</strong>:计算$\int e^x \sin x d x$</p><p><strong>Solution</strong><br>$\begin{aligned}I &amp;= \int \sin x \mathrm{d}e^x \\<br>&amp;=e^x \sin x-\int e^x \cos x \mathrm{d}x \\<br>&amp;=e^x \sin x-\int \cos x \mathrm{d}e^x \\<br>&amp;=e^x \sin x-e^x \cos x-\int e^x \sin x \mathrm{d}x\\<br>&amp; \Rightarrow\int e^x \sin x \mathrm{d}x=\cfrac{1}{2} e^x(\sin x-\cos x)+C \end{aligned}$</p><p><em>同理可以求出$\int{e^x\cos{x}}\mathrm{d}x = \frac{1}{2} e^x(\sin x+\cos x)+C $</em></p>
+            <p><strong>Example 4</strong>:计算<span class="math inline">\(\int e^x\sin x d x\)</span></p><p><strong>Solution</strong> <spanclass="math inline">\(\begin{aligned}I &amp;= \int \sin x \mathrm{d}e^x\\ &amp;=e^x \sin x-\int e^x \cos x \mathrm{d}x \\ &amp;=e^x \sin x-\int\cos x \mathrm{d}e^x \\ &amp;=e^x \sin x-e^x \cos x-\int e^x \sin x\mathrm{d}x\\ &amp; \Rightarrow\int e^x \sin x \mathrm{d}x=\cfrac{1}{2}e^x(\sin x-\cos x)+C \end{aligned}\)</span></p><p><em>同理可以求出$x = e^x(x+x)+C $</em></p>
           </div>
 
                 

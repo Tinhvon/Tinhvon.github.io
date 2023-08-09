@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          871 字
+          925 字
         
       </span>
     
@@ -293,27 +293,32 @@
             
               <div class="markdown-body">
                 
-                <h1 id="极限与连续"><a href="#极限与连续" class="headerlink" title="极限与连续"></a>极限与连续</h1><h2 id="连续"><a href="#连续" class="headerlink" title="连续"></a>连续</h2><h3 id="连续的定义"><a href="#连续的定义" class="headerlink" title="连续的定义"></a>连续的定义</h3><p>在讨论极限过后,函数的研究方法又多了一种.此前我们在中学阶段接触到的函数均为连续函数,但是我们并未用严谨的语言对<strong>连续</strong>做一个定义,下面给出<strong>连续</strong>的极限定义:</p>
+                <h1 id="极限与连续">极限与连续</h1>
+<h2 id="连续">连续</h2>
+<h3 id="连续的定义">连续的定义</h3>
+<p>在讨论极限过后,函数的研究方法又多了一种.此前我们在中学阶段接触到的函数均为连续函数,但是我们并未用严谨的语言对<strong>连续</strong>做一个定义,下面给出<strong>连续</strong>的极限定义:</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>:设$y = f(x)$在$x = x_0$及其附近有定义,对于$\forall \varepsilon &gt; 0,\exists \delta &gt; 0$,当$x \in N(x_0,\delta)$,有$|f(x)-f(x_0) &lt; \varepsilon|$,即$\lim\limits_{x \to x_0}f(x) = f(x_0)$,则称$y=f(x)$在$x = x_0$处<strong>连续</strong>.</p>
+            <p><strong>Definition</strong>:设<span class="math inline">\(y =f(x)\)</span>在<span class="math inline">\(x =x_0\)</span>及其附近有定义,对于<span class="math inline">\(\forall\varepsilon &gt; 0,\exists \delta &gt; 0\)</span>,当<spanclass="math inline">\(x \in N(x_0,\delta)\)</span>,有<spanclass="math inline">\(|f(x)-f(x_0) &lt; \varepsilon|\)</span>,即<spanclass="math inline">\(\lim\limits_{x \to x_0}f(x) =f(x_0)\)</span>,则称<span class="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x = x_0\)</span>处<strong>连续</strong>.</p>
           </div>
 <p>以上是<strong>双侧连续</strong>的定义,同理,我们可以给出<strong>单侧连续</strong>的定义,定义如下:</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>:</p><ul><li>$\lim\limits_{x\to x_0^{+}}f(x) = f(x_0)$,则称函数$f(x)$在$x=x_0$<strong>右连续</strong>.</li><li>$\lim\limits_{x\to x_0^{-}}f(x) = f(x_0)$,则称函数$f(x)$在$x=x_0$<strong>左连续</strong>.</li></ul>
+            <p><strong>Definition</strong>:</p><ul><li><span class="math inline">\(\lim\limits_{x\to x_0^{+}}f(x) =f(x_0)\)</span>,则称函数<span class="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span><strong>右连续</strong>.</li><li><span class="math inline">\(\lim\limits_{x\to x_0^{-}}f(x) =f(x_0)\)</span>,则称函数<span class="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x=x_0\)</span><strong>左连续</strong>.</li></ul>
           </div>
 <p>定义单侧连续后,我们立马可以得到一个重要的推论:</p>
 <div class="note note-danger">
-            <p><strong>Theorem</strong>:$f(x)$在$x = x_0$处连续$\Leftrightarrow \lim\limits_{x\to x_0^{+}}f(x) = \lim\limits_{x\to x_0^{-}}f(x) = f(x_0)$</p>
+            <p><strong>Theorem</strong>:<spanclass="math inline">\(f(x)\)</span>在<span class="math inline">\(x =x_0\)</span>处连续<span class="math inline">\(\Leftrightarrow\lim\limits_{x\to x_0^{+}}f(x) = \lim\limits_{x\to x_0^{-}}f(x) =f(x_0)\)</span></p>
           </div>
-<p>此后,我们给出$f(x)$在闭区间$[a,b]$上连续的定义:</p>
+<p>此后,我们给出<span class="math inline">\(f(x)\)</span>在闭区间<span
+class="math inline">\([a,b]\)</span>上连续的定义:</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>:$f(x)$在$[a,b]$上连续$\Leftrightarrow f(x)$在$(a,b)$上任意一点连续,且在$x=a,b$处单侧连续.将在$[a,b]$上连续的函数,记作$C[a,b]$</p>
+            <p><strong>Definition</strong>:<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>上连续<spanclass="math inline">\(\Leftrightarrow f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>上任意一点连续,且在<spanclass="math inline">\(x=a,b\)</span>处单侧连续.将在<spanclass="math inline">\([a,b]\)</span>上连续的函数,记作<spanclass="math inline">\(C[a,b]\)</span></p>
           </div>
 <p>在定义连续后,我们需要讨论函数的连续性,有以下定理:</p>
 <div class="note note-danger">
-            <p><strong>Theorem</strong>:</p><ul><li><p>连续函数的和差积商（分母不为0）及复合函数仍为连续函数.</p></li><li><p>严格单调连续函数的及其反函数仍为严格单调连续函数.</p></li><li><p>基本初等函数在其定义域内是连续的.</p></li></ul>
+            <p><strong>Theorem</strong>:</p><ul><li><p>连续函数的和差积商（分母不为0）及复合函数仍为连续函数.</p></li><li><p>严格单调连续函数的及其反函数仍为严格单调连续函数.</p></li><li><p>基本初等函数在其定义域内是连续的.</p></li></ul>
           </div>
-<p>关于该定理的证明,直接利用连续的$\varepsilon-\delta$语言即可,这里不再详细说明.</p>
+<p>关于该定理的证明,直接利用连续的<span
+class="math inline">\(\varepsilon-\delta\)</span>语言即可,这里不再详细说明.</p>
 
                 
               </div>
