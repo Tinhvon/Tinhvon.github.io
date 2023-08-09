@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k 字
+          1.2k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          12 分钟
+          11 分钟
         
       </span>
     
@@ -293,64 +293,29 @@
             
               <div class="markdown-body">
                 
-                <h1 id="导数与微分">导数与微分</h1>
-<h2 id="微分">微分</h2>
-<p>在系统地谈论导数后，我们最后来谈论一下微分。在谈论微分之前，我们先讨论一下局部线性化。</p>
-<h3 id="局部线性化">局部线性化</h3>
-<p>根据下图，设直线<span class="math inline">\(T\)</span>与<span
-class="math inline">\(y=f(x)\)</span>在<span
-class="math inline">\(x=x_0\)</span>处相切，则<span
-class="math inline">\(T:f(x)-f(x_0) = f&#39;(x_0)(x-x_0)\)</span>.</p>
-<p>如图，用<span class="math inline">\(KN\)</span>替代<span
-class="math inline">\(PN\)</span>,则有<span class="math inline">\(PN =
-\Delta y = f(x_0+\Delta x)-f(x_0),KN =
-f&#39;(x_0)(x-x_0)\)</span>,联立后有<span
-class="math inline">\(f(x_0+\Delta x)-f(x_0)=f&#39;(x_0)\Delta
-x+o(x-x_0)\)</span>,其中<span class="math inline">\(PK = o(x-x_0) =
-o(\Delta x)\)</span>,此即化曲为直，即局部线性化。</p>
-<h3 id="基本概念">基本概念</h3>
-<p>然后我们严格地给出微分的定义：</p>
+                <h1 id="导数与微分"><a href="#导数与微分" class="headerlink" title="导数与微分"></a>导数与微分</h1><h2 id="微分"><a href="#微分" class="headerlink" title="微分"></a>微分</h2><p>在系统地谈论导数后，我们最后来谈论一下微分。在谈论微分之前，我们先讨论一下局部线性化。</p>
+<h3 id="局部线性化"><a href="#局部线性化" class="headerlink" title="局部线性化"></a>局部线性化</h3><p>根据下图，设直线$T$与$y=f(x)$在$x=x_0$处相切，则$T:f(x)-f(x_0) = f’(x_0)(x-x_0)$.</p>
+<p>如图，用$KN$替代$PN$,则有$PN = \Delta y = f(x_0+\Delta x)-f(x_0),KN = f’(x_0)(x-x_0)$,联立后有$f(x_0+\Delta x)-f(x_0)=f’(x_0)\Delta x+o(x-x_0)$,其中$PK = o(x-x_0) = o(\Delta x)$,此即化曲为直，即局部线性化。</p>
+<h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>然后我们严格地给出微分的定义：</p>
 <div class="note note-primary">
-            <p><strong>Definition</strong>:设<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\((a,b)\)</span>有定义，且<spanclass="math inline">\(\Delta y = f(x+\Delta x)-f(x) = Ax+o(\Deltax),\Delta x \to 0\)</span>.其中<spanclass="math inline">\(A\)</span>与<span class="math inline">\(\Deltax\)</span>无关，则称<span class="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x\)</span>可微，并称<spanclass="math inline">\(A\Delta x\)</span>为<spanclass="math inline">\(y=f(x)\)</span>在<spanclass="math inline">\(x\)</span>的<strong>微分</strong>，记作<spanclass="math inline">\(\mathrm{d}y = A\Delta x\)</span>.</p>
+            <p><strong>Definition</strong>:设$y=f(x)$在$(a,b)$有定义，且$\Delta y = f(x+\Delta x)-f(x) = Ax+o(\Delta x),\Delta x \to 0$.其中$A$与$\Delta x$无关，则称$y=f(x)$在$x$可微，并称$A\Delta x$为$y=f(x)$在$x$的<strong>微分</strong>，记作$\mathrm{d}y = A\Delta x$.</p>
           </div>
-<p><strong>Note 1</strong>:其中我们称 <span
-class="math inline">\(A\Delta x\)</span> 是 <span
-class="math inline">\(\Delta y\)</span> 的线性主部，故我们有<span
-class="math inline">\(\Delta y-\mathrm{d}y = o(\Delta x),\Delta x \to
-0\)</span>.</p>
-<p><strong>Note 2</strong>:对一元函数来说，<span
-class="math inline">\(y=f(x)\)</span>在<span
-class="math inline">\(x=x_0\)</span>处可微<span
-class="math inline">\(\Leftrightarrow y = f(x)\)</span>在<span
-class="math inline">\(x =
-x_0\)</span>可导，这里直接套用定义证明即可，具体证明略。</p>
-<p><strong>Note 3</strong>:对<span
-class="math inline">\(y=f(x),\mathrm{d}y = f&#39;(x)\Delta x =
-f&#39;(x)\mathrm{d}x\)</span>.</p>
-<p><strong>Note
-4</strong>:微分公式及其运算法则，与导数的运算法则相同。</p>
+<p><strong>Note 1</strong>:其中我们称 $A\Delta x$ 是 $\Delta y$ 的线性主部，故我们有$\Delta y-\mathrm{d}y = o(\Delta x),\Delta x \to 0$.</p>
+<p><strong>Note 2</strong>:对一元函数来说，$y=f(x)$在$x=x_0$处可微$\Leftrightarrow y = f(x)$在$x = x_0$可导，这里直接套用定义证明即可，具体证明略。</p>
+<p><strong>Note 3</strong>:对$y=f(x),\mathrm{d}y = f’(x)\Delta x = f’(x)\mathrm{d}x$.</p>
+<p><strong>Note 4</strong>:微分公式及其运算法则，与导数的运算法则相同。</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:已知<spanclass="math inline">\(y=\sin{x^2}\)</span>,求<spanclass="math inline">\(\mathrm{d}y\)</span>.</p><p><strong>Solution</strong> <span class="math inline">\(\mathrm{d}y =2x\cos{x^2}\mathrm{d}x\)</span></p>
+            <p><strong>Example 1</strong>:已知$y=\sin{x^2}$,求$\mathrm{d}y$.</p><p><strong>Solution</strong> $\mathrm{d}y = 2x\cos{x^2}\mathrm{d}x$</p>
           </div>
-<p><strong>Note 5</strong>:微分的几何意义：<span
-class="math inline">\(y=f(x)\)</span>在<span
-class="math inline">\(P(x,y)\)</span>处的微分，即曲线<span
-class="math inline">\(y=f(x)\)</span>在<span
-class="math inline">\(P\)</span>切线在<span
-class="math inline">\(P\)</span>点纵坐标的改变量。</p>
-<p><strong>Note 6</strong>:一阶微分具有形式不变性，即<span
-class="math inline">\(y=f(u),u=g(x)\Rightarrow
-y=f[g(x)]\)</span>,则有<span class="math inline">\(\mathrm{d}y =
-f&#39;[g(x)]g&#39;(x)\mathrm{d}x = f&#39;(u)\mathrm{d}u\)</span>
-.但是高阶微分不具有微分形式不变性。</p>
-<h3 id="近似计算">近似计算</h3>
-<p>利用微分的概念，我们可以近似计算一些复杂的代数式。原理如下：</p>
+<p><strong>Note 5</strong>:微分的几何意义：$y=f(x)$在$P(x,y)$处的微分，即曲线$y=f(x)$在$P$切线在$P$点纵坐标的改变量。</p>
+<p><strong>Note 6</strong>:一阶微分具有形式不变性，即$y=f(u),u=g(x)\Rightarrow y=f[g(x)]$,则有$\mathrm{d}y = f’[g(x)]g’(x)\mathrm{d}x = f’(u)\mathrm{d}u$ .但是高阶微分不具有微分形式不变性。</p>
+<h3 id="近似计算"><a href="#近似计算" class="headerlink" title="近似计算"></a>近似计算</h3><p>利用微分的概念，我们可以近似计算一些复杂的代数式。原理如下：</p>
 <div class="note note-danger">
-            <p><strong>Theorem</strong>:根据局部线性化原理，我们有<spanclass="math inline">\(f(x) = f(x_0)+f&#39;(x_0)(x-x_0)\)</span>.</p>
+            <p><strong>Theorem</strong>:根据局部线性化原理，我们有$f(x) = f(x_0)+f’(x_0)(x-x_0)$.</p>
           </div>
 <p>这里我们给出一个例子：</p>
 <div class="note note-success">
-            <p><strong>Example </strong>:近似计算<spanclass="math inline">\(\sqrt[3]{29}\)</span></p><p><strong>Solution</strong> 设<span class="math inline">\(f(x) =\sqrt[3]{x}\)</span>,则<span class="math inline">\(f(29) =f(27)+f&#39;(27)\times(29-27) = 3+\cfrac{2}{27} = 3.0741\)</span></p>
+            <p><strong>Example </strong>:近似计算$\sqrt[3]{29}$</p><p><strong>Solution</strong> 设$f(x) = \sqrt[3]{x}$,则$f(29) = f(27)+f’(27)\times(29-27) = 3+\cfrac{2}{27} = 3.0741$</p>
           </div>
 
                 
@@ -825,20 +790,5 @@ f&#39;[g(x)]g&#39;(x)\mathrm{d}x = f&#39;(u)\mathrm{d}u\)</span>
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

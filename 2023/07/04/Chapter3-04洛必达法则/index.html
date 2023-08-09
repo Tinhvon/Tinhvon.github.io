@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.9k 字
+          2.8k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          25 分钟
+          24 分钟
         
       </span>
     
@@ -293,58 +293,39 @@
             
               <div class="markdown-body">
                 
-                <h1 id="微分中值定理与导数的应用">微分中值定理与导数的应用</h1>
-<h2 id="洛必达法则">洛必达法则</h2>
-<p>本文我们将介绍一个求极限的方法——洛必达法则.</p>
-<h3 id="洛必达法则概念">洛必达法则概念</h3>
-<p>首先我们给出洛必达法则的表述:</p>
+                <h1 id="微分中值定理与导数的应用"><a href="#微分中值定理与导数的应用" class="headerlink" title="微分中值定理与导数的应用"></a>微分中值定理与导数的应用</h1><h2 id="洛必达法则"><a href="#洛必达法则" class="headerlink" title="洛必达法则"></a>洛必达法则</h2><p>本文我们将介绍一个求极限的方法——洛必达法则.</p>
+<h3 id="洛必达法则概念"><a href="#洛必达法则概念" class="headerlink" title="洛必达法则概念"></a>洛必达法则概念</h3><p>首先我们给出洛必达法则的表述:</p>
 <div class="note note-danger">
-            <p><strong>L'Hospital Theorem</strong>:设<spanclass="math inline">\(f(x),g(x)\)</span>满足:</p><ul><li><span class="math inline">\(\lim\limits_{x\to x_0}f(x)=\lim\limits_{x\to x_0}g(x) = 0\)</span>或者<spanclass="math inline">\(\lim\limits_{x\to x_0}f(x) =\lim\limits_{x\tox_0}g(x) = \infty\)</span>.</li><li><span class="math inline">\(f(x),g(x)\)</span>在<spanclass="math inline">\(N_0(x_0,\delta)\)</span>可导,且<spanclass="math inline">\(g&#39;(x) \ne 0\)</span>.</li><li><span class="math inline">\(\lim\limits_{x \tox_0}\cfrac{f&#39;(x)}{g&#39;(x)} = A\)</span>.</li></ul><p>则<span class="math inline">\(\lim\limits_{x \tox_0}\cfrac{f(x)}{g(x)} = \lim\limits_{x \tox_0}\cfrac{f&#39;(x)}{g&#39;(x)} = A\)</span>.</p>
+            <p><strong>L’Hospital Theorem</strong>:设$f(x),g(x)$满足:</p><ul><li>$\lim\limits_{x\to x_0}f(x) =\lim\limits_{x\to x_0}g(x) = 0$或者$\lim\limits_{x\to x_0}f(x) =\lim\limits_{x\to x_0}g(x) = \infty$.</li><li>$f(x),g(x)$在$N_0(x_0,\delta)$可导,且$g’(x) \ne 0$.</li><li>$\lim\limits_{x \to x_0}\cfrac{f’(x)}{g’(x)} = A$.</li></ul><p>则$\lim\limits_{x \to x_0}\cfrac{f(x)}{g(x)} = \lim\limits_{x \to x_0}\cfrac{f’(x)}{g’(x)} = A$.</p>
           </div>
-<p><strong>Note 1</strong>:<span
-class="math inline">\(x_0\)</span>可以为<span
-class="math inline">\(\infty\)</span></p>
-<p><strong>Note 2</strong>:注意,<span
-class="math inline">\(f(x),g(x)\)</span>在<span
-class="math inline">\(x=x_0\)</span>处要连续或者有可去间断点.</p>
-<p><strong>Note 3</strong>:洛必达法则可以重复多次,即:<span
-class="math inline">\(\lim\limits_{x \to x_0}\cfrac{f(x)}{g(x)} =
-\lim\limits_{x \to x_0}\cfrac{f&#39;(x)}{g&#39;(x)} = ... =
-\lim\limits_{x \to
-x_0}\cfrac{f^{(n)}(x)}{g^{(n)}(x)}\)</span>但是每一次都必须满足使用条件.</p>
+<p><strong>Note 1</strong>:$x_0$可以为$\infty$</p>
+<p><strong>Note 2</strong>:注意,$f(x),g(x)$在$x=x_0$处要连续或者有可去间断点.</p>
+<p><strong>Note 3</strong>:洛必达法则可以重复多次,即:$\lim\limits_{x \to x_0}\cfrac{f(x)}{g(x)} = \lim\limits_{x \to x_0}\cfrac{f’(x)}{g’(x)} = … = \lim\limits_{x \to x_0}\cfrac{f^{(n)}(x)}{g^{(n)}(x)}$但是每一次都必须满足使用条件.</p>
 <p>我们总结一下求极限的一般方法:</p>
 <div class="note note-danger">
-            <ul><li>先带进去<span class="math inline">\(\lim\limits_{x\to x_0}f(x) =f(x_0)\)</span>,看看能否得到正常的结果.</li><li>第一步若失败的话,依靠<strong>等价无穷小代换</strong>与<strong>非零极限优先计算</strong>的原则先化简<spanclass="math inline">\(\cfrac{f(x)}{g(x)}\)</span>.再使用洛必达法则.</li></ul>
+            <ul><li>先带进去$\lim\limits_{x\to x_0}f(x) = f(x_0)$,看看能否得到正常的结果.</li><li>第一步若失败的话,依靠<strong>等价无穷小代换</strong>与<strong>非零极限优先计算</strong>的原则先化简$\cfrac{f(x)}{g(x)}$.再使用洛必达法则.</li></ul>
           </div>
-<h3 id="洛必达法则的几个反例">洛必达法则的几个反例</h3>
-<div class="note note-success">
-            <p><strong>Example 1</strong>:计算<spanclass="math inline">\(\lim\limits_{n \to \infty}(\cfrac{\pi}{2}-\arctann)\cdot n\)</span></p><p><strong>Solution</strong> 计算<spanclass="math inline">\(\lim\limits_{x \to \infty}(\cfrac{\pi}{2}-\arctanx)\cdot x\)</span></p><p><span class="math inline">\(I = \cfrac{\cfrac{\pi}{2}-\arctanx}{\frac{1}{x}} = \cfrac{-\frac{1}{1+x^2}}{-\frac{1}{x^2}} =1\)</span></p><p>故<span class="math inline">\(\lim\limits_{n \to\infty}(\cfrac{\pi}{2}-\arctan n)\cdot n=1\)</span>.</p>
+<h3 id="洛必达法则的几个反例"><a href="#洛必达法则的几个反例" class="headerlink" title="洛必达法则的几个反例"></a>洛必达法则的几个反例</h3><div class="note note-success">
+            <p><strong>Example 1</strong>:计算$\lim\limits_{n \to \infty}(\cfrac{\pi}{2}-\arctan n)\cdot n$</p><p><strong>Solution</strong> 计算$\lim\limits_{x \to \infty}(\cfrac{\pi}{2}-\arctan x)\cdot x$</p><p>$I = \cfrac{\cfrac{\pi}{2}-\arctan x}{\frac{1}{x}} = \cfrac{-\frac{1}{1+x^2}}{-\frac{1}{x^2}} = 1$</p><p>故$\lim\limits_{n \to \infty}(\cfrac{\pi}{2}-\arctan n)\cdot n=1$.</p>
           </div>
-<p><strong>Notice</strong>
-<strong>数列情况下,无法直接使用洛必达法则,应当计算函数的情况</strong></p>
+<p><strong>Notice</strong> <strong>数列情况下,无法直接使用洛必达法则,应当计算函数的情况</strong> </p>
 <div class="note note-success">
-            <p><strong>Example 2</strong>:计算<spanclass="math inline">\(\lim\limits_{x\to\infty}\cfrac{x+\sinx}{x}\)</span></p><p><strong>Solution</strong> <span class="math inline">\(I =\lim\limits_{x \to \infty}(1+\cfrac{\sin x}{x}) = 1\)</span></p>
+            <p><strong>Example 2</strong>:计算$\lim\limits_{x\to\infty}\cfrac{x+\sin x}{x}$</p><p><strong>Solution</strong> $I = \lim\limits_{x \to \infty}(1+\cfrac{\sin x}{x}) = 1$</p>
           </div>
-<p><strong>Notice</strong> 本题容易进行错解$ I = <em>{x }(1+x)<span
-class="math inline">\(,原因是\)</span></em>{x}(x+x)$不存在,故无法使用洛必达法则</p>
+<p><strong>Notice</strong> 本题容易进行错解$ I = \lim\limits_{x \to \infty}(1+\cos x)$,原因是$\lim\limits_{x\to \infty}(x+\sin x)$不存在,故无法使用洛必达法则</p>
 <div class="note note-success">
-            <p><strong>Example 3</strong>:计算<spanclass="math inline">\(\lim\limits_{x\to+\infty}\cfrac{e^x-e^{-x}}{e^{x}+e^{-x}}\)</span>.</p><p><strong>Solution</strong> <span class="math inline">\(I=\lim\limits_{x\to+\infty}\cfrac{e^x-e^{-x}}{e^{x}+e^{-x}}=\lim\limits_{x\to+\infty}\cfrac{1-e^{-2x}}{1+e^{-2x}} = 1\)</span></p>
+            <p><strong>Example 3</strong>:计算$\lim\limits_{x\to +\infty}\cfrac{e^x-e^{-x}}{e^{x}+e^{-x}}$.</p><p><strong>Solution</strong> $I =\lim\limits_{x\to +\infty}\cfrac{e^x-e^{-x}}{e^{x}+e^{-x}}=\lim\limits_{x\to +\infty}\cfrac{1-e^{-2x}}{1+e^{-2x}} = 1$</p>
           </div>
-<p><strong>Notice</strong>
-本题使用洛必达法则的话将会陷入循环,无法求解:<span
-class="math inline">\(I =\lim\limits_{x\to
-+\infty}\cfrac{e^x-e^{-x}}{e^{x}+e^{-x}}=\lim\limits_{x\to
-+\infty}\cfrac{e^x+e^{-x}}{e^{x}-e^{-x}}=...\)</span>,此时洛必达法则失效.</p>
-<h3 id="例题">例题</h3>
-<p>最后给一些洛必达法则的例题吧:</p>
+<p><strong>Notice</strong> 本题使用洛必达法则的话将会陷入循环,无法求解:$I =\lim\limits_{x\to +\infty}\cfrac{e^x-e^{-x}}{e^{x}+e^{-x}}=\lim\limits_{x\to +\infty}\cfrac{e^x+e^{-x}}{e^{x}-e^{-x}}=…$,此时洛必达法则失效.</p>
+<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p>最后给一些洛必达法则的例题吧:</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:计算<spanclass="math inline">\(\lim\limits_{x\to0}(\cfrac{1+x}{1-e^{-x}}-\cfrac{1}{x})\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned}I&amp;= \lim\limits_{x\to0}\cfrac{x+x^2-1+e^{-x}}{x(1-e^{-x})} \\ &amp;=\lim\limits_{x\to0}\cfrac{x^2+x-1+e^{-x}}{x^2} \\&amp;=\lim\limits_{x\to0}\cfrac{2x+1-e^{-x}}{2x} \\ &amp;=\lim\limits_{x\to0}\cfrac{2+e^{-x}}{2} \\ &amp;= \cfrac{3}{2}\end{aligned}\)</span></p>
+            <p><strong>Example 1</strong>:计算$\lim\limits_{x\to 0}(\cfrac{1+x}{1-e^{-x}}-\cfrac{1}{x})$</p><p><strong>Solution</strong></p><p> $\begin{aligned}I&amp;= \lim\limits_{x\to 0}\cfrac{x+x^2-1+e^{-x}}{x(1-e^{-x})} \\ &amp;= \lim\limits_{x\to0}\cfrac{x^2+x-1+e^{-x}}{x^2} \\ &amp;=\lim\limits_{x\to0}\cfrac{2x+1-e^{-x}}{2x} \\ &amp;= \lim\limits_{x\to0}\cfrac{2+e^{-x}}{2} \\ &amp;= \cfrac{3}{2} \end{aligned}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 2</strong>:计算<spanclass="math inline">\(\lim\limits_{x\to+\infty}[x-x^2\ln(1+\cfrac{1}{x})]\)</span></p><p><strong>Solution</strong> 进行变量代换<span class="math inline">\(t =\cfrac{1}{x}\)</span></p><p><span class="math inline">\(\begin{aligned} I &amp;=\lim\limits_{t\to 0^+}\cfrac{t-\ln(1+t)}{t^2} \\ &amp;=\lim\limits_{t\to 0^+}\cfrac{1-\frac{1}{1+t}}{2t} \\ &amp;=\lim\limits_{t\to 0^+}\cfrac{t}{2(1+t)t} \\ &amp;=\cfrac{1}{2}\end{aligned}\)</span></p>
+            <p><strong>Example 2</strong>:计算$\lim\limits_{x\to+\infty}[x-x^2\ln(1+\cfrac{1}{x})]$</p><p><strong>Solution</strong> 进行变量代换$t = \cfrac{1}{x}$</p><p>$\begin{aligned} I &amp;= \lim\limits_{t\to 0^+}\cfrac{t-\ln(1+t)}{t^2} \\ &amp;= \lim\limits_{t\to 0^+}\cfrac{1-\frac{1}{1+t}}{2t} \\ &amp;= \lim\limits_{t\to 0^+}\cfrac{t}{2(1+t)t} \\ &amp;= \cfrac{1}{2}\end{aligned}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 3</strong>:计算<spanclass="math inline">\(\lim\limits_{x\to0}[\cfrac{1}{\ln(1+x^2)}-\cfrac{1}{\sin^2x}]\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{align}I &amp;=\lim\limits_{x \to0}\cfrac{\sin^2x-\ln(1+x^2)}{\sin^2x\ln(1+x^2)} \\ &amp;= \lim\limits_{x\to 0}\cfrac{\sin^2x-\ln(1+x^2)}{x^4} \\ &amp;= \lim\limits_{x\to0}\cfrac{\sin 2x-\frac{2x}{1+x^2}}{4x^3} \\ &amp;= \lim\limits_{x \to0}\cfrac{(1+x^2)\sin 2x-2x}{4x^3(1+x^2)} \\ &amp;= \lim\limits_{x \to0}\cfrac{\sin 2x-2x+x^2\sin2x}{4x^3} \\ &amp;= \lim\limits_{x \to0}2\cfrac{\sin 2x - 2x}{(2x)^3}+ \lim\limits_{x \to 0}\cfrac{\sin2x}{4x} \\ &amp;= \cfrac{1}{6} \end{align}\)</span></p>
+            <p><strong>Example 3</strong>:计算$\lim\limits_{x\to 0}[\cfrac{1}{\ln(1+x^2)}-\cfrac{1}{\sin^2x}]$</p><p><strong>Solution</strong> </p><p>$\begin{align}I &amp;=\lim\limits_{x \to 0}\cfrac{\sin^2x-\ln(1+x^2)}{\sin^2x\ln(1+x^2)} \\  &amp;= \lim\limits_{x \to 0}\cfrac{\sin^2x-\ln(1+x^2)}{x^4} \\ &amp;= \lim\limits_{x\to 0}\cfrac{\sin 2x-\frac{2x}{1+x^2}}{4x^3} \\ &amp;= \lim\limits_{x \to 0}\cfrac{(1+x^2)\sin 2x-2x}{4x^3(1+x^2)} \\ &amp;= \lim\limits_{x \to 0}\cfrac{\sin 2x-2x+x^2\sin2x}{4x^3} \\ &amp;= \lim\limits_{x \to 0}2\cfrac{\sin 2x - 2x}{(2x)^3}+  \lim\limits_{x \to 0}\cfrac{\sin 2x}{4x} \\ &amp;= \cfrac{1}{6} \end{align}$</p>
           </div>
 
                 
@@ -819,20 +800,5 @@ class="math inline">\(I =\lim\limits_{x\to
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

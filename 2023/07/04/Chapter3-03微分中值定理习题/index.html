@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4.8k 字
+          4.4k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          40 分钟
+          37 分钟
         
       </span>
     
@@ -293,47 +293,45 @@
             
               <div class="markdown-body">
                 
-                <h1 id="微分中值定理与导数的应用">微分中值定理与导数的应用</h1>
-<h2 id="微分中值定理习题">微分中值定理习题</h2>
-<p>本文会给一部分微分中值定理的习题,从而帮助大家更好地掌握微分中值定理,并将其运用在证明中.</p>
+                <h1 id="微分中值定理与导数的应用"><a href="#微分中值定理与导数的应用" class="headerlink" title="微分中值定理与导数的应用"></a>微分中值定理与导数的应用</h1><h2 id="微分中值定理习题"><a href="#微分中值定理习题" class="headerlink" title="微分中值定理习题"></a>微分中值定理习题</h2><p>本文会给一部分微分中值定理的习题,从而帮助大家更好地掌握微分中值定理,并将其运用在证明中.</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:设<spanclass="math inline">\(f(x),g(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>上连续,在<spanclass="math inline">\((a,b)\)</span>上可导,且<spanclass="math inline">\(g&#39;(x) \ne 0\)</span>,求证:<spanclass="math inline">\(\exists \xi \in (a,b)\)</span>,使得<spanclass="math inline">\(\cfrac{f(\xi)-f(a)}{g(b)-g(\xi)}=\cfrac{f&#39;(\xi)}{g&#39;(\xi)}\)</span>.</p><p><strong>Proof</strong> 即证明:<spanclass="math inline">\(f(\xi)g&#39;(\xi)+f&#39;(\xi)g(\xi)-f(a)g&#39;(\xi)-g(b)f&#39;(\xi)=0\)</span></p><p>构造函数<span class="math inline">\(F(x) =f(x)g(x)-f(a)g(x)-g(b)f(x)\)</span>(<em>这里我们也可以构造<spanclass="math inline">\(F(x) = [f(x)-f(a)][g(x)-g(b)]\)</span></em>)</p><p>显然我们有<span class="math inline">\(F(a)=F(b)\)</span></p><p>根据罗尔定理:<span class="math inline">\(\exists \xi \in(a,b)\)</span>,使得<span class="math inline">\(F&#39;(\xi) =0\)</span></p><p>即:<spanclass="math inline">\(\cfrac{f(\xi)-f(a)}{g(b)-g(\xi)}=\cfrac{f&#39;(\xi)}{g&#39;(\xi)}\)</span></p>
+            <p><strong>Example 1</strong>:设$f(x),g(x)$在$[a,b]$上连续,在$(a,b)$上可导,且$g’(x) \ne 0$,求证:$\exists \xi \in (a,b)$,使得$\cfrac{f(\xi)-f(a)}{g(b)-g(\xi)}=\cfrac{f’(\xi)}{g’(\xi)}$.</p><p><strong>Proof</strong> 即证明:$f(\xi)g’(\xi)+f’(\xi)g(\xi)-f(a)g’(\xi)-g(b)f’(\xi)=0$</p><p>构造函数$F(x) = f(x)g(x)-f(a)g(x)-g(b)f(x)$(<em>这里我们也可以构造$F(x) = [f(x)-f(a)][g(x)-g(b)]$</em>)</p><p>显然我们有$F(a)=F(b)$</p><p>根据罗尔定理:$\exists \xi \in (a,b)$,使得$F’(\xi) = 0$</p><p>即:$\cfrac{f(\xi)-f(a)}{g(b)-g(\xi)}=\cfrac{f’(\xi)}{g’(\xi)}$</p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 2</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>连续,在<spanclass="math inline">\((a,b)\)</span>可导,且<spanclass="math inline">\(f(0)=f(1)=0,f(\cfrac{1}{2}) = 1\)</span>,求证:</p><ul><li><span class="math inline">\(\exists \eta \in(\cfrac{1}{2},1)\)</span>,使得<span class="math inline">\(f(\eta) =\eta\)</span></li><li><span class="math inline">\(\exists \xi \in(0,\eta)\)</span>,使得<spanclass="math inline">\(f&#39;(\xi)-\lambda[f(\xi)-\xi]=1\)</span>.</li></ul><p><strong>Proof</strong></p><ul><li>构造函数<span class="math inline">\(F(x) = f(x)-x\)</span>,有$ F()=&gt;0 ,F(1)=-1<spanclass="math inline">\(,根据零点存在性定理可知:\)</span>(,1)<spanclass="math inline">\(,使得\)</span>F() = 0<spanclass="math inline">\(,即:\)</span>f() = $.</li><li>即证明<spanclass="math inline">\([f&#39;(\xi)-1]-\lambda[f(\xi)-\xi]=0\)</span>,构造函数<spanclass="math inline">\(G(x)=e^{-\lambdax}(f(x)-x)\)</span>,利用罗尔定理即可证明.</li></ul>
+            <p><strong>Example 2</strong>:设$f(x)$在$[a,b]$连续,在$(a,b)$可导,且$f(0)=f(1)=0,f(\cfrac{1}{2}) = 1$,求证:</p><ul><li>$\exists \eta \in (\cfrac{1}{2},1)$,使得$f(\eta) = \eta$</li><li>$\exists \xi \in (0,\eta)$,使得$f’(\xi)-\lambda[f(\xi)-\xi]=1$.</li></ul><p><strong>Proof</strong> </p><ul><li>构造函数$F(x) = f(x)-x$,有$ F(\cfrac{1}{2}) =\cfrac{1}{2}&gt;0 ,F(1)=-1$,根据零点存在性定理可知:$\exists \eta \in (\cfrac{1}{2},1)$,使得$F(\eta) = 0$,即:$f(\eta) = \eta$.</li><li>即证明$[f’(\xi)-1]-\lambda[f(\xi)-\xi]=0$,构造函数$G(x)=e^{-\lambda x}(f(x)-x)$,利用罗尔定理即可证明.</li></ul>
           </div>
 <div class="note note-success">
-            <p><strong>Example 3</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>二次可导,且<spanclass="math inline">\(f(a)=f(b)=0\)</span>,<spanclass="math inline">\(f&#39;_+(a)f&#39;_-(b)&gt;0\)</span>,求证:</p><ul><li><span class="math inline">\(\exists \xi \in (a,b)\)</span>,使得<spanclass="math inline">\(f(\xi)=0\)</span>.</li><li><span class="math inline">\(\exists \eta \in(a,b)\)</span>,使得<spanclass="math inline">\(f&#39;&#39;(\eta)=0\)</span>.</li></ul><p><strong>Proof</strong></p><ul><li>不妨假设<spanclass="math inline">\(f&#39;_+(a)&gt;0,f&#39;_-(b)&gt;0\)</span>,则<spanclass="math inline">\(f&#39;_+(a) = \lim\limits_{x \toa^{+}}\cfrac{f(x)-f(a)}{x-a}&gt;0\Rightarrow x_1 \in(a,b),f(x_1)&gt;0\)</span>.</li></ul><p>​ 同理有<span class="math inline">\(f&#39;_-(b) = \lim\limits_{x \tob^{-}}\cfrac{f(x)-f(b)}{x-b}&gt;0\Rightarrow x_2 \in(a,b),f(x_2)&lt;0\)</span>.</p><p>​ 根据零点存在性定理<span class="math inline">\(\exists \xi \in(a,b)\)</span>,使得<spanclass="math inline">\(f(\xi)=0\)</span>,证毕.</p><ul><li>现在已知<spanclass="math inline">\(f(a)=f(\xi)=f(b)=0\)</span>,在<spanclass="math inline">\((a,\xi),(\xi,b)\)</span>上分别用两次罗尔定理,可证.</li></ul>
+            <p><strong>Example 3</strong>:设$f(x)$在$[a,b]$二次可导,且$f(a)=f(b)=0$,$f’_+(a)f’_-(b)&gt;0$,求证:</p><ul><li>$\exists \xi \in (a,b)$,使得$f(\xi)=0$.</li><li>$\exists \eta \in (a,b)$,使得$f’’(\eta)=0$.</li></ul><p><strong>Proof</strong> </p><ul><li>不妨假设$f’_+(a)&gt;0,f’_-(b)&gt;0$,则$f’_+(a) = \lim\limits_{x \to a^{+}}\cfrac{f(x)-f(a)}{x-a}&gt;0\Rightarrow x_1 \in (a,b),f(x_1)&gt;0$.</li></ul><p>​       同理有$f’_-(b) = \lim\limits_{x \to b^{-}}\cfrac{f(x)-f(b)}{x-b}&gt;0\Rightarrow x_2 \in (a,b),f(x_2)&lt;0$.</p><p>​        根据零点存在性定理$\exists \xi \in (a,b)$,使得$f(\xi)=0$,证毕.</p><ul><li>现在已知$f(a)=f(\xi)=f(b)=0$,在$(a,\xi),(\xi,b)$上分别用两次罗尔定理,可证.</li></ul>
           </div>
 <div class="note note-success">
-            <p><strong>Example 4</strong>:<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([0,1]\)</span>上连续,<spanclass="math inline">\((0,1)\)</span>上可导,且<spanclass="math inline">\(f(0)=0\)</span>,证明:<spanclass="math inline">\(\exists \xi \in (0,1)\)</span>,使得<spanclass="math inline">\(f(\xi) = (1-\xi)f&#39;(\xi)\)</span>.</p><p><strong>Proof</strong> 即证明<spanclass="math inline">\(f(\xi)+(\xi-1)f&#39;(\xi)=0\)</span></p><p>构造函数<span class="math inline">\(F(x) = (x-1)f(x)\)</span></p><p>显然有:<span class="math inline">\(F(0)=F(1)=0\)</span></p><p>利用罗尔定理,得证.</p>
+            <p><strong>Example 4</strong>:$f(x)$在$[0,1]$上连续,$(0,1)$上可导,且$f(0)=0$,证明:$\exists \xi \in (0,1)$,使得$f(\xi) = (1-\xi)f’(\xi)$.</p><p><strong>Proof</strong> 即证明$f(\xi)+(\xi-1)f’(\xi)=0$</p><p>构造函数$F(x) = (x-1)f(x)$</p><p>显然有:$F(0)=F(1)=0$</p><p>利用罗尔定理,得证.</p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 5</strong>:<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>上二次可导,且<spanclass="math inline">\(g&#39;&#39;(x)\ne0\)</span>,<spanclass="math inline">\(f(a)=f(b)=g(a)=g(b)=0\)</span>,求证:</p><ul><li><span class="math inline">\(g(x) \ne 0,x\in (a,b)\)</span></li><li>$(a,b), = $.</li></ul><p><strong>Proof</strong></p><ul><li>使用反证法,假设<span class="math inline">\(g(x_0)= 0\Rightarrowg(a)=g(x_0)=g(b)\)</span>,利用两次罗尔定理,即可证明<spanclass="math inline">\(\exists \eta \in (a,b),g&#39;&#39;(\eta)=0\)</span>,与题目假设矛盾,故<span class="math inline">\(g(x) \ne 0,x\in(a,b)\)</span>.</li><li>构造函数<spanclass="math inline">\(F(x)=f(x)g&#39;(x)-f&#39;(x)g(x)\)</span>,然后使用罗尔定理即可证明.</li></ul>
+            <p><strong>Example 5</strong>:$f(x)$在$[a,b]$上二次可导,且$g’’(x)\ne0$,$f(a)=f(b)=g(a)=g(b)=0$,求证:</p><ul><li>$g(x) \ne 0,x\in (a,b)$</li><li>$\exists \xi \in (a,b),\cfrac{f(\xi)}{g(\xi)} =\cfrac{f’’(\xi)}{g’’(\xi)} $.</li></ul><p><strong>Proof</strong> </p><ul><li>使用反证法,假设$g(x_0)= 0\Rightarrow g(a)=g(x_0)=g(b)$,利用两次罗尔定理,即可证明$\exists \eta \in (a,b),g’’(\eta)= 0$,与题目假设矛盾,故$g(x) \ne 0,x\in (a,b)$.</li><li>构造函数$F(x)=f(x)g’(x)-f’(x)g(x)$,然后使用罗尔定理即可证明.</li></ul>
           </div>
 <div class="note note-success">
-            <p><strong>Example 6</strong>:<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([0,1]\)</span>上二阶可导,<spanclass="math inline">\(f(1)=0\)</span>,求证:<spanclass="math inline">\(\exists \xi \in (0,1)\)</span>,使得<spanclass="math inline">\(\xi^2f&#39;&#39;(\xi)+4\xif&#39;(\xi)+2f(\xi)=0\)</span>.</p><p><strong>Proof</strong> 构造函数<spanclass="math inline">\(F(x)=x^2f(x)\)</span></p><p>显然我们有<span class="math inline">\(F(0)=F(1)=0\)</span></p><p>根据罗尔定理,我们有<spanclass="math inline">\(F&#39;(x)=x^2f&#39;(x)+2xf(x),F&#39;(\xi_1)=0\)</span></p><p>此后再用一次罗尔定理,即可证明,这里不再写出.</p>
+            <p><strong>Example 6</strong>:$f(x)$在$[0,1]$上二阶可导,$f(1)=0$,求证:$\exists \xi \in (0,1)$,使得$\xi^2f’’(\xi)+4\xi f’(\xi)+2f(\xi)=0$.</p><p><strong>Proof</strong> 构造函数$F(x)=x^2f(x)$</p><p>显然我们有$F(0)=F(1)=0$</p><p>根据罗尔定理,我们有$F’(x)=x^2f’(x)+2xf(x),F’(\xi_1)=0$</p><p>此后再用一次罗尔定理,即可证明,这里不再写出.</p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 7</strong>:已知<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>上连续,在<spanclass="math inline">\((a,b)\)</span>上可导,且<spanclass="math inline">\(f&#39;(x)\ne 0\)</span>,求证:</p><ul><li><span class="math inline">\(\exists \xi ,\eta \in(a,b)\)</span>,使得<spanclass="math inline">\(\cfrac{f&#39;(\xi)}{f&#39;(\eta)} =\cfrac{e^b-e^a}{b-a}e^{-\eta}\)</span></li><li><span class="math inline">\(\exists \xi,\eta \in(a,b)\)</span>,使得<span class="math inline">\(f&#39;(\xi) =\cfrac{a+b}{2\eta}f&#39;(\eta),(ab&gt;0)\)</span></li></ul><p><strong>Proof</strong></p><ul><li>易知<span class="math inline">\(\cfrac{f(b)-f(a)}{b-a} =\cfrac{e^b-e^a}{b-a}\cdot\cfrac{f(b)-f(a)}{e^b-e^a}\)</span>,利用拉格朗日中值定理即可证明</li><li>易知<span class="math inline">\(\cfrac{f(b)-f(a)}{b-a} =\cfrac{f(b)-f(a)}{b^2-a^2}(a+b)\)</span></li></ul>
+            <p><strong>Example 7</strong>:已知$f(x)$在$[a,b]$上连续,在$(a,b)$上可导,且$f’(x)\ne 0$,求证:</p><ul><li>$\exists \xi ,\eta \in (a,b)$,使得$\cfrac{f’(\xi)}{f’(\eta)} = \cfrac{e^b-e^a}{b-a}e^{-\eta}$</li><li>$\exists \xi,\eta \in (a,b)$,使得$f’(\xi) = \cfrac{a+b}{2\eta}f’(\eta),(ab&gt;0)$</li></ul><p><strong>Proof</strong>  </p><ul><li>易知$\cfrac{f(b)-f(a)}{b-a} = \cfrac{e^b-e^a}{b-a}\cdot \cfrac{f(b)-f(a)}{e^b-e^a}$,利用拉格朗日中值定理即可证明</li><li>易知$\cfrac{f(b)-f(a)}{b-a} = \cfrac{f(b)-f(a)}{b^2-a^2}(a+b)$</li></ul>
           </div>
 <div class="note note-success">
-            <p><strong>Example 8</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>上连续,在<spanclass="math inline">\((a,b)\)</span>上可导.且<spanclass="math inline">\(f(a)=f(b)\)</span>,求证:<spanclass="math inline">\(\exists \xi,\eta \in (a,b)\)</span>,使得<spanclass="math inline">\(\theta f&#39;(\xi)+(1-\theta)f&#39;(\eta) =0,(f(x)\ne C,0&lt;\theta&lt; 1)\)</span></p><p><strong>Proof</strong> 取<span class="math inline">\(x_0 =a+\theta(b-a)\)</span></p><p>根据拉格朗日中值定理:<span class="math inline">\(f(x_0) -f(a) =f&#39;(\xi)\theta(b-a)\)</span></p><p><span class="math inline">\(f(b)-f(x_0) =f&#39;(\eta)(1-\theta)(b-a)\)</span></p><p>将两式相加,即可得到<span class="math inline">\(\thetaf&#39;(\xi)+(1-\theta)f&#39;(\eta) = 0\)</span>.</p>
+            <p><strong>Example 8</strong>:设$f(x)$在$[a,b]$上连续,在$(a,b)$上可导.且$f(a)=f(b)$,求证:$\exists \xi,\eta \in (a,b)$,使得$\theta f’(\xi)+(1-\theta)f’(\eta) = 0,(f(x)\ne C,0&lt;\theta&lt; 1)$</p><p><strong>Proof</strong> 取$x_0 = a+\theta(b-a)$</p><p>根据拉格朗日中值定理:$f(x_0) -f(a) = f’(\xi)\theta(b-a)$</p><p>$f(b)-f(x_0) = f’(\eta)(1-\theta)(b-a)$</p><p>将两式相加,即可得到$\theta f’(\xi)+(1-\theta)f’(\eta) = 0$.</p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 9</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([0,1]\)</span>上连续,在<spanclass="math inline">\((0,1)\)</span>上可导,且<spanclass="math inline">\(f(0)=0,f(1=1)\)</span>,求证:<spanclass="math inline">\(\forall a,b &gt;0,\exists x_1 \ne x_2 \in(0,1)\)</span>使得<spanclass="math inline">\(\cfrac{a}{f&#39;(x_1)}+\cfrac{b}{f&#39;(x_2)} =a+b\)</span>.</p><p><strong>Proof</strong> 易知<span class="math inline">\(0&lt;\cfrac{a}{a+b}&lt;1\)</span></p><p>根据介值定理,<span class="math inline">\(\exists \xi \in(0,1)\)</span>,使得<span class="math inline">\(f(\xi) =\cfrac{a}{a+b}\)</span></p><p>又有<span class="math inline">\(\cfrac{a}{\frac{f(\xi)-f(0)}{\xi-0}}+\cfrac{b}{\frac{f(1)-f(\xi)}{1-\xi}} = a+b\)</span>.</p><p>在<spanclass="math inline">\((0,\xi),(\xi,1)\)</span>上分别使用拉格朗日中值定理,即可证明.</p>
+            <p><strong>Example 9</strong>:设$f(x)$在$[0,1]$上连续,在$(0,1)$上可导,且$f(0)=0,f(1=1)$,求证:$\forall a,b &gt;0,\exists x_1 \ne x_2 \in (0,1)$使得$\cfrac{a}{f’(x_1)}+\cfrac{b}{f’(x_2)} = a+b$.</p><p><strong>Proof</strong> 易知$0&lt; \cfrac{a}{a+b}&lt;1$</p><p>根据介值定理,$\exists \xi \in (0,1)$,使得$f(\xi) = \cfrac{a}{a+b}$</p><p>又有$\cfrac{a}{\frac{f(\xi)-f(0)}{\xi -0}}+\cfrac{b}{\frac{f(1)-f(\xi)}{1-\xi}} = a+b$.</p><p>在$(0,\xi),(\xi,1)$上分别使用拉格朗日中值定理,即可证明.</p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 10</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([0,1]\)</span>上连续,在<spanclass="math inline">\((0,1)\)</span>上可导,<spanclass="math inline">\(f(0)=0,f(1)-1\)</span>,求证:</p><ul><li><span class="math inline">\(\exists \xi \in (0,1)\)</span>,使得<spanclass="math inline">\(f(\xi) = 1-\xi\)</span>.</li><li><span class="math inline">\(\exists \alpha,\beta \in(0,1)\)</span>,使得<spanclass="math inline">\(f&#39;(\alpha)f&#39;(\beta)=1\)</span>.</li></ul><p><strong>Proof</strong></p><ul><li>构造函数<span class="math inline">\(F(x) =f(x)+x-1\)</span>,显然我们有<spanclass="math inline">\(F(0)=-1,F(1)=1\)</span>,根据介值定理,可证.</li><li>在<spanclass="math inline">\((0,\xi),(\xi,1)\)</span>上分别使用拉格朗日中值定理,有<spanclass="math inline">\(f&#39;(\alpha ) =\cfrac{f(\xi)-f(0)}{\xi-0},f&#39;(\beta)\cfrac{f(1)-f(\xi)}{1-\xi}\)</span>.相乘即可</li></ul>
+            <p><strong>Example 10</strong>:设$f(x)$在$[0,1]$上连续,在$(0,1)$上可导,$f(0)=0,f(1)-1$,求证:</p><ul><li>$\exists \xi \in (0,1)$,使得$f(\xi) = 1-\xi$.</li><li>$\exists \alpha,\beta \in (0,1)$,使得$f’(\alpha)f’(\beta)=1$.</li></ul><p><strong>Proof</strong> </p><ul><li>构造函数$F(x) = f(x)+x-1$,显然我们有$F(0)=-1,F(1)=1$,根据介值定理,可证.</li><li>在$(0,\xi),(\xi,1)$上分别使用拉格朗日中值定理,有$f’(\alpha ) = \cfrac{f(\xi)-f(0)}{\xi-0},f’(\beta) \cfrac{f(1)-f(\xi)}{1-\xi}$.相乘即可</li></ul>
           </div>
 <div class="note note-success">
-            <p><strong>Example 11</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>上可导,<spanclass="math inline">\(f(a)=f(b)=1\)</span>,证明:<spanclass="math inline">\(\exists \xi ,\eta \in (a,b)\)</span>,使得<spanclass="math inline">\(e^{\eta -\xi}[f(\eta)+f&#39;(\eta)]=1\)</span></p><p><strong>Proof</strong> 即证:<spanclass="math inline">\(e^{\eta}[f(\eta )+f&#39;(\eta)] =e^{\xi}\)</span></p><p>令<span class="math inline">\(F(x)=e^xf(x)\)</span></p><p>则有<span class="math inline">\(\cfrac{F(b)-F(a)}{b-a} =\cfrac{e^bf(b)-e^af(a)}{b-a} = \cfrac{e^b-e^a}{b-a}\)</span></p><p>使用一次拉格朗日中值定理,即得证.</p>
+            <p><strong>Example 11</strong>:设$f(x)$在$[a,b]$上可导,$f(a)=f(b)=1$,证明:$\exists \xi ,\eta \in (a,b)$,使得$e^{\eta -\xi}[f(\eta )+f’(\eta)]=1$</p><p><strong>Proof</strong> 即证:$e^{\eta}[f(\eta )+f’(\eta)] = e^{\xi}$</p><p>令$F(x)=e^xf(x)$</p><p>则有$\cfrac{F(b)-F(a)}{b-a} = \cfrac{e^bf(b)-e^af(a)}{b-a} = \cfrac{e^b-e^a}{b-a}$</p><p>使用一次拉格朗日中值定理,即得证.</p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 12</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([0,a]\)</span>上可导<spanclass="math inline">\((a&gt;0)\)</span>,<spanclass="math inline">\(f(0)=1,f(a)=0\)</span>,求证<spanclass="math inline">\(\exists x_1\ne x_2 \in (0,a)\)</span>,使得<spanclass="math inline">\(f&#39;(x_1)f&#39;(x_2) =\cfrac{1}{a^2}\)</span></p><p><strong>Proof</strong> 构造函数<spanclass="math inline">\(g(x)=f(x)-\cfrac{x}{a}\)</span>,<spanclass="math inline">\(g(0)=1,g(a)=-1\)</span></p><p>根据介值定理:<span class="math inline">\(\exists \xi \in(0,a)\)</span>,使得<span class="math inline">\(g(\xi) =0\)</span>,即<spanclass="math inline">\(f(\xi)=\cfrac{\xi}{a}\)</span></p><p>注意到<span class="math inline">\(\cfrac{f(\xi)-f(0)}{\xi}\cdot\cfrac{f(a)-f(\xi)}{a-\xi} = \cfrac{1}{a^2}\)</span></p><p>在<spanclass="math inline">\((0,\xi),(\xi,a)\)</span>上使用两次拉格朗日中值定理即可.</p>
+            <p><strong>Example 12</strong>:设$f(x)$在$[0,a]$上可导$(a&gt;0)$,$f(0)=1,f(a)=0$,求证$\exists x_1\ne x_2 \in (0,a)$,使得$f’(x_1)f’(x_2) = \cfrac{1}{a^2}$</p><p><strong>Proof</strong> 构造函数$g(x)=f(x)-\cfrac{x}{a}$,$g(0)=1,g(a)=-1$</p><p>根据介值定理:$\exists \xi \in (0,a)$,使得$g(\xi) = 0$,即$f(\xi)=\cfrac{\xi}{a}$</p><p>注意到$\cfrac{f(\xi)-f(0)}{\xi}\cdot \cfrac{f(a)-f(\xi)}{a-\xi} = \cfrac{1}{a^2}$</p><p>在$(0,\xi),(\xi,a)$上使用两次拉格朗日中值定理即可.</p>
           </div>
 <div class="note note-success">
-            <p><strong>Example 13</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([0,1]\)</span>上可导,<spanclass="math inline">\(f(0)=0\)</span>,<spanclass="math inline">\(|f&#39;(x)|\leq\cfrac{1}{2}|f(x)|\)</span>,求证:<span class="math inline">\(f(x) =0\)</span></p><p><strong>Proof</strong> 易知$|f'(x)||f(x)| =|f(x)-f(0)| $</p><p>根据拉格朗日中值定理<span class="math inline">\(f(x)-f(0) =f&#39;(\xi_1)x\)</span></p><p>即有<span class="math inline">\(|f&#39;(x)|\leq\cfrac{1}{2}|x||f&#39;(\xi_1)| =\cfrac{1}{2^2}|x||f(\xi_1)|\)</span></p><p>对其进行多次递推:<span class="math inline">\(|f&#39;(x)|\leq\cfrac{1}{2^{n+1}}|x||\xi_1|...|\xi_{n-1}||f(\xi_n)| \leq\cfrac{M}{2^{n+1}}\)</span></p><p>最终我们有:<span class="math inline">\(f&#39;(x) =0,f(0)=0\Rightarrow f(x)=0\)</span>.</p>
+            <p><strong>Example 13</strong>:设$f(x)$在$[0,1]$上可导,$f(0)=0$,$|f’(x)|\leq \cfrac{1}{2}|f(x)|$,求证:$f(x) = 0$</p><p><strong>Proof</strong> 易知$|f’(x)|\leq \cfrac{1}{2}|f(x)| =\cfrac{1}{2}|f(x)-f(0)| $</p><p>根据拉格朗日中值定理$f(x)-f(0) = f’(\xi_1)x$</p><p>即有$|f’(x)|\leq \cfrac{1}{2}|x||f’(\xi_1)| = \cfrac{1}{2^2}|x||f(\xi_1)|$</p><p>对其进行多次递推:$|f’(x)|\leq \cfrac{1}{2^{n+1}}|x||\xi_1|…|\xi_{n-1}||f(\xi_n)| \leq \cfrac{M}{2^{n+1}}$</p><p>最终我们有:$f’(x) = 0,f(0)=0\Rightarrow f(x)=0$.</p>
           </div>
 
                 
@@ -808,20 +806,5 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
