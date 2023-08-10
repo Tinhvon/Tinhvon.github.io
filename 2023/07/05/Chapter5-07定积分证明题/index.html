@@ -16,16 +16,16 @@
   <meta name="author" content="Tinhvon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="我们将在本文中讨论广义积分.">
+    <meta name="description" content="没有新知识,只有题目.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Chapter-05广义积分">
-<meta property="og:url" content="http://example.com/2023/07/05/Chapter5-05%E5%B9%BF%E4%B9%89%E7%A7%AF%E5%88%86/index.html">
+<meta property="og:title" content="Chapter5-07定积分证明题">
+<meta property="og:url" content="http://example.com/2023/07/05/Chapter5-07%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AF%81%E6%98%8E%E9%A2%98/index.html">
 <meta property="og:site_name" content="Tinhvon&#39;s Space">
-<meta property="og:description" content="我们将在本文中讨论广义积分.">
+<meta property="og:description" content="没有新知识,只有题目.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Calculus.png">
-<meta property="article:published_time" content="2023-07-04T19:30:00.000Z">
-<meta property="article:modified_time" content="2023-08-10T07:11:56.784Z">
+<meta property="article:published_time" content="2023-07-04T20:30:00.000Z">
+<meta property="article:modified_time" content="2023-08-10T08:48:55.111Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Calculus">
@@ -35,7 +35,7 @@
   
   
   
-  <title>Chapter-05广义积分 - Tinhvon&#39;s Space</title>
+  <title>Chapter5-07定积分证明题 - Tinhvon&#39;s Space</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -217,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Chapter-05广义积分"></span>
+            <span id="subtitle" data-typed-text="Chapter5-07定积分证明题"></span>
           
         </div>
 
@@ -228,7 +228,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-05 03:30" pubdate>
+        <time datetime="2023-07-05 04:30" pubdate>
           2023年7月5日 凌晨
         </time>
       </span>
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4.6k 字
+          57 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          39 分钟
+          1 分钟
         
       </span>
     
@@ -288,136 +288,17 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Chapter-05广义积分</h1>
+            <h1 id="seo-header">Chapter5-07定积分证明题</h1>
             
             
               <div class="markdown-body">
                 
                 <h1 id="定积分">定积分</h1>
-<h2 id="广义积分">广义积分</h2>
-<p>本文我们讨论<strong>广义积分</strong>,其可分为三类:<strong>积分区间为无限的广义积分</strong>,<strong>无界函数的广义积分</strong>,<strong>Euler积分</strong>.</p>
-<h3 id="积分区间为无限的广义积分">积分区间为无限的广义积分</h3>
-<p>直接给出其定义:</p>
-<div class="note note-primary">
-            <p><strong>Definition</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>内可积,若<spanclass="math inline">\(\lim\limits_{b \to+\infty}\int_a^bf(x)\mathrm{d}x\)</span>存在且收敛于<spanclass="math inline">\(I\)</span>,则称<spanclass="math inline">\(I\)</span>为<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,+\infty)\)</span>上的<strong>广义积分</strong>.</p><p>记作:<span class="math inline">\(I = \lim\limits_{b \to+\infty}\int_a^bf(x)\mathrm{d}x=\int_a^{+\infty}f(x)\mathrm{d}x\)</span></p><p>此时称<spanclass="math inline">\(\int_a^{+\infty}f(x)\mathrm{d}x\)</span>收敛,否则称该积分发散.</p>
-          </div>
-<p><strong>Note 1</strong>:同理<span
-class="math inline">\(\int_{-\infty}^{b}f(x)\mathrm{d}x = \lim\limits_{a
-\to -\infty}\int_a^bf(x)\mathrm{d}x\)</span>.</p>
-<p><strong>Note 2</strong>:若$<em>{c}^{+}f(x)x <span
-class="math inline">\(与\)</span></em>{-}^{c}f(x)x <span
-class="math inline">\(均收敛,定义:\)</span><em>{-}^{+}f(x)x =
-</em>{-}^{c}f(x)x +_{c}^{+}f(x)x$.</p>
-<p><strong>Note 3</strong>:敛散性的<strong>比较判别法</strong>:</p>
-<p>其方法如下:</p>
-<div class="note note-danger">
-            <p><strong>Theorem</strong>:设<spanclass="math inline">\(f(x),g(x)\)</span>在<spanclass="math inline">\([a,+\infty)\)</span>上连续,且<spanclass="math inline">\(0 \leq f(x) \leqg(x),x\in[a,+\infty)\)</span>.则:</p><ul><li><spanclass="math inline">\(\int_a^{+\infty}g(x)\mathrm{d}x\)</span>收敛<spanclass="math inline">\(\Rightarrow\int_a^{+\infty}f(x)\mathrm{d}x\)</span>收敛.</li><li><spanclass="math inline">\(\int_a^{+\infty}f(x)\mathrm{d}x\)</span>发散<spanclass="math inline">\(\Rightarrow\int_a^{+\infty}f(x)\mathrm{d}x\)</span>发散.</li></ul>
-          </div>
-<p><strong>Note 4</strong>:敛散性的<strong>比阶判别法</strong>:</p>
-<p>其方法如下:</p>
-<div class="note note-danger">
-            <p><strong>Theorem</strong>:<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,+\infty)\)</span>非负连续,且<spanclass="math inline">\(\lim\limits_{x\to+\infty}x^pf(x) = l \in[0,+\infty)\)</span>,则:</p><ul><li><span class="math inline">\(p &gt; 1\)</span>,<spanclass="math inline">\(\int_a^{+\infty}f(x)\mathrm{d}x\)</span>收敛</li><li><span class="math inline">\(p \leq 1,l &gt; 0\)</span>,<spanclass="math inline">\(\int_a^{+\infty}f(x)\mathrm{d}x\)</span>发散</li></ul>
-          </div>
-<p>根据比阶判别法,我们可以讨论积分<span class="math inline">\(I =
-\int_1^{+\infty}\cfrac{1}{x^p}\mathrm{d}x\)</span>的敛散性,其结论如下:</p>
-<ul>
-<li><span class="math inline">\(p &gt; 1\)</span>,<span
-class="math inline">\(I =
-\int_1^{+\infty}\cfrac{1}{x^p}\mathrm{d}x\)</span>收敛.</li>
-<li><span class="math inline">\(p \leq 1\)</span>,<span
-class="math inline">\(I =
-\int_1^{+\infty}\cfrac{1}{x^p}\mathrm{d}x\)</span>发散.</li>
-</ul>
-<p>给出几个例题:</p>
+<h2 id="定积分证明题">定积分证明题</h2>
+<p>定积分部分可以与微分中值定理部分结合起来,从而出一些证明题.本文便举一些例子:</p>
 <div class="note note-success">
-            <p><strong>Example 1</strong>:计算<spanclass="math inline">\(\int_{-\infty}^{+\infty}\cfrac{1}{1+x^2}\mathrm{d}x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(I = \arctan{x}|_{-\pi/2}^{\pi/2} =\pi\)</span></p>
+            <p><strong>Example 1</strong>:</p>
           </div>
-<div class="note note-success">
-            <p><strong>Example 2</strong>:计算<spanclass="math inline">\(\int_0^{+\infty}e^{-x}\sin{x}\mathrm{d}x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(I =e^{-x}\sin{x}|_{+\infty}^{0}+\int_0^{+\infty}e^{-x}\cos{x}\mathrm{d}x =\cfrac{1}{2}\)</span></p>
-          </div>
-<h3 id="无界函数的广义积分">无界函数的广义积分</h3>
-<p>直接给出其定义:</p>
-<div class="note note-primary">
-            <p><strong>Definition</strong>:设<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\(x=b\)</span>附近无界,且<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b-\varepsilon]\)</span>可积.对于<spanclass="math inline">\(\forall \varepsilon &gt; 0\)</span>,若<spanclass="math inline">\(\lim\limits_{\varepsilon \to0}\int_a^{b-\varepsilon}f(x)\mathrm{d}x\)</span>存在且等于<spanclass="math inline">\(I\)</span>,则称<spanclass="math inline">\(I\)</span>是<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,b]\)</span>上的<strong>广义积分</strong>.</p>
-          </div>
-<p><strong>Note 1</strong>:设<span
-class="math inline">\(f(x)\)</span>在<span
-class="math inline">\(x=a\)</span>附近无界,则<span
-class="math inline">\(\int_a^bf(x)\mathrm{d}x = \lim\limits_{\varepsilon
-\to 0}\int_{a+\varepsilon}^{b}f(x)\mathrm{d}x\)</span></p>
-<p><strong>Note 2</strong>:若<span class="math inline">\(c \in
-(a,b)\)</span>为瑕点,则<span
-class="math inline">\(\int_a^bf(x)\mathrm{d}x=\int_a^cf(x)\mathrm{d}x+\int_c^bf(x)\mathrm{d}x\)</span>,等号右边两个积分分别独立存在.</p>
-<p><strong>Note 3</strong>:敛散性的<strong>比较判别法</strong>:</p>
-<p>与此前类似,其方法为:</p>
-<div class="note note-danger">
-            <p><strong>Theorem</strong>:设<spanclass="math inline">\(f(x),g(x)\)</span>在<spanclass="math inline">\([a,+b)\)</span>上有定义,<spanclass="math inline">\(b\)</span>为瑕点,若<spanclass="math inline">\(\forall \varepsilon &gt; 0\)</span>,有<spanclass="math inline">\(0 \leq f(x) \leqg(x),x\in[a,b-\varepsilon]\)</span>.则:</p><ul><li><spanclass="math inline">\(\int_a^{b}g(x)\mathrm{d}x\)</span>收敛<spanclass="math inline">\(\Rightarrow\int_a^{b}f(x)\mathrm{d}x\)</span>收敛.</li><li><spanclass="math inline">\(\int_a^{b}f(x)\mathrm{d}x\)</span>发散<spanclass="math inline">\(\Rightarrow\int_a^{b}f(x)\mathrm{d}x\)</span>发散.</li></ul><p>其中<span class="math inline">\(f(x),g(x)\)</span>在<spanclass="math inline">\([a,b-\varepsilon]\)</span>上可积.</p>
-          </div>
-<p><strong>Note 4</strong>:敛散性的<strong>比阶判别法</strong>:</p>
-<p>与此前类似,其方法为:</p>
-<div class="note note-danger">
-            <p><strong>Theorem</strong>:<spanclass="math inline">\(f(x)\)</span>在<spanclass="math inline">\([a,+b)\)</span>非负连续,<spanclass="math inline">\(x=b\)</span>是瑕点,且<spanclass="math inline">\(\lim\limits_{x\to+\infty}(b-x)^pf(x) = l \in[0,+\infty)\)</span>,则:</p><ul><li><span class="math inline">\(p &gt; 1\)</span>,<spanclass="math inline">\(\int_a^{b}f(x)\mathrm{d}x\)</span>收敛</li><li><span class="math inline">\(p \leq 1,l &gt; 0\)</span>,<spanclass="math inline">\(\int_a^{b}f(x)\mathrm{d}x\)</span>发散</li></ul>
-          </div>
-<p>根据比阶判别法,我们可以讨论积分<span class="math inline">\(I =
-\int_a^{b}\cfrac{1}{(b-x)^p}\mathrm{d}x\)</span>的敛散性,其结论如下:</p>
-<ul>
-<li><span class="math inline">\(p &lt; 1\)</span>,<span
-class="math inline">\(I =
-\int_a^{b}\cfrac{1}{(b-x)^p}\mathrm{d}x\)</span>收敛.</li>
-<li><span class="math inline">\(p \geq 1\)</span>,<span
-class="math inline">\(I =
-\int_a^{b}\cfrac{1}{(b-x)^p}\mathrm{d}x\)</span>发散.</li>
-</ul>
-<p><strong>Note 5</strong>:广义积分的计算:</p>
-<p>广义积分的牛顿-莱布尼兹公式,及换元法,分部积分法均可使用:</p>
-<div class="note note-danger">
-            <p><strong>N-L公式</strong>:<spanclass="math inline">\(F&#39;(x)=f(x)\)</span>,<spanclass="math inline">\(\int_a^bf(x)\mathrm{d}x = \lim\limits_{x\tob^-}F(x)-\lim\limits_{x\to a^+}F(x)\)</span>.</p><p><strong>换元法</strong>:对于<spanclass="math inline">\(\int_a^bf(x)\mathrm{d}x\)</span>,作代换<spanclass="math inline">\(x=x(t),\lim\limits_{t \to\alpha^+}x(t)=a,\lim\limits_{t \to\beta^{-}}x(t)=b\)</span>.则原积分变为:<spanclass="math inline">\(\int_a^bf[x(t)]x&#39;(t)\mathrm{d}t\)</span>.</p><p><strong>分部积分法</strong>:<span class="math inline">\(\int_a^b u(x)\mathrm{d}v(x)=\left.u v\right|_a ^b-\int_a^b v(x)\mathrm{d}u(x)\)</span></p>
-          </div>
-<p>下面给出例题:</p>
-<div class="note note-success">
-            <p><strong>Example 1</strong>:计算<span class="math inline">\(\int_0^1\cfrac{1-2 x}{\sqrt{x-x^2}} \mathrm{d}x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I&amp;=\int_0^{\frac{1}{2}} \frac{1-2 x}{\sqrt{x} \sqrt{1-x}} \mathrm{d}x+\int_{\frac{1}{2}}^1 \frac{1-2 x}{\sqrt{1-x} \sqrt{x}} \mathrm{d}x=0 \\&amp; \end{aligned}\)</span></p>
-          </div>
-<p><strong>Note</strong>:本题使用了结论<span
-class="math inline">\(\int_a^b(x-\cfrac{a+b}{2})\mathrm{d}x =
-0\)</span></p>
-<div class="note note-success">
-            <p><strong>Example 2</strong>:判断<spanclass="math inline">\(\int_{-1}^1{\cfrac{1}{x^2}}\mathrm{d}x\)</span>的敛散性.</p><p><strong>Solution</strong>:</p><p><span class="math inline">\(I =\int_{-1}^0\cfrac{\mathrm{d}x}{x^2}+\int_0^1\cfrac{\mathrm{d}x}{x^2}\)</span>发散</p>
-          </div>
-<h3 id="euler积分">Euler积分</h3>
-<p>这部分在课程《数学物理方法》及之后的物理类核心课程中很有用,微积分学中这部分仅作了解即可.</p>
-<p>直接介绍<strong>I型Euler积分</strong>与<strong>II型Euler积分</strong>:</p>
-<div class="note note-primary">
-            <p><strong>Definition</strong>:我们记<spanclass="math inline">\(\Gamma(\alpha) = \int_{0}^{+\infty}x^{\alpha-1}e^{-x}\mathrm{d}x\)</span>为<strong>第II型Euler积分</strong>,也称其为<strong><spanclass="math inline">\(\Gamma\)</span>函数</strong>.</p>
-          </div>
-<p>根据广义积分的性质:</p>
-<p><span class="math inline">\(\Gamma{(\alpha)} = \int_{0}^{1}x^{\alpha
--1}e^{-x}\mathrm{d}x+\int_{1}^{+\infty}x^{\alpha
--1}e^{-x}\mathrm{d}x\)</span>.</p>
-<p>其敛散性如下:</p>
-<ul>
-<li><span class="math inline">\(\alpha &gt; 0\)</span>,<span
-class="math inline">\(\Gamma(\alpha)\)</span>收敛</li>
-<li><span class="math inline">\(\alpha \leq 0\)</span>,<span
-class="math inline">\(\Gamma(\alpha)\)</span>发散</li>
-</ul>
-<div class="note note-primary">
-            <p><strong>Definition</strong>:记<spanclass="math inline">\(\Beta(\alpha,\beta) =\int_{0}^1x^{\alpha-1}(1-x)^{\beta-1}\mathrm{d}x\)</span>为<strong>第I型Euler积分</strong>,也称其为<spanclass="math inline">\(\Beta\)</span>函数.</p>
-          </div>
-<p>根据广义积分的性质:</p>
-<p><span class="math inline">\(\Beta(\alpha,\beta) =
-\int_{0}^{1/2}x^{\alpha-1}(1-x)^{\beta-1}\mathrm{d}x+\int_{1/2}^1x^{\alpha-1}(1-x)^{\beta-1}\mathrm{d}x\)</span></p>
-<p>其敛散性如下:</p>
-<ul>
-<li><span class="math inline">\(\alpha,\beta &gt; 0\)</span>,<span
-class="math inline">\(\Beta(\alpha,\beta)\)</span>收敛</li>
-<li><span class="math inline">\(\alpha,\beta \leq 0\)</span>,<span
-class="math inline">\(\Beta(\alpha,\beta)\)</span>收敛</li>
-</ul>
-<p>此后我们介绍其性质:</p>
-<div class="note note-danger">
-            <p><strong>递推公式</strong>:</p><p><span class="math inline">\(\Gamma(\alpha +1) = \alpha\Gamma(\alpha),\Gamma(n+1)=n!,\Gamma(1)=1\)</span>.</p><p><span class="math inline">\(\Beta(p,q) =\cfrac{q-1}{p+q-1}\Beta(p,q-1) =\cfrac{p-1}{p+q-1}\Beta(p-1,q)\)</span></p><p><strong>转换公式</strong>:</p><p><span class="math inline">\(\Beta(p,q) =\cfrac{\Gamma(p)\Gamma(q)}{\Gamma(p+q)} = \Beta(q,p)\)</span></p><p><strong>余元公式</strong>:</p><p><span class="math inline">\(\Gamma(p)\Gamma(1-p) =\cfrac{\pi}{\sin{p\pi}}\)</span></p><p><span class="math inline">\(\Beta(p,1-p) =\cfrac{\pi}{\sin{p\pi}}\)</span></p>
-          </div>
-<p>证明详见《特殊函数概论》.</p>
 
                 
               </div>
@@ -474,8 +355,8 @@ class="math inline">\(\Beta(\alpha,\beta)\)</span>收敛</li>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Chapter-05广义积分</div>
-      <div>http://example.com/2023/07/05/Chapter5-05广义积分/</div>
+      <div>Chapter5-07定积分证明题</div>
+      <div>http://example.com/2023/07/05/Chapter5-07定积分证明题/</div>
     </div>
     <div class="license-meta">
       
@@ -519,9 +400,9 @@ class="math inline">\(\Beta(\alpha,\beta)\)</span>收敛</li>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/07/05/Chapter5-06%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97%E9%A2%98/" title="Chapter5-06定积分计算题">
+                      <a href="/2023/07/16/%E5%85%89%E5%AD%A6-Chapter1-%E5%85%89%E7%9A%84%E7%94%B5%E7%A3%81%E7%90%86%E8%AE%BA/" title="光学 Chapter1-光的电磁理论">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Chapter5-06定积分计算题</span>
+                        <span class="hidden-mobile">光学 Chapter1-光的电磁理论</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -529,8 +410,8 @@ class="math inline">\(\Beta(\alpha,\beta)\)</span>收敛</li>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/05/Chapter5-04%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97/" title="Chapter5-04定积分的计算">
-                        <span class="hidden-mobile">Chapter5-04定积分的计算</span>
+                      <a href="/2023/07/05/Chapter5-06%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AE%A1%E7%AE%97%E9%A2%98/" title="Chapter5-06定积分计算题">
+                        <span class="hidden-mobile">Chapter5-06定积分计算题</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -550,8 +431,8 @@ class="math inline">\(\Beta(\alpha,\beta)\)</span>收敛</li>
     
       <script type="text/javascript">
         var disqus_config = function() {
-          this.page.url = 'http://example.com/2023/07/05/Chapter5-05%E5%B9%BF%E4%B9%89%E7%A7%AF%E5%88%86/';
-          this.page.identifier = '/2023/07/05/Chapter5-05%E5%B9%BF%E4%B9%89%E7%A7%AF%E5%88%86/';
+          this.page.url = 'http://example.com/2023/07/05/Chapter5-07%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AF%81%E6%98%8E%E9%A2%98/';
+          this.page.identifier = '/2023/07/05/Chapter5-07%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AF%81%E6%98%8E%E9%A2%98/';
         };
         Fluid.utils.loadComments('#disqus_thread', function() {
           var d = document, s = d.createElement('script');

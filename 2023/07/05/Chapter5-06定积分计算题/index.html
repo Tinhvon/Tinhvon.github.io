@@ -24,8 +24,8 @@
 <meta property="og:description" content="没有新知识,只有题目.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/Calculus.png">
-<meta property="article:published_time" content="2023-07-04T18:30:00.000Z">
-<meta property="article:modified_time" content="2023-08-09T08:58:52.210Z">
+<meta property="article:published_time" content="2023-07-04T20:00:00.000Z">
+<meta property="article:modified_time" content="2023-08-10T08:45:11.170Z">
 <meta property="article:author" content="Tinhvon">
 <meta property="article:tag" content="Notes">
 <meta property="article:tag" content="Calculus">
@@ -228,7 +228,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-05 02:30" pubdate>
+        <time datetime="2023-07-05 04:00" pubdate>
           2023年7月5日 凌晨
         </time>
       </span>
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          6 字
+          3.9k 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          1 分钟
+          33 分钟
         
       </span>
     
@@ -295,6 +295,71 @@
                 
                 <h1 id="定积分">定积分</h1>
 <h2 id="计算题">计算题</h2>
+<h3 id="与奇偶性有关的定积分">与奇偶性有关的定积分</h3>
+<p>首先给出一个结论:</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:<spanclass="math inline">\(\int_{-a}^{a}f(x)\mathrm{d}x = \begin{cases}0,f(x)= -f(-x) \\2\int_{0}^{a}f(x)\mathrm{d}x,f(x)=f(-x)\end{cases}\)</span></p>
+          </div>
+<p>下面我们开始给出例题:</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:<spanclass="math inline">\(\int_{-\frac{1}{2}}^{\frac{1}{2}}\ln\cfrac{1-x}{1+x} \arcsin \sqrt{1-x^2} \mathrm{d}x=0\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 2</strong>:已知$_{-1}^{+1} f(x^2)(|x|+x) x=A <spanclass="math inline">\(,求:\)</span>_0^1 f(x) x$</p><p><strong>Solution</strong></p><p><span class="math inline">\(\int_{-1}^{1}f\left(x^2\right)|x|\mathrm{d} x=\int_0^1 f\left(x^2\right) \mathrm{d}x^2=\int_0^1 f(x) \mathrm{d}x=A\)</span></p>
+          </div>
+<p>中心对称函数也是重要的一类函数,其在积分运算中有着很强的技巧性,下面给出一个定理:</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:<spanclass="math inline">\(\int_{-a}^af(x)g(x)\mathrm{d}x =A\int_0^ag(x)\mathrm{d}x\)</span>,其中<spanclass="math inline">\(f(x)+f(-x) = A,g(x)\)</span>为偶函数.</p>
+          </div>
+<p>这里证明略.</p>
+<p>给出例题:</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:计算<spanclass="math inline">\(\int_{-1}^{1} x^2 \arctan e^x \mathrm{d}x\)</span></p><p><strong>Solution</strong></p><p>$ I =_{0}<sup>1x</sup>2x = $</p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 2</strong>:计算<spanclass="math inline">\(\int_{-\pi/2}^{\pi/2} \cfrac{e^x}{1+e^x} \sin ^4 x\mathrm{d}x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I &amp;=\int_0^{\pi/2}\sin ^4 x d x=\frac{3}{16} \pi \\ &amp;\frac{e^x}{1+e^x}+\frac{e^{-x}}{1+e^{-x}}=1 \end{aligned}\)</span></p>
+          </div>
+<h3 id="与周期性有关的定积分">与周期性有关的定积分</h3>
+<p>给出一个结论:</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:设<spanclass="math inline">\(f(x)\)</span>为周期为<spanclass="math inline">\(T\)</span>的周期函数,则<spanclass="math inline">\(\int_{a}^{a+T}f(x)\mathrm{d}x =\int_{0}^{T}f(x)\mathrm{d}x\)</span></p>
+          </div>
+<p>证明将区间拆开即可,这里不再详细证明.</p>
+<p>下面我们开始给出例题:</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:计算<spanclass="math inline">\(\int_0^{n\pi} \sqrt{1-\sin 2 x}\mathrm{d}x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned}I &amp;= n \int_0^\pi\sqrt{(\cos x-\sin x)^2} \mathrm{d}x \\ &amp;=n\left[\int_0^{\pi/4}(\cos x-\sin x) \mathrm{d}x+\int_{\pi/4}^\pi(\sinx-\cos x)\mathrm{d}x\right] \\ &amp;=2 \sqrt{2} n\end{aligned}\)</span></p>
+          </div>
+<p>三角函数是常见的周期函数,其在定积分运算中有着额外的技巧,给出一个结论如下:</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:<span class="math inline">\(\int_0^\pi xf(\sin x)\mathrm{d}x=\cfrac{\pi}{2} \int_0^\pi f(\sinx)\mathrm{d}x\)</span></p>
+          </div>
+<p>证明即用变量代换<span class="math inline">\(x=\pi-y\)</span>即可.</p>
+<p>给出一个例题:</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:计算<span class="math inline">\(\int_0^\pi\cfrac{x \sin ^3 x}{1+\cos ^2 x} \mathrm{d}x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(I =\cfrac{\pi}{2} \int_0^\pi \cfrac{\sin^3 x}{1+\cos ^2 x} \mathrm{d}x=\cfrac{\pi^2-2 \pi}{2}\)</span></p>
+          </div>
+<h3 id="walis公式">Walis公式</h3>
+<p>下面我们给出一个重要的积分:<strong>Walis</strong>公式,其表述如下:</p>
+<div class="note note-danger">
+            <p><strong>Theorem</strong>:记积分<span class="math inline">\(I_n =\int_0^{\pi/2} \sin ^n x\mathrm{d}x\)</span></p><p><span class="math inline">\(I_n = \int_0^{\pi/2} \sin ^n x\mathrm{d}x=\left\{\begin{array}{ll} \cfrac{(2 m-1) ! !}{(2 m) ! !}\cdot \cfrac{\pi}{2},n=2m \\ \cfrac{(2m)!!}{(2m+1)!!},n=2m+1 \end{array}\right.\)</span></p>
+          </div>
+<p>证明如下:</p>
+<div class="note note-info">
+            <p><strong>Proof</strong> 易知<span class="math inline">\(I_0 =\cfrac{\pi}{2},I_1 = 1\)</span></p><span class="math inline">\(n \geq 2\)</span>时,$<span class="math display">\[\begin{aligned}I_n &amp;=-\int_0^{\pi/2}\sin ^{n-1} x \mathrm{d}\cos x=\sin ^{n-1} x \cosx|_{\pi/2}^{0}+\int_0^{\pi/2}(n-1) \sin ^{n-2} x \cos ^2 x\mathrm{d}x \\&amp;=(n-1) \int_0^{\frac{\pi}{2}} \sin ^{n-2} x \mathrm{d}x-(n-1)\int_0^{\pi/2} \sin ^n x\mathrm{d} x \\ &amp; \Rightarrow I_n =\cfrac{n-1}{n}I_{n-2} \end{aligned}\]</span><p>$</p><p>递推即可.</p>
+          </div>
+<h3 id="其他定积分">其他定积分</h3>
+<p>下面我们再给出一些定积分计算的技巧,证明略:</p>
+<div class="note note-danger">
+            <p><strong>Theorem 1</strong>:<span class="math inline">\(\int_0^a f(x)\mathrm{d}x=\int_0^a f(a-x) \mathrm{d}x\)</span></p><p><strong>Theorem 2</strong>:<span class="math inline">\(\int_0^a f(x)\mathrm{d}x=\frac{1}{2} \int_0^a[f(x)+f(a-x)] \mathrm{d}x\)</span></p><p><strong>Theorem 3</strong>:<span class="math inline">\(\int_0^{\pi/2}f(\sin x, \cos x)\mathrm{d}x=\int_0^{\pi/2} f(\cos x, \sin x)\mathrm{d}x\)</span></p>
+          </div>
+<p>最后针对这些定理,给出一些例题:</p>
+<div class="note note-success">
+            <p><strong>Example 1</strong>:<span class="math inline">\(\int_0^1x(1-x)^{10} \mathrm{d}x=\int_0^1 x^{10}(1-x)\mathrm{d}x=\cfrac{1}{132}\)</span></p><p><strong>Example 2</strong>:<span class="math inline">\(\int_0^1 x\sqrt[3]{(1-x)^2} \mathrm{d}x=\int_0^1 x^{\frac{2}{3}}(1-x)\mathrm{d}x=\cfrac{9}{40}\)</span></p><p><strong>Example 3</strong>:<span class="math inline">\(\int_0^{\pi/2}\cfrac{\sin ^4 x-\cos ^4 x}{4-\sin x-\cos x} \mathrm{d}x=\int_0^\pi\cfrac{\cos ^4 x-\sin ^4 x}{4-\cos x-\sin x} \mathrm{d}x=0\)</span><strong>Example 4</strong>:$_0^{/2} =_0^{/2} x =_0^{/2} x= $</p><p><strong>Example 5</strong>:<span class="math inline">\(\int_0^{\pi/2}\cfrac{e^{\sin x}}{e^{\sin x}+e^{\cos x}} \mathrm{d}x=\int_0^{\pi/2}\cfrac{e^{\cos x}}{e^{\cos x}+e^{\sin x}}\mathrm{d}x=\cfrac{\pi}{4}\)</span></p>
+          </div>
+<div class="note note-success">
+            <p><strong>Example 6</strong>:<span class="math inline">\(\int_2^4\cfrac{\sqrt{\ln (9-x)} \mathrm{d}x}{\sqrt{\ln (9-x)}+\sqrt{\ln (x+3)}}=\int_2^4 \cfrac{\sqrt{\ln(t+3)} \mathrm{d}t}{\sqrt{\ln (t+3)}+\sqrt{\ln(9-x)}}=1\)</span>(本题做了变了代换<spanclass="math inline">\(9-x=t+3\)</span>)</p><p><strong>Example 7</strong>:计算<span class="math inline">\(\int_0^2\cfrac{x \mathrm{d}x}{e^x+e^{2-x}}\)</span></p><p><strong>Solution</strong>:</p><p><span class="math inline">\(\begin{aligned} I &amp;=\int_0^2\cfrac{(2-x) \mathrm{d}x}{e^{2-x}+e^x} \\ &amp;=\int_0^2\cfrac{\mathrm{d}x}{e^x+e^{2-x}} \\ &amp;=\int_0^2\cfrac{\mathrm{d}e^x}{e^{2x}+e^2} \\ &amp;=\frac{1}{e}\left[\arctane-\arctan \frac{1}{e}\right] \end{aligned}\)</span></p><p><strong>Example 8</strong>:计算<spanclass="math inline">\(\int_{0}^{1}\cfrac{\ln(1+x)}{1+x^2}\mathrm{d}x\)</span></p><p><strong>Solution</strong></p><p><span class="math inline">\(\begin{aligned} I &amp;=\int_{0}^{1}\ln(1+x)\mathrm{d}\arctan{x} \\ &amp;=\int_0^{\frac{\pi}{4}}\ln (1+\tan x) \mathrm{d}x \\ &amp;=\frac{1}{2}[\int_0^{\frac{\pi}{4}}\ln (1+\tan x) \mathrm{d}x+\int_0^{\frac{\pi}{4}} \ln(1+\tan(\frac{\pi}{4}-x)) \mathrm{d}x]=\frac{\pi}{8} \ln 2 \\ &amp;=\frac{1}{2} \int_0^{\frac{\pi}{4}}[\ln (1+\tan x)+\ln(1+\frac{1-\tanx}{1+\tan x})] \mathrm{d}x \end{aligned}\)</span></p>
+          </div>
+<p>(<em>未完待续...</em>)</p>
 
                 
               </div>
@@ -396,9 +461,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/07/05/Chapter5-05%E5%B9%BF%E4%B9%89%E7%A7%AF%E5%88%86/" title="Chapter-05广义积分">
+                      <a href="/2023/07/05/Chapter5-07%E5%AE%9A%E7%A7%AF%E5%88%86%E8%AF%81%E6%98%8E%E9%A2%98/" title="Chapter5-07定积分证明题">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Chapter-05广义积分</span>
+                        <span class="hidden-mobile">Chapter5-07定积分证明题</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -406,8 +471,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/07/05/Chapter5-02%E5%AE%9A%E7%A7%AF%E5%88%86%E7%9A%84%E6%80%A7%E8%B4%A8/" title="Chapter5-02定积分的性质">
-                        <span class="hidden-mobile">Chapter5-02定积分的性质</span>
+                      <a href="/2023/07/05/Chapter5-05%E5%B9%BF%E4%B9%89%E7%A7%AF%E5%88%86/" title="Chapter-05广义积分">
+                        <span class="hidden-mobile">Chapter-05广义积分</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
